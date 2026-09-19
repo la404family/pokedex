@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_RoeAction_Infiltration">
+        <Original>[ROE] Infiltration</Original>
+        <English>[ROE] Infiltration</English>
+        <French>[ROE] Infiltration</French>
+        <Spanish>[ROE] Infiltración</Spanish>
+        <German>[ROE] Infiltration</German>
+        <Italian>[ROE] Infiltrazione</Italian>
+        <Polish>[ROE] Infiltracja</Polish>
+        <Portuguese>[ROE] Infiltração</Portuguese>
+        <Russian>[ROE] Проникновение</Russian>
+        <Czech>[ROE] Infiltrace</Czech>
+        <Korean>[ROE] 침투</Korean>
+        <Japanese>[ROE] 潜入</Japanese>
+        <Chinese>[ROE] 渗透</Chinese>
+        <Chinesesimp>[ROE] 渗透</Chinesesimp>
+        <Turkish>[ROE] Sızma</Turkish>
+    </Key>
+    <Key ID="STR_LL_RoeAction_Reset">
+        <Original>[ROE] Regroup / Standard</Original>
+        <English>[ROE] Regroup / Standard</English>
+        <French>[ROE] Regroupement / Standard</French>
+        <Spanish>[ROE] Reagruparse / Estándar</Spanish>
+        <German>[ROE] Sammeln / Standard</German>
+        <Italian>[ROE] Raggruppamento / Standard</Italian>
+        <Polish>[ROE] Przegrupowanie / Standard</Polish>
+        <Portuguese>[ROE] Reagrupar / Padrão</Portuguese>
+        <Russian>[ROE] Сбор / Стандарт</Russian>
+        <Czech>[ROE] Seskupit / Standardní</Czech>
+        <Korean>[ROE] 재집결 / 표준</Korean>
+        <Japanese>[ROE] 再集結 / 標準</Japanese>
+        <Chinese>[ROE] 重新集结 / 标准</Chinese>
+        <Chinesesimp>[ROE] 重新集结 / 标准</Chinesesimp>
+        <Turkish>[ROE] Yeniden Toplanma / Standart</Turkish>
+    </Key>
+    <Key ID="STR_LL_RoeAction_ForceRegroup">
+        <Original>[ROE] Emergency Regroup</Original>
+        <English>[ROE] Emergency Regroup</English>
+        <French>[ROE] Regroupement d'Urgence</French>
+        <Spanish>[ROE] Reagrupación de emergencia</Spanish>
+        <German>[ROE] Notfallsammeln</German>
+        <Italian>[ROE] Raggruppamento di emergenza</Italian>
+        <Polish>[ROE] Nagłe przegrupowanie</Polish>
+        <Portuguese>[ROE] Reagrupamento de emergência</Portuguese>
+        <Russian>[ROE] Экстренный сбор</Russian>
+        <Czech>[ROE] Nouzové seskupení</Czech>
+        <Korean>[ROE] 긴급 재집결</Korean>
+        <Japanese>[ROE] 緊急再集結</Japanese>
+        <Chinese>[ROE] 紧急重新集结</Chinese>
+        <Chinesesimp>[ROE] 紧急重新集结</Chinesesimp>
+        <Turkish>[ROE] Acil Toplanma</Turkish>
+    </Key>
+    <Key ID="STR_LL_RoeAction_Assault">
+        <Original>[ROE] Assault</Original>
+        <English>[ROE] Assault</English>
+        <French>[ROE] Assaut</French>
+        <Spanish>[ROE] Asalto</Spanish>
+        <German>[ROE] Angriff</German>
+        <Italian>[ROE] Assalto</Italian>
+        <Polish>[ROE] Szturm</Polish>
+        <Portuguese>[ROE] Assalto</Portuguese>
+        <Russian>[ROE] Штурм</Russian>
+        <Czech>[ROE] Útok</Czech>
+        <Korean>[ROE] 강습</Korean>
+        <Japanese>[ROE] 強襲</Japanese>
+        <Chinese>[ROE] 突击</Chinese>
+        <Chinesesimp>[ROE] 突击</Chinesesimp>
+        <Turkish>[ROE] Saldırı</Turkish>
+    </Key>
+    <Key ID="STR_LL_RoeAction_Defend">
+        <Original>[ROE] Defend Position</Original>
+        <English>[ROE] Defend Position</English>
+        <French>[ROE] Tenir la Position</French>
+        <Spanish>[ROE] Defender posición</Spanish>
+        <German>[ROE] Position verteidigen</German>
+        <Italian>[ROE] Difendi posizione</Italian>
+        <Polish>[ROE] Broń pozycji</Polish>
+        <Portuguese>[ROE] Defender posição</Portuguese>
+        <Russian>[ROE] Защищать позицию</Russian>
+        <Czech>[ROE] Bránit pozici</Czech>
+        <Korean>[ROE] 진지 방어</Korean>
+        <Japanese>[ROE] 陣地防衛</Japanese>
+        <Chinese>[ROE] 坚守阵地</Chinese>
+        <Chinesesimp>[ROE] 坚守阵地</Chinesesimp>
+        <Turkish>[ROE] Pozisyonu Koru</Turkish>
+    </Key>
+    <Key ID="STR_LL_RoeAction_Name_Defense">
+        <Original>Defense</Original>
+        <English>Defense</English>
+        <French>Défense</French>
+        <Spanish>Defensa</Spanish>
+        <German>Verteidigung</German>
+        <Italian>Difesa</Italian>
+        <Polish>Obrona</Polish>
+        <Portuguese>Defesa</Portuguese>
+        <Russian>Оборона</Russian>
+        <Czech>Obrana</Czech>
+        <Korean>방어</Korean>
+        <Japanese>防衛</Japanese>
+        <Chinese>防御</Chinese>
+        <Chinesesimp>防御</Chinesesimp>
+        <Turkish>Savunma</Turkish>
+    </Key>
+</Keys>

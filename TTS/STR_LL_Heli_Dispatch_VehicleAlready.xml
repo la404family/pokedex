@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_VehicleAlready">
+            <Original>Vehicle delivery already completed. Request denied.</Original>
+            <English>Vehicle delivery already completed. Request denied.</English>
+            <French>Livraison de véhicule déjà effectuée. Demande refusée.</French>
+            <Spanish>Entrega de vehículo ya completada. Solicitud denegada.</Spanish>
+            <Italian>Consegna del veicolo già completata. Richiesta respinta.</Italian>
+            <German>Fahrzeuglieferung bereits abgeschlossen. Anfrage abgelehnt.</German>
+            <Polish>Dostawa pojazdu już zakończona. Żądanie odrzucone.</Polish>
+            <Russian>Доставка техники уже завершена. Запрос отклонен.</Russian>
+            <Turkish>Araç teslimatı zaten tamamlandı. İstek reddedildi.</Turkish>
+            <Japanese>車両の配達はすでに完了しています。要求は拒否されました。</Japanese>
+            <Korean>차량 배송이 이미 완료되었습니다. 요청이 거부되었습니다.</Korean>
+            <Chinese>车辆交付已完成。请求被拒绝。</Chinese>
+        </Key>
+</Keys>

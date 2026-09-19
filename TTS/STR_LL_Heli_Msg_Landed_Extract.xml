@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Landed_Extract">
+            <Original>Helicopter landed for extraction.</Original>
+            <English>Helicopter landed for extraction.</English>
+            <French>Hélicoptère posé pour extraction.</French>
+            <Spanish>Helicóptero aterrizó para extracción.</Spanish>
+            <Italian>Elicottero atterrato per l'estrazione.</Italian>
+            <German>Helikopter zur Extraktion gelandet.</German>
+            <Polish>Helikopter wylądował do ewakuacji.</Polish>
+            <Russian>Вертолет прибыл для эвакуации.</Russian>
+            <Turkish>Helikopter tahliye için indi.</Turkish>
+            <Japanese>ヘリコプターが離脱のため着陸しました。</Japanese>
+            <Korean>헬리콥터가 철수를 위해 착륙했습니다.</Korean>
+            <Chinese>直升机已着陆准备撤离。</Chinese>
+        </Key>
+</Keys>

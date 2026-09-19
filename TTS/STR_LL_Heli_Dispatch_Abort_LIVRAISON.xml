@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Abort_LIVRAISON">
+            <Original>Supply drop aborted — priority mission active.</Original>
+            <English>Supply drop aborted — priority mission active.</English>
+            <French>Livraison annulée — mission prioritaire en cours.</French>
+            <Spanish>Lanzamiento de suministros abortado — misión prioritaria activa.</Spanish>
+            <Italian>Lancio forniture annullato — missione prioritaria attiva.</Italian>
+            <German>Versorgungsabwurf abgebrochen — Prioritätsmission aktiv.</German>
+            <Polish>Zrzut zaopatrzenia przerwany — aktywna misja priorytetowa.</Polish>
+            <Russian>Сброс припасов отменен — активна приоритетная миссия.</Russian>
+            <Turkish>İkmal atışı iptal edildi — öncelikli görev aktif.</Turkish>
+            <Japanese>補給投下は中止されました — 優先任務が進行中です。</Japanese>
+            <Korean>보급품 투하 중단됨 — 우선순위 임무 진행 중.</Korean>
+            <Chinese>补给空投取消 — 优先任务正在进行中。</Chinese>
+        </Key>
+</Keys>

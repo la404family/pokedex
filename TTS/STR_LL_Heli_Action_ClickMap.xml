@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Action_ClickMap">
+            <Original>Define the helicopter zone.</Original>
+            <English>Define the helicopter zone.</English>
+            <French>Définir la zone de l'hélicoptère.</French>
+            <Spanish>Definir la zona del helicóptero.</Spanish>
+            <Italian>Definire la zona dell'elicottero.</Italian>
+            <German>Helikopterzone definieren.</German>
+            <Polish>Określ strefę helikoptera.</Polish>
+            <Russian>Определить зону для вертолета.</Russian>
+            <Turkish>Helikopter bölgesini belirle.</Turkish>
+            <Japanese>ヘリコプターのゾーンを定義する。</Japanese>
+            <Korean>헬리콥터 구역 설정.</Korean>
+            <Chinese>定义直升机区域。</Chinese>
+        </Key>
+</Keys>

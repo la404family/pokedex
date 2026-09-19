@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Abort_VEHICULE">
+            <Original>Vehicle drop aborted — priority mission active.</Original>
+            <English>Vehicle drop aborted — priority mission active.</English>
+            <French>Livraison véhicule annulée — mission prioritaire en cours.</French>
+            <Spanish>Lanzamiento de vehículo abortado — misión prioritaria activa.</Spanish>
+            <Italian>Lancio veicolo annullato — missione prioritaria attiva.</Italian>
+            <German>Fahrzeugabwurf abgebrochen — Prioritätsmission aktiv.</German>
+            <Polish>Zrzut pojazdu przerwany — aktywna misja priorytetowa.</Polish>
+            <Russian>Сброс техники отменен — активна приоритетная миссия.</Russian>
+            <Turkish>Araç ikmali iptal edildi — öncelikli görev aktif.</Turkish>
+            <Japanese>車両投下は中止されました — 優先任務が進行中です。</Japanese>
+            <Korean>차량 투하 중단됨 — 우선순위 임무 진행 중.</Korean>
+            <Chinese>车辆空投取消 — 优先任务正在进行中。</Chinese>
+        </Key>
+</Keys>

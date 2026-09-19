@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Abort_DEBARQUEMENT">
+            <Original>Reinforcements aborted — priority mission active.</Original>
+            <English>Reinforcements aborted — priority mission active.</English>
+            <French>Renforts annulés — mission prioritaire en cours.</French>
+            <Spanish>Refuerzos abortados — misión prioritaria activa.</Spanish>
+            <Italian>Rinforzi annullati — missione prioritaria attiva.</Italian>
+            <German>Verstärkung abgebrochen — Prioritätsmission aktiv.</German>
+            <Polish>Posiłki przerwane — aktywna misja priorytetowa.</Polish>
+            <Russian>Подкрепление отменено — активна приоритетная миссия.</Russian>
+            <Turkish>Takviye iptal edildi — öncelikli görev aktif.</Turkish>
+            <Japanese>増援は中止されました — 優先任務が進行中です。</Japanese>
+            <Korean>증원 중단됨 — 우선순위 임무 진행 중.</Korean>
+            <Chinese>增援取消 — 优先任务正在进行中。</Chinese>
+        </Key>
+</Keys>

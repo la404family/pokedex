@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Departing">
+            <Original>Helicopter departing.</Original>
+            <English>Helicopter departing.</English>
+            <French>Hélicoptère en départ.</French>
+            <Spanish>Helicóptero partiendo.</Spanish>
+            <Italian>Elicottero in partenza.</Italian>
+            <German>Helikopter im Abflug.</German>
+            <Polish>Helikopter odlatuje.</Polish>
+            <Russian>Вертолет отправляется.</Russian>
+            <Turkish>Helikopter kalkıyor.</Turkish>
+            <Japanese>ヘリコプター出発。</Japanese>
+            <Korean>헬리콥터 출발.</Korean>
+            <Chinese>直升机正在起飞。</Chinese>
+        </Key>
+</Keys>

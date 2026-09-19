@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_Available">
+            <Original>Drone de nouveau disponible.</Original>
+            <English>Drone is available again.</English>
+            <French>Drone de nouveau disponible.</French>
+            <Spanish>El dron vuelve a estar disponible.</Spanish>
+            <Italian>Il drone è di nuovo disponibile.</Italian>
+            <German>Drohne ist wieder verfügbar.</German>
+            <Polish>Dron jest ponownie dostępny.</Polish>
+            <Russian>Дрон снова доступен.</Russian>
+            <Turkish>Dron tekrar kullanılabilir.</Turkish>
+            <Japanese>ドローンが再び利用可能です。</Japanese>
+            <Korean>드론을 다시 사용할 수 있습니다。</Korean>
+            <Chinese>无人机再次可用。</Chinese>
+        </Key>
+</Keys>

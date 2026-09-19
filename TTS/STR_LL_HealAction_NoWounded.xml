@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_HealAction_NoWounded">
+            <Original> Aucun blessé nécessitant des soins.</Original>
+            <English> No wounded requiring healing.</English>
+            <French> Aucun blessé nécessitant des soins.</French>
+            <Turkish> İyileşmesi gereken yaralı yok.</Turkish>
+            <Korean> 치료가 필요한 부상자가 없습니다.</Korean>
+            <Spanish> No hay heridos que requieran curación.</Spanish>
+            <Japanese> 治療が必要な負傷者はいません。</Japanese>
+            <Chinese> 没有需要治疗的伤员。</Chinese>
+            <Russian> Нет раненых, нуждающихся в лечении.</Russian>
+            <German> Keine Verwundeten, die geheilt werden müssen.</German>
+            <Italian> Nessun ferito che richieda cure.</Italian>
+            <Polish> Brak rannych wymagających leczenia.</Polish>
+        </Key>
+</Keys>

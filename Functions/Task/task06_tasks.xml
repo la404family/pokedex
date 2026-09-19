@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_06_Action">
+        <Original>Capturer l'HVT (Soumission)</Original>
+        <French>Capturer l'HVT (Soumission)</French>
+        <English>Capture HVT (Subdue)</English>
+        <Turkish>HVT'yi Yakala (Teslim Al)</Turkish>
+        <Korean>HVT 포획 (제압)</Korean>
+        <Spanish>Capturar HVT (Someter)</Spanish>
+        <Japanese>HVT捕獲（降伏）</Japanese>
+        <Chinese>抓捕HVT（迫降）</Chinese>
+        <Russian>Захватить HVT (Принудить к сдаче)</Russian>
+        <German>HVT gefangen nehmen (Unterwerfen)</German>
+        <Italian>Cattura HVT (Sottometti)</Italian>
+        <Polish>Pojmij HVT (Zmuś do poddania)</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_ExtractAction">
+        <Original>Embarquer l'HVT à bord</Original>
+        <French>Embarquer l'HVT à bord</French>
+        <English>Board HVT into helicopter</English>
+        <Turkish>HVT'yi helikoptere bindir</Turkish>
+        <Korean>HVT 헬기 탑승</Korean>
+        <Spanish>Embarcar HVT en helicóptero</Spanish>
+        <Japanese>HVTをヘリに搭乗させる</Japanese>
+        <Chinese>押送HVT登上直升机</Chinese>
+        <Russian>Погрузить HVT в вертолет</Russian>
+        <German>HVT in Hubschrauber einsteigen lassen</German>
+        <Italian>Imbarca HVT sull'elicottero</Italian>
+        <Polish>Umieść HVT w śmigłowcu</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_EscortAction">
+        <Original>Escorter l'HVT</Original>
+        <French>Escorter l'HVT</French>
+        <English>Escort HVT</English>
+        <Turkish>HVT'ye Refakat Et</Turkish>
+        <Korean>HVT 호송</Korean>
+        <Spanish>Escoltar HVT</Spanish>
+        <Japanese>HVT護送</Japanese>
+        <Chinese>押送HVT</Chinese>
+        <Russian>Конвоировать HVT</Russian>
+        <German>HVT eskortieren</German>
+        <Italian>Scorta HVT</Italian>
+        <Polish>Eskortuj HVT</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_ReleaseAction">
+        <Original>Relâcher l'HVT</Original>
+        <French>Relâcher l'HVT</French>
+        <English>Release HVT</English>
+        <Turkish>HVT'yi Serbest Bırak</Turkish>
+        <Korean>HVT 석방</Korean>
+        <Spanish>Liberar HVT</Spanish>
+        <Japanese>HVT解放</Japanese>
+        <Chinese>释放HVT</Chinese>
+        <Russian>Отпустить HVT</Russian>
+        <German>HVT freilassen</German>
+        <Italian>Rilascia HVT</Italian>
+        <Polish>Zwolnij HVT</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_Title">
+        <Original>Opération Live Asset</Original>
+        <French>Opération Live Asset</French>
+        <English>Operation Live Asset</English>
+        <Turkish>Live Asset Harekâtı</Turkish>
+        <Korean>라이브 에셋 작전</Korean>
+        <Spanish>Operación Live Asset</Spanish>
+        <Japanese>ライブ・アセット作戦</Japanese>
+        <Chinese>活体资产行动</Chinese>
+        <Russian>Операция "Живой актив"</Russian>
+        <German>Operation Live Asset</German>
+        <Italian>Operazione Live Asset</Italian>
+        <Polish>Operacja Live Asset</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_Desc">
+        <Original>Localisez le haut responsable hostile (HVT), neutralisez sa garde rapprochée, soumettez-le au contact pour obtenir sa reddition, puis extrayez-le vivant par hélicoptère.</Original>
+        <French>Localisez le haut responsable hostile (HVT), neutralisez sa garde rapprochée, soumettez-le au contact pour obtenir sa reddition, puis extrayez-le vivant par hélicoptère.</French>
+        <English>Locate the high-ranking hostile leader (HVT), neutralize his bodyguards, force his surrender in close-quarters, and extract him alive by helicopter.</English>
+        <Turkish>Üst düzey düşman liderinin (HVT) yerini tespit edin, korumalarını etkisiz hale getirin, teslim olmaya zorlayın ve helikopterle canlı olarak tahliye edin.</Turkish>
+        <Korean>적 고위 지휘관(HVT)의 위치를 파악하고, 경호대를 무력화한 후 근접 항복을 받아내어 헬기로 생포 탈출하십시오.</Korean>
+        <Spanish>Localice al alto líder hostil (HVT), neutralice a sus escoltas, sométalo al contacto para lograr su rendición y extráigalo vivo en helicóptero.</Spanish>
+        <Japanese>敵高級幹部（HVT）を特定し、護衛を排除して接近時に降伏させ、身柄を生きたままヘリで回収せよ。</Japanese>
+        <Chinese>定位敌方高级头目（HVT），消灭其保镖，贴身迫使其投降，并通过直升机将其活捉撤离。</Chinese>
+        <Russian>Найдите высокопоставленного главаря (HVT), уничтожьте его охрану, принудите к сдаче и эвакуируйте живым на вертолете.</Russian>
+        <German>Lokalisieren Sie den hochrangigen feindlichen Anführer (HVT), schalten Sie seine Leibwache aus, erzwingen Sie seine Kapitulation und evakuieren Sie ihn lebend per Hubschrauber.</German>
+        <Italian>Individua l'alto leader ostile (HVT), elimina la sua scorta, costringilo alla resa al contatto ed estrailo vivo in elicottero.</Italian>
+        <Polish>Zlokalizuj wrogiego dowódcę wysokiego szczebla (HVT), zneutralizuj ochronę, zmuś do poddania i ewakuuj żywego śmigłowcem.</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_Marker">
+        <Original>Secteur Suspect (HVT)</Original>
+        <French>Secteur Suspect (HVT)</French>
+        <English>Suspected Sector (HVT)</English>
+        <Turkish>Şüpheli Sektör (HVT)</Turkish>
+        <Korean>의심 구역 (HVT)</Korean>
+        <Spanish>Sector sospechoso (HVT)</Spanish>
+        <Japanese>HVT疑いセクター</Japanese>
+        <Chinese>疑似HVT区域</Chinese>
+        <Russian>Подозрительный сектор (HVT)</Russian>
+        <German>Verdächtiger Sektor (HVT)</German>
+        <Italian>Settore sospetto (HVT)</Italian>
+        <Polish>Podejrzany sektor (HVT)</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_06_MarkerMain">
+        <Original>HVT Stratégique</Original>
+        <French>HVT Stratégique</French>
+        <English>Strategic HVT</English>
+        <Turkish>Stratejik HVT</Turkish>
+        <Korean>전략 HVT</Korean>
+        <Spanish>HVT Estratégico</Spanish>
+        <Japanese>戦略HVT</Japanese>
+        <Chinese>战略高价值目标</Chinese>
+        <Russian>Стратегическая цель (HVT)</Russian>
+        <German>Strategisches HVT</German>
+        <Italian>HVT Strategico</Italian>
+        <Polish>Strategiczny HVT</Polish>
+    </Key>
+</Keys>

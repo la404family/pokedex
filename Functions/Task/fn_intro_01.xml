@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Intro_Author">
+        <Original>OPERATION ROYAL ALLIANCE</Original>
+        <English>OPERATION ROYAL ALLIANCE</English>
+        <French>OPÉRATION ROYAL ALLIANCE</French>
+        <Spanish>OPERACIÓN ROYAL ALLIANCE</Spanish>
+        <German>OPERATION ROYAL ALLIANCE</German>
+        <Italian>OPERAZIONE ROYAL ALLIANCE</Italian>
+        <Polish>OPERACJA ROYAL ALLIANCE</Polish>
+        <Portuguese>OPERAÇÃO ROYAL ALLIANCE</Portuguese>
+        <Russian>ОПЕРАЦИЯ ROYAL ALLIANCE</Russian>
+        <Czech>OPERACE ROYAL ALLIANCE</Czech>
+        <Korean>작전 로열 엘라이언스</Korean>
+        <Japanese>オペレーション・ロイヤル・アライアンス</Japanese>
+        <Chinese>皇家同盟行動</Chinese>
+        <Chinesesimp>皇家同盟行动</Chinesesimp>
+        <Turkish>ROYAL ALLIANCE OPERASYONU</Turkish>
+    </Key>
+    <Key ID="STR_LL_Intro_Presents">
+        <Original>Immersion, actions and dynamic objectives</Original>
+        <English>Immersion, actions and dynamic objectives</English>
+        <French>Immersion, actions et objectifs dynamiques</French>
+        <Spanish>Inmersión, acciones y objetivos dinámicos</Spanish>
+        <German>Immersion, Aktionen und dynamische Ziele</German>
+        <Italian>Immersione, azioni e obiettivi dinamici</Italian>
+        <Polish>Imersja, działania i dynamiczne cele</Polish>
+        <Portuguese>Imersão, ações e objetivos dinâmicos</Portuguese>
+        <Russian>Погружение, действия и динамические цели</Russian>
+        <Czech>Infiltrace, akce a dynamické cíle</Czech>
+        <Korean>몰입감, 작전 및 역동적인 목표</Korean>
+        <Japanese>没入感、アクション、そしてダイナミックな目標</Japanese>
+        <Chinese>沉浸感、行動與動態目標</Chinese>
+        <Chinesesimp>沉浸感、行动与动态目标</Chinesesimp>
+        <Turkish>Sürükleyicilik, eylemler ve dinamik hedefler</Turkish>
+    </Key>
+    <Key ID="STR_LL_Intro_Faction">
+        <Original>ROYAL ARMY CORPS OF SAHRANI</Original>
+        <English>ROYAL ARMY CORPS OF SAHRANI</English>
+        <French>CORPS D'ARMÉE ROYAL DE SAHRANI</French>
+        <Spanish>CUERPO DE EJÉRCITO REAL DE SAHRANI</Spanish>
+        <German>KÖNIGLICHES ARMEEKORPS VON SAHRANI</German>
+        <Italian>CORPO D'ARMATA REALE DI SAHRANI</Italian>
+        <Polish>KRÓLEWSKI KORPUS ARMII SAHRANI</Polish>
+        <Portuguese>CORPO DO EXÉRCITO REAL DE SAHRANI</Portuguese>
+        <Russian>КОРОЛЕВСКИЙ АРМЕЙСКИЙ КОРПУС САХРАНИ</Russian>
+        <Czech>KRÁLOVSKÝ ARMÁDNÍ SBOR SAHRANI</Czech>
+        <Korean>사ahrani 국왕군 corps</Korean>
+        <Japanese>サフラニ王立陸軍軍団</Japanese>
+        <Chinese>薩拉尼皇家陸軍軍團</Chinese>
+        <Chinesesimp>萨拉尼皇家陆军军团</Chinesesimp>
+        <Turkish>SAHRANİ KRALİYET ORDU KOLORDUSU</Turkish>
+    </Key>
+    <Key ID="STR_LL_Intro_Location">
+        <Original>June 29, 2026</Original>
+        <English>June 29, 2026</English>
+        <French>29 Juin 2026</French>
+        <Spanish>29 de Junio de 2026</Spanish>
+        <German>29. Juni 2026</German>
+        <Italian>29 Giugno 2026</Italian>
+        <Polish>29 Czerwca 2026</Polish>
+        <Portuguese>29 de Junho de 2026</Portuguese>
+        <Russian>29 июня 2026 г.</Russian>
+        <Czech>29. června 2026</Czech>
+        <Korean>2026년 6월 29일</Korean>
+        <Japanese>2026年6月29日</Japanese>
+        <Chinese>2026年6月29日</Chinese>
+        <Chinesesimp>2026年6月29日</Chinesesimp>
+        <Turkish>29 Haziran 2026</Turkish>
+    </Key>
+    <Key ID="STR_LL_Intro_MissionStartSubtitle">
+        <Original>Review the operational briefing if you value your life.</Original>
+        <English>Review the operational briefing if you value your life.</English>
+        <French>Consultez le briefing opérationnel si vous tenez à votre peau.</French>
+        <Spanish>Consulte el informe operativo si valora su vida.</Spanish>
+        <German>Missionsbriefing lesen, wenn Sie am Leben bleiben wollen.</German>
+        <Italian>Consulta il briefing operativo se tieni alla pelle.</Italian>
+        <Polish>Zapoznaj się z odprawą operacyjną, jeśli zależy ci na życiu.</Polish>
+        <Portuguese>Consulte o briefing operacional se dá valor à sua vida.</Portuguese>
+        <Russian>Ознакомьтесь с оперативным брифингом, если хотите остаться в живых.</Russian>
+        <Czech>Seznamte se s operačním brífinkem, pokud si vážíte svého života.</Czech>
+        <Korean>살고 싶다면 작전 브리핑을 정독하십시오.</Korean>
+        <Japanese>命が惜しければ作戦説明を確認せよ。</Japanese>
+        <Chinese>如果想活命，請仔細閱讀作戰簡報。</Chinese>
+        <Chinesesimp>如果想活命，请仔细阅读作战简报。</Chinesesimp>
+        <Turkish>Hayatta kalmak istiyorsanız operasyonel brifingi inceleyin.</Turkish>
+    </Key>
+</Keys>

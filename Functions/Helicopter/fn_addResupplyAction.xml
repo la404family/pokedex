@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Action_Resupply">
+        <Original>[SQUAD] Resupply</Original>
+        <English>[SQUAD] Resupply</English>
+        <French>[ESCOUADE] Ravitaillement</French>
+        <Spanish>[ESCUADRA] Reabastecimiento</Spanish>
+        <Italian>[SQUADRA] Rifornimento</Italian>
+        <German>[TRUPP] Nachschub</German>
+        <Polish>[DRUŻYNA] Zaopatrzenie</Polish>
+        <Russian>[ОТРЯД] Пополнение</Russian>
+        <Turkish>[MANGA] İkmal</Turkish>
+        <Japanese>[分隊] 補給</Japanese>
+        <Korean>[분대] 재보급</Korean>
+        <Chinese>[小队] 补给</Chinese>
+    </Key>
+    <Key ID="STR_LL_Msg_Resupply_NoAI">
+        <Original>You can't use this action.</Original>
+        <English>You can't use this action.</English>
+        <French>Vous ne pouvez pas utiliser cette action.</French>
+        <Spanish>No puedes usar esta acción.</Spanish>
+        <Italian>Non puoi usare questa azione.</Italian>
+        <German>Sie können diese Aktion nicht verwenden.</German>
+        <Polish>Nie możesz użyć tej akcji.</Polish>
+        <Russian>Вы не можете использовать это действие.</Russian>
+        <Turkish>Bu eylemi kullanamazsınız.</Turkish>
+        <Japanese>このアクションは使用できません。</Japanese>
+        <Korean>이 작업을 사용할 수 없습니다.</Korean>
+        <Chinese>您无法使用此操作。</Chinese>
+    </Key>
+    <Key ID="STR_LL_Msg_Resupply_Start">
+        <Original>Resupply in progress...</Original>
+        <English>Resupply in progress...</English>
+        <French>Ravitaillement en cours...</French>
+        <Spanish>Reabastecimiento en progreso...</Spanish>
+        <Italian>Rifornimento in corso...</Italian>
+        <German>Nachschub im Gange...</German>
+        <Polish>Zaopatrzenie w toku...</Polish>
+        <Russian>Идет пополнение запасов...</Russian>
+        <Turkish>İkmal devam ediyor...</Turkish>
+        <Japanese>補給進行中...</Japanese>
+        <Korean>재보급 진행 중...</Korean>
+        <Chinese>补给进行中...</Chinese>
+    </Key>
+    <Key ID="STR_LL_Msg_Resupply_Done">
+        <Original>Resupply finished.</Original>
+        <English>Resupply finished.</English>
+        <French>Ravitaillement terminé.</French>
+        <Spanish>Reabastecimiento finalizado.</Spanish>
+        <Italian>Rifornimento terminato.</Italian>
+        <German>Nachschub abgeschlossen.</German>
+        <Polish>Zaopatrzenie zakończone.</Polish>
+        <Russian>Пополнение запасов завершено.</Russian>
+        <Turkish>İkmal tamamlandı.</Turkish>
+        <Japanese>補給完了。</Japanese>
+        <Korean>재보급 완료.</Korean>
+        <Chinese>补给完成。</Chinese>
+    </Key>
+</Keys>

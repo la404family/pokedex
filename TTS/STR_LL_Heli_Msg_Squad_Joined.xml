@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Squad_Joined">
+            <Original>Squad joined.</Original>
+            <English>Squad joined.</English>
+            <French>Escouade a rejoint.</French>
+            <Spanish>Escuadra unida.</Spanish>
+            <Italian>Squadra unita.</Italian>
+            <German>Trupp beigetreten.</German>
+            <Polish>Drużyna dołączyła.</Polish>
+            <Russian>Отряд присоединился.</Russian>
+            <Turkish>Manga katıldı.</Turkish>
+            <Japanese>分隊合流。</Japanese>
+            <Korean>분대 합류.</Korean>
+            <Chinese>小队已加入。</Chinese>
+        </Key>
+</Keys>

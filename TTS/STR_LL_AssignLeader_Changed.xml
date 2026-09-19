@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_AssignLeader_Changed">
+            <Original>Tactical command has been transferred.</Original>
+            <English>Tactical command has been transferred.</English>
+            <French>Le commandement tactique a été transféré.</French>
+            <Spanish>El mando táctico ha sido transferido.</Spanish>
+            <Italian>Il comando tattico è stato trasferito.</Italian>
+            <German>Das taktische Kommando wurde übertragen.</German>
+            <Polish>Dowództwo taktyczne zostało przekazane.</Polish>
+            <Russian>Тактическое командование передано.</Russian>
+            <Turkish>Taktik komuta devredildi.</Turkish>
+            <Japanese>戦術指揮が移譲されました。</Japanese>
+            <Korean>전술 지휘권이 이양되었습니다.</Korean>
+            <Chinese>战术指挥权已移交。</Chinese>
+        </Key>
+</Keys>

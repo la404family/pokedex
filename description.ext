@@ -1,0 +1,156 @@
+onLoadName = "OPERATION ROYAL ALLIANCE";
+onLoadMission = "Takistan Civil War — RACS Foreign Legion Tactical Operations";
+author = "Takistan Restored Team";
+disabledAI = 0;
+
+#include "Dialogs\main_menu.hpp"
+#include "CfgSounds.hpp"
+
+class CfgFunctions
+{
+    class LL
+    {
+        tag = "LL";
+        class Spawn
+        {
+            file = "Functions\Spawn";
+            class spawn_main_menu {};
+        };
+        class Task
+        {
+            file = "Functions\Task";
+            class intro_01 {};
+            class intro_02 {};
+            class spawnStartArsenal {};
+            class initVehicleLoadout {};
+        };
+        class Environment
+        {
+            file = "Functions\Environment";
+            class randomWeather {};
+            class initSkills {};
+        };
+        class Team
+        {
+            file = "Functions\Team";
+            class applyIdentity {};
+            class randomizeLoadout {};
+            class switchToAI {};
+            class badgeManager {};
+            class identityManager {};
+            class applyRoE {};
+            class addRoeActions {};
+        };
+        class Player
+        {
+            file = "Functions\Player";
+            class initIdentity {};
+            class applyLoadout {};
+            class initLoadout {};
+            class addHealAction {};
+            class setupUVO {};
+            class initLocal {};
+        };
+        class Helicopter
+        {
+            file = "Functions\Helicopter";
+            class heliManager {};
+            class heliDispatch {};
+            class initSupport {};
+            class addResupplyAction {};
+        };
+        class UI
+        {
+            file = "Functions\UI";
+            class radioMessage {};
+        };
+    };
+};
+
+class CfgCommunicationMenu
+{
+    class Support_Ammo
+    {
+        text = "$STR_LL_Support_Ammo";
+        submenu = "";
+        expression = "['LIVRAISON', _pos, _caller, 2] call LL_fnc_heliDispatch;";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa";
+        cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+    class Support_Vehicle
+    {
+        text = "$STR_LL_Support_Vehicle";
+        submenu = "";
+        expression = "['VEHICULE', _pos, _caller, 2] call LL_fnc_heliDispatch;";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa";
+        cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+    class Support_Extract
+    {
+        text = "$STR_LL_Support_Extract";
+        submenu = "";
+        expression = "['EMBARQUEMENT', _pos, _caller, 3] call LL_fnc_heliDispatch;";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\getin_ca.paa";
+        cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+    class Support_CAS
+    {
+        text = "$STR_LL_Support_CAS";
+        submenu = "";
+        expression = "['CAS', _pos, _caller, 4] call LL_fnc_heliDispatch;";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\casheli_ca.paa";
+        cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+};
+
+class CfgMusic
+{
+    tracks[] = {Music_Intro, Music_Track_01, Music_Track_02, Music_Track_03};
+
+    class Music_Intro
+    {
+        name = "Shadow of the Valley 02";
+        sound[] = {"Music\Shadow of the Valley_02.ogg", db+0, 1.0};
+        titles[] = {0, ""};
+    };
+
+    class Music_Track_01
+    {
+        name = "Shadow of the Valley 01";
+        sound[] = {"Music\Shadow of the Valley_01.ogg", db+0, 1.0};
+        titles[] = {0, ""};
+    };
+
+    class Music_Track_02
+    {
+        name = "Shadow of the Valley 02";
+        sound[] = {"Music\Shadow of the Valley_02.ogg", db+0, 1.0};
+        titles[] = {0, ""};
+    };
+
+    class Music_Track_03
+    {
+        name = "Shadow of the Valley 03";
+        sound[] = {"Music\Shadow of the Valley_03.ogg", db+0, 1.0};
+        titles[] = {0, ""};
+    };
+};
+
+class CfgUnitInsignia
+{
+    class RACS_Badge
+    {
+        displayName = "RACS Foreign Legion";
+        author = "Takistan Restored Team";
+        texture = "Images\racs_badge_ca.paa";
+        textureVehicle = "";
+    };
+};

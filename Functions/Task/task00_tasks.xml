@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_00_Action">
+        <Original>Libérer l'agent captif</Original>
+        <French>Libérer l'agent captif</French>
+        <English>Free captured agent</English>
+        <Turkish>Esir ajanı serbest bırak</Turkish>
+        <Korean>포로 요원 구출</Korean>
+        <Spanish>Liberar agente cautivo</Spanish>
+        <Japanese>拘束された情報員を解放</Japanese>
+        <Chinese>解救被俘情报员</Chinese>
+        <Russian>Освободить агента</Russian>
+        <German>Gefangenen Agenten befreien</German>
+        <Italian>Libera l'agente prigioniero</Italian>
+        <Polish>Uwolnij pojmanego agenta</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_00_ExtractAction">
+        <Original>Embarquer l'agent captif</Original>
+        <French>Embarquer l'agent captif</French>
+        <English>Extract captured agent</English>
+        <Turkish>Esir ajanı tahliye et</Turkish>
+        <Korean>포로 요원 탑승</Korean>
+        <Spanish>Embarcar agente cautivo</Spanish>
+        <Japanese>情報員を搭乗させる</Japanese>
+        <Chinese>登机撤离情报员</Chinese>
+        <Russian>Погрузить агента на борт</Russian>
+        <German>Gefangenen Agenten einsteigen lassen</German>
+        <Italian>Imbarca l'agente</Italian>
+        <Polish>Zabierz agenta na pokład</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_00_Title">
+        <Original>Opération Broken Cage</Original>
+        <French>Opération Broken Cage</French>
+        <English>Operation Broken Cage</English>
+        <Turkish>Broken Cage Harekâtı</Turkish>
+        <Korean>브로큰 케이지 작전</Korean>
+        <Spanish>Operación Broken Cage</Spanish>
+        <Japanese>ブロークン・ケージ作戦</Japanese>
+        <Chinese>破笼行动</Chinese>
+        <Russian>Операция "Сломанная клетка"</Russian>
+        <German>Operation Broken Cage</German>
+        <Italian>Operazione Broken Cage</Italian>
+        <Polish>Operacja Broken Cage</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_00_Desc">
+        <Original>Infiltrez le complexe ennemi, neutralisez les gardes et libérez l'agent de renseignement captif dans la zone de recherche. Escortez-le ensuite jusqu'à l'hélicoptère d'extraction.</Original>
+        <French>Infiltrez le complexe ennemi, neutralisez les gardes et libérez l'agent de renseignement captif dans la zone de recherche. Escortez-le ensuite jusqu'à l'hélicoptère d'extraction.</French>
+        <English>Infiltrate the enemy compound, neutralize the guards and free the captured intelligence agent in the search area. Then escort him to the extraction helicopter.</English>
+        <Turkish>Düşman tesisine sızın, nöbetçileri etkisiz hale getirin ve arama bölgesindeki esir istihbarat ajanını kurtarın. Ardından tahliye helikopterine kadar eşlik edin.</Turkish>
+        <Korean>적 시설에 침투하여 경비병을 무력화하고 수색 구역의 포로 정보 요원을 구출하십시오. 그 후 탈출 헬기까지 호위하십시오.</Korean>
+        <Spanish>Infiltrarse en el complejo enemigo, neutralizar a los guardias y liberar al agente de inteligencia cautivo en el área de búsqueda. Luego escoltarlo al helicóptero de extracción.</Spanish>
+        <Japanese>敵施設に潜入し、警備兵を無力化して捜索エリア内の捕虜情報員を解放せよ。その後、回収ヘリまで護衛せよ。</Japanese>
+        <Chinese>潜入敌方营地，消灭守卫并在搜索区域内救出被俘的情报人员。随后护送他至撤离直升机。</Chinese>
+        <Russian>Проникните в комплекс противника, нейтрализуйте охрану и освободите захваченного агента разведки в зоне поиска. Затем сопроводите его к эвакуационному вертолету.</Russian>
+        <German>Infiltrieren Sie den feindlichen Komplex, schalten Sie die Wachen aus und befreien Sie den gefangenen Agenten im Suchbereich. Eskortieren Sie ihn anschließend zum Evakuierungshubschrauber.</German>
+        <Italian>Infiltrati nel complesso nemico, neutralizza le guardie e libera l'agente prigioniero nell'area di ricerca. Scortalo quindi all'elicottero di estrazione.</Italian>
+        <Polish>Przeniknij do kompleksu wroga, zneutralizuj strażników i uwolnij pojmanego agenta w strefie poszukiwań. Następnie eskortuj go do śmigłowca ewakuacyjnego.</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_00_Marker">
+        <Original>Zone de Recherche</Original>
+        <French>Zone de Recherche</French>
+        <English>Search Zone</English>
+        <Turkish>Arama Bölgesi</Turkish>
+        <Korean>수색 구역</Korean>
+        <Spanish>Zona de búsqueda</Spanish>
+        <Japanese>捜索ゾーン</Japanese>
+        <Chinese>搜索区域</Chinese>
+        <Russian>Зона поиска</Russian>
+        <German>Suchzone</German>
+        <Italian>Zona di ricerca</Italian>
+        <Polish>Strefa poszukiwań</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_00_MarkerMain">
+        <Original>Secteur d'opération</Original>
+        <French>Secteur d'opération</French>
+        <English>Area of operations</English>
+        <Turkish>Operasyon bölgesi</Turkish>
+        <Korean>작전 지역</Korean>
+        <Spanish>Área de operaciones</Spanish>
+        <Japanese>作戦エリア</Japanese>
+        <Chinese>行动区域</Chinese>
+        <Russian>Район операции</Russian>
+        <German>Einsatzgebiet</German>
+        <Italian>Area di operazione</Italian>
+        <Polish>Obszar operacji</Polish>
+    </Key>
+</Keys>

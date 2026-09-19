@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Patrol_Started">
+            <Original>Patrol started.</Original>
+            <English>Patrol started.</English>
+            <French>Patrouille commencée.</French>
+            <Spanish>Patrulla iniciada.</Spanish>
+            <Italian>Pattuglia iniziata.</Italian>
+            <German>Patrouille gestartet.</German>
+            <Polish>Patrol rozpoczęty.</Polish>
+            <Russian>Патрулирование начато.</Russian>
+            <Turkish>Devriye başladı.</Turkish>
+            <Japanese>パトロール開始。</Japanese>
+            <Korean>순찰 시작됨.</Korean>
+            <Chinese>巡逻开始。</Chinese>
+        </Key>
+</Keys>

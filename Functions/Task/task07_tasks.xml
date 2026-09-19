@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_07_Title">
+        <Original>Eliminate High-Value Tank</Original>
+        <French>Éliminer le char de commandement</French>
+        <English>Eliminate High-Value Tank</English>
+        <Spanish>Eliminar tanque de alto valor</Spanish>
+        <Italian>Elimina carro armato di alto valore</Italian>
+        <German>Hochwertigen Panzer eliminieren</German>
+        <Portuguese>Eliminar tanque de alto valor</Portuguese>
+        <Polish>Wyeliminuj cenny czołg</Polish>
+        <Russian>Уничтожить ценный танк</Russian>
+        <Czech>Zničit cenný tank</Czech>
+        <Turkish>Yüksek Değerli Tankı Yok Et</Turkish>
+        <Korean>고가치 전차 파괴</Korean>
+        <Japanese>重要戦車の排除</Japanese>
+        <Chinese>摧毁高价值坦克</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_07_Desc">
+        <Original>Two enemy officers are inspecting a T-140K Angara command tank. Eliminate the officers and coordinate a CAS strike to destroy the tank.</Original>
+        <French>Deux officiers ennemis inspectent un char de commandement T-140K Angara. Éliminez les officiers et coordonnez une frappe CAS pour détruire le char.</French>
+        <English>Two enemy officers are inspecting a T-140K Angara command tank. Eliminate the officers and coordinate a CAS strike to destroy the tank.</English>
+        <Spanish>Dos oficiales enemigos inspeccionan un tanque de mando T-140K Angara. Elimina a los oficiales y coordina un ataque CAS para destruir el tanque.</Spanish>
+        <Italian>Due ufficiali nemici stanno ispezionando un carro armato di comando T-140K Angara. Elimina gli ufficiali e coordina un attacco CAS per distruggere il carro armato.</Italian>
+        <German>Zwei feindliche Offiziere inspizieren einen Befehlspanzer T-140K Angara. Eliminieren Sie die Offiziere und koordinieren Sie einen CAS-Schlag, um den Panzer zu zerstören.</German>
+        <Portuguese>Dois oficiais inimigos estão inspecionando um tanque de comando T-140K Angara. Elimine os oficiais e coordene um ataque CAS para destruir o tanque.</Portuguese>
+        <Polish>Dwóch wrogich oficerów inspekcjonuje czołg dowodzenia T-140K Angara. Wyeliminuj oficerów i skoordynuj atak CAS, aby zniszczyć czołg.</Polish>
+        <Russian>Два вражеских офицера осматривают командирский танк Т-140К «Ангара». Уничтожьте офицеров и скоординируйте удар CAS, чтобы уничтожить танк.</Russian>
+        <Czech>Dva nepřátelští důstojníci kontrolují velitelský tank T-140K Angara. Zlikvidujte důstojníky a koordinujte útok CAS ke zničení tanku.</Czech>
+        <Turkish>İki düşman subayı bir T-140K Angara komuta tankını inceliyor. Subayları ortadan kaldırın ve tankı yok etmek için bir CAS saldırısı koordine edin.</Turkish>
+        <Korean>적 장교 두 명이 T-140K 앙가라 지휘 전차를 점검하고 있습니다. 장교들을 제거하고 CAS 공격을 조율하여 전차를 파괴하십시오.</Korean>
+        <Japanese>2名の敵将校がT-140Kアンガラ指揮戦車を視察している。将校を排除し、CAS攻撃を要請して戦車を破壊せよ。</Japanese>
+        <Chinese>两名敌方军官正在视察一辆T-140K安加拉指挥坦克。消灭军官并协调CAS打击以摧毁坦克。</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_07_Marker">
+        <Original>Target Tank</Original>
+        <French>Char cible</French>
+        <English>Target Tank</English>
+        <Spanish>Tanque objetivo</Spanish>
+        <Italian>Carro armato bersaglio</Italian>
+        <German>Zielpanzer</German>
+        <Portuguese>Tanque Alvo</Portuguese>
+        <Polish>Cel: Czołg</Polish>
+        <Russian>Цель: Танк</Russian>
+        <Czech>Cílový tank</Czech>
+        <Turkish>Hedef Tank</Turkish>
+        <Korean>목표 전차</Korean>
+        <Japanese>目標戦車</Japanese>
+        <Chinese>目标坦克</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_07_Officer_Marker">
+        <Original>Officer</Original>
+        <French>Officier</French>
+        <English>Officer</English>
+        <Spanish>Oficial</Spanish>
+        <Italian>Ufficiale</Italian>
+        <German>Offizier</German>
+        <Portuguese>Oficial</Portuguese>
+        <Polish>Oficer</Polish>
+        <Russian>Офицер</Russian>
+        <Czech>Důstojník</Czech>
+        <Turkish>Subay</Turkish>
+        <Korean>장교</Korean>
+        <Japanese>将校</Japanese>
+        <Chinese>军官</Chinese>
+    </Key>
+</Keys>

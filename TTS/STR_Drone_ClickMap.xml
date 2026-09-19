@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_ClickMap">
+            <Original>Define the surveillance zone.</Original>
+            <English>Define the surveillance zone.</English>
+            <French>Définir la zone de surveillance.</French>
+            <Spanish>Definir la zona de vigilancia.</Spanish>
+            <Italian>Definire la zona di sorveglianza.</Italian>
+            <German>Überwachungszone definieren.</German>
+            <Polish>Określ strefę obserwacji.</Polish>
+            <Russian>Определить зону наблюдения.</Russian>
+            <Turkish>Gözetleme bölgesini belirle.</Turkish>
+            <Japanese>監視ゾーンを定義する。</Japanese>
+            <Korean>감시 구역 설정.</Korean>
+            <Chinese>定义监视区域。</Chinese>
+        </Key>
+</Keys>

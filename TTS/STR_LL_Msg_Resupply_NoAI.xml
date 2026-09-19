@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Msg_Resupply_NoAI">
+            <Original>You can't use this action.</Original>
+            <English>You can't use this action.</English>
+            <French>Vous ne pouvez pas utiliser cette action.</French>
+            <Spanish>No puedes usar esta acción.</Spanish>
+            <Italian>Non puoi usare questa azione.</Italian>
+            <German>Sie können diese Aktion nicht verwenden.</German>
+            <Polish>Nie możesz użyć tej akcji.</Polish>
+            <Russian>Вы не можете использовать это действие.</Russian>
+            <Turkish>Bu eylemi kullanamazsınız.</Turkish>
+            <Japanese>このアクションは使用できません。</Japanese>
+            <Korean>이 작업을 사용할 수 없습니다.</Korean>
+            <Chinese>您无法使用此操作。</Chinese>
+        </Key>
+</Keys>

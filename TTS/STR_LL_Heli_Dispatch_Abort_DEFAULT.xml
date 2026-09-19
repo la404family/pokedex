@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Abort_DEFAULT">
+            <Original>Current mission aborted — helicopter redirected.</Original>
+            <English>Current mission aborted — helicopter redirected.</English>
+            <French>Mission en cours annulée — redirection de l'hélicoptère.</French>
+            <Spanish>Misión actual abortada — helicóptero redirigido.</Spanish>
+            <Italian>Missione attuale annullata — elicottero reindirizzato.</Italian>
+            <German>Aktuelle Mission abgebrochen — Hubschrauber umgeleitet.</German>
+            <Polish>Obecna misja przerwana — śmigłowiec przekierowany.</Polish>
+            <Russian>Текущая миссия отменена — вертолет перенаправлен.</Russian>
+            <Turkish>Mevcut görev iptal edildi — helikopter yönlendirildi.</Turkish>
+            <Japanese>現在の任務は中止されました — ヘリは方向転換しました。</Japanese>
+            <Korean>현재 임무 중단됨 — 헬기 경로 변경.</Korean>
+            <Chinese>当前任务取消 — 直升机已重新定向。</Chinese>
+        </Key>
+</Keys>

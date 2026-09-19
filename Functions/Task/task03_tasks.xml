@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_03_Title">
+        <Original>Opération Blind Signal</Original>
+        <French>Opération Blind Signal</French>
+        <English>Operation Blind Signal</English>
+        <Turkish>Blind Signal Harekâtı</Turkish>
+        <Korean>블라인드 시그널 작전</Korean>
+        <Spanish>Operación Blind Signal</Spanish>
+        <Japanese>ブラインド・シグナル作戦</Japanese>
+        <Chinese>盲信行动</Chinese>
+        <Russian>Операция "Слепой сигнал"</Russian>
+        <German>Operation Blind Signal</German>
+        <Italian>Operazione Blind Signal</Italian>
+        <Polish>Operacja Blind Signal</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_Desc">
+        <Original>Infiltrez les avant-postes ennemis, sabotez et détruisez l'intégralité des stations de transmission et terminaux radio haute fréquence par charges de démolition.</Original>
+        <French>Infiltrez les avant-postes ennemis, sabotez et détruisez l'intégralité des stations de transmission et terminaux radio haute fréquence par charges de démolition.</French>
+        <English>Infiltrate enemy outposts, sabotage and destroy all high-frequency transmission stations and radio terminals using demolition charges.</English>
+        <Turkish>Düşman karakollarına sızın, yıkım patlayıcıları kullanarak tüm yüksek frekanslı yayın istasyonlarını ve radyo terminallerini sabote edip yok edin.</Turkish>
+        <Korean>적 전초기지에 침투하여 폭파 폭약을 사용해 모든 고주파 송신소와 무전 단말기를 사보타주하고 파괴하십시오.</Korean>
+        <Spanish>Infiltrarse en los puestos avanzados enemigos, sabotear y destruir todas las estaciones de transmisión y terminales de radio de alta frecuencia con cargas de demolición.</Spanish>
+        <Japanese>敵の前哨基地に潜入し、爆薬を使用してすべての高周波送信所と無線端末を破壊せよ。</Japanese>
+        <Chinese>潜入敌军前哨，使用定点炸药破坏并摧毁所有高频发射站与无线电通讯终端。</Chinese>
+        <Russian>Проникните на вражеские аванпосты, подорвите и уничтожьте все высокочастотные радиостанции и терминалы связи с помощью взрывчатки.</Russian>
+        <German>Infiltrieren Sie feindliche Außenposten und zerstören Sie alle Hochfrequenz-Sendestationen und Funkterminals mit Sprengladungen.</German>
+        <Italian>Infiltratevi negli avamposti nemici, sabotate e distruggete tutte le stazioni di trasmissione ad alta frequenza e i terminali radio con cariche da demolizione.</Italian>
+        <Polish>Przeniknijcie na posterunki wroga, zniszczcie wszystkie stacje nadawcze wysokiej częstotliwości i terminale radiowe przy użyciu ładunków wybuchowych.</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_MarkerMain">
+        <Original>Secteur d'Opération</Original>
+        <French>Secteur d'Opération</French>
+        <English>Area of Operations</English>
+        <Turkish>Operasyon Bölgesi</Turkish>
+        <Korean>작전 구역</Korean>
+        <Spanish>Área de operaciones</Spanish>
+        <Japanese>作戦エリア</Japanese>
+        <Chinese>作战区域</Chinese>
+        <Russian>Зона операций</Russian>
+        <German>Einsatzgebiet</German>
+        <Italian>Area delle operazioni</Italian>
+        <Polish>Strefa operacji</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_Marker">
+        <Original>Station de Transmission</Original>
+        <French>Station de Transmission</French>
+        <English>Transmission Relay</English>
+        <Turkish>Yayın İstasyonu</Turkish>
+        <Korean>송신 중계소</Korean>
+        <Spanish>Estación de transmisión</Spanish>
+        <Japanese>通信中継所</Japanese>
+        <Chinese>中继传输站</Chinese>
+        <Russian>Узел связи</Russian>
+        <German>Sendestation</German>
+        <Italian>Stazione di trasmissione</Italian>
+        <Polish>Stacja nadawcza</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_Marker_Destroyed">
+        <Original>Station Neutralisée</Original>
+        <French>Station Neutralisée</French>
+        <English>Relay Neutralized</English>
+        <Turkish>İstasyon İmha Edildi</Turkish>
+        <Korean>중계소 무력화됨</Korean>
+        <Spanish>Estación neutralizada</Spanish>
+        <Japanese>中継所無力化</Japanese>
+        <Chinese>中继站已瘫痪</Chinese>
+        <Russian>Узел связи уничтожен</Russian>
+        <German>Station neutralisiert</German>
+        <Italian>Stazione neutralizzata</Italian>
+        <Polish>Stacja zneutralizowana</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_Action">
+        <Original>Poser une charge C4 (40s)</Original>
+        <French>Poser une charge C4 (40s)</French>
+        <English>Plant C4 charge (40s)</English>
+        <Turkish>C4 patlayıcı yerleştir (40s)</Turkish>
+        <Korean>C4 폭약 설치 (40초)</Korean>
+        <Spanish>Colocar carga C4 (40s)</Spanish>
+        <Japanese>C4爆薬を設置 (40秒)</Japanese>
+        <Chinese>安放C4炸药 (40秒)</Chinese>
+        <Russian>Установить заряд C4 (40с)</Russian>
+        <German>C4-Sprengladung platzieren (40s)</German>
+        <Italian>Piazza carica C4 (40s)</Italian>
+        <Polish>Podłóż ładunek C4 (40s)</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_03_Warning">
+        <Original>Charge armée ! Dégagez la zone !</Original>
+        <French>Charge armée ! Dégagez la zone !</French>
+        <English>Charge armed! Clear the area!</English>
+        <Turkish>Patlayıcı kuruldu! Bölgeden uzaklaşın!</Turkish>
+        <Korean>폭약 장전 완료! 구역을 벗어나십시오!</Korean>
+        <Spanish>¡Carga armada! ¡Despejen la zona!</Spanish>
+        <Japanese>起爆準備完了！エリアから退避せよ！</Japanese>
+        <Chinese>炸药已激活！立即撤离该区域！</Chinese>
+        <Russian>Заряд взведен! Очистить зону!</Russian>
+        <German>Ladung scharf! Bereich räumen!</German>
+        <Italian>Carica innescata! Allontanarsi dall'area!</Italian>
+        <Polish>Ładunek uzbrojony! Opuścić strefę!</Polish>
+    </Key>
+</Keys>

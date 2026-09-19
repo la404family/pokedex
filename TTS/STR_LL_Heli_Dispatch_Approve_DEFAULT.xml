@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Approve_DEFAULT">
+            <Original>Request approved. Helicopter en route.</Original>
+            <English>Request approved. Helicopter en route.</English>
+            <French>Demande approuvée. Hélicoptère en route.</French>
+            <Spanish>Solicitud aprobada. Helicóptero en camino.</Spanish>
+            <Italian>Richiesta approvata. Elicottero in arrivo.</Italian>
+            <German>Anfrage genehmigt. Hubschrauber ist unterwegs.</German>
+            <Polish>Żądanie zatwierdzone. Śmigłowiec w drodze.</Polish>
+            <Russian>Запрос одобрен. Вертолет в пути.</Russian>
+            <Turkish>İstek onaylandı. Helikopter yolda.</Turkish>
+            <Japanese>要求を承認。ヘリが向かっています。</Japanese>
+            <Korean>요청 승인됨. 헬기 이동 중.</Korean>
+            <Chinese>请求已批准。直升机在途中。</Chinese>
+        </Key>
+</Keys>

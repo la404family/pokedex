@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_02_Title">
+        <Original>Opération Defused Shadow</Original>
+        <French>Opération Defused Shadow</French>
+        <English>Operation Defused Shadow</English>
+        <Turkish>Defused Shadow Harekâtı</Turkish>
+        <Korean>디퓨즈드 섀도 작전</Korean>
+        <Spanish>Operación Defused Shadow</Spanish>
+        <Japanese>ディフューズド・シャドウ作戦</Japanese>
+        <Chinese>拆影行动</Chinese>
+        <Russian>Операция "Обезвреженная тень"</Russian>
+        <German>Operation Defused Shadow</German>
+        <Italian>Operazione Defused Shadow</Italian>
+        <Polish>Operacja Defused Shadow</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_02_Desc">
+        <Original>Localisez et désamorcez l'ensemble des charges explosives industrielles dissimulées dans les infrastructures du secteur avant la fin du compte à rebours.</Original>
+        <French>Localisez et désamorcez l'ensemble des charges explosives industrielles dissimulées dans les infrastructures du secteur avant la fin du compte à rebours.</French>
+        <English>Locate and defuse all industrial explosive charges hidden within sector infrastructure before the countdown expires.</English>
+        <Turkish>Geri sayım bitmeden sektör altyapısına gizlenmiş tüm endüstriyel patlayıcı yükleri bulun ve imha edin.</Turkish>
+        <Korean>카운트다운이 종료되기 전에 구역 내 기반 시설에 숨겨진 모든 산업용 폭발물을 찾아 해체하십시오.</Korean>
+        <Spanish>Localiza y desactiva todas las cargas explosivas industriales ocultas en las infraestructuras del sector antes de que expire la cuenta atrás.</Spanish>
+        <Japanese>カウントダウンが終了する前に、セクター内のインフラに隠されたすべての産業用爆薬を発見して解除せよ。</Japanese>
+        <Chinese>在倒计时结束前，找到并拆除隐藏在该防区基础设施内的所有工业爆炸装置。</Chinese>
+        <Russian>Найдите и обезвредьте все заряды промышленной взрывчатки, спрятанные в инфраструктуре сектора, до истечения таймера.</Russian>
+        <German>Lokalisieren und entschärfen Sie alle in der Infrastruktur des Sektors versteckten industriellen Sprengladungen vor Ablauf des Countdowns.</German>
+        <Italian>Individua e disinnesca tutte le cariche esplosive industriali nascoste nelle infrastrutture del settore prima dello scadere del conto alla rovescia.</Italian>
+        <Polish>Zlokalizuj i rozbrój wszystkie przemysłowe ładunki wybuchowe ukryte w infrastrukturze sektora przed upływem czasu.</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_02_MarkerMain">
+        <Original>Zone de Neutralisation</Original>
+        <French>Zone de Neutralisation</French>
+        <English>Neutralization Zone</English>
+        <Turkish>İmha Bölgesi</Turkish>
+        <Korean>무력화 구역</Korean>
+        <Spanish>Zona de neutralización</Spanish>
+        <Japanese>無力化ゾーン</Japanese>
+        <Chinese>拆除处置区域</Chinese>
+        <Russian>Зона нейтрализации</Russian>
+        <German>Neutralisierungszone</German>
+        <Italian>Zona di neutralizzazione</Italian>
+        <Polish>Strefa neutralizacji</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_02_Marker">
+        <Original>Dispositif Suspect</Original>
+        <French>Dispositif Suspect</French>
+        <English>Suspect Device</English>
+        <Turkish>Şüpheli Düzenek</Turkish>
+        <Korean>의심 장치</Korean>
+        <Spanish>Dispositivo sospechoso</Spanish>
+        <Japanese>不審な装置</Japanese>
+        <Chinese>可疑爆炸物</Chinese>
+        <Russian>Подозрительное устройство</Russian>
+        <German>Verdächtige Vorrichtung</German>
+        <Italian>Ordigno sospetto</Italian>
+        <Polish>Podejrzany ładunek</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_02_Action">
+        <Original>Désamorcer la charge explosive</Original>
+        <French>Désamorcer la charge explosive</French>
+        <English>Defuse explosive charge</English>
+        <Turkish>Patlayıcı yükü imha et</Turkish>
+        <Korean>폭발물 해체</Korean>
+        <Spanish>Desactivar carga explosiva</Spanish>
+        <Japanese>爆薬を解除</Japanese>
+        <Chinese>拆除爆炸装置</Chinese>
+        <Russian>Обезвредить заряд</Russian>
+        <German>Sprengladung entschärfen</German>
+        <Italian>Disinnesca carica esplosiva</Italian>
+        <Polish>Rozbrój ładunek wybuchowy</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_02_Defused">
+        <Original>Charge explosive neutralisée avec succès.</Original>
+        <French>Charge explosive neutralisée avec succès.</French>
+        <English>Explosive charge successfully defused.</English>
+        <Turkish>Patlayıcı yük başarıyla imha edildi.</Turkish>
+        <Korean>폭발물이 성공적으로 해체되었습니다.</Korean>
+        <Spanish>Carga explosiva desactivada con éxito.</Spanish>
+        <Japanese>爆薬の解除に成功した。</Japanese>
+        <Chinese>爆炸装置已成功拆除。</Chinese>
+        <Russian>Заряд взрывчатки успешно обезврежен.</Russian>
+        <German>Sprengladung erfolgreich entschärft.</German>
+        <Italian>Carica esplosiva disinnescata con successo.</Italian>
+        <Polish>Ładunek wybuchowy został pomyślnie rozbrojony.</Polish>
+    </Key>
+</Keys>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_HealAction_Healing">
+            <Original> %1 homme(s) en cours de soins...</Original>
+            <English>... %1 man(men) being healed...</English>
+            <French> %1 homme(s) en cours de soins...</French>
+            <Turkish>... %1 adam iyileştiriliyor...</Turkish>
+            <Korean>... %1명이 치료받고 있습니다...</Korean>
+            <Spanish>... %1 hombre(s) siendo curado(s)...</Spanish>
+            <Japanese>... %1人が治療中です...</Japanese>
+            <Chinese>... %1 人正在接受治疗...</Chinese>
+            <Russian>... %1 человек(а) лечат...</Russian>
+            <German>... %1 Mann (Männer) werden geheilt...</German>
+            <Italian>... %1 uomo(i) in cura...</Italian>
+            <Polish>... %1 żołnierz(y) jest leczonych...</Polish>
+        </Key>
+</Keys>

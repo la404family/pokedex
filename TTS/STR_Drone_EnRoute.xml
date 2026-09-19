@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_EnRoute">
+            <Original>Drone en route vers la position [%1, %2].</Original>
+            <English>Drone en route to position [%1, %2].</English>
+            <French>Drone en route vers la position [%1, %2].</French>
+            <Spanish>Dron en camino a la posición [%1, %2].</Spanish>
+            <Italian>Drone in viaggio verso la posizione [%1, %2].</Italian>
+            <German>Drohne auf dem Weg zur Position [%1, %2].</German>
+            <Polish>Dron w drodze na pozycję [%1, %2].</Polish>
+            <Russian>Дрон направляется на позицию [%1, %2].</Russian>
+            <Turkish>Dron [%1, %2] konumuna ilerliyor.</Turkish>
+            <Japanese>ドローンが位置 [%1, %2] に向かっています。</Japanese>
+            <Korean>드론이 [%1, %2] 위치로 이동 중입니다.</Korean>
+            <Chinese>无人机正在前往位置 [%1, %2]。</Chinese>
+        </Key>
+</Keys>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Msg_Resupply_Done">
+            <Original>Resupply finished.</Original>
+            <English>Resupply finished.</English>
+            <French>Ravitaillement terminé.</French>
+            <Spanish>Reabastecimiento finalizado.</Spanish>
+            <Italian>Rifornimento terminato.</Italian>
+            <German>Nachschub abgeschlossen.</German>
+            <Polish>Zaopatrzenie zakończone.</Polish>
+            <Russian>Пополнение запасов завершено.</Russian>
+            <Turkish>İkmal tamamlandı.</Turkish>
+            <Japanese>補給完了。</Japanese>
+            <Korean>재보급 완료.</Korean>
+            <Chinese>补给完成。</Chinese>
+        </Key>
+</Keys>

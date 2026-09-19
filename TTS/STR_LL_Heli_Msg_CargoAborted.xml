@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_CargoAborted">
+            <Original>Drop aborted.</Original>
+            <English>Drop aborted.</English>
+            <French>Largage annulé.</French>
+            <Spanish>Lanzamiento abortado.</Spanish>
+            <Italian>Lancio annullato.</Italian>
+            <German>Abwurf abgebrochen.</German>
+            <Polish>Zrzut przerwany.</Polish>
+            <Russian>Сброс отменен.</Russian>
+            <Turkish>Bırakma iptal edildi.</Turkish>
+            <Japanese>投下中止。</Japanese>
+            <Korean>투하 취소됨.</Korean>
+            <Chinese>空投已中止。</Chinese>
+        </Key>
+</Keys>

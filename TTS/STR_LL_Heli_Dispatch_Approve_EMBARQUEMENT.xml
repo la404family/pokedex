@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Approve_EMBARQUEMENT">
+            <Original>Extraction approved. Helicopter en route to pickup zone.</Original>
+            <English>Extraction approved. Helicopter en route to pickup zone.</English>
+            <French>Extraction approuvée. Hélicoptère en route vers la zone de pickup.</French>
+            <Spanish>Extracción aprobada. Helicóptero en camino a la zona de recogida.</Spanish>
+            <Italian>Estrazione approvata. Elicottero in arrivo alla zona di prelievo.</Italian>
+            <German>Evakuierung genehmigt. Hubschrauber auf dem Weg zur Abholzone.</German>
+            <Polish>Ewakuacja zatwierdzona. Śmigłowiec w drodze do strefy podjęcia.</Polish>
+            <Russian>Эвакуация одобрена. Вертолет направляется в зону посадки.</Russian>
+            <Turkish>Tahliye onaylandı. Helikopter alınma bölgesine yolda.</Turkish>
+            <Japanese>撤退を承認。ヘリが回収ゾーンに向かっています。</Japanese>
+            <Korean>추출 승인됨. 헬기가 픽업 지점으로 이동 중.</Korean>
+            <Chinese>撤离已批准。直升机正在前往接应区。</Chinese>
+        </Key>
+</Keys>

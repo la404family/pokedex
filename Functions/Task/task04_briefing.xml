@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Diary_Task04_Title">
+        <Original>OPORD : Opération Crimson Hazard (Interception Chimique)</Original>
+        <French>OPORD : Opération Crimson Hazard (Interception Chimique)</French>
+        <English>OPORD: Operation Crimson Hazard (Chemical Interception)</English>
+        <Spanish>OPORD: Operación Crimson Hazard (Intercepción Química)</Spanish>
+        <Italian>OPORD: Operazione Crimson Hazard (Intercettazione Chimica)</Italian>
+        <German>OPORD: Operation Crimson Hazard (Chemieabfangung)</German>
+        <Portuguese>OPORD: Operação Crimson Hazard (Interceção Química)</Portuguese>
+        <Polish>OPORD: Operacja Crimson Hazard (Przechwycenie Chemiczne)</Polish>
+        <Russian>Боевой приказ: Операция "Багровая угроза" (Перехват химикатов)</Russian>
+        <Czech>OPORD: Operace Crimson Hazard (Chemické zachycení)</Czech>
+        <Turkish>OPORD: Crimson Hazard Harekâtı (Kimyasal Önleme)</Turkish>
+        <Korean>작전 명령: 크림슨 해저드 작전 (화학물질 요격)</Korean>
+        <Japanese>作戦命令: クリムゾン・ハザード作戦（化学物質迎撃）</Japanese>
+        <Chinese>作战命令：深红危机行动（化学品拦截）</Chinese>
+    </Key>
+    <Key ID="STR_LL_Diary_Task04_Text">
+        <Original>&lt;font size='16' color='#ff8800'&gt;SITUATION :&lt;/font&gt;&lt;br/&gt;
+Un convoi paramilitaire transportant des précurseurs chimiques toxiques et du matériel sensible est immobilisé dans le secteur. L'ennemi a déployé une escorte d'infanterie pour verrouiller le périmètre.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;ORDRE DE MISSION :&lt;/font&gt;&lt;br/&gt;
+1. Infiltrez la zone et éliminez l'escorte ennemie.&lt;br/&gt;
+2. Sécurisez la citerne intacte. INTERDICTION ABSOLUE d'utiliser des explosifs ou armes lourdes sur le véhicule (risque immédiat de nuage toxique mortel).&lt;br/&gt;
+3. Utilisez la console de bord pour appeler l'extraction lourde par élingage (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;RÈGLES D'ENGAGEMENT :&lt;/font&gt;&lt;br/&gt;
+Tirs de précision uniquement. Aucun explosif à proximité du véhicule cible.</Original>
+        <French>&lt;font size='16' color='#ff8800'&gt;SITUATION :&lt;/font&gt;&lt;br/&gt;
+Un convoi paramilitaire transportant des précurseurs chimiques toxiques et du matériel sensible est immobilisé dans le secteur. L'ennemi a déployé une escorte d'infanterie pour verrouiller le périmètre.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;ORDRE DE MISSION :&lt;/font&gt;&lt;br/&gt;
+1. Infiltrez la zone et éliminez l'escorte ennemie.&lt;br/&gt;
+2. Sécurisez la citerne intacte. INTERDICTION ABSOLUE d'utiliser des explosifs ou armes lourdes sur le véhicule (risque immédiat de nuage toxique mortel).&lt;br/&gt;
+3. Utilisez la console de bord pour appeler l'extraction lourde par élingage (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;RÈGLES D'ENGAGEMENT :&lt;/font&gt;&lt;br/&gt;
+Tirs de précision uniquement. Aucun explosif à proximité du véhicule cible.</French>
+        <English>&lt;font size='16' color='#ff8800'&gt;SITUATION:&lt;/font&gt;&lt;br/&gt;
+A paramilitary convoy carrying toxic chemical precursors and sensitive cargo is immobilized in the sector. The enemy has deployed an infantry escort to lock down the perimeter.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;MISSION ORDER:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrate the area and eliminate the enemy escort.&lt;br/&gt;
+2. Secure the tanker intact. STRICTLY FORBIDDEN to use explosives or heavy weapons on the vehicle (immediate risk of lethal toxic dispersion).&lt;br/&gt;
+3. Use the onboard console to call in heavy slingload helicopter extraction.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;RULES OF ENGAGEMENT:&lt;/font&gt;&lt;br/&gt;
+Precision fire only. Zero explosives near the target vehicle.</English>
+        <Spanish>&lt;font size='16' color='#ff8800'&gt;SITUACIÓN:&lt;/font&gt;&lt;br/&gt;
+Un convoy paramilitar con precursores químicos tóxicos y carga sensible está inmovilizado en el sector. El enemigo desplegó una escolta de infantería.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;MISIÓN:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrarse y eliminar la escolta enemiga.&lt;br/&gt;
+2. Asegurar el camión cisterna intacto. PROHIBIDO el uso de explosivos o armas pesadas contra el vehículo.&lt;br/&gt;
+3. Usar la consola a bordo para solicitar la extracción por eslingado (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;REGLAS DE ENFRENTAMIENTO:&lt;/font&gt;&lt;br/&gt;
+Solo disparos de precisión. Cero explosivos cerca del vehículo objetivo.</Spanish>
+        <Italian>&lt;font size='16' color='#ff8800'&gt;SITUAZIONE:&lt;/font&gt;&lt;br/&gt;
+Un convoglio paramilitare che trasporta precursori chimici tossici è bloccato nel settore. Il nemico ha schierato una scorta di fanteria.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;MISSIONE:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrati ed elimina la scorta nemica.&lt;br/&gt;
+2. Metti in sicurezza l'autobotte intatta. VIETATO usare esplosivi o armi pesanti sul veicolo.&lt;br/&gt;
+3. Usa la console per richiedere l'estrazione con elicottero (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;REGOLE D'INGAGGIO:&lt;/font&gt;&lt;br/&gt;
+Solo fuoco di precisione. Nessun esplosivo vicino al bersaglio.</Italian>
+        <German>&lt;font size='16' color='#ff8800'&gt;LAGE:&lt;/font&gt;&lt;br/&gt;
+Ein paramilitärischer Konvoi mit giftigen chemischen Vorläuferstoffen ist im Sektor liegengeblieben. Der Feind hat eine Infanterie-Eskorte aufgestellt.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;EINSATZBEFEHL:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrieren Sie das Gebiet und schalten Sie die Eskorte aus.&lt;br/&gt;
+2. Sichern Sie den Tankwagen unbeschädigt. STRENG VERBOTEN, Sprengstoffe gegen das Fahrzeug einzusetzen.&lt;br/&gt;
+3. Nutzen Sie die Konsole für die Hubschrauberbergung (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;EINSATZREGELN:&lt;/font&gt;&lt;br/&gt;
+Nur Präzisionsschüsse. Keine Sprengstoffe in Fahrzeugnähe.</German>
+        <Portuguese>&lt;font size='16' color='#ff8800'&gt;SITUAÇÃO:&lt;/font&gt;&lt;br/&gt;
+Um comboio paramilitar transportando precursores químicos tóxicos está imobilizado no setor. O inimigo montou uma escolta.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;MISSÃO:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrar e eliminar a escolta inimiga.&lt;br/&gt;
+2. Proteger o caminhão intacto. PROIBIDO o uso de explosivos no veículo.&lt;br/&gt;
+3. Solicitar extração aérea pesada (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;REGRAS DE ENGAJAMENTO:&lt;/font&gt;&lt;br/&gt;
+Apenas tiros de precisão. Zero explosivos próximos ao alvo.</Portuguese>
+        <Polish>&lt;font size='16' color='#ff8800'&gt;SYTUACJA:&lt;/font&gt;&lt;br/&gt;
+Konwój paramilitarny przewożący toksyczne prekursory chemiczne został unieruchomiony w sektorze. Wróg rozstawił eskortę.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;ROZKAZ MISJI:&lt;/font&gt;&lt;br/&gt;
+1. Przeniknąć i zlikwidować eskortę wroga.&lt;br/&gt;
+2. Zabezpieczyć nienaruszoną cysternę. CAŁKOWITY ZAKAZ używania materiałów wybuchowych na pojeździe.&lt;br/&gt;
+3. Użyć konsoli do wezwania ewakuacji na zawiesiu (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;ZASADY WALKI:&lt;/font&gt;&lt;br/&gt;
+Wyłącznie ogień precyzyjny. Brak materiałów wybuchowych w pobliżu celu.</Polish>
+        <Russian>&lt;font size='16' color='#ff8800'&gt;ОБСТАНОВКА:&lt;/font&gt;&lt;br/&gt;
+Колонна боевиков с токсичными химическими прекурсорами заблокирована в секторе. Противник выставил пехотное охранение.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;БОЕВАЯ ЗАДАЧА:&lt;/font&gt;&lt;br/&gt;
+1. Скрытно проникнуть и ликвидировать охрану.&lt;br/&gt;
+2. Захватить автоцистерну неповрежденной. КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО применять взрывчатку против машины.&lt;br/&gt;
+3. Вызвать тяжелый вертолет эвакуации на внешней подвеске (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;ПРАВИЛА ВЕДЕНИЯ БОЯ:&lt;/font&gt;&lt;br/&gt;
+Только прицельная стрельба. Никакой взрывчатки рядом с объектом.</Russian>
+        <Czech>&lt;font size='16' color='#ff8800'&gt;SITUACE:&lt;/font&gt;&lt;br/&gt;
+Paramilitární konvoj přepravující toxické chemikálie je zablokován v sektoru. Nepřítel nasadil pěchotní eskortu.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;ÚKOL:&lt;/font&gt;&lt;br/&gt;
+1. Infiltrovat a eliminovat eskortu.&lt;br/&gt;
+2. Zajistit cisternu nepoškozenou. ZÁKAZ používání výbušnin na vozidlo.&lt;br/&gt;
+3. Požádat o evakuaci vozidla na laně (Slingload).&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;PRAVIDLA ZÁSAHU:&lt;/font&gt;&lt;br/&gt;
+Pouze přesná střelba. Žádné výbušniny v blízkosti cíle.</Czech>
+        <Turkish>&lt;font size='16' color='#ff8800'&gt;DURUM:&lt;/font&gt;&lt;br/&gt;
+Zehirli kimyasal maddeler taşıyan bir paramiliter konvoy sektörde hareketsiz kaldı. Düşman piyade eskortu konuşlandırdı.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;GÖREV EMRİ:&lt;/font&gt;&lt;br/&gt;
+1. Sızın ve düşman eskortunu etkisiz hale getirin.&lt;br/&gt;
+2. Tankeri hasarsız güvenceye alın. Araca karşı patlayıcı kullanmak KESİNLİKLE YASAKTIR.&lt;br/&gt;
+3. Helikopterle havadan tahliye (Slingload) çağırın.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;ANGARYA KURALLARI:&lt;/font&gt;&lt;br/&gt;
+Sadece hassas atış. Hedef araç yakınında patlayıcı yasaktır.</Turkish>
+        <Korean>&lt;font size='16' color='#ff8800'&gt;상황:&lt;/font&gt;&lt;br/&gt;
+독성 화학 전구체를 운송하는 준군사 수송대가 구역 내에 멈춰 섰습니다. 적은 보병 호위대를 배치했습니다.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;임무 명령:&lt;/font&gt;&lt;br/&gt;
+1. 침투하여 적 호위대를 제거하십시오.&lt;br/&gt;
+2. 탱크로리를 온전하게 확보하십시오. 폭발물 사용은 엄격히 금지됩니다.&lt;br/&gt;
+3. 슬링로드 헬기 수송을 호출하십시오.&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;교전 수칙:&lt;/font&gt;&lt;br/&gt;
+정밀 사격만 허용됩니다. 목표 차량 근처 폭발물 사용 금지.</Korean>
+        <Japanese>&lt;font size='16' color='#ff8800'&gt;状況:&lt;/font&gt;&lt;br/&gt;
+有毒な化学物質を運ぶ敵コンボイがセクター内で立ち往生している。敵は歩兵護衛を配置した。&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;作戦命令:&lt;/font&gt;&lt;br/&gt;
+1. 潜入して敵護衛を排除せよ。&lt;br/&gt;
+2. タンクローリーを無傷で確保せよ。車両に対する爆薬の使用は厳禁である。&lt;br/&gt;
+3. スリングロードによるヘリ回収を要請せよ。&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;交戦規定:&lt;/font&gt;&lt;br/&gt;
+精密射撃のみ。目標車両付近での爆薬使用厳禁。</Japanese>
+        <Chinese>&lt;font size='16' color='#ff8800'&gt;情况：&lt;/font&gt;&lt;br/&gt;
+运载剧毒化学品前体的准军事车队在该防区受阻。敌方已部署步兵护卫。&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff8800'&gt;任务命令：&lt;/font&gt;&lt;br/&gt;
+1. 潜入并消灭敌方护卫。&lt;br/&gt;
+2. 完好控制油罐车。严禁对车辆使用爆炸物。&lt;br/&gt;
+3. 请求重型直升机吊运撤离（Slingload）。&lt;br/&gt;&lt;br/&gt;
+&lt;font size='16' color='#ff0000'&gt;交战规则：&lt;/font&gt;&lt;br/&gt;
+仅限精准射击。目标车辆周围严禁使用爆炸物。</Chinese>
+    </Key>
+</Keys>

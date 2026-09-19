@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_TAG_Msg_Ammo_Dropped">
+            <Original>Ammo dropped.</Original>
+            <English>Ammo dropped.</English>
+            <French>Munitions larguées.</French>
+            <Spanish>Munición lanzada.</Spanish>
+            <Italian>Munizioni lanciate.</Italian>
+            <German>Munition abgeworfen.</German>
+            <Polish>Amunicja zrzucona.</Polish>
+            <Russian>Боеприпасы сброшены.</Russian>
+            <Turkish>Mühimmat bırakıldı.</Turkish>
+            <Japanese>弾薬投下。</Japanese>
+            <Korean>탄약 투하됨.</Korean>
+            <Chinese>弹药已空投。</Chinese>
+        </Key>
+</Keys>

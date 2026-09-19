@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Deny_EMBARQUEMENT">
+            <Original>Extraction already in progress. Request denied.</Original>
+            <English>Extraction already in progress. Request denied.</English>
+            <French>Extraction déjà en cours. Demande refusée.</French>
+            <Spanish>Extracción ya en curso. Solicitud denegada.</Spanish>
+            <Italian>Estrazione già in corso. Richiesta respinta.</Italian>
+            <German>Evakuierung bereits im Gange. Anfrage abgelehnt.</German>
+            <Polish>Ewakuacja już w toku. Żądanie odrzucone.</Polish>
+            <Russian>Эвакуация уже выполняется. Запрос отклонен.</Russian>
+            <Turkish>Tahliye zaten devam ediyor. İstek reddedildi.</Turkish>
+            <Japanese>撤退はすでに進行中です。要求は拒否されました。</Japanese>
+            <Korean>추출이 이미 진행 중입니다. 요청이 거부되었습니다.</Korean>
+            <Chinese>撤离已在进行中。请求被拒绝。</Chinese>
+        </Key>
+</Keys>

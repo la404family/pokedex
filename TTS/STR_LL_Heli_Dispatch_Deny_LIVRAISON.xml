@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Deny_LIVRAISON">
+            <Original>Helicopter busy (mission %1 in progress). Supply drop denied.</Original>
+            <English>Helicopter busy (mission %1 in progress). Supply drop denied.</English>
+            <French>Hélicoptère occupé (mission %1 en cours). Livraison refusée.</French>
+            <Spanish>Helicóptero ocupado (misión %1 en curso). Lanzamiento de suministros denegado.</Spanish>
+            <Italian>Elicottero occupato (missione %1 in corso). Lancio forniture respinto.</Italian>
+            <German>Hubschrauber beschäftigt (Mission %1 im Gange). Versorgungsabwurf abgelehnt.</German>
+            <Polish>Śmigłowiec zajęty (misja %1 w toku). Zrzut zaopatrzenia odrzucony.</Polish>
+            <Russian>Вертолет занят (выполняется миссия %1). Сброс припасов отклонен.</Russian>
+            <Turkish>Helikopter meşgul (görev %1 devam ediyor). İkmal atışı reddedildi.</Turkish>
+            <Japanese>ヘリは現在塞がっています（任務 %1 進行中）。補給投下は拒否されました。</Japanese>
+            <Korean>헬기가 바쁩니다 (임무 %1 진행 중). 보급품 투하 거부됨.</Korean>
+            <Chinese>直升机正忙（%1 任务进行中）。补给空投被拒绝。</Chinese>
+        </Key>
+</Keys>

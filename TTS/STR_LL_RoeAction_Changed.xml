@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_RoeAction_Changed">
+            <Original>New Rules of Engagement -&gt; %1</Original>
+            <English>New Rules of Engagement -&gt; %1</English>
+            <French>Nouvelles Règles d'Engagement -&gt; %1</French>
+            <Spanish>Nuevas reglas de enfrentamiento -&gt; %1</Spanish>
+            <Italian>Nuove regole di ingaggio -&gt; %1</Italian>
+            <German>Neue Einsatzregeln -&gt; %1</German>
+            <Polish>Nowe zasady zaangażowania -&gt; %1</Polish>
+            <Russian>Новые правила ведения боя -&gt; %1</Russian>
+            <Turkish>Yeni angajman kuralları -&gt; %1</Turkish>
+            <Japanese>新しい交戦規定 -&gt; %1</Japanese>
+            <Korean>새로운 교전 수칙 -&gt; %1</Korean>
+            <Chinese>新交战规则 -&gt; %1</Chinese>
+        </Key>
+</Keys>

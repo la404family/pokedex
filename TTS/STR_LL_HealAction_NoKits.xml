@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_HealAction_NoKits">
+            <Original> Personne ne possède de kit de soin.</Original>
+            <English> No one has a medkit.</English>
+            <French> Personne ne possède de kit de soin.</French>
+            <Turkish> Kimsede ilk yardım çantası yok.</Turkish>
+            <Korean> 구급상자를 가진 사람이 없습니다.</Korean>
+            <Spanish> Nadie tiene un botiquín.</Spanish>
+            <Japanese> 誰も医療キットを持っていません。</Japanese>
+            <Chinese> 没有人有医疗包。</Chinese>
+            <Russian> Ни у кого нет аптечки.</Russian>
+            <German> Niemand hat ein Medikit.</German>
+            <Italian> Nessuno ha un kit medico.</Italian>
+            <Polish> Nikt nie ma apteczki.</Polish>
+        </Key>
+</Keys>

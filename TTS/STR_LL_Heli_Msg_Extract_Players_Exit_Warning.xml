@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Extract_Players_Exit_Warning">
+            <Original>Do not leave the helicopter.</Original>
+            <English>Do not leave the helicopter.</English>
+            <French>Ne quittez pas l'hélicoptère.</French>
+            <Spanish>No abandone el helicóptero.</Spanish>
+            <Italian>Non abbandonare l'elicottero.</Italian>
+            <German>Verlassen Sie den Helikopter nicht.</German>
+            <Polish>Nie opuszczaj helikoptera.</Polish>
+            <Russian>Не покидайте вертолет.</Russian>
+            <Turkish>Helikopterden ayrılmayın.</Turkish>
+            <Japanese>ヘリコプターから離れないでください。</Japanese>
+            <Korean>헬리콥터를 벗어나지 마십시오.</Korean>
+            <Chinese>请勿离开直升机。</Chinese>
+        </Key>
+</Keys>

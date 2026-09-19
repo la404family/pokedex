@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_AlreadyActive_Wait">
+            <Original>Drone déjà en mission. Attendez son retour.</Original>
+            <English>Drone is already on a mission. Wait for its return.</English>
+            <French>Drone déjà en mission. Attendez son retour.</French>
+            <Spanish>El dron ya está en una misión. Espera a que regrese.</Spanish>
+            <Italian>Il drone è già in missione. Attendi il suo ritorno.</Italian>
+            <German>Drohne ist bereits auf einer Mission. Warten Sie auf die Rückkehr.</German>
+            <Polish>Dron jest już na misji. Czekaj na jego powrót.</Polish>
+            <Russian>Дрон уже на задании. Ожидайте его возвращения.</Russian>
+            <Turkish>Dron şu anda görevde. Dönmesini bekleyin.</Turkish>
+            <Japanese>ドローンはすでに任務中です。帰還を待ってください。</Japanese>
+            <Korean>드론이 이미 임무 수행 중입니다. 복귀를 기다려주십시오.</Korean>
+            <Chinese>无人机正在执行任务，请等待其返回。</Chinese>
+        </Key>
+</Keys>

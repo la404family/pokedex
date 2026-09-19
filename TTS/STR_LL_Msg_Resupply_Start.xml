@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Msg_Resupply_Start">
+            <Original>Resupply in progress...</Original>
+            <English>Resupply in progress...</English>
+            <French>Ravitaillement en cours...</French>
+            <Spanish>Reabastecimiento en progreso...</Spanish>
+            <Italian>Rifornimento in corso...</Italian>
+            <German>Nachschub im Gange...</German>
+            <Polish>Zaopatrzenie w toku...</Polish>
+            <Russian>Идет пополнение запасов...</Russian>
+            <Turkish>İkmal devam ediyor...</Turkish>
+            <Japanese>補給進行中...</Japanese>
+            <Korean>재보급 진행 중...</Korean>
+            <Chinese>补给进行中...</Chinese>
+        </Key>
+</Keys>

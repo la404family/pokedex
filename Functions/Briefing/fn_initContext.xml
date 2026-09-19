@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Context_Tab">
+        <Original>Contexte</Original>
+        <French>Contexte de Mission</French>
+        <English>Context</English>
+        <Spanish>Contexto de Misión</Spanish>
+        <Italian>Contesto Missione</Italian>
+        <German>Missionskontext</German>
+        <Polish>Kontekst Misji</Polish>
+        <Russian>Контекст миссии</Russian>
+        <Turkish>Görev Bağlamı</Turkish>
+        <Japanese>ミッションの背景</Japanese>
+        <Korean>임무 배경</Korean>
+        <Chinese>任务背景</Chinese>
+    </Key>
+
+    <Key ID="STR_LL_Context_1_Title">
+        <Original>1. Contexte Global</Original>
+        <French>1. Contexte Global</French>
+        <English>1. Global Context</English>
+        <Spanish>1. Contexto Global</Spanish>
+        <Italian>1. Contesto Globale</Italian>
+        <German>1. Globaler Kontext</German>
+        <Polish>1. Globalny Kontekst</Polish>
+        <Russian>1. Глобальный контекст</Russian>
+        <Turkish>1. Küresel Bağlam</Turkish>
+        <Japanese>1. グローバルな背景</Japanese>
+        <Korean>1. 글로벌 배경</Korean>
+        <Chinese>1. 全球背景</Chinese>
+    </Key>
+    <Key ID="STR_LL_Context_1_Text">
+        <Original>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Original>
+        <French>
+<font color='#FFA500' size='16'>1. Contexte Global (Guerre Civile au Takistan)</font><br/><br/>Le <font color='#FFD700'>Takistan</font> est plongé dans une <font color='#FFD700'>guerre civile ravageuse</font>. Région hautement stratégique du Moyen-Orient, le pays est devenu le théâtre d'affrontements sanglants menaçant la sécurité globale.<br/><br/><font color='#00BFFF' size='14'>La Légion Étrangère de Sahrani (RACS)</font><br/>Suite à la réunification de Sahrani, le gouvernement a organisé le RACS en force d'intervention mondiale. Pour opérer à l'étranger sans risquer ses troupes régulières, le RACS a fondé la <font color='#00FF00'>Légion Étrangère</font> (RACS Foreign Legion).<br/><br/>Déployée au Takistan, cette unité d'élite rassemble des vétérans et volontaires du monde entier.
+        </French>
+        <English>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </English>
+        <Spanish>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Spanish>
+        <Italian>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Italian>
+        <German>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </German>
+        <Polish>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Polish>
+        <Russian>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Russian>
+        <Turkish>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Turkish>
+        <Japanese>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Japanese>
+        <Korean>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Korean>
+        <Chinese>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Chinese>
+        <Chinesesimp>
+<font color='#FFA500' size='16'>1. Global Context (Civil War in Takistan)</font><br/><br/><font color='#FFD700'>Takistan</font> is plunged into a <font color='#FFD700'>devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br/><br/><font color='#00BFFF' size='14'>The Sahrani Foreign Legion (RACS)</font><br/>Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color='#00FF00'>Foreign Legion</font>.<br/><br/>Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+        </Chinesesimp>
+    </Key>
+
+    <Key ID="STR_LL_Context_2_Title">
+        <Original>2. Objectifs et Missions</Original>
+        <French>2. Objectifs et Missions</French>
+        <English>2. Objectives and Missions</English>
+        <Spanish>2. Objetivos y Misiones</Spanish>
+        <Italian>2. Obiettivi e Missioni</Italian>
+        <German>2. Ziele und Missionen</German>
+        <Polish>2. Cele i Misje</Polish>
+        <Russian>2. Цели и задачи</Russian>
+        <Turkish>2. Hedefler ve Görevler</Turkish>
+        <Japanese>2. 目標と任務</Japanese>
+        <Korean>2. 목표 및 임무</Korean>
+        <Chinese>2. 目标与任务</Chinese>
+    </Key>
+    <Key ID="STR_LL_Context_2_Text">
+        <Original>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Original>
+        <French>
+<font color='#FFA500' size='16'>2. Objectifs et Missions de la Légion Étrangère</font><br/><br/>Le commandement de la Légion Étrangère du RACS s'est vu confier le mandat de <font color='#00FF00'>rétablir l'ordre</font> et de pacifier le Takistan.<br/><br/><font color='#00BFFF' size='14'>Missions Principales</font><br/>- <font color='#00FF00'>Contrôle Territorial :</font> Déploiement rapide pour sécuriser et purger les zones urbaines des insurgés.<br/>- <font color='#00FF00'>Contre-terrorisme :</font> Traquer et démanteler les factions rebelles et les cellules extrémistes lourdement armées.<br/>- <font color='#00FF00'>Stabilisation Politique :</font> Neutraliser la subversion armée pour empêcher la résurgence d'une insurrection globale.<br/><br/><font color='#00BFFF' size='14'>Tâches Secondaires</font><br/>- Sécurisation des ressources critiques.<br/>- Protection et escorte des VIP et convois humanitaires.
+        </French>
+        <English>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </English>
+        <Spanish>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Spanish>
+        <Italian>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Italian>
+        <German>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </German>
+        <Polish>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Polish>
+        <Russian>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Russian>
+        <Turkish>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Turkish>
+        <Japanese>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Japanese>
+        <Korean>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Korean>
+        <Chinese>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Chinese>
+        <Chinesesimp>
+<font color='#FFA500' size='16'>2. Objectives and Missions of the Foreign Legion</font><br/><br/>The command of the RACS Foreign Legion has been entrusted with the mandate to <font color='#00FF00'>restore order</font> and pacify Takistan.<br/><br/><font color='#00BFFF' size='14'>Main Missions</font><br/>- <font color='#00FF00'>Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br/>- <font color='#00FF00'>Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br/>- <font color='#00FF00'>Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br/><br/><font color='#00BFFF' size='14'>Secondary Tasks</font><br/>- Securing critical resources.<br/>- Protection and escort of VIPs and humanitarian convoys.
+        </Chinesesimp>
+    </Key>
+
+    <Key ID="STR_LL_Context_3_Title">
+        <Original>3. Contexte Narratif</Original>
+        <French>3. Contexte Narratif</French>
+        <English>3. Narrative Context</English>
+        <Spanish>3. Contexto Narrativo</Spanish>
+        <Italian>3. Contesto Narrativo</Italian>
+        <German>3. Erzählerischer Kontext</German>
+        <Polish>3. Kontekst Fabularny</Polish>
+        <Russian>3. Сюжетный контекст</Russian>
+        <Turkish>3. Hikaye Bağlamı</Turkish>
+        <Japanese>3. 物語の背景</Japanese>
+        <Korean>3. 내러티브 배경</Korean>
+        <Chinese>3. 叙事背景</Chinese>
+    </Key>
+    <Key ID="STR_LL_Context_3_Text">
+        <Original>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Original>
+        <French>
+<font color='#FFA500' size='16'>3. Contexte Narratif (Lore de Campagne)</font><br/><br/>Alors que le monde a les yeux rivés sur le Takistan, les grandes puissances internationales (OTAN, USA, CSAT) attisent les braises du conflit pour s'emparer des ressources locales.<br/><br/>L'intervention du RACS, opérant sous couvert d'opérations de maintien de la paix, vise en réalité à <font color='#00FF00'>sécuriser les installations stratégiques</font> pour empêcher l'OTAN ou d'autres grandes puissances mondiales d'intervenir et de prendre le contrôle absolu de la région.
+        </French>
+        <English>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </English>
+        <Spanish>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Spanish>
+        <Italian>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Italian>
+        <German>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </German>
+        <Polish>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Polish>
+        <Russian>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Russian>
+        <Turkish>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Turkish>
+        <Japanese>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Japanese>
+        <Korean>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Korean>
+        <Chinese>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Chinese>
+        <Chinesesimp>
+<font color='#FFA500' size='16'>3. Narrative Context (Campaign Lore)</font><br/><br/>While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br/><br/>The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color='#00FF00'>secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+        </Chinesesimp>
+    </Key>
+</Keys>

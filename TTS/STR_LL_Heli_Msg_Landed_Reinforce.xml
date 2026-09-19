@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Landed_Reinforce">
+            <Original>Reinforcements landed.</Original>
+            <English>Reinforcements landed.</English>
+            <French>Renforts posés.</French>
+            <Spanish>Refuerzos aterrizados.</Spanish>
+            <Italian>Rinforzi atterrati.</Italian>
+            <German>Verstärkung gelandet.</German>
+            <Polish>Posiłki wylądowały.</Polish>
+            <Russian>Подкрепление высадилось.</Russian>
+            <Turkish>Takviyeler indi.</Turkish>
+            <Japanese>増援着陸。</Japanese>
+            <Korean>증원 병력 착륙.</Korean>
+            <Chinese>增援已着陆。</Chinese>
+        </Key>
+</Keys>

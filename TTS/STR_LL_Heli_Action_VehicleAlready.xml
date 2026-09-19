@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Action_VehicleAlready">
+            <Original>Vehicle delivery already completed.</Original>
+            <English>Vehicle delivery already completed.</English>
+            <French>Livraison de véhicule déjà effectuée.</French>
+            <Spanish>Entrega de vehículo ya completada.</Spanish>
+            <Italian>Consegna del veicolo già completata.</Italian>
+            <German>Fahrzeuglieferung bereits abgeschlossen.</German>
+            <Polish>Dostawa pojazdu już zakończona.</Polish>
+            <Russian>Доставка техники уже завершена.</Russian>
+            <Turkish>Araç teslimatı zaten tamamlandı.</Turkish>
+            <Japanese>車両の配達はすでに完了しています。</Japanese>
+            <Korean>차량 배송이 이미 완료되었습니다.</Korean>
+            <Chinese>车辆交付已完成。</Chinese>
+        </Key>
+</Keys>

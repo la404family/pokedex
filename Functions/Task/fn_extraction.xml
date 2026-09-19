@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_Extraction_Title">
+        <Original>Extraction</Original>
+        <French>Extraction</French>
+        <English>Extraction</English>
+        <Spanish>Extracción</Spanish>
+        <Italian>Estrazione</Italian>
+        <German>Evakuierung</German>
+        <Polish>Ewakuacja</Polish>
+        <Russian>Эвакуация</Russian>
+        <Turkish>Tahliye</Turkish>
+        <Japanese>抽出・脱出</Japanese>
+        <Korean>탈출 / 철수</Korean>
+        <Chinese>撤离行动</Chinese>
+        <Portuguese>Extração</Portuguese>
+        <Czech>Extrakce</Czech>
+    </Key>
+    <Key ID="STR_LL_Task_Extraction_Desc">
+        <Original>Mission accomplie. Rejoignez le point d'extraction et montez à bord de l'hélicoptère de transport allié.</Original>
+        <French>Mission accomplie. Rejoignez le point d'extraction et montez à bord de l'hélicoptère de transport allié.</French>
+        <English>Mission accomplished. Reach the extraction point and board the allied transport helicopter.</English>
+        <Spanish>Misión cumplida. Dirígete al punto de extracción y sube a bordo del helicóptero de transporte aliado.</Spanish>
+        <Italian>Missione compiuta. Raggiungi il punto di estrazione e sali a bordo dell'elicottero da trasporto alleato.</Italian>
+        <German>Mission erfüllt. Begeben Sie sich zum Evakuierungspunkt und steigen Sie in den alliierten Transporthubschrauber ein.</German>
+        <Polish>Misja zakończona. Udaj się do punktu ewakuacji i wejdź na pokład sojuszniczego śmigłowca transportowego.</Polish>
+        <Russian>Задание выполнено. Прибудьте в точку эвакуации и поднимитесь на борт союзного транспортного вертолета.</Russian>
+        <Turkish>Görev tamamlandı. Tahliye noktasına ulaşın ve müttefik nakliye helikopterine binin.</Turkish>
+        <Japanese>作戦完了。脱出地点へ向かい、味方の輸送ヘリに搭乗せよ。</Japanese>
+        <Korean>작전 성공. 탈출 지점으로 이동하여 아군 수송 헬리콥터에 탑승하십시오.</Korean>
+        <Chinese>任务完成。前往撤离点并登上盟军运输直升机。</Chinese>
+        <Portuguese>Missão cumprida. Dirija-se ao ponto de extração e embarque no helicóptero de transporte aliado.</Portuguese>
+        <Czech>Mise splněna. Dosáhněte bodu extrakce a nastupte do spojeneckého transportního vrtulníku.</Czech>
+    </Key>
+    <Key ID="STR_LL_Task_Extraction_Marker">
+        <Original>Point d'Extraction</Original>
+        <French>Point d'Extraction</French>
+        <English>Extraction Point</English>
+        <Spanish>Punto de extracción</Spanish>
+        <Italian>Punto di estrazione</Italian>
+        <German>Evakuierungspunkt</German>
+        <Polish>Punkt ewakuacji</Polish>
+        <Russian>Точка эвакуации</Russian>
+        <Turkish>Tahliye Noktası</Turkish>
+        <Japanese>脱出地点</Japanese>
+        <Korean>탈출 지점</Korean>
+        <Chinese>撤离点</Chinese>
+        <Portuguese>Ponto de extração</Portuguese>
+        <Czech>Bod extrakce</Czech>
+    </Key>
+    <Key ID="STR_LL_Task_Extraction_Board">
+        <Original>Embarquer dans l'hélicoptère</Original>
+        <French>Embarquer dans l'hélicoptère</French>
+        <English>Board Helicopter</English>
+        <Spanish>Embarcar en el helicóptero</Spanish>
+        <Italian>Sali a bordo dell'elicottero</Italian>
+        <German>In den Hubschrauber einsteigen</German>
+        <Polish>Wejdź do śmigłowca</Polish>
+        <Russian>Сесть в вертолет</Russian>
+        <Turkish>Helikoptere bin</Turkish>
+        <Japanese>ヘリに搭乗する</Japanese>
+        <Korean>헬리콥터 탑승</Korean>
+        <Chinese>登机</Chinese>
+        <Portuguese>Embarcar no helicóptero</Portuguese>
+        <Czech>Nastoupit do vrtulníku</Czech>
+    </Key>
+</Keys>

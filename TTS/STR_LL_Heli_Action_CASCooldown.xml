@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Action_CASCooldown">
+            <Original>C.A.S on cooldown, %1s remaining.</Original>
+            <English>C.A.S on cooldown, %1s remaining.</English>
+            <French>Appui CAS en rechargement, encore %1s.</French>
+            <Spanish>C.A.S en tiempo de recarga, quedan %1s.</Spanish>
+            <Italian>C.A.S in ricarica, %1s rimanenti.</Italian>
+            <German>C.A.S in Abklingzeit, %1s verbleibend.</German>
+            <Polish>C.A.S się ładuje, pozostało %1s.</Polish>
+            <Russian>Поддержка с воздуха недоступна, осталось %1с.</Russian>
+            <Turkish>C.A.S bekleme süresinde, kalan %1s.</Turkish>
+            <Japanese>C.A.Sクールダウン中、残り%1秒。</Japanese>
+            <Korean>C.A.S 재사용 대기 중, %1초 남음.</Korean>
+            <Chinese>近距离空中支援冷却中，剩余%1秒。</Chinese>
+        </Key>
+</Keys>

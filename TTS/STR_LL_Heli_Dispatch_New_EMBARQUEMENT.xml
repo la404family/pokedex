@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_New_EMBARQUEMENT">
+            <Original>PRIORITY extraction — helicopter redirected immediately.</Original>
+            <English>PRIORITY extraction — helicopter redirected immediately.</English>
+            <French>Extraction PRIORITAIRE — hélicoptère redirigé immédiatement.</French>
+            <Spanish>Extracción PRIORITARIA — helicóptero redirigido inmediatamente.</Spanish>
+            <Italian>Estrazione PRIORITARIA — elicottero reindirizzato immediatamente.</Italian>
+            <German>PRIORITÄRE Evakuierung — Hubschrauber wird sofort umgeleitet.</German>
+            <Polish>Ewakuacja PRIORYTETOWA — śmigłowiec natychmiast przekierowany.</Polish>
+            <Russian>ПРИОРИТЕТНАЯ эвакуация — вертолет немедленно перенаправлен.</Russian>
+            <Turkish>ÖNCELİKLİ tahliye — helikopter derhal yönlendirildi.</Turkish>
+            <Japanese>最優先の撤退 — ヘリは直ちに方向転換しました。</Japanese>
+            <Korean>우선순위 추출 — 헬기가 즉시 경로를 변경했습니다.</Korean>
+            <Chinese>优先撤离 — 直升机立即重新定向。</Chinese>
+        </Key>
+</Keys>

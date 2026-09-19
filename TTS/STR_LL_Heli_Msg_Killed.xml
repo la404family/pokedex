@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Killed">
+            <Original>Helicopter destroyed.</Original>
+            <English>Helicopter destroyed.</English>
+            <French>Hélicoptère détruit.</French>
+            <Spanish>Helicóptero destruido.</Spanish>
+            <Italian>Elicottero distrutto.</Italian>
+            <German>Helikopter zerstört.</German>
+            <Polish>Helikopter zniszczony.</Polish>
+            <Russian>Вертолет уничтожен.</Russian>
+            <Turkish>Helikopter yok edildi.</Turkish>
+            <Japanese>ヘリコプター破壊。</Japanese>
+            <Korean>헬리콥터 파괴됨.</Korean>
+            <Chinese>直升机被摧毁。</Chinese>
+        </Key>
+</Keys>

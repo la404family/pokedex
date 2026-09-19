@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_AlreadyActive">
+            <Original>Drone déjà en mission.</Original>
+            <English>Drone is already on a mission.</English>
+            <French>Drone déjà en mission.</French>
+            <Spanish>El dron ya está en una misión.</Spanish>
+            <Italian>Il drone è già in missione.</Italian>
+            <German>Drohne ist bereits auf einer Mission.</German>
+            <Polish>Dron jest już na misji.</Polish>
+            <Russian>Дрон уже на задании.</Russian>
+            <Turkish>Dron şu anda görevde.</Turkish>
+            <Japanese>ドローンはすでに任務中です。</Japanese>
+            <Korean>드론이 이미 임무 수행 중입니다.</Korean>
+            <Chinese>无人机正在执行任务。</Chinese>
+        </Key>
+</Keys>

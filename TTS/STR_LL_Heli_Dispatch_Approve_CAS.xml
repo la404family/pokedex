@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Approve_CAS">
+            <Original>Close Air Support approved. Helicopter en route.</Original>
+            <English>Close Air Support approved. Helicopter en route.</English>
+            <French>Appui aérien CAS approuvé. Hélicoptère en route.</French>
+            <Spanish>Apoyo aéreo cercano aprobado. Helicóptero en camino.</Spanish>
+            <Italian>Supporto aereo ravvicinato approvato. Elicottero in arrivo.</Italian>
+            <German>Luftnahunterstützung genehmigt. Hubschrauber ist unterwegs.</German>
+            <Polish>Bezpośrednie wsparcie lotnicze zatwierdzone. Śmigłowiec w drodze.</Polish>
+            <Russian>Непосредственная авиационная поддержка одобрена. Вертолет в пути.</Russian>
+            <Turkish>Yakın Hava Desteği onaylandı. Helikopter yolda.</Turkish>
+            <Japanese>近接航空支援を承認。ヘリが向かっています。</Japanese>
+            <Korean>근접 항공 지원 승인됨. 헬기 이동 중.</Korean>
+            <Chinese>近距离空中支援已批准。直升机在途中。</Chinese>
+        </Key>
+</Keys>

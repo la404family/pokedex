@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_TAG_Msg_Vehicle_Dropped">
+            <Original>Vehicle dropped.</Original>
+            <English>Vehicle dropped.</English>
+            <French>Véhicule largué.</French>
+            <Spanish>Vehículo lanzado.</Spanish>
+            <Italian>Veicolo lanciato.</Italian>
+            <German>Fahrzeug abgeworfen.</German>
+            <Polish>Pojazd zrzucony.</Polish>
+            <Russian>Техника сброшена.</Russian>
+            <Turkish>Araç bırakıldı.</Turkish>
+            <Japanese>車両投下。</Japanese>
+            <Korean>차량 투하됨.</Korean>
+            <Chinese>车辆已空投。</Chinese>
+        </Key>
+</Keys>

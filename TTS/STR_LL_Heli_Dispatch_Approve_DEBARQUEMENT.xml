@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Approve_DEBARQUEMENT">
+            <Original>Reinforcements approved. Helicopter en route with troops.</Original>
+            <English>Reinforcements approved. Helicopter en route with troops.</English>
+            <French>Renforts approuvés. Hélicoptère en route avec des troupes.</French>
+            <Spanish>Refuerzos aprobados. Helicóptero en camino con tropas.</Spanish>
+            <Italian>Rinforzi approvati. Elicottero in arrivo con truppe.</Italian>
+            <German>Verstärkung genehmigt. Hubschrauber mit Truppen ist unterwegs.</German>
+            <Polish>Posiłki zatwierdzone. Śmigłowiec z żołnierzami w drodze.</Polish>
+            <Russian>Подкрепление одобрено. Вертолет с войсками в пути.</Russian>
+            <Turkish>Takviye onaylandı. Helikopter birliklerle yolda.</Turkish>
+            <Japanese>増援を承認。部隊を乗せたヘリが向かっています。</Japanese>
+            <Korean>증원 승인됨. 병력을 태운 헬기 이동 중.</Korean>
+            <Chinese>增援已批准。直升机正载着部队在途中。</Chinese>
+        </Key>
+</Keys>

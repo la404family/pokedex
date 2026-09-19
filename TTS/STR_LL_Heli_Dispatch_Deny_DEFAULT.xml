@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Deny_DEFAULT">
+            <Original>Helicopter busy (mission %1 in progress). Request denied.</Original>
+            <English>Helicopter busy (mission %1 in progress). Request denied.</English>
+            <French>Hélicoptère occupé (mission %1 en cours). Demande refusée.</French>
+            <Spanish>Helicóptero ocupado (misión %1 en curso). Solicitud denegada.</Spanish>
+            <Italian>Elicottero occupato (missione %1 in corso). Richiesta respinta.</Italian>
+            <German>Hubschrauber beschäftigt (Mission %1 im Gange). Anfrage abgelehnt.</German>
+            <Polish>Śmigłowiec zajęty (misja %1 w toku). Żądanie odrzucone.</Polish>
+            <Russian>Вертолет занят (выполняется миссия %1). Запрос отклонен.</Russian>
+            <Turkish>Helikopter meşgul (görev %1 devam ediyor). İstek reddedildi.</Turkish>
+            <Japanese>ヘリは現在塞がっています（任務 %1 進行中）。要求は拒否されました。</Japanese>
+            <Korean>헬기가 바쁩니다 (임무 %1 진행 중). 요청이 거부되었습니다.</Korean>
+            <Chinese>直升机正忙（%1 任务进行中）。请求被拒绝。</Chinese>
+        </Key>
+</Keys>

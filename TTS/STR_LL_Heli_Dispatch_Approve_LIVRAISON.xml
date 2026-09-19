@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Approve_LIVRAISON">
+            <Original>Ammo drop approved. Helicopter en route.</Original>
+            <English>Ammo drop approved. Helicopter en route.</English>
+            <French>Livraison de munitions approuvée. Hélicoptère en route.</French>
+            <Spanish>Lanzamiento de munición aprobado. Helicóptero en camino.</Spanish>
+            <Italian>Lancio munizioni approvato. Elicottero in arrivo.</Italian>
+            <German>Munitionsabwurf genehmigt. Hubschrauber ist unterwegs.</German>
+            <Polish>Zrzut amunicji zatwierdzony. Śmigłowiec w drodze.</Polish>
+            <Russian>Сброс боеприпасов одобрен. Вертолет в пути.</Russian>
+            <Turkish>Cephane ikmali onaylandı. Helikopter yolda.</Turkish>
+            <Japanese>弾薬投下を承認。ヘリが向かっています。</Japanese>
+            <Korean>탄약 투하 승인됨. 헬기 이동 중.</Korean>
+            <Chinese>弹药空投已批准。直升机在途中。</Chinese>
+        </Key>
+</Keys>

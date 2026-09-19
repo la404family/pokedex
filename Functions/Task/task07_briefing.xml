@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Diary_Task07_Title">
+        <Original>OPORD: Steel Rain</Original>
+        <French>OPORD : Pluie d'Acier</French>
+        <English>OPORD: Steel Rain</English>
+        <Spanish>OPORD: Lluvia de Acero</Spanish>
+        <Italian>OPORD: Pioggia d'Acciaio</Italian>
+        <German>OPORD: Stahlregen</German>
+        <Portuguese>OPORD: Chuva de Aço</Portuguese>
+        <Polish>OPORD: Stalowy Deszcz</Polish>
+        <Russian>OPORD: Стальной дождь</Russian>
+        <Czech>OPORD: Ocelový déšť</Czech>
+        <Turkish>OPORD: Çelik Yağmuru</Turkish>
+        <Korean>OPORD: 강철 비</Korean>
+        <Japanese>OPORD：鋼鉄の雨</Japanese>
+        <Chinese>OPORD：钢铁之雨</Chinese>
+    </Key>
+    <Key ID="STR_LL_Diary_Task07_Text">
+        <Original>HQ has located a CSAT command tank currently undergoing inspection by two high-ranking officers. DIRECTIVE: Both officers and the MBT must be confirmed KIA/K-KILL for mission success. Calling in the F/A-181 Black Wasp CAS strike via close-range laser designation (under 200m) is highly recommended, but remains OPTIONAL if your squad carries sufficient AT assets.</Original>
+        <French>Le QG a localisé un char de commandement CSAT en cours d'inspection par deux officiers de haut rang. DIRECTIVE ABSOLUE : Les deux officiers et le blindé doivent être confirmés KIA/K-KILL pour valider la mission. L'appel de la frappe CAS (F/A-181 Black Wasp) via balisage rapproché à moins de 200m est recommandé, mais reste OPTIONNEL si l'escouade possède ses propres moyens antichars lourds.</French>
+        <English>HQ has located a CSAT command tank currently undergoing inspection by two high-ranking officers. DIRECTIVE: Both officers and the MBT must be confirmed KIA/K-KILL for mission success. Calling in the F/A-181 Black Wasp CAS strike via close-range laser designation (under 200m) is highly recommended, but remains OPTIONAL if your squad carries sufficient AT assets.</English>
+        <Spanish>El CG ha localizado un tanque de mando CSAT inspeccionado por dos altos oficiales. DIRECTIVA: Ambos oficiales y el MBT deben ser confirmados KIA/K-KILL para el éxito de la misión. Solicitar el ataque CAS (F/A-181) mediante designación láser cercana (menos de 200m) es muy recomendable, pero es OPCIONAL si el escuadrón dispone de medios AT.</Spanish>
+        <Italian>Il QG ha localizzato un carro armato di comando CSAT ispezionato da due alti ufficiali. DIRETTIVA: Entrambi gli ufficiali e il MBT devono essere confermati KIA/K-KILL per il successo. Richiedere l'attacco CAS tramite designazione ravvicinata (sotto i 200m) è consigliato, ma rimane OPZIONALE se la squadra dispone di proprie armi AT.</Italian>
+        <German>Das HQ hat einen CSAT-Befehlspanzer lokalisiert, der von Offizieren inspiziert wird. DIREKTIVE: Beide Offiziere und der MBT müssen für den Missionserfolg als KIA/K-KILL bestätigt werden. Die Anforderung des CAS-Schlags durch Laser-Zielzuweisung (unter 200m) wird dringend empfohlen, ist aber OPTIONAL, falls der Trupp eigene AT-Waffen besitzt.</German>
+        <Portuguese>O QG localizou um tanque de comando CSAT inspecionado por dois oficiais. DIRETRIZ: Ambos os oficiais e o MBT devem ser confirmados KIA/K-KILL para o sucesso. Solicitar o ataque CAS via designação a curta distância (menos de 200m) é recomendado, mas permanece OPCIONAL se o esquadrão possuir armamento AT próprio.</Portuguese>
+        <Polish>Dowództwo zlokalizowało czołg dowodzenia CSAT wizytowany przez dwóch oficerów. DYREKTYWA: Obydwaj oficerowie i MBT muszą zostać potwierdzeni jako KIA/K-KILL, aby misja zakończyła się sukcesem. Wezwanie uderzenia CAS z bliska (poniżej 200m) jest zalecane, ale pozostaje OPCJONALNE, jeśli drużyna dysponuje własną bronią ppanc.</Polish>
+        <Russian>Штаб обнаружил командирский танк CSAT. ДИРЕКТИВА: Оба офицера и танк должны быть подтверждены как KIA/K-KILL для успеха миссии. Вызов авиаудара CAS с дистанции менее 200 м настоятельно рекомендуется, но является НЕОБЯЗАТЕЛЬНЫМ, если у отряда есть собственное ПТ-оружие.</Russian>
+        <Czech>Velitelství lokalizovalo velitelský tank CSAT. SMĚRNICE: Oba důstojníci i tank musí být potvrzeni jako KIA/K-KILL pro úspěch mise. Přivolání útoku CAS z blízkosti (pod 200m) je doporučeno, ale je VOLITELNÉ, pokud má jednotka vlastní PT zbraně.</Czech>
+        <Turkish>Karargah, bir CSAT komuta tankı tespit etti. DİREKTİF: Görev başarısı için her iki subay ve MBT KIA/K-KILL olarak onaylanmalıdır. Yakın mesafe (200m altı) lazer işaretleme ile CAS saldırısı çağırmak önerilir, ancak manganızın AT silahları varsa İSTEĞE BAĞLIDIR.</Turkish>
+        <Korean>본부에서 CSAT 지휘 전차를 발견했습니다. 지시: 임무 성공을 위해 두 장교와 MBT는 KIA/K-KILL로 확인되어야 합니다. 근거리(200m 이내) 레이저 지정을 통한 CAS 공격 요청이 권장되지만 분대에 대전차 무기가 있다면 선택 사항입니다.</Korean>
+        <Japanese>司令部はCSAT指揮戦車を発見した。指令：任務成功には、両将校とMBTのKIA/K-KILL確認が必須である。200m以内からのレーザー指示によるCAS要請を強く推奨するが、分隊がAT兵器を所持している場合は任意（オプショナル）である。</Japanese>
+        <Chinese>指挥部发现了一辆CSAT指挥坦克。指令：必须确认两名军官和MBT为KIA/K-KILL才能成功完成任务。强烈建议在200米以内通过激光指示呼叫CAS打击，但如果小队有足够的反坦克武器，则该行动为可选（OPTIONAL）。</Chinese>
+    </Key>
+</Keys>

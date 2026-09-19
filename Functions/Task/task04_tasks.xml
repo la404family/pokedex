@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_04_Title">
+        <Original>Opération Crimson Hazard</Original>
+        <French>Opération Crimson Hazard</French>
+        <English>Operation Crimson Hazard</English>
+        <Spanish>Operación Crimson Hazard</Spanish>
+        <Italian>Operazione Crimson Hazard</Italian>
+        <German>Operation Crimson Hazard</German>
+        <Portuguese>Operação Crimson Hazard</Portuguese>
+        <Polish>Operacja Crimson Hazard</Polish>
+        <Russian>Операция "Багровая угроза"</Russian>
+        <Czech>Operace Crimson Hazard</Czech>
+        <Turkish>Crimson Hazard Harekâtı</Turkish>
+        <Korean>크림슨 해저드 작전</Korean>
+        <Japanese>クリムゾン・ハザード作戦</Japanese>
+        <Chinese>深红危机行动</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_04_Desc">
+        <Original>Neutralisez l'escorte ennemie, sécurisez la citerne chimique sans l'endommager et déclenchez l'extraction par hélitreuillage lourd (slingload). ATTENTION : Ne détruisez pas le véhicule sous peine de contamination mortelle immédiate.</Original>
+        <French>Neutralisez l'escorte ennemie, sécurisez la citerne chimique sans l'endommager et déclenchez l'extraction par hélitreuillage lourd (slingload). ATTENTION : Ne détruisez pas le véhicule sous peine de contamination mortelle immédiate.</French>
+        <English>Neutralize the enemy escort, secure the chemical tanker undamaged, and initiate heavy helicopter slingload extraction. WARNING: Do not destroy the vehicle to avoid fatal contamination.</English>
+        <Spanish>Neutraliza la escolta enemiga, asegura el camión cisterna sin dañarlo e inicia la extracción pesada por eslingado. ADVERTENCIA: No destruyas el vehículo para evitar una contaminación mortal.</Spanish>
+        <Italian>Neutralizza la scorta nemica, metti in sicurezza l'autobotte intatta e avvia l'estrazione con elicottero. ATTENZIONE: Non distruggere il veicolo per evitare contaminazioni letali.</Italian>
+        <German>Schalten Sie die feindliche Eskorte aus, sichern Sie den Tankwagen unbeschädigt und leiten Sie die Hubschrauberbergung (Slingload) ein. ACHTUNG: Zerstören Sie das Fahrzeug nicht.</German>
+        <Portuguese>Neutralize a escolta inimiga, proteja o caminhão sem danos e solicite a extração pesada. AVISO: Não destrua o veículo para evitar contaminação fatal.</Portuguese>
+        <Polish>Zneutralizuj eskortę wroga, zabezpiecz nienaruszoną cysternę i wezwij ewakuację na zawiesiu. UWAGA: Nie niszcz pojazdu, aby uniknąć śmiertelnego skażenia.</Polish>
+        <Russian>Ликвидируйте охранение противника, захватите автоцистерну неповрежденной и запросите тяжелую эвакуацию вертолетом. ВНИМАНИЕ: Не уничтожайте машину.</Russian>
+        <Czech>Zneškodněte eskortu, zajistěte cisternu nepoškozenou a zahajte evakuaci vrtulníkem. VAROVÁNÍ: Neničte vozidlo.</Czech>
+        <Turkish>Düşman eskortunu etkisiz hale getirin, tankeri hasarsız güvenceye alın ve helikopterle havadan tahliyeyi başlatın. UYARI: Ölümcül kirlenmeyi önlemek için aracı yok etmeyin.</Turkish>
+        <Korean>적 호위대를 제압하고, 유조차량을 파손 없이 확보한 후 헬기 슬링로드 수송을 요청하십시오. 경고: 치명적인 오염을 방지하기 위해 차량을 파괴하지 마십시오.</Korean>
+        <Japanese>敵護衛を無力化し、タンクローリーを無傷で確保してヘリによるスリングロード回収を開始せよ。警告：致命的な汚染を防ぐため車両を破壊するな。</Japanese>
+        <Chinese>消灭敌方护卫，完好控制化学品油罐车，并发起重型直升机吊运撤离。警告：请勿摧毁车辆以避免致命污染。</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_04_MarkerMain">
+        <Original>Cargaison Chimique</Original>
+        <French>Cargaison Chimique</French>
+        <English>Chemical Cargo</English>
+        <Spanish>Carga Química</Spanish>
+        <Italian>Carico Chimico</Italian>
+        <German>Chemiefracht</German>
+        <Portuguese>Carga Química</Portuguese>
+        <Polish>Ładunek Chemiczny</Polish>
+        <Russian>Химический груз</Russian>
+        <Czech>Chemický náklad</Czech>
+        <Turkish>Kimyasal Kargo</Turkish>
+        <Korean>화학 화물</Korean>
+        <Japanese>化学貨物</Japanese>
+        <Chinese>化学货物</Chinese>
+    </Key>
+    <Key ID="STR_LL_Task_04_Action">
+        <Original>Demander l'extraction de la citerne (Élingage)</Original>
+        <French>Demander l'extraction de la citerne (Élingage)</French>
+        <English>Request tanker extraction (Slingload)</English>
+        <Spanish>Solicitar extracción de la cisterna (Eslingado)</Spanish>
+        <Italian>Richiedi estrazione autobotte (Slingload)</Italian>
+        <German>Tankwagenbergung anfordern (Slingload)</German>
+        <Portuguese>Solicitar extração da cisterna (Slingload)</Portuguese>
+        <Polish>Wezwij ewakuację cysterny (Podwieszenie)</Polish>
+        <Russian>Запросить эвакуацию цистерны (на подвесе)</Russian>
+        <Czech>Požádat o evakuaci cisterny (Slingload)</Czech>
+        <Turkish>Tanker tahliyesi iste (Slingload)</Turkish>
+        <Korean>탱크로리 슬링로드 수송 요청</Korean>
+        <Japanese>タンクローリーの回収要請（スリングロード）</Japanese>
+        <Chinese>请求油罐车吊运撤离（Slingload）</Chinese>
+    </Key>
+</Keys>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_New_DEFAULT">
+            <Original>New priority mission accepted. Helicopter redirected.</Original>
+            <English>New priority mission accepted. Helicopter redirected.</English>
+            <French>Nouvelle mission prioritaire acceptée. Hélicoptère redirigé.</French>
+            <Spanish>Nueva misión prioritaria aceptada. Helicóptero redirigido.</Spanish>
+            <Italian>Nuova missione prioritaria accettata. Elicottero reindirizzato.</Italian>
+            <German>Neue Prioritätsmission akzeptiert. Hubschrauber umgeleitet.</German>
+            <Polish>Nowa misja priorytetowa zaakceptowana. Śmigłowiec przekierowany.</Polish>
+            <Russian>Новая приоритетная миссия принята. Вертолет перенаправлен.</Russian>
+            <Turkish>Yeni öncelikli görev kabul edildi. Helikopter yönlendirildi.</Turkish>
+            <Japanese>新しい優先任務が受諾されました。ヘリは方向転換しました。</Japanese>
+            <Korean>새로운 우선순위 임무 수락됨. 헬기 경로 변경.</Korean>
+            <Chinese>接受新优先任务。直升机已重新定向。</Chinese>
+        </Key>
+</Keys>

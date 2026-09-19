@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Diary_Task00_Title">
+        <Original>OPORD : Opération Broken Cage (Sauvetage de Captif)</Original>
+        <French>OPORD : Opération Broken Cage (Sauvetage de Captif)</French>
+        <English>OPORD: Operation Broken Cage (Hostage Rescue)</English>
+        <Turkish>OPORD: Broken Cage Harekâtı (Tutsak Kurtarma)</Turkish>
+        <Korean>작전 명령: 브로큰 케이지 작전 (포로 구출)</Korean>
+        <Spanish>OPORD: Operación Broken Cage (Rescate de Cautivo)</Spanish>
+        <Japanese>作戦命令: ブロークン・ケージ作戦（捕虜救出）</Japanese>
+        <Chinese>作战命令：破笼行动（营救俘虏）</Chinese>
+        <Russian>Боевой приказ: Операция "Сломанная клетка" (Спасение пленника)</Russian>
+        <German>OPORD: Operation Broken Cage (Gefangenenrettung)</German>
+        <Italian>OPORD: Operazione Broken Cage (Salvataggio Prigioniero)</Italian>
+        <Polish>OPORD: Operacja Broken Cage (Ratowanie Jeńca)</Polish>
+    </Key>
+    <Key ID="STR_LL_Diary_Task00_Text">
+        <Original>Un agent de renseignement infiltré clé a été capturé lors d'une mission clandestine. Les insurgés le détiennent dans un complexe retranché. Infiltrez le secteur en silence, éliminez les gardes, libérez l'agent avant qu'il ne cède aux interrogatoires et extrayez-le par vecteur héliporté.</Original>
+        <French>Un agent de renseignement infiltré clé a été capturé lors d'une mission clandestine. Les insurgés le détiennent dans un complexe retranché. Infiltrez le secteur en silence, éliminez les gardes, libérez l'agent avant qu'il ne cède aux interrogatoires et extrayez-le par vecteur héliporté.</French>
+        <English>A key undercover intelligence agent was captured during a clandestine mission. Insurgents are holding him in an entrenched compound. Infiltrate the sector quietly, eliminate the guards, free the agent before interrogation breaks him, and extract him via helicopter.</English>
+        <Turkish>Gizli bir görev sırasında kilit bir istihbarat ajanı esir alındı. İsyancılar onu korunaklı bir tesiste tutuyor. Sektöre sessizce sızın, nöbetçileri etkisiz hale getirin, sorgularda konuşmadan önce ajanı kurtarın ve helikopterle tahliye edin.</Turkish>
+        <Korean>비밀 임무 수행 중 주요 잠입 정보 요원이 포로로 잡혔습니다. 반군이 요새화된 시설에 그를 구금하고 있습니다. 조용히 침투하여 경비병을 제거하고, 심문에서 기밀이 유출되기 전에 구출하여 헬기로 탈출하십시오.</Korean>
+        <Spanish>Un agente de inteligencia clave fue capturado durante una misión clandestina. Los insurgentes lo retienen en un complejo fortificado. Infiltrarse en silencio, eliminar a los guardias, liberar al agente antes de que ceda a los interrogatorios y extraerlo en helicóptero.</Spanish>
+        <Japanese>秘密任務中に重要潜入情報員が拘束された。反乱勢力は彼を要塞化された施設に監禁している。静かに潜入し、警備兵を排除し、尋問に屈する前に情報員を救出してヘリコプターで回収せよ。</Japanese>
+        <Chinese>一名关键的潜伏情报人员在一次秘密任务中被俘。叛乱分子将他扣押在一个设防的建筑群中。静默潜入该区域，消灭守卫，在他屈服于审讯前将其救出，并通过直升机撤离。</Chinese>
+        <Russian>Ключевой агент разведки был захвачен во время тайной операции. Повстанцы удерживают его в укрепленном комплексе. Скрытно проникните в сектор, устраните охрану, освободите агента до завершения допросов и эвакуируйте его на вертолете.</Russian>
+        <German>Ein wichtiger verdeckter Geheimdienstagent wurde während einer Geheimmission gefangen genommen. Die Aufständischen halten ihn in einem befestigten Komplex fest. Infiltrieren Sie den Sektor lautlos, schalten Sie die Wachen aus, befreien Sie den Agenten vor den Verhören und evakuieren Sie ihn per Hubschrauber.</German>
+        <Italian>Un agente chiave dell'intelligence sotto copertura è stato catturato durante una missione clandestina. Gli insorti lo tengono in un complesso fortificato. Infiltrati silenziosamente, elimina le guardie, libera l'agente prima che ceda agli interrogatori ed estrailo via elicottero.</Italian>
+        <Polish>Kluczowy agent wywiadu został schwytany podczas tajnej misji. Powstańcy przetrzymują go w ufortyfikowanym kompleksie. Przeniknij cicho do sektora, wyeliminuj strażników, uwolnij agenta zanim ulegnie przesłuchaniom i ewakuuj go śmigłowcem.</Polish>
+    </Key>
+</Keys>

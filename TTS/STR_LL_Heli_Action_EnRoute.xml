@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Action_EnRoute">
+            <Original>Helicopter on the way to [%1, %2]. Type: %3</Original>
+            <English>Helicopter on the way to [%1, %2]. Type: %3</English>
+            <French>Hélicoptère en route vers [%1, %2]. Type: %3</French>
+            <Spanish>Helicóptero en camino a [%1, %2]. Tipo: %3</Spanish>
+            <Italian>Elicottero in rotta verso [%1, %2]. Tipo: %3</Italian>
+            <German>Helikopter auf dem Weg nach [%1, %2]. Typ: %3</German>
+            <Polish>Helikopter w drodze do [%1, %2]. Typ: %3</Polish>
+            <Russian>Вертолет в пути к [%1, %2]. Тип: %3</Russian>
+            <Turkish>Helikopter [%1, %2] konumuna ilerliyor. Tür: %3</Turkish>
+            <Japanese>ヘリコプターが [%1, %2] に向かっています。タイプ: %3</Japanese>
+            <Korean>헬리콥터가 [%1, %2] 위치로 이동 중. 유형: %3</Korean>
+            <Chinese>直升机正在前往 [%1, %2]。类型: %3</Chinese>
+        </Key>
+</Keys>

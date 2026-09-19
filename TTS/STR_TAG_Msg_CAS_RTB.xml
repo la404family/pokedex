@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_TAG_Msg_CAS_RTB">
+            <Original>Air support finished, returning to base.</Original>
+            <English>Air support finished, returning to base.</English>
+            <French>Appui aérien terminé, retour à la base.</French>
+            <Spanish>Apoyo aéreo finalizado, regresando a base.</Spanish>
+            <Italian>Supporto aereo terminato, ritorno alla base.</Italian>
+            <German>Luftunterstützung beendet, Rückkehr zur Basis.</German>
+            <Polish>Wsparcie lotnicze zakończone, powrót do bazy.</Polish>
+            <Russian>Воздушная поддержка завершена, возвращение на базу.</Russian>
+            <Turkish>Hava desteği bitti, üsse dönülüyor.</Turkish>
+            <Japanese>航空支援終了、基地に帰還します。</Japanese>
+            <Korean>항공 지원 종료, 기지로 복귀 중.</Korean>
+            <Chinese>空中支援结束，返回基地。</Chinese>
+        </Key>
+</Keys>

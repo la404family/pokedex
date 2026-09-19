@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_01_Title">
+        <Original>Opération Black Ledger</Original>
+        <French>Opération Black Ledger</French>
+        <English>Operation Black Ledger</English>
+        <Turkish>Black Ledger Harekâtı</Turkish>
+        <Korean>블랙 레저 작전</Korean>
+        <Spanish>Operación Black Ledger</Spanish>
+        <Japanese>ブラック・レジャー作戦</Japanese>
+        <Chinese>黑账行动</Chinese>
+        <Russian>Операция "Черный гроссбух"</Russian>
+        <German>Operation Black Ledger</German>
+        <Italian>Operazione Black Ledger</Italian>
+        <Polish>Operacja Black Ledger</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_01_Desc">
+        <Original>Éliminez le commandant ennemi et son escorte dans le secteur, puis fouillez son corps pour récupérer les documents top-secrets et les registres logistiques.</Original>
+        <French>Éliminez le commandant ennemi et son escorte dans le secteur, puis fouillez son corps pour récupérer les documents top-secrets et les registres logistiques.</French>
+        <English>Eliminate the enemy commander and his escort in the sector, then search his body to retrieve the classified documents and logistical records.</English>
+        <Turkish>Sektördeki düşman komutanını ve eskortunu etkisiz hale getirin, ardından gizli belgeleri ve lojistik kayıtları almak için cesedini arayın.</Turkish>
+        <Korean>구역 내 적 지휘관과 호위대를 제거한 후, 시체를 수색하여 기밀 문서와 군수 기록을 확보하십시오.</Korean>
+        <Spanish>Elimina al comandante enemigo y a su escolta en el sector, luego registra su cuerpo para recuperar los documentos clasificados y los registros logísticos.</Spanish>
+        <Japanese>セクター内の敵指揮官と護衛部隊を排除し、死体を捜索して機密書類と兵站記録を回収せよ。</Japanese>
+        <Chinese>消灭防区内的敌方指挥官及其护卫，随后搜查其尸体以取回绝密文件与后勤记录。</Chinese>
+        <Russian>Ликвидируйте командира противника и его охрану в секторе, затем обыщите тело для захвата секретных документов и логистических реестров.</Russian>
+        <German>Schalten Sie den feindlichen Kommandanten und seine Eskorte im Sektor aus und durchsuchen Sie seinen Leichnam nach den Geheimdokumenten und Logistikregistern.</German>
+        <Italian>Elimina il comandante nemico e la sua scorta nel settore, quindi perquisisci il corpo per recuperare i documenti classificati e i registri logistici.</Italian>
+        <Polish>Wyeliminuj wrogiego dowódcę i jego eskortę w sektorze, a następnie przeszukaj ciało, aby przejąć tajne dokumenty i rejestry logistyczne.</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_01_Marker">
+        <Original>Commandant Cible</Original>
+        <French>Commandant Cible</French>
+        <English>Target Commander</English>
+        <Turkish>Hedef Komutan</Turkish>
+        <Korean>목표 지휘관</Korean>
+        <Spanish>Comandante Objetivo</Spanish>
+        <Japanese>標的の指揮官</Japanese>
+        <Chinese>目标指挥官</Chinese>
+        <Russian>Командир-цель</Russian>
+        <German>Ziel-Kommandant</German>
+        <Italian>Comandante Bersaglio</Italian>
+        <Polish>Cel: Dowódca</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_01_MarkerDoc">
+        <Original>Registres Secrets</Original>
+        <French>Registres Secrets</French>
+        <English>Classified Intel</English>
+        <Turkish>Gizli Kayıtlar</Turkish>
+        <Korean>기밀 기록</Korean>
+        <Spanish>Registros Secretos</Spanish>
+        <Japanese>極秘記録</Japanese>
+        <Chinese>机密记录</Chinese>
+        <Russian>Секретные реестры</Russian>
+        <German>Geheimregister</German>
+        <Italian>Registri Segreti</Italian>
+        <Polish>Tajne Rejestry</Polish>
+    </Key>
+    <Key ID="STR_LL_Task_01_Action">
+        <Original>Fouiller l'officier</Original>
+        <French>Fouiller l'officier</French>
+        <English>Search officer</English>
+        <Turkish>Subayı ara</Turkish>
+        <Korean>장교 수색</Korean>
+        <Spanish>Registrar oficial</Spanish>
+        <Japanese>将校を捜索</Japanese>
+        <Chinese>搜查军官</Chinese>
+        <Russian>Обыскать офицера</Russian>
+        <German>Offizier durchsuchen</German>
+        <Italian>Perquisisci ufficiale</Italian>
+        <Polish>Przeszukaj oficera</Polish>
+    </Key>
+</Keys>

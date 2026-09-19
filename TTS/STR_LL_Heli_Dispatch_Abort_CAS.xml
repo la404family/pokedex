@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Dispatch_Abort_CAS">
+            <Original>CAS mission aborted — higher priority task.</Original>
+            <English>CAS mission aborted — higher priority task.</English>
+            <French>Mission CAS annulée — priorité supérieure.</French>
+            <Spanish>Misión CAS abortada — tarea de mayor prioridad.</Spanish>
+            <Italian>Missione CAS annullata — incarico a priorità maggiore.</Italian>
+            <German>CAS-Mission abgebrochen — Aufgabe mit höherer Priorität.</German>
+            <Polish>Misja CAS przerwana — zadanie o wyższej priorytecie.</Polish>
+            <Russian>Миссия CAS отменена — более приоритетная задача.</Russian>
+            <Turkish>CAS görevi iptal edildi — daha yüksek öncelikli görev.</Turkish>
+            <Japanese>CAS任務は中止されました — より優先度の高い任務があります。</Japanese>
+            <Korean>CAS 임무 중단됨 — 더 높은 우선순위의 작업.</Korean>
+            <Chinese>CAS任务取消 — 有更高优先级的任务。</Chinese>
+        </Key>
+</Keys>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_Drone_RTB">
+            <Original>Drone de surveillance en retour à la base.</Original>
+            <English>Surveillance drone returning to base.</English>
+            <French>Drone de surveillance en retour à la base.</French>
+            <Spanish>Dron de vigilancia regresando a la base.</Spanish>
+            <Italian>Drone di sorveglianza in ritorno alla base.</Italian>
+            <German>Überwachungsdrohne kehrt zur Basis zurück.</German>
+            <Polish>Dron obserwacyjny wraca do bazy.</Polish>
+            <Russian>Разведывательный дрон возвращается на базу.</Russian>
+            <Turkish>Gözetleme dronu üsse dönüyor.</Turkish>
+            <Japanese>監視ドローンが基地に帰還中。</Japanese>
+            <Korean>감시 드론이 기지로 귀환 중입니다。</Korean>
+            <Chinese>监视无人机正在返回基地。</Chinese>
+        </Key>
+</Keys>

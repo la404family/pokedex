@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+<Key ID="STR_LL_Heli_Msg_Active">
+            <Original>Helicopter deployed.</Original>
+            <English>Helicopter deployed.</English>
+            <French>Hélicoptère déployé.</French>
+            <Spanish>Helicóptero desplegado.</Spanish>
+            <Italian>Elicottero dispiegato.</Italian>
+            <German>Helikopter im Einsatz.</German>
+            <Polish>Helikopter rozmieszczony.</Polish>
+            <Russian>Вертолет развернут.</Russian>
+            <Turkish>Helikopter konuşlandırıldı.</Turkish>
+            <Japanese>ヘリコプター展開。</Japanese>
+            <Korean>헬리콥터 배치됨.</Korean>
+            <Chinese>直升机已部署。</Chinese>
+        </Key>
+</Keys>
