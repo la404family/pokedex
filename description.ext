@@ -29,6 +29,8 @@ class CfgFunctions
             file = "Functions\Environment";
             class randomWeather {};
             class initSkills {};
+            class doorSecurity {};
+            class playEzan {};
         };
         class Team
         {
@@ -113,7 +115,14 @@ class CfgCommunicationMenu
 
 class CfgMusic
 {
-    tracks[] = {Music_Intro, Music_Track_01, Music_Track_02, Music_Track_03};
+    tracks[] = {Music_Intro, Music_Track_01, Music_Track_02, Music_Track_03, Music_Ezan};
+
+    class Music_Ezan
+    {
+        name = "Ezan";
+        sound[] = {"Music\ezan.ogg", db+0, 1.0};
+        titles[] = {0, ""};
+    };
 
     class Music_Intro
     {

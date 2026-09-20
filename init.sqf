@@ -5,6 +5,8 @@
 if (isServer) then {
     [] spawn LL_fnc_randomWeather;
     [] spawn LL_fnc_heliManager;
+    [] spawn LL_fnc_doorSecurity;
+    [] spawn LL_fnc_playEzan;
 };
 
 if (!hasInterface) exitWith {};

@@ -1,133 +1,237 @@
 if (!isServer) exitWith {};
 
 [] spawn {
-    private _OPEN_DIST       = 4;    
-    private _CLOSE_SAFE_DIST = 20;   
-    private _CLOSE_DELAY     = 25;   
-    private _CHECK_FREQ      = 0.8;
+    private _OPEN_DIST      = 4.0;
+    private _OPEN_DIST_SQR  = _OPEN_DIST * _OPEN_DIST;      // 16.0 m²
+    private _CLOSE_DIST     = 5.5;
+    private _CLOSE_DIST_SQR = _CLOSE_DIST * _CLOSE_DIST;    // 30.25 m²
+    private _MIN_OPEN_TIME  = 4.0;                          // Minimum open duration (seconds)
+    private _COOLDOWN       = 1.5;                          // Cooldown between transitions
+    private _CHECK_FREQ     = 0.4;                          // Loop evaluation period
 
-    private _doorCache = [];
+    // Helper to retrieve or cache doors for a building
+    private _fnc_getBuildingDoors = {
+        params ["_bldg"];
+
+        private _cached = _bldg getVariable ["LL_doorData", nil];
+        if (!isNil "_cached") exitWith { _cached };
+
+        private _type = typeOf _bldg;
+        private _cfg = configFile >> "CfgVehicles" >> _type;
+        private _numDoors = getNumber (_cfg >> "numberOfDoors");
+
+        private _doorList = [];
+        private _foundNums = [];
+
+        // Method 1: Config numberOfDoors
+        if (_numDoors > 0) then {
+            for "_i" from 1 to _numDoors do {
+                private _doorNum = _i;
+                private _anim = format ["Door_%1_rot", _doorNum];
+                if (!(_anim in animationNames _bldg)) then {
+                    _anim = format ["Door_%1", _doorNum];
+                    if (!(_anim in animationNames _bldg)) then {
+                        _anim = format ["door_%1", _doorNum];
+                    };
+                };
+
+                // Find door 3D world position
+                private _doorPos = [0, 0, 0];
+                private _candidates = [
+                    format ["Door_%1_trigger", _doorNum],
+                    format ["door_%1_trigger", _doorNum],
+                    format ["Door_%1", _doorNum],
+                    format ["door_%1", _doorNum],
+                    format ["Door_%1_axis", _doorNum],
+                    format ["door_%1_axis", _doorNum],
+                    format ["Door_%1_sound", _doorNum],
+                    format ["door_%1_sound", _doorNum],
+                    format ["Door_%1_handle", _doorNum],
+                    _anim
+                ];
+                {
+                    private _posM = _bldg selectionPosition _x;
+                    if (_posM isNotEqualTo [0, 0, 0]) exitWith {
+                        _doorPos = _bldg modelToWorld _posM;
+                    };
+                } forEach _candidates;
+
+                if (_doorPos isNotEqualTo [0, 0, 0]) then {
+                    private _initOpen = (_bldg animationPhase _anim) > 0.5;
+                    // Format: [_doorNum, _anim, _doorPos, _isOpen, _lastActionTime, _openedAt, _openedByAI]
+                    _doorList pushBack [_doorNum, _anim, _doorPos, _initOpen, 0, 0, false];
+                    _foundNums pushBack _doorNum;
+                };
+            };
+        };
+
+        // Method 2: Inspect animationNames if numberOfDoors was 0 or incomplete
+        if (count _doorList == 0) then {
+            private _anims = (animationNames _bldg) select {
+                private _low = toLowerANSI _x;
+                (_low find "door" != -1) && (_low find "handle" == -1) && (_low find "sound" == -1)
+            };
+
+            {
+                private _animName = _x;
+                private _animLower = toLowerANSI _animName;
+                private _doorNum = 1;
+                private _startIdx = _animLower find "door";
+                if (_startIdx != -1) then {
+                    private _sub = _animLower select [_startIdx + 4];
+                    private _digits = [];
+                    {
+                        if (_x in ["0","1","2","3","4","5","6","7","8","9"]) then {
+                            _digits pushBack _x;
+                        };
+                    } forEach (_sub splitString "");
+                    if (count _digits > 0) then {
+                        _doorNum = parseNumber (_digits joinString "");
+                    };
+                };
+
+                if (!(_doorNum in _foundNums)) then {
+                    _foundNums pushBack _doorNum;
+
+                    private _doorPos = [0, 0, 0];
+                    private _candidates = [
+                        format ["Door_%1_trigger", _doorNum],
+                        format ["door_%1_trigger", _doorNum],
+                        format ["Door_%1", _doorNum],
+                        format ["door_%1", _doorNum],
+                        format ["Door_%1_axis", _doorNum],
+                        format ["door_%1_axis", _doorNum],
+                        format ["Door_%1_sound", _doorNum],
+                        format ["door_%1_sound", _doorNum],
+                        format ["Door_%1_handle", _doorNum],
+                        _animName
+                    ];
+                    {
+                        private _posM = _bldg selectionPosition _x;
+                        if (_posM isNotEqualTo [0, 0, 0]) exitWith {
+                            _doorPos = _bldg modelToWorld _posM;
+                        };
+                    } forEach _candidates;
+
+                    if (_doorPos isEqualTo [0, 0, 0]) then {
+                        _doorPos = getPosATL _bldg;
+                    };
+
+                    private _initOpen = (_bldg animationPhase _animName) > 0.5;
+                    _doorList pushBack [_doorNum, _animName, _doorPos, _initOpen, 0, 0, false];
+                };
+            } forEach _anims;
+        };
+
+        _bldg setVariable ["LL_doorData", _doorList];
+        _doorList
+    };
 
     while {true} do {
         sleep _CHECK_FREQ;
 
-        private _aiUnits = allUnits select {
-            alive _x &&
-            !isPlayer _x &&
-            vehicle _x == _x
-        };
+        // All active on-foot units
+        private _allActiveUnits = allUnits select { alive _x && vehicle _x == _x };
+        private _aiUnits = _allActiveUnits select { !isPlayer _x };
 
         if (_aiUnits isEqualTo []) then { continue; };
 
-        private _currentTime = time;
-
+        // Collect buildings near AI units (max 15m search radius around each AI)
         private _nearBuildings = [];
         {
             private _pos = getPosATL _x;
             {
                 _nearBuildings pushBackUnique _x;
-            } forEach (nearestObjects [_pos, ["House", "Building"], _OPEN_DIST + 8]);
+            } forEach (nearestObjects [_pos, ["House", "Building"], 15]);
         } forEach _aiUnits;
+
+        private _currentTime = time;
 
         {
             private _bldg = _x;
-            private _idx = _doorCache findIf { (_x select 0) == _bldg };
-            private _bldgData = if (_idx != -1) then { (_doorCache select _idx) select 1 } else { [] };
+            private _doors = [_bldg] call _fnc_getBuildingDoors;
 
-            if (_bldgData isEqualTo []) then {
-                private _anims = (animationNames _bldg) select { (toLowerANSI _x) find "door" >= 0 };
-                private _doorDetails = [];
+            if (_doors isNotEqualTo []) then {
                 {
-                    private _animLower = toLowerANSI _x;
-                    private _doorNum = 1;
-                    private _startIdx = _animLower find "door";
-                    if (_startIdx != -1) then {
-                        private _sub = _animLower select [_startIdx + 4];
-                        private _digits = [];
-                        {
-                            if (_x in ["0","1","2","3","4","5","6","7","8","9"]) then {
-                                _digits pushBack _x;
-                            };
-                        } forEach (_sub splitString "");
-                        if (count _digits > 0) then {
-                            _doorNum = parseNumber (_digits joinString "");
-                        };
+                    _x params [
+                        "_doorNum",
+                        "_anim",
+                        "_doorPos",
+                        "_isOpen",
+                        "_lastActionTime",
+                        "_openedAt",
+                        "_openedByAI"
+                    ];
+
+                    // Sync state with manual player interaction if needed
+                    private _currentPhase = _bldg animationPhase _anim;
+                    if (!_isOpen && _currentPhase > 0.6) then {
+                        _isOpen = true;
+                        _x set [3, true];
                     };
-                    _doorDetails pushBack [_x, _doorNum];
-                } forEach _anims;
+                    if (_isOpen && _currentPhase < 0.1) then {
+                        _isOpen = false;
+                        _openedByAI = false;
+                        _x set [3, false];
+                        _x set [6, false];
+                    };
 
-                _bldgData = [_doorDetails, 0, _bldg, false];
-                _doorCache pushBack [_bldg, _bldgData];
-                _idx = count _doorCache - 1;
-            };
+                    // Check if any AI is within 4.0m of this specific door
+                    private _aiNear = _aiUnits findIf { (_x distanceSqr _doorPos) < _OPEN_DIST_SQR } != -1;
 
-            _bldgData params [
-                ["_doorDetails", [], [[]]],
-                ["_lastOpened", 0, [0]],
-                ["_cachedBldg", objNull, [objNull]],
-                ["_isDoorOpen", false, [false]]
-            ];
+                    if (_aiNear) then {
+                        // If door is closed, open it
+                        if (!_isOpen) then {
+                            // Check if door is locked
+                            private _lockVal = _bldg getVariable [format ["bis_disabled_Door_%1", _doorNum], 0];
+                            private _locked = (_lockVal isEqualTo 1) || (_lockVal isEqualTo true);
 
-            if (_doorDetails isEqualTo []) then { continue; };
-
-            private _aiNearDoor = _aiUnits findIf { _x distanceSqr _bldg < 16 } != -1;
-
-            if (_aiNearDoor) then {
-                if (!_isDoorOpen || _currentTime - _lastOpened > 2) then {
-                    {
-                        _x params ["_anim", "_doorNum"];
-
-                        private _lockVal = _bldg getVariable [format ["bis_disabled_Door_%1", _doorNum], 0];
-                        private _locked = (_lockVal isEqualTo 1) || (_lockVal isEqualTo true);
-                        if (!_locked) then {
-                            private _phase = _bldg animationPhase _anim;
-                            if (_phase < 0.95) then {
-                                _bldg animate [_anim, 1, 0.8];
+                            if (!_locked && { _currentTime - _lastActionTime >= _COOLDOWN }) then {
+                                _bldg animateSource [format ["Door_%1_sound", _doorNum], 1];
+                                _bldg animateSource [format ["Door_%1_source", _doorNum], 1, false];
+                                _bldg animateDoor [format ["Door_%1_source", _doorNum], 1, false];
+                                _bldg animateDoor [format ["Door_%1", _doorNum], 1, false];
                                 _bldg animateDoor [_anim, 1, false];
-                                private _soundPos = _bldg modelToWorld (getCenterOfMass _bldg);
-                                playSound3D ["A3\Sounds_F\environment\doors\DoorMetalSingleOpen_1.wss", _bldg, false, _soundPos, 0.25, 0.8, 20];
+                                _bldg animate [_anim, 1];
+
+                                playSound3D ["A3\Sounds_F\environment\doors\DoorWoodSingleOpen_1.wss", objNull, false, _doorPos, 0.45, 1.0, 15];
+
+                                _x set [3, true];           // _isOpen = true
+                                _x set [4, _currentTime];   // _lastActionTime
+                                _x set [5, _currentTime];   // _openedAt
+                                _x set [6, true];           // _openedByAI = true
+                            };
+                        } else {
+                            // If already open and AI is near, refresh _openedAt so it doesn't close while AI is crossing
+                            _x set [5, _currentTime];
+                        };
+                    } else {
+                        // AI is not within 4.0m. Check if we should close the door
+                        if (_isOpen && _openedByAI) then {
+                            // Must have been open for at least _MIN_OPEN_TIME and cooldown passed
+                            if (_currentTime - _openedAt >= _MIN_OPEN_TIME && { _currentTime - _lastActionTime >= _COOLDOWN }) then {
+                                // Safe check: no unit (AI or player) within _CLOSE_DIST (5.5m)
+                                private _anyoneClose = _allActiveUnits findIf { (_x distanceSqr _doorPos) < _CLOSE_DIST_SQR } != -1;
+
+                                if (!_anyoneClose) then {
+                                    _bldg animateSource [format ["Door_%1_sound", _doorNum], 0];
+                                    _bldg animateSource [format ["Door_%1_source", _doorNum], 0, false];
+                                    _bldg animateDoor [format ["Door_%1_source", _doorNum], 0, false];
+                                    _bldg animateDoor [format ["Door_%1", _doorNum], 0, false];
+                                    _bldg animateDoor [_anim, 0, false];
+                                    _bldg animate [_anim, 0];
+
+                                    playSound3D ["A3\Sounds_F\environment\doors\DoorWoodSingleClose_1.wss", objNull, false, _doorPos, 0.45, 1.0, 15];
+
+                                    _x set [3, false];          // _isOpen = false
+                                    _x set [4, _currentTime];   // _lastActionTime
+                                    _x set [6, false];          // _openedByAI = false
+                                };
                             };
                         };
-                    } forEach _doorDetails;
-
-                    _bldgData set [1, _currentTime];
-                    _bldgData set [3, true];
-                };
-            }
-            else {
-                if (_isDoorOpen && _currentTime - _lastOpened > _CLOSE_DELAY) then {
-
-                    private _anyUnitNear = (_aiUnits findIf { _x distanceSqr _bldg < 400 } != -1);
-
-                    if (!_anyUnitNear) then {
-                        _anyUnitNear = (allPlayers findIf { alive _x && _x distanceSqr _bldg < 400 } != -1);
                     };
-
-                    if (!_anyUnitNear) then {
-                        {
-                            _x params ["_anim", "_doorNum"];
-                            if (_bldg animationPhase _anim > 0.05) then {
-                                _bldg animate [_anim, 0, 0.6];
-                            };
-                        } forEach _doorDetails;
-
-                        _bldgData set [1, 0];
-                        _bldgData set [3, false];
-                    };
-                };
+                } forEach _doors;
             };
         } forEach _nearBuildings;
-
-        if (count _doorCache > 120) then {
-            private _refPos = getPosATL (selectRandom _aiUnits);
-            private _toRemove = [];
-            {
-                private _cachedObj = _x select 0;
-                if (isNull _cachedObj || { _cachedObj distance2D _refPos > 300 }) then {
-                    _toRemove pushBack _x;
-                };
-            } forEach _doorCache;
-            _doorCache = _doorCache - _toRemove;
-        };
     };
 };

@@ -5,7 +5,7 @@
 ### LOGIC DE JEU : 
 
 - des game logic placé dans des batiments et déterminent des lieux précis de missions ( respecter absolument le x,y,z + 0.2)
-- des heliport invisibles . pour l'hélicoptère allié
+- des heliport invisibles
 - player_0 à player_5 sont les unités jouables (independant - RACS pas BLUFOR)
 - ezan_00 à ezan_XX sont des Loudspeaker dans le jeu qui produise l'appel a la prière.
 - La variable du drone est : CUP_B_USMC_DYN_MQ9
