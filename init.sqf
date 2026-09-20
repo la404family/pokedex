@@ -5,8 +5,10 @@
 if (isServer) then {
     [] spawn LL_fnc_randomWeather;
     [] spawn LL_fnc_heliManager;
+    [] spawn LL_fnc_droneManager;
     [] spawn LL_fnc_doorSecurity;
     [] spawn LL_fnc_playEzan;
+    [] spawn LL_fnc_aiHealSelf;
 };
 
 if (!hasInterface) exitWith {};
@@ -33,7 +35,15 @@ for "_i" from 0 to 5 do {
     while {true} do {
         waitUntil { sleep 1; player != _lastPlayer && { !isNull player } };
         _lastPlayer = player;
+        
+        _lastPlayer addEventHandler ["Killed", {
+            params ["_unit"];
+            [_unit] spawn LL_fnc_switchToAI;
+        }];
+        
         [_lastPlayer] call LL_fnc_addRoeActions;
         [] call LL_fnc_initSupport;
+        [] call LL_fnc_initBriefing;
+        [] call LL_fnc_initContext;
     };
 };

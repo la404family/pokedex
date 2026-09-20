@@ -31,134 +31,121 @@
         </Key>
         <Key ID="STR_LL_Briefing_1_1_Text">
             <Original>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Original>
             <French>
-                <font color="#FF8800">Interface :</font> Menu dynamique (molette).<br />
-                <font color="#FFD700">Description :</font> Modifie instantanément le comportement de l'escouade.<br />
-                <br />
-- <font color="#87CEEB">Infiltration :</font> Déplacement furtif, ignore l'autocombat.<br />
-- <font color="#87CEEB">Normal :</font> Comportement standard, engage librement.<br />
-- <font color="#87CEEB">Défense :</font> L'escouade stoppe ses mouvements et défend sa position.<br />
-- <font color="#87CEEB">Regroupement d'urgence :</font> Ignore les cibles et sprinte vers le chef.<br />
-- <font color="#87CEEB">Assaut :</font> Vitesse maximale, progression agressive.
+&lt;font color='#FF8800'&gt;Interface :&lt;/font&gt; Menu dynamique (molette).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description :&lt;/font&gt; Modifie instantanément le comportement de l'escouade.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration :&lt;/font&gt; Déplacement furtif, ignore l'autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal :&lt;/font&gt; Comportement standard, engage librement.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Défense :&lt;/font&gt; L'escouade stoppe ses mouvements et défend sa position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Regroupement d'urgence :&lt;/font&gt; Ignore les cibles et sprinte vers le chef.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assaut :&lt;/font&gt; Vitesse maximale, progression agressive.
         </French>
             <English>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </English>
             <Spanish>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Spanish>
             <Italian>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Italian>
             <German>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </German>
             <Polish>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Polish>
             <Russian>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Russian>
             <Turkish>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Turkish>
             <Japanese>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Japanese>
             <Korean>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Korean>
             <Chinese>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Chinese>
             <Chinesesimp>
-                <font color="#FF8800">Interface:</font> Dynamic menu (scroll wheel).<br />
-                <font color="#FFD700">Description:</font> Instantly modifies the squad tactical behavior.<br />
-                <br />
-- <font color="#87CEEB">Infiltration:</font> Stealthy movement, ignores autocombat.<br />
-- <font color="#87CEEB">Normal:</font> Standard behavior, engages freely.<br />
-- <font color="#87CEEB">Defense:</font> Squad stops moving and defends current position.<br />
-- <font color="#87CEEB">Emergency Regroup:</font> Ignores targets and sprints to leader.<br />
-- <font color="#87CEEB">Assault:</font> Maximum speed, aggressive push-forward.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Dynamic menu (scroll wheel).&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Instantly modifies the squad tactical behavior.&lt;br/&gt;&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Infiltration:&lt;/font&gt; Stealthy movement, ignores autocombat.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Normal:&lt;/font&gt; Standard behavior, engages freely.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Defense:&lt;/font&gt; Squad stops moving and defends current position.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Emergency Regroup:&lt;/font&gt; Ignores targets and sprints to leader.&lt;br/&gt;
+- &lt;font color='#87CEEB'&gt;Assault:&lt;/font&gt; Maximum speed, aggressive push-forward.
         </Chinesesimp>
         </Key>
         <Key ID="STR_LL_Briefing_1_3_Title">
@@ -266,6 +253,8 @@
         <Key ID="STR_LL_Briefing_2_1_Text">
             <Original>
 High Command has assigned a single UH-60L helicopter to the operational sector. You share this resource with other units. Missions are processed according to a strict priority protocol.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Requirement:&lt;/font&gt; All transport missions (except CAS) require an allied Helipad within 3km. The helicopter will always route to the nearest helipad.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Security:&lt;/font&gt; For supply and vehicle drops, the LZ must be clear of enemies within a 500m radius, otherwise the operation will be aborted.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Close Air Support (CAS):&lt;/font&gt; The helicopter will perform firing passes (miniguns) on the designated area. (Cooldown: 5 minutes)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Ammo Supply Drop:&lt;/font&gt; A supply crate drop by the helicopter.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Vehicle Drop:&lt;/font&gt; Heli-lifting of a light transport vehicle. (Limited to 1 use)&lt;br/&gt;
@@ -274,6 +263,8 @@ High Command has assigned a single UH-60L helicopter to the operational sector. 
         </Original>
             <French>
 Le Haut Commandement a affecté un unique hélicoptère UH-60L au secteur opérationnel. Vous partagez cette ressource avec d'autres unités. Les missions sont traitées selon un protocole de priorité strict.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Prérequis LZ :&lt;/font&gt; Toutes les missions de transport (hors CAS) nécessitent un héliport allié à moins de 3km. L'hélicoptère se dirigera toujours vers l'héliport le plus proche.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Sécurité LZ :&lt;/font&gt; Pour les livraisons (caisse et véhicule), la zone d'atterrissage doit être sécurisée de tout ennemi dans un rayon de 500m, sous peine d'annulation immédiate de l'opération.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Appui Aérien Rapproché (CAS) :&lt;/font&gt; L'hélicoptère effectuera des passes de tir (miniguns) sur la zone désignée. (Cooldown : 5 minutes)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Livraison de Munitions :&lt;/font&gt; Largage d'une caisse de ravitaillement par l'hélicoptère.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Livraison de Véhicule :&lt;/font&gt; Héliportage d'un véhicule léger de transport. (Limité à 1 utilisation)&lt;br/&gt;
@@ -282,6 +273,8 @@ Le Haut Commandement a affecté un unique hélicoptère UH-60L au secteur opéra
         </French>
             <English>
 High Command has assigned a single UH-60L helicopter to the operational sector. You share this resource with other units. Missions are processed according to a strict priority protocol.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Requirement:&lt;/font&gt; All transport missions (except CAS) require an allied Helipad within 3km. The helicopter will always route to the nearest helipad.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Security:&lt;/font&gt; For supply and vehicle drops, the LZ must be clear of enemies within a 500m radius, otherwise the operation will be aborted.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Close Air Support (CAS):&lt;/font&gt; The helicopter will perform firing passes (miniguns) on the designated area. (Cooldown: 5 minutes)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Ammo Supply Drop:&lt;/font&gt; A supply crate drop by the helicopter.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Vehicle Drop:&lt;/font&gt; Heli-lifting of a light transport vehicle. (Limited to 1 use)&lt;br/&gt;
@@ -290,6 +283,8 @@ High Command has assigned a single UH-60L helicopter to the operational sector. 
         </English>
             <Spanish>
 El Alto Mando ha asignado un solo helicóptero UH-60L al sector operacional. Compartes este recurso con otras unidades. Las misiones se procesan de acuerdo con un estricto protocolo de prioridad.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Requisito LZ:&lt;/font&gt; Todas las misiones de transporte (excepto CAS) requieren un helipuerto aliado a menos de 3km. El helicóptero siempre se dirigirá al helipuerto más cercano.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Seguridad LZ:&lt;/font&gt; Para entregas (caja y vehículo), la zona de aterrizaje debe estar despejada de enemigos en un radio de 500m, o la operación será abortada.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Apoyo Aéreo Cercano (CAS):&lt;/font&gt; El helicóptero realizará pasadas de tiro (miniguns) en el área designada. (Tiempo de reutilización: 5 minutos)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Suministro de Munición:&lt;/font&gt; Lanzamiento de una caja de suministros por el helicóptero.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Lanzamiento de Vehículo:&lt;/font&gt; Transporte en helicóptero de un vehículo de transporte ligero. (Limitado a 1 uso)&lt;br/&gt;
@@ -298,6 +293,8 @@ El Alto Mando ha asignado un solo helicóptero UH-60L al sector operacional. Com
         </Spanish>
             <Italian>
 L'Alto Comando ha assegnato un singolo elicottero UH-60L al settore operativo. Condividi questa risorsa con altre unità. Le missioni vengono elaborate secondo un rigido protocollo di priorità.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Requisito LZ:&lt;/font&gt; Tutte le missioni di trasporto (tranne CAS) richiedono un eliporto alleato entro 3km. L'elicottero si dirigerà sempre verso l'eliporto più vicino.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Sicurezza LZ:&lt;/font&gt; Per le consegne, la zona di atterraggio deve essere libera da nemici in un raggio di 500m, altrimenti l'operazione verrà annullata.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Supporto Aereo Ravvicinato (CAS):&lt;/font&gt; L'elicottero effettuerà passaggi di tiro (minigun) sull'area designata. (Tempo di ricarica: 5 minuti)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Rifornimento Munizioni:&lt;/font&gt; Lancio di una cassa di rifornimento dall'elicottero.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Lancio Veicolo:&lt;/font&gt; Trasporto in elicottero di un veicolo da trasporto leggero. (Limitato a 1 utilizzo)&lt;br/&gt;
@@ -306,6 +303,8 @@ L'Alto Comando ha assegnato un singolo elicottero UH-60L al settore operativo. C
         </Italian>
             <German>
 Das Oberkommando hat dem operativen Sektor einen einzigen UH-60L-Hubschrauber zugewiesen. Sie teilen sich diese Ressource mit anderen Einheiten. Missionen werden nach einem strengen Prioritätsprotokoll abgewickelt.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ-Anforderung:&lt;/font&gt; Alle Transportmissionen (außer CAS) erfordern einen alliierten Hubschrauberlandeplatz im Umkreis von 3km. Der Hubschrauber fliegt immer den nächsten Landeplatz an.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ-Sicherheit:&lt;/font&gt; Bei Lieferungen (Kiste und Fahrzeug) muss die Landezone in einem Radius von 500m frei von Feinden sein, sonst wird die Operation abgebrochen.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Luftnahunterstützung (CAS):&lt;/font&gt; Der Hubschrauber führt Feuerüberflüge (Miniguns) auf das vorgesehene Gebiet durch. (Abklingzeit: 5 Minuten)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Munitionsabwurf:&lt;/font&gt; Abwurf einer Versorgungskiste durch den Hubschrauber.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Fahrzeugabwurf:&lt;/font&gt; Heli-Transport eines leichten Transportfahrzeugs. (Auf 1 Nutzung begrenzt)&lt;br/&gt;
@@ -314,6 +313,8 @@ Das Oberkommando hat dem operativen Sektor einen einzigen UH-60L-Hubschrauber zu
         </German>
             <Polish>
 Naczelne Dowództwo przydzieliło do sektora operacyjnego pojedynczy helikopter UH-60L. Dzielisz te zasoby z innymi jednostkami. Misje są przetwarzane zgodnie z rygorystycznym protokołem priorytetów.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Wymagania LZ:&lt;/font&gt; Wszystkie misje transportowe (oprócz CAS) wymagają sojuszniczego lądowiska w promieniu 3 km. Śmigłowiec zawsze poleci na najbliższe lądowisko.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Bezpieczeństwo LZ:&lt;/font&gt; W przypadku zrzutów, strefa lądowania musi być wolna od wrogów w promieniu 500 m, w przeciwnym razie operacja zostanie przerwana.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Bezpośrednie Wsparcie Lotnicze (CAS):&lt;/font&gt; Śmigłowiec wykona przeloty ostrzeliwujące (miniguny) na wyznaczonym obszarze. (Czas odnowienia: 5 minut)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Zrzut Amunicji:&lt;/font&gt; Zrzut skrzyni z zaopatrzeniem przez śmigłowiec.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Zrzut Pojazdu:&lt;/font&gt; Transport helikopterem lekkiego pojazdu transportowego. (Ograniczone do 1 użycia)&lt;br/&gt;
@@ -322,6 +323,8 @@ Naczelne Dowództwo przydzieliło do sektora operacyjnego pojedynczy helikopter 
         </Polish>
             <Russian>
 Главное командование выделило на сектор Заргабад один вертолет UH-60L. Вы делите этот ресурс с другими подразделениями. Миссии обрабатываются в соответствии со строгим протоколом приоритетов.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Требования LZ:&lt;/font&gt; Все транспортные миссии (кроме CAS) требуют союзной вертолетной площадки в радиусе 3 км. Вертолет всегда направляется к ближайшей площадке.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] Безопасность LZ:&lt;/font&gt; Для сброса припасов и техники зона посадки должна быть очищена от врагов в радиусе 500 м, иначе операция будет отменена.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Непосредственная авиационная поддержка (CAS):&lt;/font&gt; Вертолет выполнит боевые заходы (миниганы) на обозначенный район. (Перезарядка: 5 минут)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Сброс боеприпасов:&lt;/font&gt; Сброс ящика с припасами с вертолета.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Сброс техники:&lt;/font&gt; Переброска легкого транспортного средства на вертолете. (Ограничено 1 использованием)&lt;br/&gt;
@@ -330,6 +333,8 @@ Naczelne Dowództwo przydzieliło do sektora operacyjnego pojedynczy helikopter 
         </Russian>
             <Turkish>
 Yüksek Komuta, AO bölgesine tek bir UH-60L helikopteri atadı. Bu kaynağı diğer birimlerle paylaşıyorsunuz. Görevler katı bir öncelik protokolüne göre işlenir.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Gereksinimi:&lt;/font&gt; Tüm nakliye görevleri (CAS hariç) 3km içinde müttefik bir helikopter pisti gerektirir. Helikopter her zaman en yakın piste yönelecektir.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ Güvenliği:&lt;/font&gt; Tedarik ve araç atımları için iniş bölgesi 500m yarıçap içinde düşmanlardan temizlenmiş olmalıdır, aksi takdirde operasyon iptal edilir.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Yakın Hava Desteği (CAS):&lt;/font&gt; Helikopter belirlenen alana ateş geçişleri (minigunlar) gerçekleştirecektir. (Bekleme Süresi: 5 dakika)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Mühimmat İkmali:&lt;/font&gt; Helikopter tarafından tedarik sandığı atılması.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;Araç İkmali:&lt;/font&gt; Hafif bir nakliye aracının helikopterle taşınması. (1 kullanımla sınırlı)&lt;br/&gt;
@@ -338,6 +343,8 @@ Yüksek Komuta, AO bölgesine tek bir UH-60L helikopteri atadı. Bu kaynağı di
         </Turkish>
             <Japanese>
 最高司令部はザルガバード地区にUH-60Lヘリコプターを1機割り当てました。あなたはこのリソースを他の部隊と共有します。ミッションは厳密な優先順位プロトコルに従って処理されます。&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ条件:&lt;/font&gt; すべての輸送ミッション（CASを除く）には、3km以内の味方ヘリポートが必要です。ヘリコプターは常に最も近いヘリポートに向かいます。&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZセキュリティ:&lt;/font&gt; 補給および車両の投下の場合、着陸地点の半径500m以内に敵がいてはなりません。さもないと作戦は中止されます。&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;近接航空支援 (CAS):&lt;/font&gt; ヘリコプターは指定されたエリアに機銃掃射 (ミニガン) を実行します。(クールダウン: 5分)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;弾薬投下:&lt;/font&gt; ヘリコプターによる補給箱の投下。&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;車両投下:&lt;/font&gt; 軽輸送車両のヘリコプター輸送。(1回の使用に制限)&lt;br/&gt;
@@ -346,6 +353,8 @@ Yüksek Komuta, AO bölgesine tek bir UH-60L helikopteri atadı. Bu kaynağı di
         </Japanese>
             <Korean>
 최고 사령부는 자르가바드 구역에 단일 UH-60L 헬리콥터를 할당했습니다. 이 자원을 다른 부대와 공유합니다. 임무는 엄격한 우선순위 프로토콜에 따라 처리됩니다.&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ 요구 사항:&lt;/font&gt; 모든 수송 임무(CAS 제외)에는 3km 이내에 아군 헬기장이 필요합니다. 헬리콥터는 항상 가장 가까운 헬기장으로 이동합니다.&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ 보안:&lt;/font&gt; 보급품 및 차량 투하의 경우 반경 500m 이내에 적이 없어야 하며, 그렇지 않으면 작전이 취소됩니다.&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;근접 항공 지원 (CAS):&lt;/font&gt; 헬리콥터가 지정된 구역에 사격(미니건)을 실시합니다. (재사용 대기시간: 5분)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;탄약 투하:&lt;/font&gt; 헬리콥터에 의한 보급품 상자 투하.&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;차량 투하:&lt;/font&gt; 경수송 차량의 헬기 수송. (1회 사용 제한)&lt;br/&gt;
@@ -354,6 +363,8 @@ Yüksek Komuta, AO bölgesine tek bir UH-60L helikopteri atadı. Bu kaynağı di
         </Korean>
             <Chinese>
 最高指挥部已向扎尔加巴德区域分配了一架 UH-60L 直升机。您与其他部队共享此资源。任务按照严格的优先协议进行处理。&lt;br/&gt;&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ 要求:&lt;/font&gt; 所有运输任务（CAS 除外）都需要在 3 公里内有友军直升机停机坪。直升机将始终飞往最近的停机坪。&lt;br/&gt;
+&lt;font color='#FF4500'&gt;[!] LZ 安全:&lt;/font&gt; 对于补给和车辆空投，着陆区必须在 500 米半径内没有敌人，否则行动将被取消。&lt;br/&gt;&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;近距离空中支援 (CAS):&lt;/font&gt; 直升机将在指定区域进行火力扫射 (迷你机枪)。 (冷却时间: 5 分钟)&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;弹药空投:&lt;/font&gt; 直升机空投补给箱。&lt;br/&gt;
 - &lt;font color='#87CEEB'&gt;车辆空投:&lt;/font&gt; 直升机吊运轻型运输车辆。 (仅限使用 1 次)&lt;br/&gt;
@@ -529,76 +540,76 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
         </Key>
         <Key ID="STR_LL_Briefing_3_1_Text">
             <Original>
-&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; White action 'Request surveillance drone'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Requests the deployment of an orbiting drone at 350m altitude above precise coordinates. The drone will scan the sector (400m radius) for 5 minutes.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Data Feed (HUD/Map):&lt;/font&gt; The exact position of living enemy forces will be relayed to you in real-time directly on your mapping equipment (Red markers). Corpses or units leaving the sector will disappear from the radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Refusal / Availability:&lt;/font&gt; The drone must refuel after its flight time (RTB). You will have to wait 2 minutes (cooldown) after its departure before you can request it again.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Native Support Menu (0-8) '&lt;font color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/font&gt;'. Click on the map or ground to designate the zone.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Deploys an orbiting MQ-9 Reaper at 350m altitude (invisible to enemies). Scans the sector (400m radius) for 5 minutes.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Combat:&lt;/font&gt; Automatically paints and engages any enemy vehicles in the zone with missiles.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Data Feed:&lt;/font&gt; Exact positions of living enemies are relayed in real-time on your map (Red markers).
         </Original>
             <French>
-&lt;font color='#FF8800'&gt;Interface :&lt;/font&gt; Action blanche 'Demander un drone de surveillance'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Description :&lt;/font&gt; Demande la mise sur orbite d'un drone à 350m d'altitude au-dessus de coordonnées précises. Le drone balaiera le secteur (400m de rayon) pendant 5 minutes.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Flux de données (HUD/Carte) :&lt;/font&gt; La position exacte des forces ennemies vivantes vous sera retransmise en temps réel directement sur votre équipement cartographique (Marqueurs rouges). Les cadavres ou unités quittant le secteur disparaîtront du radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Refus / Disponibilité :&lt;/font&gt; Le drone doit faire le plein après son temps de vol (RTB). Vous devrez attendre 2 minutes (cooldown) après son départ avant de pouvoir le solliciter à nouveau.
+&lt;font color='#FF8800'&gt;Interface :&lt;/font&gt; Menu Soutien natif (0-8) '&lt;font color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/font&gt;'. Cliquez sur la carte ou le sol pour désigner la zone.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description :&lt;/font&gt; Déploie un MQ-9 Reaper en orbite à 350m d'altitude (invisible des ennemis). Scanne le secteur (400m de rayon) pendant 5 minutes.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Combat :&lt;/font&gt; Verrouille et engage automatiquement tous les véhicules ennemis de la zone avec ses missiles.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Flux de données :&lt;/font&gt; Position exacte des ennemis en vie retransmise en temps réel sur la carte (Marqueurs rouges).
         </French>
             <English>
-&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; White action 'Request surveillance drone'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Requests the deployment of an orbiting drone at 350m altitude above precise coordinates. The drone will scan the sector (400m radius) for 5 minutes.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Data Feed (HUD/Map):&lt;/font&gt; The exact position of living enemy forces will be relayed to you in real-time directly on your mapping equipment (Red markers). Corpses or units leaving the sector will disappear from the radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Refusal / Availability:&lt;/font&gt; The drone must refuel after its flight time (RTB). You will have to wait 2 minutes (cooldown) after its departure before you can request it again.
+&lt;font color='#FF8800'&gt;Interface:&lt;/font&gt; Native Support Menu (0-8) '&lt;font color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/font&gt;'. Click on the map or ground to designate the zone.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Description:&lt;/font&gt; Deploys an orbiting MQ-9 Reaper at 350m altitude (invisible to enemies). Scans the sector (400m radius) for 5 minutes.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Combat:&lt;/font&gt; Automatically paints and engages any enemy vehicles in the zone with missiles.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Data Feed:&lt;/font&gt; Exact positions of living enemies are relayed in real-time on your map (Red markers).
         </English>
             <Spanish>
-&lt;font color='#FF8800'&gt;Interfaz:&lt;/font&gt; Acción blanca 'Solicitar dron de vigilancia'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Descripción:&lt;/font&gt; Solicita el despliegue de un dron en órbita a 350 m de altitud sobre coordenadas precisas. El dron escaneará el sector (400 m de radio) durante 5 minutos.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Fuente de Datos (HUD/Mapa):&lt;/font&gt; La posición exacta de las fuerzas enemigas vivas se te transmitirá en tiempo real directamente en tu equipo de mapeo (marcadores rojos). Los cadáveres o unidades que abandonen el sector desaparecerán del radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Rechazo / Disponibilidad:&lt;/font&gt; El dron debe repostar después de su tiempo de vuelo (RTB). Deberás esperar 2 minutos (tiempo de reutilización) después de su partida antes de poder solicitarlo nuevamente.
+&lt;font color='#FF8800'&gt;Interfaz:&lt;/font&gt; Menú de Apoyo Nativo (0-8) '&lt;font color='#FFFFFF'&gt;[DRON] Vigilancia&lt;/font&gt;'. Haz clic en el mapa o en el suelo para designar la zona.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Descripción:&lt;/font&gt; Despliega un MQ-9 Reaper en órbita a 350 m de altitud (invisible a los enemigos). Escanea el sector (400 m de radio) durante 5 minutos.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Combate:&lt;/font&gt; Marca y ataca automáticamente a cualquier vehículo enemigo en la zona con misiles.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Fuente de Datos:&lt;/font&gt; Las posiciones exactas de los enemigos vivos se transmiten en tiempo real en tu mapa (marcadores rojos).
         </Spanish>
             <Italian>
-&lt;font color='#FF8800'&gt;Interfaccia:&lt;/font&gt; Azione bianca 'Richiedi drone di sorveglianza'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Descrizione:&lt;/font&gt; Richiede il dispiegamento di un drone in orbita a 350m di altitudine sopra coordinate precise. Il drone scansionerà il settore (raggio 400m) per 5 minuti.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Flusso di Dati (HUD/Mappa):&lt;/font&gt; La posizione esatta delle forze nemiche vive ti verrà trasmessa in tempo reale direttamente sul tuo equipaggiamento cartografico (marcatori rossi). I cadaveri o le unità che lasciano il settore scompariranno dal radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Rifiuto / Disponibilità:&lt;/font&gt; Il drone deve fare rifornimento dopo il suo tempo di volo (RTB). Dovrai attendere 2 minuti (tempo di ricarica) dopo la sua partenza prima di poterlo richiedere di nuovo.
+&lt;font color='#FF8800'&gt;Interfaccia:&lt;/font&gt; Menu di Supporto Nativo (0-8) '&lt;font color='#FFFFFF'&gt;[DRONE] Sorveglianza&lt;/font&gt;'. Clicca sulla mappa o sul terreno per designare la zona.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Descrizione:&lt;/font&gt; Dispiega un MQ-9 Reaper in orbita a 350m di altitudine (invisibile ai nemici). Scansiona il settore (raggio di 400m) per 5 minuti.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Combattimento:&lt;/font&gt; Marca e ingaggia automaticamente con missili qualsiasi veicolo nemico nella zona.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Flusso di Dati:&lt;/font&gt; Le posizioni esatte dei nemici vivi vengono trasmesse in tempo reale sulla tua mappa (marcatori rossi).
         </Italian>
             <German>
-&lt;font color='#FF8800'&gt;Schnittstelle:&lt;/font&gt; Weiße Aktion 'Überwachungsdrohne anfordern'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Beschreibung:&lt;/font&gt; Fordert den Einsatz einer kreisenden Drohne in 350 m Höhe über genauen Koordinaten an. Die Drohne scannt den Sektor (400 m Radius) für 5 Minuten.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Datenstrom (HUD/Karte):&lt;/font&gt; Die genaue Position lebender feindlicher Streitkräfte wird dir in Echtzeit direkt auf deine Kartenausrüstung übertragen (rote Markierungen). Leichen oder Einheiten, die den Sektor verlassen, verschwinden vom Radar.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Ablehnung / Verfügbarkeit:&lt;/font&gt; Die Drohne muss nach ihrer Flugzeit nachtanken (RTB). Du musst 2 Minuten (Abklingzeit) nach ihrem Abflug warten, bevor du sie erneut anfordern kannst.
+&lt;font color='#FF8800'&gt;Schnittstelle:&lt;/font&gt; Natives Unterstützungsmenü (0-8) '&lt;font color='#FFFFFF'&gt;[DROHNE] Überwachung&lt;/font&gt;'. Klicken Sie auf die Karte oder den Boden, um die Zone zuzuweisen.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Beschreibung:&lt;/font&gt; Setzt eine kreisende MQ-9 Reaper in 350 m Höhe ein (unsichtbar für Feinde). Scannt den Sektor (400 m Radius) für 5 Minuten.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Kampf:&lt;/font&gt; Markiert und greift automatisch feindliche Fahrzeuge in der Zone mit Raketen an.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Datenstrom:&lt;/font&gt; Genaue Positionen lebender Feinde werden in Echtzeit auf Ihrer Karte übertragen (rote Markierungen).
         </German>
             <Polish>
-&lt;font color='#FF8800'&gt;Interfejs:&lt;/font&gt; Biała akcja 'Zażądaj drona obserwacyjnego'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Opis:&lt;/font&gt; Żąda rozmieszczenia drona na orbicie na wysokości 350m nad dokładnymi współrzędnymi. Dron będzie skanował sektor (promień 400m) przez 5 minut.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Strumień Danych (HUD/Mapa):&lt;/font&gt; Dokładna pozycja żywych sił wroga będzie przekazywana w czasie rzeczywistym bezpośrednio na twój sprzęt kartograficzny (czerwone znaczniki). Zwłoki lub jednostki opuszczające sektor znikną z radaru.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Odmowa / Dostępność:&lt;/font&gt; Dron musi zatankować po czasie lotu (RTB). Będziesz musiał poczekać 2 minuty (czas odnowienia) po jego odlocie, zanim będziesz mógł o niego ponownie poprosić.
+&lt;font color='#FF8800'&gt;Interfejs:&lt;/font&gt; Natywne Menu Wsparcia (0-8) '&lt;font color='#FFFFFF'&gt;[DRON] Obserwacja&lt;/font&gt;'. Kliknij na mapę lub ziemię, aby wyznaczyć strefę.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Opis:&lt;/font&gt; Rozmieszcza drona MQ-9 Reaper na orbicie na wysokości 350 m (niewidoczny dla wrogów). Skanuje sektor (promień 400 m) przez 5 minut.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Walka:&lt;/font&gt; Automatycznie namierza i atakuje rakietami wszystkie wrogie pojazdy w strefie.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Strumień Danych:&lt;/font&gt; Dokładne pozycje żywych wrogów są przekazywane w czasie rzeczywistym na twojej mapie (czerwone znaczniki).
         </Polish>
             <Russian>
-&lt;font color='#FF8800'&gt;Интерфейс:&lt;/font&gt; Белое действие 'Запросить разведывательный дрон'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Описание:&lt;/font&gt; Запрашивает развертывание дрона на орбите на высоте 350 м над точными координатами. Дрон будет сканировать сектор (радиус 400 м) в течение 5 минут.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Поток данных (HUD/Карта):&lt;/font&gt; Точная позиция живых сил противника будет передаваться вам в режиме реального времени прямо на ваше картографическое оборудование (красные маркеры). Трупы или подразделения, покидающие сектор, исчезнут с радара.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Отказ / Доступность:&lt;/font&gt; Дрону необходимо дозаправиться после полета (RTB). Вам придется подождать 2 минуты (время восстановления) после его отбытия, прежде чем вы сможете снова запросить его.
+&lt;font color='#FF8800'&gt;Интерфейс:&lt;/font&gt; Встроенное меню поддержки (0-8) '&lt;font color='#FFFFFF'&gt;[ДРОН] Наблюдение&lt;/font&gt;'. Кликните по карте или земле, чтобы обозначить зону.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Описание:&lt;/font&gt; Развертывает MQ-9 Reaper на орбите на высоте 350 м (невидимый для врагов). Сканирует сектор (радиус 400 м) в течение 5 минут.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Бой:&lt;/font&gt; Автоматически подсвечивает и атакует ракетами любую вражескую технику в зоне.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Поток данных:&lt;/font&gt; Точные позиции живых врагов передаются в режиме реального времени на вашу карту (красные маркеры).
         </Russian>
             <Turkish>
-&lt;font color='#FF8800'&gt;Arayüz:&lt;/font&gt; Beyaz eylem 'Gözetleme dronu iste'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;Açıklama:&lt;/font&gt; Kesin koordinatların 350m üzerinde yörüngede bir dronun konuşlandırılmasını talep eder. Dron sektörü (400m yarıçap) 5 dakika boyunca tarayacaktır.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;Veri Akışı (HUD/Harita):&lt;/font&gt; Yaşayan düşman kuvvetlerinin kesin konumu gerçek zamanlı olarak doğrudan haritalama ekipmanınıza iletilecektir (Kırmızı işaretleyiciler). Cesetler veya sektörden ayrılan birimler radardan kaybolacaktır.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;Reddetme / Uygunluk:&lt;/font&gt; Dron uçuş süresinden sonra yakıt ikmali yapmalıdır (RTB). Ayrıldıktan sonra tekrar talep edebilmek için 2 dakika (bekleme süresi) beklemeniz gerekecektir.
+&lt;font color='#FF8800'&gt;Arayüz:&lt;/font&gt; Yerel Destek Menüsü (0-8) '&lt;font color='#FFFFFF'&gt;[DRON] Gözetleme&lt;/font&gt;'. Bölgeyi belirlemek için haritaya veya yere tıklayın.&lt;br/&gt;
+&lt;font color='#FFD700'&gt;Açıklama:&lt;/font&gt; 350 m irtifada yörüngede dönen bir MQ-9 Reaper konuşlandırır (düşmanlar tarafından görünmez). Sektörü (400 m yarıçap) 5 dakika boyunca tarar.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;Çatışma:&lt;/font&gt; Bölgedeki tüm düşman araçlarını otomatik olarak işaretler ve füzelerle saldırır.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;Veri Akışı:&lt;/font&gt; Yaşayan düşmanların kesin konumları haritanızda gerçek zamanlı olarak iletilir (Kırmızı işaretleyiciler).
         </Turkish>
             <Japanese>
-&lt;font color='#FF8800'&gt;インターフェース:&lt;/font&gt; 白いアクション '監視ドローンを要請する'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;説明:&lt;/font&gt; 正確な座標の上空高度350mで周回ドローンの配備を要求します。ドローンはセクター(半径400m)を5分間スキャンします。&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;データフィード (HUD/マップ):&lt;/font&gt; 生存している敵対勢力の正確な位置が、マッピング機器(赤いマーカー)にリアルタイムで直接中継されます。死体やセクターを離れる部隊はレーダーから消えます。&lt;br/&gt;
-&lt;font color='#FFA500'&gt;拒否 / 可用性:&lt;/font&gt; ドローンは飛行時間後に燃料を補給する必要があります(RTB)。出発後、再要求できるようになるまで2分間(クールダウン)待つ必要があります。
+&lt;font color='#FF8800'&gt;インターフェース:&lt;/font&gt; ネイティブ支援メニュー (0-8) '&lt;font color='#FFFFFF'&gt;[ドローン] 監視&lt;/font&gt;'. マップまたは地面をクリックしてゾーンを指定します。&lt;br/&gt;
+&lt;font color='#FFD700'&gt;説明:&lt;/font&gt; 敵から見えない高度350mにMQ-9 Reaperを配備します。セクター（半径400m）を5分間スキャンします。&lt;br/&gt;
+&lt;font color='#FF0000'&gt;戦闘:&lt;/font&gt; ゾーン内の敵車両を自動的にマーキングし、ミサイルで攻撃します。&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;データフィード:&lt;/font&gt; 生きている敵の正確な位置がマップ上にリアルタイムで中継されます（赤いマーカー）。
         </Japanese>
             <Korean>
-&lt;font color='#FF8800'&gt;인터페이스:&lt;/font&gt; 흰색 액션 '감시 드론 요청'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;설명:&lt;/font&gt; 정확한 좌표 위 350m 고도에 궤도 드론 배치를 요청합니다. 드론은 5분 동안 구역(반경 400m)을 스캔합니다.&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;데이터 피드 (HUD/지도):&lt;/font&gt; 살아있는 적군의 정확한 위치가 매핑 장비(빨간색 마커)에 실시간으로 직접 중계됩니다. 시체나 구역을 벗어나는 유닛은 레이더에서 사라집니다.&lt;br/&gt;
-&lt;font color='#FFA500'&gt;거부 / 가용성:&lt;/font&gt; 드론은 비행 시간 후 연료를 재보급해야 합니다(RTB). 출발 후 다시 요청하려면 2분(재사용 대기시간)을 기다려야 합니다.
+&lt;font color='#FF8800'&gt;인터페이스:&lt;/font&gt; 기본 지원 메뉴 (0-8) '&lt;font color='#FFFFFF'&gt;[드론] 감시&lt;/font&gt;'. 지도나 지면을 클릭하여 구역을 지정합니다.&lt;br/&gt;
+&lt;font 포맷='#FFD700'&gt;설명:&lt;/font&gt; 적에게 보이지 않는 350m 고도에 MQ-9 Reaper를 배치합니다. 5분 동안 섹터(반경 400m)를 스캔합니다.&lt;br/&gt;
+&lt;font color='#FF0000'&gt;전투:&lt;/font&gt; 구역 내의 모든 적 차량을 자동으로 마커하고 미사일로 교전합니다.&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;데이터 피드:&lt;/font&gt; 살아있는 적의 정확한 위치가 지도에 실시간으로 중계됩니다(빨간색 마커).
         </Korean>
             <Chinese>
-&lt;font color='#FF8800'&gt;界面:&lt;/font&gt; 白色操作 '请求侦察无人机'.&lt;br/&gt;
-&lt;font color='#FFD700'&gt;描述:&lt;/font&gt; 请求在精确坐标上方 350 米的高度部署轨道无人机。无人机将扫描扇区（半径 400 米）5 分钟。&lt;br/&gt;
-&lt;font color='#87CEEB'&gt;数据流 (HUD/地图):&lt;/font&gt; 活着的敌军的准确位置将实时直接传递到您的地图设备（红色标记）。尸体或离开扇区的部队将从雷达上消失。&lt;br/&gt;
-&lt;font color='#FFA500'&gt;拒绝 / 可用性:&lt;/font&gt; 无人机必须在飞行时间后加油 (RTB)。您必须在其离开后等待 2 分钟（冷却时间），然后才能再次请求它。
+&lt;font color='#FF8800'&gt;界面:&lt;/font&gt; 原生支援菜单 (0-8) '&lt;font color='#FFFFFF'&gt;[无人机] 监视&lt;/font&gt;'. 点击地图或地面指定区域。&lt;br/&gt;
+&lt;font color='#FFD700'&gt;描述:&lt;/font&gt; 在350米高度（对敌人不可见）部署一架在轨MQ-9 Reaper。扫描该扇区（400米半径）5分钟。&lt;br/&gt;
+&lt;font color='#FF0000'&gt;战斗:&lt;/font&gt; 自动标记并用导弹攻击区域内的任何敌方车辆。&lt;br/&gt;
+&lt;font color='#87CEEB'&gt;数据流:&lt;/font&gt; 活着的敌人的确切位置实时中继在您的地图上（红色标记）。
         </Chinese>
         </Key>
         <Key ID="STR_LL_Context_Tab">
@@ -631,133 +642,43 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
         </Key>
         <Key ID="STR_LL_Context_1_Text">
             <Original>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Original>
             <French>
-                <font color="#FFA500" size="16">1. Contexte Global (Guerre Civile au Takistan)</font>
-                <br />
-                <br />Le <font color="#FFD700">Takistan</font> est plongé dans une <font color="#FFD700">guerre civile ravageuse</font>. Région hautement stratégique du Moyen-Orient, le pays est devenu le théâtre d'affrontements sanglants menaçant la sécurité globale.<br />
-                <br />
-                <font color="#00BFFF" size="14">La Légion Étrangère de Sahrani (RACS)</font>
-                <br />Suite à la réunification de Sahrani, le gouvernement a organisé le RACS en force d'intervention mondiale. Pour opérer à l'étranger sans risquer ses troupes régulières, le RACS a fondé la <font color="#00FF00">Légion Étrangère</font> (RACS Foreign Legion).<br />
-                <br />Déployée au Takistan, cette unité d'élite rassemble des vétérans et volontaires du monde entier.
+&lt;font color='#FFA500' size='16'&gt;1. Contexte Global (Guerre Civile au Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Le &lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; est plongé dans une &lt;font color='#FFD700'&gt;guerre civile ravageuse&lt;/font&gt;. Région hautement stratégique du Moyen-Orient, le pays est devenu le théâtre d'affrontements sanglants menaçant la sécurité globale.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;La Légion Étrangère de Sahrani (RACS)&lt;/font&gt;&lt;br/&gt;Suite à la réunification de Sahrani, le gouvernement a organisé le RACS en force d'intervention mondiale. Pour opérer à l'étranger sans risquer ses troupes régulières, le RACS a fondé la &lt;font color='#00FF00'&gt;Légion Étrangère&lt;/font&gt; (RACS Foreign Legion).&lt;br/&gt;&lt;br/&gt;Déployée au Takistan, cette unité d'élite rassemble des vétérans et volontaires du monde entier.
         </French>
             <English>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </English>
             <Spanish>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Spanish>
             <Italian>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Italian>
             <German>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </German>
             <Polish>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Polish>
             <Russian>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Russian>
             <Turkish>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Turkish>
             <Japanese>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Japanese>
             <Korean>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Korean>
             <Chinese>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Chinese>
             <Chinesesimp>
-                <font color="#FFA500" size="16">1. Global Context (Civil War in Takistan)</font>
-                <br />
-                <br />
-                <font color="#FFD700">Takistan</font> is plunged into a <font color="#FFD700">devastating civil war</font>. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.<br />
-                <br />
-                <font color="#00BFFF" size="14">The Sahrani Foreign Legion (RACS)</font>
-                <br />Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the <font color="#00FF00">Foreign Legion</font>.<br />
-                <br />Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
+&lt;font color='#FFA500' size='16'&gt;1. Global Context (Civil War in Takistan)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFD700'&gt;Takistan&lt;/font&gt; is plunged into a &lt;font color='#FFD700'&gt;devastating civil war&lt;/font&gt;. A highly strategic region of the Middle East, the country has become the theater of bloody clashes threatening global security.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;The Sahrani Foreign Legion (RACS)&lt;/font&gt;&lt;br/&gt;Following the reunification of Sahrani, the government reorganized the RACS into a global intervention force. To operate abroad without risking regular troops, the RACS founded the &lt;font color='#00FF00'&gt;Foreign Legion&lt;/font&gt;.&lt;br/&gt;&lt;br/&gt;Deployed to Takistan, this elite unit gathers veterans and volunteers from around the world.
         </Chinesesimp>
         </Key>
         <Key ID="STR_LL_Context_2_Title">
@@ -776,147 +697,43 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
         </Key>
         <Key ID="STR_LL_Context_2_Text">
             <Original>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Original>
             <French>
-                <font color="#FFA500" size="16">2. Objectifs et Missions de la Légion Étrangère</font>
-                <br />
-                <br />Le commandement de la Légion Étrangère du RACS s'est vu confier le mandat de <font color="#00FF00">rétablir l'ordre</font> et de pacifier le Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Missions Principales</font>
-                <br />- <font color="#00FF00">Contrôle Territorial :</font> Déploiement rapide pour sécuriser et purger les zones urbaines des insurgés.<br />- <font color="#00FF00">Contre-terrorisme :</font> Traquer et démanteler les factions rebelles et les cellules extrémistes lourdement armées.<br />- <font color="#00FF00">Stabilisation Politique :</font> Neutraliser la subversion armée pour empêcher la résurgence d'une insurrection globale.<br />
-                <br />
-                <font color="#00BFFF" size="14">Tâches Secondaires</font>
-                <br />- Sécurisation des ressources critiques.<br />- Protection et escorte des VIP et convois humanitaires.
+&lt;font color='#FFA500' size='16'&gt;2. Objectifs et Missions de la Légion Étrangère&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Le commandement de la Légion Étrangère du RACS s'est vu confier le mandat de &lt;font color='#00FF00'&gt;rétablir l'ordre&lt;/font&gt; et de pacifier le Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Missions Principales&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Contrôle Territorial :&lt;/font&gt; Déploiement rapide pour sécuriser et purger les zones urbaines des insurgés.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Contre-terrorisme :&lt;/font&gt; Traquer et démanteler les factions rebelles et les cellules extrémistes lourdement armées.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Stabilisation Politique :&lt;/font&gt; Neutraliser la subversion armée pour empêcher la résurgence d'une insurrection globale.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Tâches Secondaires&lt;/font&gt;&lt;br/&gt;- Sécurisation des ressources critiques.&lt;br/&gt;- Protection et escorte des VIP et convois humanitaires.
         </French>
             <English>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </English>
             <Spanish>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Spanish>
             <Italian>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Italian>
             <German>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </German>
             <Polish>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Polish>
             <Russian>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Russian>
             <Turkish>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Turkish>
             <Japanese>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Japanese>
             <Korean>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Korean>
             <Chinese>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Chinese>
             <Chinesesimp>
-                <font color="#FFA500" size="16">2. Objectives and Missions of the Foreign Legion</font>
-                <br />
-                <br />The command of the RACS Foreign Legion has been entrusted with the mandate to <font color="#00FF00">restore order</font> and pacify Takistan.<br />
-                <br />
-                <font color="#00BFFF" size="14">Main Missions</font>
-                <br />- <font color="#00FF00">Territorial Control:</font> Rapid deployment to secure and purge urban areas from insurgents.<br />- <font color="#00FF00">Counter-terrorism:</font> Track down and dismantle heavily armed rebel factions and extremist cells.<br />- <font color="#00FF00">Political Stabilization:</font> Neutralize armed subversion to prevent the resurgence of a global insurgency.<br />
-                <br />
-                <font color="#00BFFF" size="14">Secondary Tasks</font>
-                <br />- Securing critical resources.<br />- Protection and escort of VIPs and humanitarian convoys.
+&lt;font color='#FFA500' size='16'&gt;2. Objectives and Missions of the Foreign Legion&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;The command of the RACS Foreign Legion has been entrusted with the mandate to &lt;font color='#00FF00'&gt;restore order&lt;/font&gt; and pacify Takistan.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Main Missions&lt;/font&gt;&lt;br/&gt;- &lt;font color='#00FF00'&gt;Territorial Control:&lt;/font&gt; Rapid deployment to secure and purge urban areas from insurgents.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Counter-terrorism:&lt;/font&gt; Track down and dismantle heavily armed rebel factions and extremist cells.&lt;br/&gt;- &lt;font color='#00FF00'&gt;Political Stabilization:&lt;/font&gt; Neutralize armed subversion to prevent the resurgence of a global insurgency.&lt;br/&gt;&lt;br/&gt;&lt;font color='#00BFFF' size='14'&gt;Secondary Tasks&lt;/font&gt;&lt;br/&gt;- Securing critical resources.&lt;br/&gt;- Protection and escort of VIPs and humanitarian convoys.
         </Chinesesimp>
         </Key>
         <Key ID="STR_LL_Context_3_Title">
@@ -935,99 +752,60 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
         </Key>
         <Key ID="STR_LL_Context_3_Text">
             <Original>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Original>
             <French>
-                <font color="#FFA500" size="16">3. Contexte Narratif (Lore de Campagne)</font>
-                <br />
-                <br />Alors que le monde a les yeux rivés sur le Takistan, les grandes puissances internationales (OTAN, USA, CSAT) attisent les braises du conflit pour s'emparer des ressources locales.<br />
-                <br />L'intervention du RACS, opérant sous couvert d'opérations de maintien de la paix, vise en réalité à <font color="#00FF00">sécuriser les installations stratégiques</font> pour empêcher l'OTAN ou d'autres grandes puissances mondiales d'intervenir et de prendre le contrôle absolu de la région.
+&lt;font color='#FFA500' size='16'&gt;3. Contexte Narratif (Lore de Campagne)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Alors que le monde a les yeux rivés sur le Takistan, les grandes puissances internationales (OTAN, USA, CSAT) attisent les braises du conflit pour s'emparer des ressources locales.&lt;br/&gt;&lt;br/&gt;L'intervention du RACS, opérant sous couvert d'opérations de maintien de la paix, vise en réalité à &lt;font color='#00FF00'&gt;sécuriser les installations stratégiques&lt;/font&gt; pour empêcher l'OTAN ou d'autres grandes puissances mondiales d'intervenir et de prendre le contrôle absolu de la région.
         </French>
             <English>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </English>
             <Spanish>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Spanish>
             <Italian>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Italian>
             <German>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </German>
             <Polish>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Polish>
             <Russian>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Russian>
             <Turkish>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Turkish>
             <Japanese>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Japanese>
             <Korean>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Korean>
             <Chinese>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Chinese>
             <Chinesesimp>
-                <font color="#FFA500" size="16">3. Narrative Context (Campaign Lore)</font>
-                <br />
-                <br />While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.<br />
-                <br />The RACS intervention, operating under the guise of peacekeeping operations, actually aims to <font color="#00FF00">secure strategic facilities</font> to prevent NATO or other major global powers from intervening and taking absolute control of the region.
+&lt;font color='#FFA500' size='16'&gt;3. Narrative Context (Campaign Lore)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;While the world's eyes are on Takistan, major international powers (NATO, USA, CSAT) fan the flames of conflict to seize local resources.&lt;br/&gt;&lt;br/&gt;The RACS intervention, operating under the guise of peacekeeping operations, actually aims to &lt;font color='#00FF00'&gt;secure strategic facilities&lt;/font&gt; to prevent NATO or other major global powers from intervening and taking absolute control of the region.
         </Chinesesimp>
         </Key>
     </Package>
     <Package name="Drone">
         <Key ID="STR_Drone_Surveillance">
-            <Original>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</Original>
-            <English>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</English>
-            <French>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</French>
-            <Spanish>&lt;t color='#FFFFFF'&gt;[DRON] Vigilancia&lt;/t&gt;</Spanish>
-            <Italian>&lt;t color='#FFFFFF'&gt;[DRONE] Sorveglianza&lt;/t&gt;</Italian>
-            <German>&lt;t color='#FFFFFF'&gt;[DROHNE] Überwachung&lt;/t&gt;</German>
-            <Polish>&lt;t color='#FFFFFF'&gt;[DRON] Obserwacja&lt;/t&gt;</Polish>
-            <Russian>&lt;t color='#FFFFFF'&gt;[ДРОН] Наблюдение&lt;/t&gt;</Russian>
-            <Turkish>&lt;t color='#FFFFFF'&gt;[DRON] Gözetleme&lt;/t&gt;</Turkish>
-            <Japanese>&lt;t color='#FFFFFF'&gt;[ドローン] 監視&lt;/t&gt;</Japanese>
-            <Korean>&lt;t color='#FFFFFF'&gt;[드론] 감시&lt;/t&gt;</Korean>
-            <Chinese>&lt;t color='#FFFFFF'&gt;[无人机] 监视&lt;/t&gt;</Chinese>
+            <Original>[DRONE] Surveillance</Original>
+            <English>[DRONE] Surveillance</English>
+            <French>[DRONE] Surveillance</French>
+            <Spanish>[DRON] Vigilancia</Spanish>
+            <Italian>[DRONE] Sorveglianza</Italian>
+            <German>[DROHNE] Überwachung</German>
+            <Polish>[DRON] Obserwacja</Polish>
+            <Russian>[ДРОН] Наблюдение</Russian>
+            <Turkish>[DRON] Gözetleme</Turkish>
+            <Japanese>[ドローン] 監視</Japanese>
+            <Korean>[드론] 감시</Korean>
+            <Chinese>[无人机] 监视</Chinese>
         </Key>
         <Key ID="STR_Drone_AlreadyActive_Wait">
             <Original>Drone déjà en mission. Attendez son retour.</Original>
@@ -1493,6 +1271,34 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Korean>헬기가 바쁩니다 (임무 %1 진행 중). 요청이 거부되었습니다.</Korean>
             <Chinese>直升机正忙（%1 任务进行中）。请求被拒绝。</Chinese>
         </Key>
+        <Key ID="STR_LL_Heli_Dispatch_Deny_HotLZ">
+            <Original>Negative, the landing zone is compromised by enemy forces.</Original>
+            <English>Negative, the landing zone is compromised by enemy forces.</English>
+            <French>Négatif, la zone d'atterrissage est compromise par des forces ennemies.</French>
+            <Spanish>Negativo, la zona de aterrizaje está comprometida por fuerzas enemigas.</Spanish>
+            <Italian>Negativo, la zona di atterraggio è compromessa dalle forze nemiche.</Italian>
+            <German>Negativ, die Landezone ist durch feindliche Truppen kompromittiert.</German>
+            <Polish>Odmowa, strefa lądowania jest opanowana przez siły wroga.</Polish>
+            <Russian>Отказ, зона высадки скомпрометирована силами противника.</Russian>
+            <Turkish>Olumsuz, iniş bölgesi düşman kuvvetleri tarafından ele geçirilmiş.</Turkish>
+            <Japanese>拒否、着陸地点は敵軍によって危険にさらされています。</Japanese>
+            <Korean>거부됨, 착륙 지점이 적군에 의해 위험합니다.</Korean>
+            <Chinese>拒绝，着陆区被敌军渗透。</Chinese>
+        </Key>
+        <Key ID="STR_LL_Heli_Dispatch_Deny_NoLZ">
+            <Original>Negative, no suitable landing zone found in the area.</Original>
+            <English>Negative, no suitable landing zone found in the area.</English>
+            <French>Négatif, aucune zone d'atterrissage appropriée trouvée dans le secteur.</French>
+            <Spanish>Negativo, no se ha encontrado una zona de aterrizaje adecuada en la zona.</Spanish>
+            <Italian>Negativo, nessuna zona di atterraggio adatta trovata nell'area.</Italian>
+            <German>Negativ, keine geeignete Landezone in dem Bereich gefunden.</German>
+            <Polish>Odmowa, nie znaleziono odpowiedniej strefy lądowania w okolicy.</Polish>
+            <Russian>Отказ, подходящая зона высадки в этом районе не найдена.</Russian>
+            <Turkish>Olumsuz, bölgede uygun bir iniş bölgesi bulunamadı.</Turkish>
+            <Japanese>拒否、周辺に適切な着陸地点が見つかりません。</Japanese>
+            <Korean>거부됨, 해당 지역에서 적절한 착륙 지점을 찾지 못했습니다.</Korean>
+            <Chinese>拒绝，在该区域未找到合适的着陆区。</Chinese>
+        </Key>
         <Key ID="STR_LL_Heli_Msg_CargoAborted">
             <Original>Drop aborted.</Original>
             <English>Drop aborted.</English>
@@ -1801,61 +1607,75 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Korean>오류: 차량을 보낼 수 없습니다.</Korean>
             <Chinese>错误：无法送达车辆。</Chinese>
         </Key>
+        <Key ID="STR_LL_Heli_Msg_LZ_Hot_Abort">
+            <Original>Enemies in sight! Aborting drop and returning to base.</Original>
+            <English>Enemies in sight! Aborting drop and returning to base.</English>
+            <French>Ennemis en vue ! Annulation du largage et retour à la base.</French>
+            <Spanish>¡Enemigos a la vista! Abortando lanzamiento y regresando a base.</Spanish>
+            <Italian>Nemici in vista! Lancio annullato e ritorno alla base.</Italian>
+            <German>Feinde in Sicht! Abwurf abgebrochen, Rückkehr zur Basis.</German>
+            <Polish>Wróg w zasięgu wzroku! Przerwanie zrzutu i powrót do bazy.</Polish>
+            <Russian>Враги в поле зрения! Отмена сброса и возвращение на базу.</Russian>
+            <Turkish>Düşman görüldü! Bırakma iptal ediliyor ve üsse dönülüyor.</Turkish>
+            <Japanese>敵を発見！投下を中止し、基地に帰還します。</Japanese>
+            <Korean>적 발견! 투하를 취소하고 기지로 복귀합니다.</Korean>
+            <Chinese>发现敌人！取消空投并返回基地。</Chinese>
+        </Key>
         <Key ID="STR_LL_Support_Ammo">
-            <Original>Support: Resupply</Original>
-            <English>Support: Resupply</English>
-            <French>Soutien : Ravitaillement</French>
-            <Spanish>Apoyo: Reabastecimiento</Spanish>
-            <Italian>Supporto: Rifornimento</Italian>
-            <German>Unterstützung: Nachschub</German>
-            <Polish>Wsparcie: Zaopatrzenie</Polish>
-            <Russian>Поддержка: Пополнение</Russian>
-            <Turkish>Destek: İkmal</Turkish>
-            <Japanese>支援：補給</Japanese>
-            <Korean>지원: 재보급</Korean>
-            <Chinese>支援：补给</Chinese>
+            <Original>[HELI] Support: Resupply</Original>
+            <English>[HELI] Support: Resupply</English>
+            <French>[HELI] Soutien : Ravitaillement</French>
+            <Spanish>[HELI] Apoyo: Reabastecimiento</Spanish>
+            <Italian>[HELI] Supporto: Rifornimento</Italian>
+            <German>[HELI] Unterstützung: Nachschub</German>
+            <Polish>[HELI] Wsparcie: Zaopatrzenie</Polish>
+            <Russian>[HELI] Поддержка: Пополнение</Russian>
+            <Turkish>[HELI] Destek: İkmal</Turkish>
+            <Japanese>[HELI] 支援：補給</Japanese>
+            <Korean>[HELI] 지원: 재보급</Korean>
+            <Chinese>[HELI] 支援：补给</Chinese>
         </Key>
         <Key ID="STR_LL_Support_Vehicle">
-            <Original>Support: Light Vehicle</Original>
-            <English>Support: Light Vehicle</English>
-            <French>Soutien : Véhicule Léger</French>
-            <Spanish>Apoyo: Vehículo Ligero</Spanish>
-            <Italian>Supporto: Veicolo Leggero</Italian>
-            <German>Unterstützung: Leichtes Fahrzeug</German>
-            <Polish>Wsparcie: Lekki pojazd</Polish>
-            <Russian>Поддержка: Легкая техника</Russian>
-            <Turkish>Destek: Hafif Araç</Turkish>
-            <Japanese>支援：軽車両</Japanese>
-            <Korean>지원: 경차량</Korean>
-            <Chinese>支援：轻型载具</Chinese>
+            <Original>[HELI] Support: Light Vehicle</Original>
+            <English>[HELI] Support: Light Vehicle</English>
+            <French>[HELI] Soutien : Véhicule Léger</French>
+            <Spanish>[HELI] Apoyo: Vehículo Ligero</Spanish>
+            <Italian>[HELI] Supporto: Veicolo Leggero</Italian>
+            <German>[HELI] Unterstützung: Leichtes Fahrzeug</German>
+            <Polish>[HELI] Wsparcie: Lekki pojazd</Polish>
+            <Russian>[HELI] Поддержка: Легкая техника</Russian>
+            <Turkish>[HELI] Destek: Hafif Araç</Turkish>
+            <Japanese>[HELI] 支援：軽車両</Japanese>
+            <Korean>[HELI] 지원: 경차량</Korean>
+            <Chinese>[HELI] 支援：轻型载具</Chinese>
         </Key>
         <Key ID="STR_LL_Support_Extract">
-            <Original>Support: Extraction</Original>
-            <English>Support: Extraction</English>
-            <French>Soutien : Extraction</French>
-            <Spanish>Apoyo: Extracción</Spanish>
-            <Italian>Supporto: Estrazione</Italian>
-            <German>Unterstützung: Evakuierung</German>
-            <Polish>Wsparcie: Ewakuacja</Polish>
-            <Russian>Поддержка: Эвакуация</Russian>
-            <Turkish>Destek: Tahliye</Turkish>
-            <Japanese>支援：回収</Japanese>
-            <Korean>지원: 회수</Korean>
-            <Chinese>支援：撤离</Chinese>
+            <Original>[HELI] Support: Extraction</Original>
+            <English>[HELI] Support: Extraction</English>
+            <French>[HELI] Soutien : Extraction</French>
+            <Spanish>[HELI] Apoyo: Extracción</Spanish>
+            <Italian>[HELI] Supporto: Estrazione</Italian>
+            <German>[HELI] Unterstützung: Evakuierung</German>
+            <Polish>[HELI] Wsparcie: Ewakuacja</Polish>
+            <Russian>[HELI] Поддержка: Эвакуация</Russian>
+            <Turkish>[HELI] Destek: Tahliye</Turkish>
+            <Japanese>[HELI] 支援：回収</Japanese>
+            <Korean>[HELI] 지원: 회수</Korean>
+            <Chinese>[HELI] 支援：撤离</Chinese>
         </Key>
         <Key ID="STR_LL_Support_CAS">
-            <Original>Support: CAS</Original>
-            <English>Support: CAS</English>
-            <French>Soutien : CAS</French>
-            <Spanish>Apoyo: CAS</Spanish>
-            <Italian>Supporto: CAS</Italian>
-            <German>Unterstützung: CAS</German>
-            <Polish>Wsparcie: CAS</Polish>
-            <Russian>Поддержка: Непосредственная авиаподдержка (CAS)</Russian>
-            <Turkish>Destek: YHD (CAS)</Turkish>
-            <Japanese>支援：近接航空支援 (CAS)</Japanese>
-            <Korean>지원: 근접 항공 지원 (CAS)</Korean>
-            <Chinese>支援：空中密接支援 (CAS)</Chinese>
+            <Original>[HELI] Support: CAS</Original>
+            <English>[HELI] Support: CAS</English>
+            <French>[HELI] Soutien : CAS</French>
+            <Spanish>[HELI] Apoyo: CAS</Spanish>
+            <Italian>[HELI] Supporto: CAS</Italian>
+            <German>[HELI] Unterstützung: CAS</German>
+            <Polish>[HELI] Wsparcie: CAS</Polish>
+            <Russian>[HELI] Поддержка: Непосредственная авиаподдержка (CAS)</Russian>
+            <Turkish>[HELI] Destek: YHD (CAS)</Turkish>
+            <Japanese>[HELI] 支援：近接航空支援 (CAS)</Japanese>
+            <Korean>[HELI] 지원: 근접 항공 지원 (CAS)</Korean>
+            <Chinese>[HELI] 支援：空中密接支援 (CAS)</Chinese>
         </Key>
     </Package>
     <Package name="Player">

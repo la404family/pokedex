@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Support_Ammo">
-        <Original>Support: Resupply</Original>
-        <English>Support: Resupply</English>
-        <French>Soutien : Ravitaillement</French>
-        <Spanish>Apoyo: Reabastecimiento</Spanish>
-        <Italian>Supporto: Rifornimento</Italian>
-        <German>Unterstützung: Nachschub</German>
-        <Polish>Wsparcie: Zaopatrzenie</Polish>
-        <Russian>Поддержка: Пополнение</Russian>
-        <Turkish>Destek: İkmal</Turkish>
-        <Japanese>支援：補給</Japanese>
-        <Korean>지원: 재보급</Korean>
-        <Chinese>支援：补给</Chinese>
+        <Original>[HELI] Support: Resupply</Original>
+        <English>[HELI] Support: Resupply</English>
+        <French>[HELI] Soutien : Ravitaillement</French>
+        <Spanish>[HELI] Apoyo: Reabastecimiento</Spanish>
+        <Italian>[HELI] Supporto: Rifornimento</Italian>
+        <German>[HELI] Unterstützung: Nachschub</German>
+        <Polish>[HELI] Wsparcie: Zaopatrzenie</Polish>
+        <Russian>[HELI] Поддержка: Пополнение</Russian>
+        <Turkish>[HELI] Destek: İkmal</Turkish>
+        <Japanese>[HELI] 支援：補給</Japanese>
+        <Korean>[HELI] 지원: 재보급</Korean>
+        <Chinese>[HELI] 支援：补给</Chinese>
     </Key>
     <Key ID="STR_LL_Support_Vehicle">
-        <Original>Support: Light Vehicle</Original>
-        <English>Support: Light Vehicle</English>
-        <French>Soutien : Véhicule Léger</French>
-        <Spanish>Apoyo: Vehículo Ligero</Spanish>
-        <Italian>Supporto: Veicolo Leggero</Italian>
-        <German>Unterstützung: Leichtes Fahrzeug</German>
-        <Polish>Wsparcie: Lekki pojazd</Polish>
-        <Russian>Поддержка: Легкая техника</Russian>
-        <Turkish>Destek: Hafif Araç</Turkish>
-        <Japanese>支援：軽車両</Japanese>
-        <Korean>지원: 경차량</Korean>
-        <Chinese>支援：轻型载具</Chinese>
+        <Original>[HELI] Support: Light Vehicle</Original>
+        <English>[HELI] Support: Light Vehicle</English>
+        <French>[HELI] Soutien : Véhicule Léger</French>
+        <Spanish>[HELI] Apoyo: Vehículo Ligero</Spanish>
+        <Italian>[HELI] Supporto: Veicolo Leggero</Italian>
+        <German>[HELI] Unterstützung: Leichtes Fahrzeug</German>
+        <Polish>[HELI] Wsparcie: Lekki pojazd</Polish>
+        <Russian>[HELI] Поддержка: Легкая техника</Russian>
+        <Turkish>[HELI] Destek: Hafif Araç</Turkish>
+        <Japanese>[HELI] 支援：軽車両</Japanese>
+        <Korean>[HELI] 지원: 경차량</Korean>
+        <Chinese>[HELI] 支援：轻型载具</Chinese>
     </Key>
     <Key ID="STR_LL_Support_Extract">
-        <Original>Support: Extraction</Original>
-        <English>Support: Extraction</English>
-        <French>Soutien : Extraction</French>
-        <Spanish>Apoyo: Extracción</Spanish>
-        <Italian>Supporto: Estrazione</Italian>
-        <German>Unterstützung: Evakuierung</German>
-        <Polish>Wsparcie: Ewakuacja</Polish>
-        <Russian>Поддержка: Эвакуация</Russian>
-        <Turkish>Destek: Tahliye</Turkish>
-        <Japanese>支援：回収</Japanese>
-        <Korean>지원: 회수</Korean>
-        <Chinese>支援：撤离</Chinese>
+        <Original>[HELI] Support: Extraction</Original>
+        <English>[HELI] Support: Extraction</English>
+        <French>[HELI] Soutien : Extraction</French>
+        <Spanish>[HELI] Apoyo: Extracción</Spanish>
+        <Italian>[HELI] Supporto: Estrazione</Italian>
+        <German>[HELI] Unterstützung: Evakuierung</German>
+        <Polish>[HELI] Wsparcie: Ewakuacja</Polish>
+        <Russian>[HELI] Поддержка: Эвакуация</Russian>
+        <Turkish>[HELI] Destek: Tahliye</Turkish>
+        <Japanese>[HELI] 支援：回収</Japanese>
+        <Korean>[HELI] 지원: 회수</Korean>
+        <Chinese>[HELI] 支援：撤离</Chinese>
     </Key>
     <Key ID="STR_LL_Support_CAS">
-        <Original>Support: CAS</Original>
-        <English>Support: CAS</English>
-        <French>Soutien : CAS</French>
-        <Spanish>Apoyo: CAS</Spanish>
-        <Italian>Supporto: CAS</Italian>
-        <German>Unterstützung: CAS</German>
-        <Polish>Wsparcie: CAS</Polish>
-        <Russian>Поддержка: Непосредственная авиаподдержка (CAS)</Russian>
-        <Turkish>Destek: YHD (CAS)</Turkish>
-        <Japanese>支援：近接航空支援 (CAS)</Japanese>
-        <Korean>지원: 근접 항공 지원 (CAS)</Korean>
-        <Chinese>支援：空中密接支援 (CAS)</Chinese>
+        <Original>[HELI] Support: CAS</Original>
+        <English>[HELI] Support: CAS</English>
+        <French>[HELI] Soutien : CAS</French>
+        <Spanish>[HELI] Apoyo: CAS</Spanish>
+        <Italian>[HELI] Supporto: CAS</Italian>
+        <German>[HELI] Unterstützung: CAS</German>
+        <Polish>[HELI] Wsparcie: CAS</Polish>
+        <Russian>[HELI] Поддержка: Непосредственная авиаподдержка (CAS)</Russian>
+        <Turkish>[HELI] Destek: YHD (CAS)</Turkish>
+        <Japanese>[HELI] 支援：近接航空支援 (CAS)</Japanese>
+        <Korean>[HELI] 지원: 근접 항공 지원 (CAS)</Korean>
+        <Chinese>[HELI] 支援：空中密接支援 (CAS)</Chinese>
     </Key>
 </Keys>

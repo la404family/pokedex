@@ -10,6 +10,11 @@ if (!isServer) exitWith {};
                     params ["_unit"];
 
                     doStop _unit;
+                    _unit disableAI "FSM";
+                    _unit disableAI "TARGET";
+                    _unit disableAI "AUTOTARGET";
+                    _unit disableAI "MOVE";
+
                     _unit removeItem "FirstAidKit";
                     [_unit, "AinvPknlMstpSnonWnonDnon_medic_1"] remoteExecCall ["playMoveNow", 0];
 
@@ -18,6 +23,10 @@ if (!isServer) exitWith {};
                     if (alive _unit) then {
                         _unit setDamage 0;
                         [_unit, ""] remoteExecCall ["switchMove", 0];
+                        _unit enableAI "FSM";
+                        _unit enableAI "TARGET";
+                        _unit enableAI "AUTOTARGET";
+                        _unit enableAI "MOVE";
                         _unit doFollow (leader group _unit);
                     };
 

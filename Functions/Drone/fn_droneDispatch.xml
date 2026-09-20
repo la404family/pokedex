@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_Drone_Surveillance">
-        <Original>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</Original>
-        <English>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</English>
-        <French>&lt;t color='#FFFFFF'&gt;[DRONE] Surveillance&lt;/t&gt;</French>
-        <Spanish>&lt;t color='#FFFFFF'&gt;[DRON] Vigilancia&lt;/t&gt;</Spanish>
-        <Italian>&lt;t color='#FFFFFF'&gt;[DRONE] Sorveglianza&lt;/t&gt;</Italian>
-        <German>&lt;t color='#FFFFFF'&gt;[DROHNE] Überwachung&lt;/t&gt;</German>
-        <Polish>&lt;t color='#FFFFFF'&gt;[DRON] Obserwacja&lt;/t&gt;</Polish>
-        <Russian>&lt;t color='#FFFFFF'&gt;[ДРОН] Наблюдение&lt;/t&gt;</Russian>
-        <Turkish>&lt;t color='#FFFFFF'&gt;[DRON] Gözetleme&lt;/t&gt;</Turkish>
-        <Japanese>&lt;t color='#FFFFFF'&gt;[ドローン] 監視&lt;/t&gt;</Japanese>
-        <Korean>&lt;t color='#FFFFFF'&gt;[드론] 감시&lt;/t&gt;</Korean>
-        <Chinese>&lt;t color='#FFFFFF'&gt;[无人机] 监视&lt;/t&gt;</Chinese>
+        <Original>[DRONE] Surveillance</Original>
+        <English>[DRONE] Surveillance</English>
+        <French>[DRONE] Surveillance</French>
+        <Spanish>[DRON] Vigilancia</Spanish>
+        <Italian>[DRONE] Sorveglianza</Italian>
+        <German>[DROHNE] Überwachung</German>
+        <Polish>[DRON] Obserwacja</Polish>
+        <Russian>[ДРОН] Наблюдение</Russian>
+        <Turkish>[DRON] Gözetleme</Turkish>
+        <Japanese>[ドローン] 監視</Japanese>
+        <Korean>[드론] 감시</Korean>
+        <Chinese>[无人机] 监视</Chinese>
     </Key>
     <Key ID="STR_Drone_AlreadyActive_Wait">
         <Original>Drone déjà en mission. Attendez son retour.</Original>

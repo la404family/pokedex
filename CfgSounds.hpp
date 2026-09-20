@@ -200,10 +200,22 @@ class CfgSounds
         sound[] = {"TTS\output\STR_LL_Heli_Dispatch_Deny_EMBARQUEMENT.ogg", db+5, 1.0};
         titles[] = {0, ""};
     };
+    class STR_LL_Heli_Dispatch_Deny_HotLZ
+    {
+        name = "STR_LL_Heli_Dispatch_Deny_HotLZ";
+        sound[] = {"TTS\output\STR_LL_Heli_Dispatch_Deny_HotLZ.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
     class STR_LL_Heli_Dispatch_Deny_LIVRAISON
     {
         name = "STR_LL_Heli_Dispatch_Deny_LIVRAISON";
         sound[] = {"TTS\output\STR_LL_Heli_Dispatch_Deny_LIVRAISON.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_LL_Heli_Dispatch_Deny_NoLZ
+    {
+        name = "STR_LL_Heli_Dispatch_Deny_NoLZ";
+        sound[] = {"TTS\output\STR_LL_Heli_Dispatch_Deny_NoLZ.ogg", db+5, 1.0};
         titles[] = {0, ""};
     };
     class STR_LL_Heli_Dispatch_Deny_VEHICULE
@@ -270,6 +282,12 @@ class CfgSounds
     {
         name = "STR_LL_Heli_Msg_Killed";
         sound[] = {"TTS\output\STR_LL_Heli_Msg_Killed.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+    class STR_LL_Heli_Msg_LZ_Hot_Abort
+    {
+        name = "STR_LL_Heli_Msg_LZ_Hot_Abort";
+        sound[] = {"TTS\output\STR_LL_Heli_Msg_LZ_Hot_Abort.ogg", db+5, 1.0};
         titles[] = {0, ""};
     };
     class STR_LL_Heli_Msg_Landed_Extract

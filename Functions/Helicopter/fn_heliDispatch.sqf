@@ -12,6 +12,25 @@ if (_type == "CAS" && { time < (missionNamespace getVariable ["TAG_CAS_Cooldown_
     ["STR_LL_Heli_Dispatch_Cooldown", [_rem]] call LL_fnc_radioMessage;
 };
 
+if (_type in ["LIVRAISON", "VEHICULE", "DEBARQUEMENT", "EMBARQUEMENT"]) then {
+    private _heliports = nearestObjects [_caller, ["Land_HelipadEmpty_F", "HeliHEmpty"], 3000];
+    if (count _heliports == 0) exitWith {
+        ["STR_LL_Heli_Dispatch_Deny_NoLZ"] call LL_fnc_radioMessage;
+        _type = "ABORT";
+    };
+    
+    if (_type in ["LIVRAISON", "VEHICULE"]) then {
+        private _lzPos = getPosATL (_heliports # 0);
+        private _enemies = _lzPos nearEntities [["Man", "Car", "Tank"], 500] select { side _x == east };
+        if (count _enemies > 0) exitWith {
+            ["STR_LL_Heli_Dispatch_Deny_HotLZ"] call LL_fnc_radioMessage;
+            _type = "ABORT";
+        };
+    };
+};
+
+if (_type == "ABORT") exitWith {};
+
 if (_type == "VEHICULE" && { missionNamespace getVariable ["TAG_VehicleSupport_Delivered", false] }) exitWith {
     ["STR_LL_Heli_Dispatch_VehicleAlready"] call LL_fnc_radioMessage;
 };

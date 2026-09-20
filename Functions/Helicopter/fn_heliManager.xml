@@ -308,4 +308,18 @@
         <Korean>오류: 차량을 보낼 수 없습니다.</Korean>
         <Chinese>错误：无法送达车辆。</Chinese>
     </Key>
+    <Key ID="STR_LL_Heli_Msg_LZ_Hot_Abort">
+        <Original>Enemies in sight! Aborting drop and returning to base.</Original>
+        <English>Enemies in sight! Aborting drop and returning to base.</English>
+        <French>Ennemis en vue ! Annulation du largage et retour à la base.</French>
+        <Spanish>¡Enemigos a la vista! Abortando lanzamiento y regresando a base.</Spanish>
+        <Italian>Nemici in vista! Lancio annullato e ritorno alla base.</Italian>
+        <German>Feinde in Sicht! Abwurf abgebrochen, Rückkehr zur Basis.</German>
+        <Polish>Wróg w zasięgu wzroku! Przerwanie zrzutu i powrót do bazy.</Polish>
+        <Russian>Враги в поле зрения! Отмена сброса и возвращение на базу.</Russian>
+        <Turkish>Düşman görüldü! Bırakma iptal ediliyor ve üsse dönülüyor.</Turkish>
+        <Japanese>敵を発見！投下を中止し、基地に帰還します。</Japanese>
+        <Korean>적 발견! 투하를 취소하고 기지로 복귀합니다.</Korean>
+        <Chinese>发现敌人！取消空投并返回基地。</Chinese>
+    </Key>
 </Keys>

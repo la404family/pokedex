@@ -218,13 +218,15 @@ private _fnRTB = {
     while { count (waypoints _group) > 0 } do { deleteWaypoint [_group, 0]; };
 
     if (alive _heli) then {
+        _group setBehaviour "CARELESS";
+        _group setCombatMode "BLUE";
         _heli flyInHeight _flyHeight;
         _heli limitSpeed  300;
         private _rtbDest = _homeBase;
         private _wpRTB = _group addWaypoint [_rtbDest, 0];
         _wpRTB setWaypointType       "MOVE";
         _wpRTB setWaypointBehaviour  "CARELESS";
-        _wpRTB setWaypointCombatMode "RED";
+        _wpRTB setWaypointCombatMode "BLUE";
         _wpRTB setWaypointSpeed      "FULL";
         _group setCurrentWaypoint _wpRTB;
         _heli doMove _rtbDest;
@@ -356,11 +358,11 @@ private _fnExecDelivery = {
         false
     };
 
-    if (_type == "VEHICULE") then {
-        private _enemies = _targetPos nearEntities [["Man", "Car", "Tank"], 50] select { side _x == east };
+    if (_type in ["VEHICULE", "LIVRAISON"]) then {
+        private _enemies = _targetPos nearEntities [["Man", "Car", "Tank"], 500] select { side _x == east };
         if (count _enemies > 0) then {
             _abort = true;
-            ["STR_LL_Heli_Msg_CargoAborted"] call LL_fnc_radioMessage;
+            ["STR_LL_Heli_Msg_LZ_Hot_Abort"] call LL_fnc_radioMessage;
         };
     };
 
@@ -592,7 +594,7 @@ private _fnExecExtract = {
     _heli engineOn true;
     sleep 3;
     _group setBehaviour "CARELESS";
-    _group setCombatMode "RED";
+    _group setCombatMode "BLUE";
     _group setSpeedMode  "FULL";
     ["STR_LL_Heli_Msg_Departing"] call LL_fnc_radioMessage;
 
@@ -604,7 +606,7 @@ private _fnExecExtract = {
         private _wpVic = _group addWaypoint [_homeBase, 0];
         _wpVic setWaypointType       "MOVE";
         _wpVic setWaypointBehaviour  "CARELESS";
-        _wpVic setWaypointCombatMode "RED";
+        _wpVic setWaypointCombatMode "BLUE";
         _wpVic setWaypointSpeed      "FULL";
         _heli doMove _homeBase;
         _heli lock 2;

@@ -302,4 +302,32 @@
         <Korean>헬기가 바쁩니다 (임무 %1 진행 중). 요청이 거부되었습니다.</Korean>
         <Chinese>直升机正忙（%1 任务进行中）。请求被拒绝。</Chinese>
     </Key>
+    <Key ID="STR_LL_Heli_Dispatch_Deny_HotLZ">
+        <Original>Negative, the landing zone is compromised by enemy forces.</Original>
+        <English>Negative, the landing zone is compromised by enemy forces.</English>
+        <French>Négatif, la zone d'atterrissage est compromise par des forces ennemies.</French>
+        <Spanish>Negativo, la zona de aterrizaje está comprometida por fuerzas enemigas.</Spanish>
+        <Italian>Negativo, la zona di atterraggio è compromessa dalle forze nemiche.</Italian>
+        <German>Negativ, die Landezone ist durch feindliche Truppen kompromittiert.</German>
+        <Polish>Odmowa, strefa lądowania jest opanowana przez siły wroga.</Polish>
+        <Russian>Отказ, зона высадки скомпрометирована силами противника.</Russian>
+        <Turkish>Olumsuz, iniş bölgesi düşman kuvvetleri tarafından ele geçirilmiş.</Turkish>
+        <Japanese>拒否、着陸地点は敵軍によって危険にさらされています。</Japanese>
+        <Korean>거부됨, 착륙 지점이 적군에 의해 위험합니다.</Korean>
+        <Chinese>拒绝，着陆区被敌军渗透。</Chinese>
+    </Key>
+    <Key ID="STR_LL_Heli_Dispatch_Deny_NoLZ">
+        <Original>Negative, no suitable landing zone found in the area.</Original>
+        <English>Negative, no suitable landing zone found in the area.</English>
+        <French>Négatif, aucune zone d'atterrissage appropriée trouvée dans le secteur.</French>
+        <Spanish>Negativo, no se ha encontrado una zona de aterrizaje adecuada en la zona.</Spanish>
+        <Italian>Negativo, nessuna zona di atterraggio adatta trovata nell'area.</Italian>
+        <German>Negativ, keine geeignete Landezone in dem Bereich gefunden.</German>
+        <Polish>Odmowa, nie znaleziono odpowiedniej strefy lądowania w okolicy.</Polish>
+        <Russian>Отказ, подходящая зона высадки в этом районе не найдена.</Russian>
+        <Turkish>Olumsuz, bölgede uygun bir iniş bölgesi bulunamadı.</Turkish>
+        <Japanese>拒否、周辺に適切な着陸地点が見つかりません。</Japanese>
+        <Korean>거부됨, 해당 지역에서 적절한 착륙 지점을 찾지 못했습니다.</Korean>
+        <Chinese>拒绝，在该区域未找到合适的着陆区。</Chinese>
+    </Key>
 </Keys>

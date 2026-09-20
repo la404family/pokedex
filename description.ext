@@ -16,6 +16,11 @@ class CfgFunctions
             file = "Functions\Spawn";
             class spawn_main_menu {};
         };
+        class Medical
+        {
+            file = "Functions\Medical";
+            class aiHealSelf {};
+        };
         class Task
         {
             file = "Functions\Task";
@@ -53,6 +58,12 @@ class CfgFunctions
             class setupUVO {};
             class initLocal {};
         };
+        class Briefing
+        {
+            file = "Functions\Briefing";
+            class initBriefing {};
+            class initContext {};
+        };
         class Helicopter
         {
             file = "Functions\Helicopter";
@@ -60,6 +71,12 @@ class CfgFunctions
             class heliDispatch {};
             class initSupport {};
             class addResupplyAction {};
+        };
+        class Drone
+        {
+            file = "Functions\Drone";
+            class droneManager {};
+            class droneDispatch {};
         };
         class UI
         {
@@ -107,6 +124,16 @@ class CfgCommunicationMenu
         submenu = "";
         expression = "['CAS', _pos, _caller, 4] call LL_fnc_heliDispatch;";
         icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\casheli_ca.paa";
+        cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+        enable = "1";
+        removeAfterExpressionCall = 0;
+    };
+    class Support_Drone
+    {
+        text = "$STR_Drone_Surveillance";
+        submenu = "";
+        expression = "['SURVEILLANCE', _pos, _caller] call LL_fnc_droneDispatch;";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\radio_ca.paa";
         cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
         enable = "1";
         removeAfterExpressionCall = 0;
