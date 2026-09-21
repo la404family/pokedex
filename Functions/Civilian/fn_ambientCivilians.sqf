@@ -41,6 +41,8 @@ if (count _outdoorNodes == 0) then { _outdoorNodes = _nodes; };
 private _spawnCount = (count _nodes) min _maxCivs;
 private _spawnedCivs = [];
 
+private _globalCivs = missionNamespace getVariable ["MISSION_var_ambientCivs", []];
+
 for "_i" from 1 to _spawnCount do {
     private _node = selectRandom _nodes;
     private _pos = getPosATL _node;
@@ -93,26 +95,17 @@ for "_i" from 1 to _spawnCount do {
     [_civ] spawn { sleep 3; (_this select 0) allowDamage true; };
     
     _spawnedCivs pushBack _civ;
+    _globalCivs pushBack _civ;
     sleep 0.1;
 };
+
+missionNamespace setVariable ["MISSION_var_ambientCivs", _globalCivs];
 
 {
     [_x, _outdoorNodes, _buildingNodes, _otherZonePos] spawn {
         params ["_unit", "_outdoorNodes", "_buildingNodes", "_otherZonePos"];
         
-        while { alive _unit } do {
-            if (!(_unit getVariable ["LL_hasBeenSeen", false])) then {
-                if (player distance2D _unit < 800) then {
-                    _unit setVariable ["LL_hasBeenSeen", true];
-                };
-            } else {
-                if (player distance2D _unit > 1000) exitWith {
-                    deleteVehicle _unit;
-                };
-            };
-            
-            if (!alive _unit) exitWith {};
-            
+        while { !isNull _unit && { alive _unit } } do {
             private _fleeTime = _unit getVariable ["LL_fleeTime", 0];
             private _isFleeing = time < _fleeTime;
             
@@ -167,10 +160,10 @@ for "_i" from 1 to _spawnCount do {
                 private _timeout = time + 180;
                 waitUntil {
                     sleep 2;
-                    !alive _unit || {(_unit distance2D _targetPos) < 3} || {time > _timeout} || {time < _unit getVariable ["LL_fleeTime", 0] && !_isFleeing}
+                    isNull _unit || {!alive _unit} || {(_unit distance2D _targetPos) < 3} || {time > _timeout} || {time < _unit getVariable ["LL_fleeTime", 0] && !_isFleeing}
                 };
                 
-                if (alive _unit) then {
+                if (!isNull _unit && { alive _unit }) then {
                     if (time < _unit getVariable ["LL_fleeTime", 0]) then {
                         _unit setUnitPos "DOWN";
                         sleep (5 + random 15);
@@ -193,3 +186,32 @@ for "_i" from 1 to _spawnCount do {
         };
     };
 } forEach _spawnedCivs;
+
+if (isNil "MISSION_var_civDespawnLoopStarted") then {
+    MISSION_var_civDespawnLoopStarted = true;
+    
+    [] spawn {
+        waitUntil {
+            sleep 2;
+            private _targetPos = missionNamespace getVariable ["MISSION_var_targetPos", [0,0,0]];
+            !(_targetPos isEqualTo [0,0,0]) && { (player distance2D _targetPos) <= 800 }
+        };
+        
+        while { true } do {
+            sleep 120;
+            private _allCivs = missionNamespace getVariable ["MISSION_var_ambientCivs", []];
+            _allCivs = _allCivs select { !isNull _x && { alive _x } };
+            
+            private _remainingCivs = [];
+            {
+                if ((player distance2D _x) >= 1500) then {
+                    deleteVehicle _x;
+                } else {
+                    _remainingCivs pushBack _x;
+                };
+            } forEach _allCivs;
+            
+            missionNamespace setVariable ["MISSION_var_ambientCivs", _remainingCivs];
+        };
+    };
+};

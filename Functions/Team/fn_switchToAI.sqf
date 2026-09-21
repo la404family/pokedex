@@ -27,6 +27,7 @@ if (count _livingUnits > 0) then {
         _group selectLeader _targetAI;
         titleCut ["", "BLACK IN", 2];
         [_targetAI] call LL_fnc_addRoeActions;
+        [] call LL_fnc_initSupport;
     };
 } else {
     [_deadUnit] spawn {

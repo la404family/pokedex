@@ -508,76 +508,7 @@ private _fnExecExtract = {
     _heli animateDoor   ["door_rear_source", 1];
     ["STR_LL_Heli_Msg_Landed_Extract"] call LL_fnc_radioMessage;
 
-    private _task02bHostage   = missionNamespace getVariable ["LL_Task02b_Hostage", objNull];
-    private _task00Hostage    = missionNamespace getVariable ["LL_Task00_Hostage", objNull];
-    private _task06HVT        = missionNamespace getVariable ["LL_Task06_HVT", objNull];
-
-    private _taskInProgress   = missionNamespace getVariable ["LL_g_taskInProgress", false];
-
-    private _isTask02bExtract = _taskInProgress && { !isNull _task02bHostage && { alive _task02bHostage } && { !(missionNamespace getVariable ["LL_Task02b_Freed_Done", false]) } };
-    private _isTask00Extract  = _taskInProgress && { !isNull _task00Hostage && { alive _task00Hostage } };
-    private _isTask06Extract  = _taskInProgress && { !isNull _task06HVT && { alive _task06HVT } };
-
-    private _ejectEH = -1;
-    if (_isTask02bExtract || _isTask00Extract || _isTask06Extract) then {
-        _ejectEH = _heli addEventHandler ["GetIn", {
-            params ["_vehicle", "_role", "_unit"];
-            private _h00 = missionNamespace getVariable ["LL_Task00_Hostage", objNull];
-            private _h2b = missionNamespace getVariable ["LL_Task02b_Hostage", objNull];
-            private _h06 = missionNamespace getVariable ["LL_Task06_HVT", objNull];
-
-            if (_unit != _h00 && _unit != _h2b && _unit != _h06 && { group _unit != group driver _vehicle }) then {
-                moveOut _unit;
-                if (isPlayer _unit) then {
-                    ["STR_LL_Heli_Msg_Extract_Players_Exit_Warning"] call LL_fnc_radioMessage;
-                };
-            };
-        }];
-    };
-
-    private _timeout     = time + 600;
-    private _shouldLeave = false;
-    waitUntil {
-        sleep 3;
-        private _allHumans     = allPlayers select { alive _x };
-        private _playersInHeli = { isPlayer _x && { alive _x } } count (crew _heli);
-
-        if (_isTask02bExtract || _isTask00Extract || _isTask06Extract) then {
-
-            private _hostage = objNull;
-            if (_isTask02bExtract) then { _hostage = missionNamespace getVariable ["LL_Task02b_Hostage", objNull]; };
-            if (_isTask00Extract) then { _hostage = missionNamespace getVariable ["LL_Task00_Hostage", objNull]; };
-            if (_isTask06Extract) then { _hostage = missionNamespace getVariable ["LL_Task06_HVT", objNull]; };
-
-            {
-                if (_x != _hostage && { group _x != group driver _heli }) then {
-                    moveOut _x;
-                };
-            } forEach (crew _heli);
-
-            if (!isNull _hostage && { !alive _hostage }) then {
-                _shouldLeave = true;
-            };
-
-            if (!isNull _hostage && { vehicle _hostage == _heli }) then { _shouldLeave = true; };
-
-            if (time > _timeout) then { _shouldLeave = true; };
-
-            if (!isNull _hostage && { vehicle _hostage != _heli }) then {
-            };
-        } else {
-            if (_playersInHeli >= count _allHumans && { _playersInHeli > 0 }) then {
-                _shouldLeave = true;
-            };
-            if (time > _timeout && { _playersInHeli == 0 }) then { _shouldLeave = true; };
-        };
-
-        !alive _heli || _shouldLeave || call _fnAborted
-    };
-
-    if (_ejectEH >= 0) then {
-        _heli removeEventHandler ["GetIn", _ejectEH];
-    };
+    [_heli] call LL_fnc_extraction_secure;
 
     if (call _fnAborted) exitWith {
         false
@@ -603,14 +534,21 @@ private _fnExecExtract = {
     if (count _boardedPlayers > 0) then {
 
         _heli flyInHeight _flyHeight;
-        private _wpVic = _group addWaypoint [_homeBase, 0];
+        
+        // Prolongement du point de destination pour ne pas qu'il s'arrête
+        private _farAway = _heli getPos [10000, _heli getDir _homeBase];
+        private _wpVic = _group addWaypoint [_farAway, 0];
         _wpVic setWaypointType       "MOVE";
         _wpVic setWaypointBehaviour  "CARELESS";
         _wpVic setWaypointCombatMode "BLUE";
         _wpVic setWaypointSpeed      "FULL";
-        _heli doMove _homeBase;
+        _heli doMove _farAway;
         _heli lock 2;
-        sleep 25;
+        
+        // Musique et attente finale
+        { 0 fadeMusic 1; playMusic "Music_Track_02"; } remoteExec ["call", 0];
+        sleep 75;
+        
         if (alive _heli) then {
             ["MissionSuccess", true, true] call BIS_fnc_endMission;
         };

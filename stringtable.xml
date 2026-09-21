@@ -2521,6 +2521,57 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <English>Extraction</English>
             <French>Extraction</French>
         </Key>
+        <Key ID="STR_LL_Task_D_HVT_Title">
+            <Original>Eliminate HVT Commander</Original>
+            <English>Eliminate HVT Commander</English>
+            <French>Éliminer le commandant HVT</French>
+            <Spanish>Eliminar al comandante HVT</Spanish>
+            <German>HVT-Kommandanten eliminieren</German>
+            <Italian>Elimina il comandante HVT</Italian>
+            <Polish>Wyeliminuj dowódcę HVT</Polish>
+            <Portuguese>Eliminar o comandante HVT</Portuguese>
+            <Russian>Ликвидировать командира HVT</Russian>
+            <Czech>Eliminovat velitele HVT</Czech>
+            <Korean>HVT 지휘관 제거</Korean>
+            <Japanese>HVT指揮官の排除</Japanese>
+            <Chinese>消除 HVT 指揮官</Chinese>
+            <Chinesesimp>消除 HVT 指挥官</Chinesesimp>
+            <Turkish>HVT Komutanını Etkisiz Hale Getir</Turkish>
+        </Key>
+        <Key ID="STR_LL_Task_D_HVT_Desc">
+            <Original>Locate and eliminate the insurgent HVT commander operating in the sector.</Original>
+            <English>Locate and eliminate the insurgent HVT commander operating in the sector.</English>
+            <French>Localisez et éliminez le commandant insurgé HVT opérant dans le secteur.</French>
+            <Spanish>Localice y elimine al comandante insurgente HVT que opera en el sector.</Spanish>
+            <German>Lokalisieren und eliminieren Sie den im Sektor operierenden HVT-Insurgentenkommandanten.</German>
+            <Italian>Localizza ed elimina il comandante insorto HVT operativo nel settore.</Italian>
+            <Polish>Zlokalizuj i wyeliminuj dowódcę rebeliantów HVT działającego w sektorze.</Polish>
+            <Portuguese>Localize e elimine o comandante insurgente HVT a operar no sector.</Portuguese>
+            <Russian>Обнаружить и ликвидировать командира повстанцев HVT, действующего в секторе.</Russian>
+            <Czech>Lokalizujte a eliminujte velitele povstalců HVT působícího v sektoru.</Czech>
+            <Korean>해당 구역에서 활동 중인 반군 HVT 지휘관을 위치 추적하고 제거하십시오.</Korean>
+            <Japanese>セクター内で活動中の反乱軍HVT指揮官を特定し、排除せよ。</Japanese>
+            <Chinese>找到並消除在該區域活動的叛軍 HVT 指揮官。</Chinese>
+            <Chinesesimp>找到并消除在该区域活动的叛军 HVT 指挥官。</Chinesesimp>
+            <Turkish>Sektörde faaliyet gösteren isyancı HVT komutanını tespit edin ve etkisiz hale getirin.</Turkish>
+        </Key>
+        <Key ID="STR_LL_Task_D_HVT_Marker">
+            <Original>HVT Target</Original>
+            <English>HVT Target</English>
+            <French>Cible HVT</French>
+            <Spanish>Objetivo HVT</Spanish>
+            <German>HVT-Ziel</German>
+            <Italian>Obiettivo HVT</Italian>
+            <Polish>Cel HVT</Polish>
+            <Portuguese>Alvo HVT</Portuguese>
+            <Russian>Цель HVT</Russian>
+            <Czech>Cíl HVT</Czech>
+            <Korean>HVT 표적</Korean>
+            <Japanese>HVTターゲット</Japanese>
+            <Chinese>HVT 目標</Chinese>
+            <Chinesesimp>HVT 目标</Chinesesimp>
+            <Turkish>HVT Hedefi</Turkish>
+        </Key>
         <Key ID="STR_LL_Diary_Task00_Title">
             <Original>OPORD : Opération Broken Cage (Sauvetage de Captif)</Original>
             <French>OPORD : Opération Broken Cage (Sauvetage de Captif)</French>

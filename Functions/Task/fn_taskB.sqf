@@ -1,13 +1,9 @@
-/*
-    LL_fnc_taskB
-    Protéger la population civile
-*/
+if (!isServer) exitWith {};
+
 params [
     ["_locMarker", "", [""]],
     ["_optionalTasks", [], [[]]]
 ];
-
-if (!isServer) exitWith {};
 
 private _targetPos = getMarkerPos _locMarker;
 
@@ -27,21 +23,37 @@ private _targetPos = getMarkerPos _locMarker;
     false
 ] call BIS_fnc_taskCreate;
 
-// -- LOGIQUE DE SPAWN DES CIVILS --
-// (A adapter : on spawn 3 civils près de l'objectif par exemple)
+missionNamespace setVariable ["LL_g_civKilledByPlayers", false, true];
+
 private _civGrp = createGroup [civilian, true];
 private _civList = [];
+
 for "_i" from 1 to 3 do {
-    private _spawnPos = _targetPos getPos [50 + (random 100), random 360];
+    private _spawnPos = _targetPos getPos [30 + (random 80), random 360];
+    _spawnPos set [2, (_spawnPos select 2) + 0.2];
+
     private _civ = _civGrp createUnit ["UK3CB_TKC_C_CIV", _spawnPos, [], 0, "NONE"];
+    _civ setPosATL _spawnPos;
     _civ allowDamage false;
+
+    [_civ, false, false] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
+
+    _civ addEventHandler ["Killed", {
+        params ["_unit", "_killer", "_instigator"];
+        if (isNull _instigator) then { _instigator = _killer; };
+        if (!isNull _instigator && { side (group _instigator) == west || _instigator in (allPlayers + (switchableUnits select { !isNull _x })) }) then {
+            missionNamespace setVariable ["LL_g_civKilledByPlayers", true, true];
+        };
+    }];
+
     _civList pushBack _civ;
 };
-sleep 3;
-{ _x allowDamage true; } forEach _civList;
 
-// -- LANCEMENT DES TACHES OPTIONNELLES --
-// Puisque le joueur est sur zone, on peut initialiser les tâches optionnelles choisies
+[_civList] spawn {
+    sleep 3;
+    { if (!isNull _x) then { _x allowDamage true; }; } forEach (_this select 0);
+};
+
 {
     private _taskId = _x;
     switch (_taskId) do {
@@ -57,18 +69,14 @@ sleep 3;
     };
 } forEach _optionalTasks;
 
-// -- VERIFICATION DE FIN DE MISSION (EXTRACTION) --
-// On attend que le processus de fin soit enclenché (ex: hélico sur le point de décoller)
-// Nous utiliserons une variable globale (ex: LL_g_extractionStarted)
 waitUntil {
-    sleep 3;
+    sleep 1;
     missionNamespace getVariable ["LL_g_extractionStarted", false]
 };
 
-// Vérification si au moins un civil lié à cette tâche est mort
-private _civDeadCount = { !alive _x } count _civList;
+private _hasBavure = missionNamespace getVariable ["LL_g_civKilledByPlayers", false];
 
-if (_civDeadCount == 0) then {
+if (!_hasBavure) then {
     ["task_mandatory_civ", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 } else {
     ["task_mandatory_civ", "FAILED", true] call BIS_fnc_taskSetState;

@@ -358,6 +358,7 @@ if (_mode == "LAUNCH") exitWith {
     simulWeatherSync;
     
     private _targetPos = getMarkerPos _selectedLocationMarker;
+    missionNamespace setVariable ["MISSION_var_targetPos", _targetPos];
     
     private _allMarkers = allMapMarkers select { (_x select [0, 7]) == "marker_" };
     {
@@ -406,9 +407,11 @@ if (_mode == "LAUNCH") exitWith {
         };
     };
 
-    // Lancement de la vie civile ambiante (Immersive) avec gestion des voyageurs inter-zones (80% Locaux / 20% Voyageurs)
-    [_dropPosCenter, 400, 15, _targetPos] spawn LL_fnc_ambientCivilians; // LZ (Départ)
-    [_targetPos, 400, 30, _dropPosCenter] spawn LL_fnc_ambientCivilians; // Objectif (Arrivée)
+    [_dropPosCenter, 400, 15, _targetPos] spawn LL_fnc_ambientCivilians;
+    [_targetPos, 400, 30, _dropPosCenter] spawn LL_fnc_ambientCivilians;
+
+    [_dropPosCenter] spawn LL_fnc_ambientSheep;
+    [_targetPos] spawn LL_fnc_ambientSheep;
 
     // Lancement du gestionnaire dynamique des tâches
     [_selectedLocationMarker, _selectedInsertion, _selectedTasks] spawn LL_fnc_task_generator;

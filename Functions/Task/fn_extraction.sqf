@@ -300,9 +300,11 @@ _pilot setBehaviour "CARELESS";
 
 [_heli] call LL_fnc_extraction_secure;
 
+missionNamespace setVariable ["LL_g_extractionStarted", true, true];
+
 sleep 2;
 
-{ 0 fadeMusic 1; playMusic "LeadTrack01_F"; } remoteExec ["call", 0];
+{ 0 fadeMusic 1; playMusic "Music_Track_02"; } remoteExec ["call", 0];
 
 [_heli, ["doorLB", 0]] remoteExec ["animateDoor", 0, _heli];
 [_heli, ["doorRB", 0]] remoteExec ["animateDoor", 0, _heli];
@@ -326,8 +328,8 @@ _pilot setBehaviour "CARELESS";
 
 private _endDir = random 360;
 private _endPos = [
-    (_lzPos select 0) + 3500 * sin _endDir,
-    (_lzPos select 1) + 3500 * cos _endDir,
+    (_lzPos select 0) + 10000 * sin _endDir,
+    (_lzPos select 1) + 10000 * cos _endDir,
     200
 ];
 
@@ -405,11 +407,7 @@ _heli doMove _endPos;
 
 ["task_extraction", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 
-private _tTimeout = time + 60;
-waitUntil {
-    sleep 1;
-    (_heli distance2D _lzPos) > 1200 || time > _tTimeout
-};
+sleep 75;
 
 private _endType = "End1";
 private _win = true;

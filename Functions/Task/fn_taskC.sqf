@@ -1,11 +1,3 @@
-/*
-    LL_fnc_taskC
-    Extraction en toute sécurité
-*/
-params [
-    ["_locMarker", "", [""]]
-];
-
 if (!isServer) exitWith {};
 
 [
@@ -24,26 +16,30 @@ if (!isServer) exitWith {};
     false
 ] call BIS_fnc_taskCreate;
 
-// -- VERIFICATION DE FIN DE MISSION (EXTRACTION) --
-// On attend que l'hélicoptère d'extraction décolle ou que la mission se termine
 waitUntil {
-    sleep 3;
+    sleep 1;
     missionNamespace getVariable ["LL_g_extractionStarted", false]
 };
 
-// Vérifier si toute l'équipe de départ est en vie
-// Pour cet exemple, on regarde tous les joueurs (ou toutes les unités jouables)
-private _allPlayers = playableUnits + (switchableUnits select { _x != player });
-if (isMultiplayer) then {
-    _allPlayers = playableUnits;
-} else {
-    // Solo
-    _allPlayers = units group player;
+private _unitsToCheck = [
+    missionNamespace getVariable ["player_0", objNull],
+    missionNamespace getVariable ["player_1", objNull],
+    missionNamespace getVariable ["player_2", objNull],
+    missionNamespace getVariable ["player_3", objNull],
+    missionNamespace getVariable ["player_4", objNull],
+    missionNamespace getVariable ["player_5", objNull]
+] select { !isNull _x };
+
+if (count _unitsToCheck == 0) then {
+    _unitsToCheck = (playableUnits + switchableUnits) select { !isNull _x };
+};
+if (count _unitsToCheck == 0) then {
+    _unitsToCheck = (allPlayers) select { !isNull _x };
 };
 
-private _deadTeammates = { !alive _x } count _allPlayers;
+private _deadCount = { !alive _x } count _unitsToCheck;
 
-if (_deadTeammates == 0) then {
+if (_deadCount == 0) then {
     ["task_mandatory_ext", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 } else {
     ["task_mandatory_ext", "FAILED", true] call BIS_fnc_taskSetState;

@@ -32,6 +32,7 @@ class CfgFunctions
             class taskA {};
             class taskB {};
             class taskC {};
+            class taskCleanup {};
             class taskD_captive {};
             class taskD_hvt {};
             class taskD_defuse {};
@@ -41,6 +42,8 @@ class CfgFunctions
             class taskD_documents {};
             class taskD_tigris {};
             class taskD_militia {};
+            class extraction {};
+            class extraction_secure {};
         };
         class Environment
         {
@@ -65,6 +68,7 @@ class CfgFunctions
         {
             file = "Functions\Civilian";
             class ambientCivilians {};
+            class ambientSheep {};
             class initTakistaniDB {};
             class applyTakistaniIdentity {};
             class spawnPresence {};
