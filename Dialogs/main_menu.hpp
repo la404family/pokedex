@@ -24,6 +24,45 @@ class RscText
     tooltipColorColor[] = {0, 0, 0, 1};
 };
 
+class RscCheckBox
+{
+    idc = -1;
+    type = 77;
+    style = 0;
+    checked = 0;
+    x = "0.375 * safezoneW + safezoneX";
+    y = "0.36 * safezoneH + safezoneY";
+    w = "0.025 * safezoneW";
+    h = "0.04 * safezoneH";
+    color[] = {1, 1, 1, 0.7};
+    colorFocused[] = {1, 1, 1, 1};
+    colorHover[] = {1, 1, 1, 1};
+    colorPressed[] = {1, 1, 1, 1};
+    colorDisabled[] = {1, 1, 1, 0.2};
+    colorBackground[] = {0, 0, 0, 0};
+    colorBackgroundFocused[] = {0, 0, 0, 0};
+    colorBackgroundHover[] = {0, 0, 0, 0};
+    colorBackgroundPressed[] = {0, 0, 0, 0};
+    colorBackgroundDisabled[] = {0, 0, 0, 0};
+    textureChecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureUnchecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureFocusedChecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureFocusedUnchecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureHoverChecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureHoverUnchecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    texturePressedChecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    texturePressedUnchecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureDisabledChecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureDisabledUnchecked = "\A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    tooltipColorText[] = {1, 1, 1, 1};
+    tooltipColorBox[] = {1, 1, 1, 1};
+    tooltipColorShade[] = {0, 0, 0, 0.65};
+    soundEnter[] = {"", 0.1, 1};
+    soundPush[] = {"", 0.1, 1};
+    soundClick[] = {"", 0.1, 1};
+    soundEscape[] = {"", 0.1, 1};
+};
+
 class RscButton
 {
     deletable = 0;
@@ -676,7 +715,7 @@ class Refour_Main_Menu_Dialog
         class MissionListHeader: RscText
         {
             idc = -1;
-            text = "$STR_LABEL_SELECT_MISSION";
+            text = "$STR_MAIN_MENU_OBJECTIVES";
             x = safezoneX + (0.03 * safezoneW);
             y = safezoneY + (0.10 * safezoneH);
             w = 0.28 * safezoneW;
@@ -684,38 +723,210 @@ class Refour_Main_Menu_Dialog
             colorBackground[] = {0.15, 0.3, 0.5, 1};
         };
 
-        class MissionListBox: RscListBox
-        {
+        // --- TÂCHES OBLIGATOIRES ---
+        class CB_Man1: RscCheckBox {
             idc = 7100;
             x = safezoneX + (0.03 * safezoneW);
             y = safezoneY + (0.14 * safezoneH);
-            w = 0.28 * safezoneW;
-            h = 0.30 * safezoneH;
-            onLBSelChanged = "['SELECT_MISSION', _this] call LL_fnc_spawn_main_menu;";
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Man1: RscText {
+            idc = -1;
+            text = "$STR_TASK_MAN1";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.14 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+            colorText[] = {0.6, 0.6, 0.6, 1};
         };
 
-        class MissionTitleText: RscText
-        {
+        class CB_Man2: RscCheckBox {
             idc = 7101;
-            text = "";
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.17 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Man2: RscText {
+            idc = -1;
+            text = "$STR_TASK_MAN2";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.17 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+            colorText[] = {0.6, 0.6, 0.6, 1};
+        };
+
+        class CB_Man3: RscCheckBox {
+            idc = 7102;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.20 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Man3: RscText {
+            idc = -1;
+            text = "$STR_TASK_MAN3";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.20 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+            colorText[] = {0.6, 0.6, 0.6, 1};
+        };
+
+        class DividerMandatory: RscText {
+            idc = -1;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.235 * safezoneH);
+            w = 0.28 * safezoneW;
+            h = 0.002 * safezoneH;
+            colorBackground[] = {1, 1, 1, 0.2};
+        };
+
+        // --- TÂCHES OPTIONNELLES ---
+        class CB_Opt1: RscCheckBox {
+            idc = 7110;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.25 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt1: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT1";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.25 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt2: RscCheckBox {
+            idc = 7111;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.28 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt2: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT2";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.28 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt3: RscCheckBox {
+            idc = 7112;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.31 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt3: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT3";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.31 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt4: RscCheckBox {
+            idc = 7113;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.34 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt4: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT4";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.34 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt5: RscCheckBox {
+            idc = 7114;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.37 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt5: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT5";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.37 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt6: RscCheckBox {
+            idc = 7115;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.40 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt6: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT6";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.40 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt7: RscCheckBox {
+            idc = 7116;
+            x = safezoneX + (0.03 * safezoneW);
+            y = safezoneY + (0.43 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt7: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT7";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.43 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+
+        class CB_Opt8: RscCheckBox {
+            idc = 7117;
             x = safezoneX + (0.03 * safezoneW);
             y = safezoneY + (0.46 * safezoneH);
-            w = 0.28 * safezoneW;
-            h = 0.04 * safezoneH;
-            colorBackground[] = {0.2, 0.4, 0.6, 1};
-            style = 0x02;
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt8: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT8";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.46 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
         };
 
-        class MissionDescText: RscText
-        {
-            idc = 7102;
-            text = "";
+        class CB_Opt9: RscCheckBox {
+            idc = 7118;
             x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.51 * safezoneH);
-            w = 0.28 * safezoneW;
-            h = 0.33 * safezoneH;
-            style = 0x10;
-            lineSpacing = 1;
+            y = safezoneY + (0.49 * safezoneH);
+            w = 0.015 * safezoneW;
+            h = 0.025 * safezoneH;
+        };
+        class Txt_Opt9: RscText {
+            idc = -1;
+            text = "$STR_TASK_OPT9";
+            x = safezoneX + (0.05 * safezoneW);
+            y = safezoneY + (0.49 * safezoneH);
+            w = 0.26 * safezoneW;
+            h = 0.025 * safezoneH;
         };
 
         class EnvHeader: RscText
@@ -742,7 +953,7 @@ class Refour_Main_Menu_Dialog
         {
             idc = 7200;
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.17 * safezoneH);
+            y = safezoneY + (0.165 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.035 * safezoneH;
             onLBSelChanged = "['UPDATE_ENV_PREVIEW', _this] spawn LL_fnc_spawn_main_menu;";
@@ -753,7 +964,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_LABEL_CLOUDS";
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.21 * safezoneH);
+            y = safezoneY + (0.205 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -761,7 +972,7 @@ class Refour_Main_Menu_Dialog
         {
             idc = 7201;
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.24 * safezoneH);
+            y = safezoneY + (0.23 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.035 * safezoneH;
             onLBSelChanged = "['UPDATE_ENV_PREVIEW', _this] spawn LL_fnc_spawn_main_menu;";
@@ -772,7 +983,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_LABEL_FOG";
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.26 * safezoneH);
+            y = safezoneY + (0.27 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -780,7 +991,7 @@ class Refour_Main_Menu_Dialog
         {
             idc = 7202;
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.285 * safezoneH);
+            y = safezoneY + (0.295 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.03 * safezoneH;
             onLBSelChanged = "['UPDATE_ENV_PREVIEW', _this] spawn LL_fnc_spawn_main_menu;";
@@ -791,7 +1002,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_LABEL_VEHICLE_SELECT";
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.32 * safezoneH);
+            y = safezoneY + (0.335 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -799,7 +1010,7 @@ class Refour_Main_Menu_Dialog
         {
             idc = 7204;
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.345 * safezoneH);
+            y = safezoneY + (0.36 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.03 * safezoneH;
             onLBSelChanged = "['SELECT_VEHICLE', _this] spawn LL_fnc_spawn_main_menu;";
@@ -810,7 +1021,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_LABEL_VEHICLE_CAM";
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.385 * safezoneH);
+            y = safezoneY + (0.40 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.025 * safezoneH;
             colorBackground[] = {0.15, 0.3, 0.5, 1};
@@ -821,7 +1032,7 @@ class Refour_Main_Menu_Dialog
             idc = 7203;
             text = "#(argb,512,512,1)r2t(rendertarget8,1.0)";
             x = safezoneX + (0.35 * safezoneW);
-            y = safezoneY + (0.415 * safezoneH);
+            y = safezoneY + (0.43 * safezoneH);
             w = 0.28 * safezoneW;
             h = 0.435 * safezoneH;
         };

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_Man1_Title">
+        <Original>Proceed to Location</Original>
+        <English>Proceed to Location</English>
+        <French>Se rendre sur les lieux</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man1_Desc">
+        <Original>Reach the objective area (550m perimeter) to start the operations.</Original>
+        <English>Reach the objective area (550m perimeter) to start the operations.</English>
+        <French>Atteignez la zone d'opération (périmètre de 550m) pour débuter l'intervention.</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man1_Marker">
+        <Original>Insertion</Original>
+        <English>Insertion</English>
+        <French>Insertion</French>
+    </Key>
+</Keys>

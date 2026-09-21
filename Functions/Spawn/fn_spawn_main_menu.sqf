@@ -23,24 +23,26 @@ if (_mode == "OPEN") exitWith {
     waitUntil { !isNull (findDisplay 7000) };
     private _display = findDisplay 7000;
     
-    private _listCtrl = _display displayCtrl 7100;
-    lbClear _listCtrl;
-    
-    private _dummyMissions = [
-        ["1", "Mission 1 : Reconnaissance Tactique"],
-        ["2", "Mission 2 : Destruction du Dépôt Radio"],
-        ["3", "Mission 3 : Infiltration & Extraction HVT"]
-    ];
+    // --- Tâches Obligatoires (cochées et bloquées) ---
+    private _cbMan1 = _display displayCtrl 7100;
+    _cbMan1 cbSetChecked true;
+    _cbMan1 ctrlEnable false;
 
-    {
-        _x params ["_idStr", "_defaultTitle"];
-        private _taskTitleKey = format ["STR_TASK_%1_TITLE", _idStr];
-        private _title = if (isLocalized _taskTitleKey) then { localize _taskTitleKey } else { _defaultTitle };
-        private _idx = _listCtrl lbAdd _title;
-        _listCtrl lbSetData [_idx, _idStr];
-    } forEach _dummyMissions;
-    
-    _listCtrl lbSetCurSel 0;
+    private _cbMan2 = _display displayCtrl 7101;
+    _cbMan2 cbSetChecked true;
+    _cbMan2 ctrlEnable false;
+
+    private _cbMan3 = _display displayCtrl 7102;
+    _cbMan3 cbSetChecked true;
+    _cbMan3 ctrlEnable false;
+
+    // --- Tâches Optionnelles (décochées) ---
+    for "_i" from 7110 to 7118 do {
+        private _cbOpt = _display displayCtrl _i;
+        if (!isNull _cbOpt) then {
+            _cbOpt cbSetChecked false;
+        };
+    };
 
     private _currentHour = date select 3;
     private _currentOvercast = overcast;
@@ -177,7 +179,6 @@ if (_mode == "OPEN") exitWith {
 
     uiSleep 0.05;
     ["UPDATE_MAP"] call LL_fnc_spawn_main_menu;
-    ["SELECT_MISSION", [_listCtrl, 0]] call LL_fnc_spawn_main_menu;
 };
 
 if (_mode == "SELECT_VEHICLE") exitWith {
@@ -224,30 +225,7 @@ if (_mode == "SELECT_VEHICLE") exitWith {
     MISSION_var_spawning_veh = false;
 };
 
-if (_mode == "SELECT_MISSION") exitWith {
-    _args params ["_ctrl", "_selIndex"];
-    private _taskNum = parseNumber (_ctrl lbData _selIndex);
-    MISSION_var_current_task_index = _taskNum;
-    
-    private _display = findDisplay 7000;
-    private _titleCtrl = _display displayCtrl 7101;
-    private _descCtrl = _display displayCtrl 7102;
-    
-    private _dummyDescs = [
-        "Mission 1 : Patrouille de reconnaissance en territoire ennemi à Takistan. Détecter les positions de la milice et sécuriser la LZ d'insertion.",
-        "Mission 2 : Infiltration et destruction du poste de transmission radio ennemi et des dépôts de munitions secondaires.",
-        "Mission 3 : Infiltrer la zone fortifiée ennemie, neutraliser le commandant adverse et procéder à l'évacuation d'urgence."
-    ];
-    
-    private _titleKey = format ["STR_TASK_%1_TITLE", _taskNum];
-    private _descKey = format ["STR_TASK_%1_DESC", _taskNum];
-    
-    private _titleText = if (isLocalized _titleKey) then { localize _titleKey } else { format ["Mission %1", _taskNum] };
-    private _descText = if (isLocalized _descKey) then { localize _descKey } else { _dummyDescs select ((_taskNum - 1) min 2) };
-    
-    _titleCtrl ctrlSetText _titleText;
-    _descCtrl ctrlSetText _descText;
-};
+
 
 if (_mode == "UPDATE_MAP") exitWith {
     private _display = findDisplay 7000;
@@ -295,7 +273,31 @@ if (_mode == "UPDATE_ENV_PREVIEW") exitWith {
 
 if (_mode == "LAUNCH") exitWith {
     private _display = findDisplay 7000;
-    private _taskNum = MISSION_var_current_task_index;
+    
+    private _selectedTasks = [];
+    private _taskMap = [
+        [7110, "TASK_CAPTIVE"],
+        [7111, "TASK_HVT"],
+        [7112, "TASK_DEFUSE"],
+        [7113, "TASK_TRANSMISSION"],
+        [7114, "TASK_CHEMICAL"],
+        [7115, "TASK_EXTRACT_HVT"],
+        [7116, "TASK_DOCUMENTS"],
+        [7117, "TASK_TIGRIS"],
+        [7118, "TASK_MILITIA"]
+    ];
+    
+    {
+        _x params ["_idc", "_taskId"];
+        private _cb = _display displayCtrl _idc;
+        if (cbChecked _cb) then {
+            _selectedTasks pushBack _taskId;
+        };
+    } forEach _taskMap;
+    
+    if (count _selectedTasks == 0) exitWith {
+        hint localize "STR_ERR_NO_TASK";
+    };
     
     private _ctrlTime = _display displayCtrl 7200;
     private _ctrlClouds = _display displayCtrl 7201;
@@ -404,12 +406,18 @@ if (_mode == "LAUNCH") exitWith {
         };
     };
 
-    switch (_taskNum) do {
-        case 1: { if (!isNil "MISSION_fnc_task_1_launch") then { [_selectedLocationMarker, _selectedInsertion] call MISSION_fnc_task_1_launch; }; };
-        case 2: { if (!isNil "MISSION_fnc_task_2_launch") then { [_selectedLocationMarker, _selectedInsertion] call MISSION_fnc_task_2_launch; }; };
-        case 3: { if (!isNil "MISSION_fnc_task_3_launch") then { ["INIT", _selectedLocationMarker, _selectedInsertion] call MISSION_fnc_task_3_launch; }; };
-        default {};
+    // Récupération globale des GameLogics pour la circulation des civils sur toute la carte
+    private _globalNodes = nearestObjects [_dropPosCenter, ["Logic", "Land_HelipadEmpty_F"], 400] + nearestObjects [_targetPos, ["Logic", "Land_HelipadEmpty_F"], 400];
+    if (count _globalNodes == 0) then {
+        _globalNodes = nearestObjects [_dropPosCenter, ["House", "Building"], 400] + nearestObjects [_targetPos, ["House", "Building"], 400];
     };
+
+    // Lancement de la vie civile ambiante (Immersive)
+    [_dropPosCenter, 400, 15, _globalNodes] spawn LL_fnc_ambientCivilians; // LZ (Départ)
+    [_targetPos, 400, 30, _globalNodes] spawn LL_fnc_ambientCivilians;     // Objectif (Arrivée)
+
+    // Lancement du gestionnaire dynamique des tâches
+    [_selectedLocationMarker, _selectedInsertion, _selectedTasks] spawn LL_fnc_task_generator;
 
     // Les fondus au noir et réouvertures sont gérés exclusivement par fn_intro_01 / fn_intro_02
 };

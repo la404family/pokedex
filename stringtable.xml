@@ -878,18 +878,18 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Chinese>无人机正在执行任务。</Chinese>
         </Key>
         <Key ID="STR_Drone_Approach">
-            <Original>MQ-9 Reaper en approche. Surveillance active pendant %1 minutes.</Original>
-            <English>MQ-9 Reaper on approach. Active surveillance for %1 minutes.</English>
-            <French>MQ-9 Reaper en approche. Surveillance active pendant %1 minutes.</French>
-            <Spanish>MQ-9 Reaper aproximándose. Vigilancia activa por %1 minutos.</Spanish>
-            <Italian>MQ-9 Reaper in avvicinamento. Sorveglianza attiva per %1 minuti.</Italian>
-            <German>MQ-9 Reaper im Anflug. Aktive Überwachung für %1 Minuten.</German>
-            <Polish>MQ-9 Reaper zbliża się. Aktywna obserwacja przez %1 minut.</Polish>
-            <Russian>MQ-9 Reaper на подходе. Активное наблюдение на %1 минут.</Russian>
-            <Turkish>MQ-9 Reaper yaklaşıyor. %1 dakika boyunca aktif gözetleme.</Turkish>
-            <Japanese>MQ-9 Reaperが接近中。%1分間の監視を開始します。</Japanese>
-            <Korean>MQ-9 리퍼 접근 중. %1분 동안 감시 활성화.</Korean>
-            <Chinese>MQ-9死神正在接近。将进行%1分钟的监视。</Chinese>
+            <Original>MQ-9 Reaper en approche. Surveillance active pendant 5 minutes.</Original>
+            <English>MQ-9 Reaper on approach. Active surveillance for 5 minutes.</English>
+            <French>MQ-9 Reaper en approche. Surveillance active pendant 5 minutes.</French>
+            <Spanish>MQ-9 Reaper aproximándose. Vigilancia activa por 5 minutos.</Spanish>
+            <Italian>MQ-9 Reaper in avvicinamento. Sorveglianza attiva per 5 minuti.</Italian>
+            <German>MQ-9 Reaper im Anflug. Aktive Überwachung für 5 Minuten.</German>
+            <Polish>MQ-9 Reaper zbliża się. Aktywna obserwacja przez 5 minut.</Polish>
+            <Russian>MQ-9 Reaper на подходе. Активное наблюдение на 5 минут.</Russian>
+            <Turkish>MQ-9 Reaper yaklaşıyor. 5 dakika boyunca aktif gözetleme.</Turkish>
+            <Japanese>MQ-9 Reaperが接近中。5分間の監視を開始します。</Japanese>
+            <Korean>MQ-9 리퍼 접근 중. 5분 동안 감시 활성화.</Korean>
+            <Chinese>MQ-9死神正在接近。将进行5分钟的监视。</Chinese>
         </Key>
         <Key ID="STR_Drone_RTB">
             <Original>Drone de surveillance en retour à la base.</Original>
@@ -2206,6 +2206,76 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Chinesesimp>任务 3: 渗透敌方防御阵地，中和敌方指挥官并执行紧急撤离。</Chinesesimp>
             <Turkish>Görev 3: Düşman müstahkem bölgesine sızın, düşman komutanını etkisiz hale getirin ve acil tahliyeyi gerçekleştirin.</Turkish>
         </Key>
+        <Key ID="STR_MAIN_MENU_OBJECTIVES">
+            <Original>OPERATIONAL OBJECTIVES</Original>
+            <English>OPERATIONAL OBJECTIVES</English>
+            <French>OBJECTIFS OPÉRATIONNELS</French>
+        </Key>
+        <Key ID="STR_TASK_MAN1">
+            <Original>Proceed to location</Original>
+            <English>Proceed to location</English>
+            <French>Se rendre sur les lieux</French>
+        </Key>
+        <Key ID="STR_TASK_MAN2">
+            <Original>Protect civilian population</Original>
+            <English>Protect civilian population</English>
+            <French>Protéger la population civile</French>
+        </Key>
+        <Key ID="STR_TASK_MAN3">
+            <Original>Safe extraction</Original>
+            <English>Safe extraction</English>
+            <French>Extraction en toute sécurité</French>
+        </Key>
+        <Key ID="STR_TASK_OPT1">
+            <Original>Free a captive</Original>
+            <English>Free a captive</English>
+            <French>Libérer un captif</French>
+        </Key>
+        <Key ID="STR_TASK_OPT2">
+            <Original>Eliminate enemy commander</Original>
+            <English>Eliminate enemy commander</English>
+            <French>Éliminer un commandant ennemi précis</French>
+        </Key>
+        <Key ID="STR_TASK_OPT3">
+            <Original>Defuse explosive charge</Original>
+            <English>Defuse explosive charge</English>
+            <French>Désamorcer une charge explosive</French>
+        </Key>
+        <Key ID="STR_TASK_OPT4">
+            <Original>Destroy transmission stations</Original>
+            <English>Destroy transmission stations</English>
+            <French>Détruire des stations de transmission</French>
+        </Key>
+        <Key ID="STR_TASK_OPT5">
+            <Original>Secure chemical tank</Original>
+            <English>Secure chemical tank</English>
+            <French>Sécuriser une citerne chimique</French>
+        </Key>
+        <Key ID="STR_TASK_OPT6">
+            <Original>Extract HVT via helicopter</Original>
+            <English>Extract HVT via helicopter</English>
+            <French>Embarquer l'HVT à bord de l'hélico</French>
+        </Key>
+        <Key ID="STR_TASK_OPT7">
+            <Original>Recover documents</Original>
+            <English>Recover documents</English>
+            <French>Récupérer des documents</French>
+        </Key>
+        <Key ID="STR_TASK_OPT8">
+            <Original>Destroy a Tigris AA</Original>
+            <English>Destroy a Tigris AA</English>
+            <French>Détruire un DCA Tigris</French>
+        </Key>
+        <Key ID="STR_TASK_OPT9">
+            <Original>Arrest militia leader</Original>
+            <English>Arrest militia leader</English>
+            <French>Arrêter un chef de milice ennemi</French>
+        </Key>
+        <Key ID="STR_ERR_NO_TASK">
+            <Original>YOU MUST SELECT AT LEAST ONE OPTIONAL OBJECTIVE!</Original>
+            <English>YOU MUST SELECT AT LEAST ONE OPTIONAL OBJECTIVE!</English>
+            <French>VOUS DEVEZ SÉLECTIONNER AU MOINS UN OBJECTIF OPTIONNEL !</French>
+        </Key>
     </Package>
     <Package name="Task">
         <Key ID="STR_LL_Task_Extraction_Title">
@@ -2405,6 +2475,51 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Korean>[CAS] 표적 지정</Korean>
             <Japanese>[CAS] 目標を指定</Japanese>
             <Chinese>[CAS] 指定目标</Chinese>
+        </Key>
+        <Key ID="STR_LL_Task_Man1_Title">
+            <Original>Proceed to Location</Original>
+            <English>Proceed to Location</English>
+            <French>Se rendre sur les lieux</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man1_Desc">
+            <Original>Reach the objective area (550m perimeter) to start the operations.</Original>
+            <English>Reach the objective area (550m perimeter) to start the operations.</English>
+            <French>Atteignez la zone d'opération (périmètre de 550m) pour débuter l'intervention.</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man1_Marker">
+            <Original>Insertion</Original>
+            <English>Insertion</English>
+            <French>Insertion</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man2_Title">
+            <Original>Protect Civilian Population</Original>
+            <English>Protect Civilian Population</English>
+            <French>Protéger la population civile</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man2_Desc">
+            <Original>Ensure there are no civilian casualties during your operations in the sector.</Original>
+            <English>Ensure there are no civilian casualties during your operations in the sector.</English>
+            <French>Assurez-vous de ne faire aucune victime civile lors de vos opérations dans le secteur.</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man2_Marker">
+            <Original>Civilians</Original>
+            <English>Civilians</English>
+            <French>Civils</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man3_Title">
+            <Original>Safe Extraction</Original>
+            <English>Safe Extraction</English>
+            <French>Extraction en toute sécurité</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man3_Desc">
+            <Original>Ensure that your entire team survives the operation and is successfully extracted.</Original>
+            <English>Ensure that your entire team survives the operation and is successfully extracted.</English>
+            <French>Faites en sorte que toute votre équipe survive à l'opération et soit extraite avec succès.</French>
+        </Key>
+        <Key ID="STR_LL_Task_Man3_Marker">
+            <Original>Extraction</Original>
+            <English>Extraction</English>
+            <French>Extraction</French>
         </Key>
         <Key ID="STR_LL_Diary_Task00_Title">
             <Original>OPORD : Opération Broken Cage (Sauvetage de Captif)</Original>

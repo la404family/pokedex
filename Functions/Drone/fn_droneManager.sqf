@@ -67,7 +67,7 @@ while { true } do {
         _markerDrone setMarkerColor "ColorCIV";
         _markerDrone setMarkerSize [0.9, 0.9];
 
-        ["STR_Drone_Approach", [round (_duration / 60)]] call LL_fnc_radioMessage;
+        ["STR_Drone_Approach"] call LL_fnc_radioMessage;
 
         private _wp = _grp addWaypoint [_targetPos, 0];
         _wp setWaypointType "LOITER";

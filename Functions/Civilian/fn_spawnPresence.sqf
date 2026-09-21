@@ -1,73 +1,52 @@
 if (!isServer) exitWith {};
 
-private _SPAWN_DIST = 500;
-private _MIN_DIST = 50;
-private _CLEANUP_DIST = 1200;
-private _MAX_CIVILS = 55;
+params [
+    ["_spawnCenter", objNull, [objNull, []]],
+    ["_spawnSide", civilian, [civilian]],
+    ["_maxUnits", 30, [0]],
+    ["_spawnRadius", 500, [0]]
+];
+
 private _PATROL_DIST = 200;
-private _SLEEP = 10;
+private _refPos = [];
 
-if (isNil "LL_s_civSpawned") then { LL_s_civSpawned = []; };
+if (typeName _spawnCenter == "OBJECT") then {
+    if (isNull _spawnCenter) exitWith {};
+    _refPos = getPosATL _spawnCenter;
+} else {
+    if (count _spawnCenter == 0) exitWith {};
+    _refPos = _spawnCenter;
+};
 
-while { true } do {
-    sleep _SLEEP;
+if (count _refPos == 0) exitWith {};
 
-    {
-        private _civ = _x;
-        if (isNull _civ || !alive _civ) then {
-            LL_s_civSpawned = LL_s_civSpawned - [_civ];
-        } else {
-            private _tooFar = true;
-            {
-                if (isPlayer _x && { (_x distance2D _civ) < _CLEANUP_DIST }) exitWith {
-                    _tooFar = false;
-                };
-            } forEach allPlayers;
+private _buildings = nearestObjects [_refPos, ["House","Building"], _spawnRadius];
+if (count _buildings == 0) exitWith {};
 
-            if (_tooFar) then {
-                private _grp = group _civ;
-                deleteVehicle _civ;
-                LL_s_civSpawned = LL_s_civSpawned - [_civ];
-                if (count (units _grp) == 0) then { deleteGroup _grp; };
-            };
-        };
-    } forEach (+ LL_s_civSpawned);
+private _isEnemy = (_spawnSide == east || _spawnSide == opfor || _spawnSide == independent);
+private _spawnedUnits = 0;
 
-    LL_s_civSpawned = LL_s_civSpawned select { !isNull _x && alive _x };
-
-    if (count LL_s_civSpawned < _MAX_CIVILS) then {
-        private _players = allPlayers select { alive _x };
-        if (count _players == 0) then { continue };
-
-        private _refPlayer = selectRandom _players;
-        private _refPos = getPosATL _refPlayer;
-
-        private _buildings = nearestObjects [_refPos, ["House","Building"], _SPAWN_DIST];
-        _buildings = _buildings select { (_x distance2D _refPlayer) > _MIN_DIST };
-        if (count _buildings == 0) then { continue };
-
-        private _building = selectRandom _buildings;
-        private _bPosList = _building buildingPos -1;
-        if (count _bPosList == 0) then { continue };
-
+{
+    if (_spawnedUnits >= _maxUnits) exitWith {};
+    
+    private _bPosList = _x buildingPos -1;
+    if (count _bPosList > 0) then {
         private _bPos = selectRandom _bPosList;
         _bPos set [2, (_bPos select 2) + 0.5];
-
-        private _class = "C_man_1";
-        private _template = [];
-        if (!isNil "MISSION_CivilianTemplates" && { count MISSION_CivilianTemplates > 0 }) then {
-            _template = selectRandom MISSION_CivilianTemplates;
-            _class = _template select 0;
-        };
-
-        private _grp = createGroup civilian;
-        private _civ = _grp createUnit [_class, _bPos, [], 0, "NONE"];
-        _civ setPosASL (AGLToASL _bPos);
-
-        [_civ, _template] call LL_fnc_applyTemplate;
-
-        [_grp, getPosATL _civ, _PATROL_DIST] call BIS_fnc_taskPatrol;
-
-        LL_s_civSpawned pushBack _civ;
+        
+        private _grp = createGroup _spawnSide;
+        private _class = if (_spawnSide == civilian) then { "C_man_1" } else { "O_G_Soldier_F" };
+        
+        private _unit = _grp createUnit [_class, _bPos, [], 0, "NONE"];
+        _unit setPosASL (AGLToASL _bPos);
+        
+        // Ratio 5 à 10% de femmes
+        private _isFemale = (random 1) < 0.10;
+        
+        [_unit, _isFemale, _isEnemy] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
+        
+        [_grp, getPosATL _unit, _PATROL_DIST] call BIS_fnc_taskPatrol;
+        
+        _spawnedUnits = _spawnedUnits + 1;
     };
-};
+} forEach _buildings;

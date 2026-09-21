@@ -28,6 +28,19 @@ class CfgFunctions
             class intro_02 {};
             class spawnStartArsenal {};
             class initVehicleLoadout {};
+            class task_generator {};
+            class taskA {};
+            class taskB {};
+            class taskC {};
+            class taskD_captive {};
+            class taskD_hvt {};
+            class taskD_defuse {};
+            class taskD_transmission {};
+            class taskD_chemical {};
+            class taskD_extract_hvt {};
+            class taskD_documents {};
+            class taskD_tigris {};
+            class taskD_militia {};
         };
         class Environment
         {
@@ -47,6 +60,14 @@ class CfgFunctions
             class identityManager {};
             class applyRoE {};
             class addRoeActions {};
+        };
+        class Civilian
+        {
+            file = "Functions\Civilian";
+            class ambientCivilians {};
+            class initTakistaniDB {};
+            class applyTakistaniIdentity {};
+            class spawnPresence {};
         };
         class Player
         {

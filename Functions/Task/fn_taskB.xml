@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_Man2_Title">
+        <Original>Protect Civilian Population</Original>
+        <English>Protect Civilian Population</English>
+        <French>Protéger la population civile</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man2_Desc">
+        <Original>Ensure there are no civilian casualties during your operations in the sector.</Original>
+        <English>Ensure there are no civilian casualties during your operations in the sector.</English>
+        <French>Assurez-vous de ne faire aucune victime civile lors de vos opérations dans le secteur.</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man2_Marker">
+        <Original>Civilians</Original>
+        <English>Civilians</English>
+        <French>Civils</French>
+    </Key>
+</Keys>

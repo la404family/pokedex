@@ -1,3 +1,4 @@
+if (isServer) then { [] call LL_fnc_initTakistaniDB; };
 [] spawn LL_fnc_initSkills;
 [] execVM "Functions\Player\fn_initIdentity.sqf";
 [] execVM "Functions\Player\fn_initLoadout.sqf";

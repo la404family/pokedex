@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keys>
+    <Key ID="STR_LL_Task_Man3_Title">
+        <Original>Safe Extraction</Original>
+        <English>Safe Extraction</English>
+        <French>Extraction en toute sécurité</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man3_Desc">
+        <Original>Ensure that your entire team survives the operation and is successfully extracted.</Original>
+        <English>Ensure that your entire team survives the operation and is successfully extracted.</English>
+        <French>Faites en sorte que toute votre équipe survive à l'opération et soit extraite avec succès.</French>
+    </Key>
+    <Key ID="STR_LL_Task_Man3_Marker">
+        <Original>Extraction</Original>
+        <English>Extraction</English>
+        <French>Extraction</French>
+    </Key>
+</Keys>
