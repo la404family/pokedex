@@ -174,8 +174,8 @@ class CfgMusic
 
     class Music_Intro
     {
-        name = "Shadow of the Valley 02";
-        sound[] = {"Music\Shadow of the Valley_02.ogg", db+0, 1.0};
+        name = "Shadow of the Valley 01";
+        sound[] = {"Music\Shadow of the Valley_01.ogg", db+0, 1.0};
         titles[] = {0, ""};
     };
 

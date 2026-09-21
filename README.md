@@ -5,156 +5,116 @@ Faction joueur : **Indépendant — RACS (Royal Army Corps of Sahrani)**.
 
 ---
 
-## ⚠️ DIRECTIVE STRICTE DE DÉVELOPPEMENT
+## ⚠️ DIRECTIVES STRICTES DE DÉVELOPPEMENT & ARCHITECTURE
 
-> **IMPORTANT :** 
-> Ce sont des ébauches ou des structures provisoires. **Il ne faut pas s'y fier ni les exécuter tels quels**.
-> Tout le reste du projet doit être **modifié et adapté à la réalité des entités et variables réelles de l'éditeur** (voir document de référence : `INFO_EDITOR.md`).
-> 
-> **RÈGLE SUR LA RADIO TTS :** Le système de radio/TTS (`LL_fnc_radioMessage`) est STRICTEMENT réservé aux communications globales (ex: QG, Soutien, Drone, Hélicoptère). Il NE DOIT JAMAIS être utilisé pour les actions locales de l'escouade ou les changements de Règles d'Engagement (ROE).
-
----
-
-## 1. Fichiers RÉELLEMENT Implémentés et Actifs
-
-Seuls les fichiers suivants sont officiellement déclarés, fonctionnels et rattachés au moteur de jeu via `description.ext` et `init.sqf` :
-
-| Fichier | Rôle / Description |
-| :--- | :--- |
-| [`init.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/init.sqf) | Point d'entrée : protection immédiate des 6 unités jouables, lancement des gestionnaires serveur (météo, hélicoptère, portes, ezan) et ouverture du menu principal. |
-| [`description.ext`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/description.ext) | Configuration mission, sons/musiques, `CfgCommunicationMenu`, inclusion du menu et déclaration stricte des fonctions actives dans `CfgFunctions`. |
-| [`Dialogs/main_menu.hpp`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Dialogs/main_menu.hpp) | Interface graphique du menu de préparation de mission (sélection insertion, météo, véhicule, etc.). |
-| [`Functions/Spawn/fn_spawn_main_menu.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Spawn/fn_spawn_main_menu.sqf) | Logique du menu principal et lancement de la mission. |
-| [`Functions/Task/fn_intro_01.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_intro_01.sqf) | Introduction cinématique 1 : Arrivée en hélicoptère UH-60 RACS sur la LZ. (Activation automatique des JVN de nuit). |
-| [`Functions/Task/fn_intro_02.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_intro_02.sqf) | Introduction cinématique 2 : Insertion par avion C-130J RACS, largage HALO. (Activation automatique des JVN de nuit). |
-| [`Functions/Task/fn_spawnStartArsenal.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_spawnStartArsenal.sqf) | Génération de l'arsenal de départ. **Comprend un verrouillage de l'uniforme et du casque** pour forcer l'identité visuelle de la Légion Étrangère. |
-| [`Functions/Task/fn_initVehicleLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_initVehicleLoadout.sqf) | Transfert du loadout vers le véhicule de l'escouade lors de la fermeture de l'arsenal. |
-| [`Functions/Environment/fn_randomWeather.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_randomWeather.sqf) | Initialisation de la météo aléatoire au démarrage et gestion de son évolution dynamique. |
-| [`Functions/Environment/fn_initSkills.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_initSkills.sqf) | Gestion dynamique des compétences (buff, boost de vitesse, réduction de l'impact du poids pour l'escouade, et comportement kamikaze pour les ennemis). |
-| [`Functions/Environment/fn_doorSecurity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_doorSecurity.sqf) | Gestion automatique et immersive des portes pour l'IA (ouverture par porte individuelle à 4 m, tampon anti-claquement, élimination des traversées de porte). |
-| [`Functions/Environment/fn_playEzan.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_playEzan.sqf) | Gestion acoustique de l'appel à la prière (Ezan) : spatialisation 3D mono, détection des minarets/haut-parleurs, clustering anti-cacophonie et écho naturel de vallée. |
-| [`Functions/Player/fn_initIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initIdentity.sqf) | Attribution aléatoire des visages, voix et noms pour l'escouade (optimisé Solo). |
-| [`Functions/Player/fn_initLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initLoadout.sqf) | Customisation esthétique aléatoire de l'escouade en conservant leurs armes par défaut. |
-| [`Functions/Player/fn_setupUVO.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_setupUVO.sqf) | Intégration et configuration optionnelle du mod Unit Voice-Overs (Anglais pour RACS, Persan pour le reste). |
-| [`Functions/Team/fn_addRoeActions.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_addRoeActions.sqf) | Menu d'actions (addActions) permettant au joueur de changer les Règles d'Engagement (ROE). |
-| [`Functions/Team/fn_applyRoE.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_applyRoE.sqf) | Logique comportementale de l'escouade selon la ROE sélectionnée (silencieuse, sans radio). |
-| [`Functions/Team/fn_switchToAI.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_switchToAI.sqf) | Gestion ultra-optimisée de la mort en Solo (bascule instantanée du contrôle et du commandement vers une IA survivante). |
-| [`Functions/Team/...`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team) | Autres fonctions actives gérant l'identité (`identityManager`, `applyIdentity`), le loadout (`randomizeLoadout`) de l'escouade, et l'application stricte de l'insigne RACS (`badgeManager`). |
-| [`stringtable.xml`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/stringtable.xml) | Table de localisation complète (textes, sous-titres, appuis, cinématiques) compilée automatiquement via `compile_stringtable.py`. |
-| [`TTS/generate_radio.py`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/TTS/generate_radio.py) | Générateur audio TTS automatisé avec application de filtres immersifs "Radio Lo-Fi" dynamiques (Pydub/FFmpeg). |
-| [`Functions/UI/fn_radioMessage.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/UI/fn_radioMessage.sqf) | Système d'affichage des messages radio (file d'attente native via `BIS_fnc_showSubtitle`). |
-| [`Functions/Helicopter/fn_initSupport.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_initSupport.sqf) | Initialisation du menu de Soutien natif (`CfgCommunicationMenu`, touches 0-8) entièrement localisé via stringtable (`fn_initSupport.xml`). |
-| [`Functions/Helicopter/fn_heliDispatch.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_heliDispatch.sqf) | Dispatcher et gestionnaire de priorités (cooldowns, annulations avec redirection, retours radio TTS). |
-| [`Functions/Helicopter/fn_heliManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_heliManager.sqf) | Gestionnaire complet du cycle de vie de l'hélicoptère UH-60 RACS (spawn hors de vue en élingue, dépose physique, CAS, extraction VIP, RTB). |
-| [`Functions/Helicopter/fn_addResupplyAction.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_addResupplyAction.sqf) | Action addAction en jaune (`#FFFF00`) synchronisée en réseau, animant le réapprovisionnement automatique et réaliste des IA d'escouade. |
-| [`CfgSounds.hpp`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/CfgSounds.hpp) | Configuration des sons incluant l'appel à la prière (`ezan`) et les voix TTS. |
+> **1. RÈGLE EXCLUSIVE SINGLE-PLAYER (SP) :**
+> Cette mission s'exécute exclusivement en Solo. Tout le code s'exécute localement sur la machine du joueur. Aucune commande multijoueur (`remoteExec`, `publicVariable`, `isServer`, `hasInterface`) ne doit être utilisée ou surchargée inutilement.
+>
+> **2. RESPECT DES VARIABLES DE L'ÉDITEUR (`INFO_EDITOR.md`) :**
+> Tous les scripts doivent se référer strictement aux entités et variables réelles déclarées dans l'éditeur (unités jouables `player_0` à `player_5`, haut-parleurs `ezan_XX`, véhicules RACS, GameLogics).
+>
+> **3. RÈGLE SUR LA RADIO TTS :**
+> Le système de radio/TTS (`LL_fnc_radioMessage`) est STRICTEMENT réservé aux communications globales (ex: QG, Soutien, Drone, Hélicoptère). Il ne doit JAMAIS être utilisé pour les actions locales d'escouade ou les changements de Règles d'Engagement (ROE).
+>
+> **4. NORMES DE CODE SQF :**
+> Aucun commentaire de code (`//` ou `/* */`), aucun log de débogage (`diag_log`), aucun message d'écran (`hint`, `systemChat`) ne doit figurer dans les scripts de production.
 
 ---
 
-## 2. Unités Jouables Réelles (Éditeur)
+## 1. Variables & Entités Réelles de l'Éditeur (`INFO_EDITOR.md`)
 
-Conformément à `INFO_EDITOR.md` :
-- **Mode de jeu :** Solo exclusivement (`player` = `player_0`).
-- **Faction :** Indépendant - RACS (PAS BLUFOR).
-- **Escouade complète (6 unités au total) :**
-  1. `player_0` : Chef d'escouade (joueur)
-  2. `player_1` : Soldat AAT
-  3. `player_2` : Soldat MAT
-  4. `player_3` : Fusilier
-  5. `player_4` : Mitrailleur AR
-  6. `player_5` : Tireur d'élite / Sniper
-
-À la fin de chaque cinématique d'introduction, ces 6 unités sont systématiquement sorties de leur vecteur de transport, positionnées au sol près du véhicule d'équipe (`vehicule_team`), et rattachées sous le commandement direct du joueur (`group player selectLeader player`).
-
----
-
-## 3. Système de Soutien Hélicoptère (RACS Air Support)
-
-Le système d'appui aérien est accessible par le joueur chef d'escouade via le menu de communication natif d'Arma 3 (**Touche 0 puis 8 : Soutien**) défini dans [`description.ext`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/description.ext) sous `CfgCommunicationMenu`.
-
-### Les 4 Types de Soutiens Disponibles :
-1. **Soutien : Ravitaillement (`LIVRAISON`) :**
-   * Largage d'une caisse de munitions `B_supplyCrate_F`.
-   * Dès le spawn lointain de l'hélicoptère, la caisse est attachée en élingue (`setSlingLoad`) et remplie automatiquement avec les munitions exactes correspondant aux armes principales, secondaires et de poing de toutes les unités de l'escouade.
-   * L'hélicoptère arrive sur zone avec la charge déjà sous lui (aucun pop-in à vue). Il descend en vol stationnaire bas (15m), pose délicatement la caisse au sol et détache les câbles.
-   * Déclenchement d'un fumigène vert à l'atterrissage, puis de fumigènes blancs de fin de vie.
-2. **Soutien : Véhicule Léger (`VEHICULE`) :**
-   * Livraison d'un Land Rover armé `CUP_I_LR_MG_RACS`.
-   * Comme pour la caisse, le véhicule est attaché en élingue dès le spawn hors de vue de l'hélicoptère, avec stock de munitions de secours, descendu en douceur et détaché au sol.
-   * Limité à un seul véhicule livré par mission pour l'immersion.
-3. **Soutien : Extraction (`EMBARQUEMENT`) :**
-   * Priorité absolue dans le dispatcher (peut interrompre un CAS ou une livraison).
-   * Gestion de l'embarquement et du sauvetage des VIPs et otages de mission (`LL_Task00_Hostage`, `LL_Task02b_Hostage`, `LL_Task06_HVT`).
-   * Avertit et éjecte les unités non autorisées, attend le VIP ciblé et déclenche la condition de victoire après vol de retour.
-4. **Soutien : CAS (`CAS`) :**
-   * Appui aérien rapproché avec orbite (Loiter) à 60 m d'altitude dans un rayon de 250 m pendant 180 secondes.
-   * Vitesse régulée à 80 km/h pour stabiliser les tirs des mitrailleurs de bord.
-   * Cooldown de 300 secondes après exécution.
-
-### Caractéristiques Techniques :
-* **Spawn et Despawn Dynamiques :** Recherche d'une position sûre entre 2500 m et 8000 m de la LZ (`_fnGetSpawnPos`), hors de portée visuelle. L'hélicoptère repart à sa base (`_fnRTB`) et n'est supprimé qu'une fois hors de vue des joueurs (> 1200 m).
-* **Zéro Pop-in :** Les cargaisons (caisse ou véhicule) sont instanciées et attachées en élingue dès l'apparition à la base de départ. L'appareil traverse la carte en portant visiblement sa charge.
-* **Action de Ravitaillement d'Escouade (`fn_addResupplyAction.sqf`) :**
-  * Action molette affichée en jaune vif (`<t color='#FFFF00'>%1</t>`) et localisée (`STR_LL_Action_Resupply`).
-  * Diffusée en réseau via `remoteExec` pour être visible par tous les clients.
-  * Déclenche un comportement d'escouade réaliste : le leader ordonne l'avance (`gestureAdvance`), les IA alliées se déplacent une par une vers la caisse, se tournent vers elle, jouent l'animation de rechargement (`ReloadMagazine`), récupèrent leurs munitions, grenades, fumigènes et trousses de secours, puis reprennent leur formation.
-* **Localisation Multi-langues :** L'intégralité des menus d'appuis, des marqueurs et des messages vocaux/textuels du QG est localisée dans les 12 langues d'Arma 3 via les fichiers XML (`fn_initSupport.xml`, `fn_heliDispatch.xml`, `fn_heliManager.xml`, `fn_addResupplyAction.xml`).
+| Élément / Variable | Définition / Modèle | Usage dans la mission |
+| :--- | :--- | :--- |
+| **`player_0` à `player_5`** | `Indépendant - RACS` | Les 6 unités jouables de l'escouade Légion Étrangère RACS (`player_0` = Joueur / Leader). |
+| **`ezan_00` à `ezan_XX`** | `Loudspeaker` | Haut-parleurs répartis dans les villages/minarets pour l'appel à la prière. |
+| **Hélicoptère Allié** | `CUP_I_UH60L_FFV_RACS` (UH-60L RACS) | Transport, soutien CAS, livraison de matériel et extraction VIP. |
+| **Avion Allié** | `CUP_I_C130J_RACS` (C-130J RACS) | Insertion aéroportée HALO (Cinématique d'intro 02). |
+| **Drone Surveillance** | `CUP_B_USMC_DYN_MQ9` (MQ-9 Reaper) | Drone de reconnaissance aérienne et surveillance de zone. |
+| **Véhicule Terrestre** | `CUP_I_LR_MG_RACS` (Land Rover MG) | Véhicule léger de patrouille et de soutien au sol. |
+| **GameLogics / Hélipads** | `Logic`, `Land_HelipadEmpty_F` | Points d'ancrage de spawn/mission dans les bâtiments et en extérieur (`Z + 0.2`). |
+| **Gilets Joueurs RACS** | `CUP_V_JPC_*` | Gilets tactiques RACS (medical, tl, weapons, communicationsbelt, lightbelt, etc.). |
+| **Accessoires Civils** | Barbes (`CUP_Beard_*`), Chapeaux (`CPU_H_TKI_Lungee_*`, `Pakol_*`, `SkullCap_*`) | Équipements esthétiques appliqués aux hommes civils takistanis. |
 
 ---
 
-## 4. Système de Sécurité et Automatisation des Portes IA (`fn_doorSecurity.sqf`)
+## 2. Catalogue Complet des Fonctions Déclarées & Actives (`description.ext`)
 
-Exécuté côté serveur dès le démarrage (`init.sqf`), ce système garantit une navigation fluide, réaliste et immersive pour toutes les unités d'infanterie IA à l'approche des bâtiments.
+Toutes les fonctions ci-dessous sont déclarées dans `CfgFunctions` sous le tag `LL` et rattachées au moteur d'Arma 3 :
 
-### Fonctionnement & Résolution des Défauts du Moteur :
-* **Détection 3D Précise par Porte Individuelle :**
-  * Au lieu de mesurer la distance par rapport au centre de gravité du bâtiment, le système calcule les coordonnées 3D exactes de chaque battant de porte (`_doorPos`) via les sélections mémoires du modèle (`Door_%1_trigger`, `Door_%1`, `Door_%1_axis`, etc.).
-  * Seule la porte spécifique approchée par l'IA s'ouvre, évitant l'ouverture collective et irréaliste de toutes les portes d'un bâtiment.
-* **Ouverture Anticipée à 4 Mètres (Élimination du Clipping) :**
-  * Dès qu'une IA à pied s'approche à **moins de 4.0 m** d'une porte, celle-ci s'ouvre automatiquement.
-  * Comme l'IA met environ 2 à 3 secondes pour parcourir ces 4 mètres, le battant est entièrement ouvert avant son arrivée sur le pas de porte : **l'IA ne heurte plus la géométrie solide fermée et ne traverse plus les portes par glitch physique**.
-* **Tampon d'Hystérésis & Anti-Claquement :**
-  * **Ouverture :** Déclenchée à `<= 4.0 m`.
-  * **Fermeture sécurisée :** Déclenchée uniquement si **aucune unité** (IA ou joueur) n'est présente dans un rayon de **> 5.5 m**.
-  * **Délai minimal d'ouverture :** La porte reste maintenue ouverte **au moins 4.0 secondes** après le passage de la dernière unité, permettant à toute une colonne de soldats de franchir l'ouverture sans que la porte ne se referme brutalement sur les suivants.
-  * **Cooldown :** Verrouillage de 1.5 seconde entre deux transitions pour supprimer tout claquement frénétique ou oscillation.
-* **Immersion Sonore Spatialisée :**
-  * Bruitages de portes (`DoorWoodSingleOpen_1.wss` / `DoorWoodSingleClose_1.wss`) émis directement aux coordonnées 3D de la porte (`_doorPos`) avec une portée limitée à 15 m.
-* **Respect des Portes Verrouillées et des Joueurs :**
-  * Les portes verrouillées scénarisées (`bis_disabled_Door_%1`) restent hermétiquement closes.
-  * Les portes ouvertes manuellement par un joueur ne sont pas refermées automatiquement par le script.
+### 🔹 Core & Initialisation
+* [`init.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/init.sqf) : Point d'entrée principal. Protection immédiate des 6 unités jouables, lancement des gestionnaires serveur et ouverture du menu principal.
+* [`description.ext`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/description.ext) : Configuration globale, sons, musiques, `CfgCommunicationMenu`, `CfgFunctions`, `CfgMusic`, `CfgUnitInsignia`.
+* [`Dialogs/main_menu.hpp`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Dialogs/main_menu.hpp) : Interface GUI du menu de préparation de mission (insertion, météo, véhicule).
+* [`Functions/Spawn/fn_spawn_main_menu.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Spawn/fn_spawn_main_menu.sqf) : Logique d'affichage et de contrôle du menu principal.
+
+### 🔹 Escouade, Identité & Comportement (`Functions/Team/` & `Functions/Player/`)
+* [`Functions/Player/fn_initIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initIdentity.sqf) : Generateur d'identité aléatoire (visages, voix, noms) pour l'escouade.
+* [`Functions/Player/fn_initLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initLoadout.sqf) : Personnalisation esthétique tout en conservant le kit d'armes d'origine.
+* [`Functions/Player/fn_setupUVO.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_setupUVO.sqf) : Intégration du mod Unit Voice-Overs (Anglais pour RACS, Persan pour ennemis/civils).
+* [`Functions/Team/fn_applyIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_applyIdentity.sqf) : Application des visages et voix.
+* [`Functions/Team/fn_badgeManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_badgeManager.sqf) : Application forcée de l'insigne officiel RACS (`Images/racs_badge_ca.paa`).
+* [`Functions/Team/fn_identityManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_identityManager.sqf) : Gestionnaire des profils d'unités de l'escouade.
+* [`Functions/Team/fn_randomizeLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_randomizeLoadout.sqf) : Randomisation des gilets JPC et accessoires.
+* [`Functions/Team/fn_addRoeActions.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_addRoeActions.sqf) : Menu d'actions utilisateur pour la sélection des Règles d'Engagement (ROE).
+* [`Functions/Team/fn_applyRoE.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_applyRoE.sqf) : Application silencieuse du comportement de tir et de discrétion de l'escouade selon la ROE.
+* [`Functions/Team/fn_switchToAI.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_switchToAI.sqf) : Gestion de la mort en Solo (transfert instantané de la caméra et du commandement vers une IA survivante).
+
+### 🔹 Vie Ambiante & Population Civile (`Functions/Civilian/`)
+* [`Functions/Civilian/fn_ambientCivilians.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_ambientCivilians.sqf) : Système de civils ambiants et faune (`sideAmbientLife`). Gère la séparation des déplacements intérieurs/extérieurs, le pathfinding anti-wall-clipping et la dispersion des cibles.
+* [`Functions/Civilian/fn_spawnPresence.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_spawnPresence.sqf) : Instanciation de la population civile locale selon la densité des villages.
+* [`Functions/Civilian/fn_applyTakistaniIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_applyTakistaniIdentity.sqf) : Attribution des visages, barbes, turbans, pakols et tenues civiles orientales.
+* [`Functions/Civilian/fn_initTakistaniDB.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_initTakistaniDB.sqf) : Base de données des noms et identités takistanis.
+
+### 🔹 Soutien Aérien Hélicoptère & Drone (`Functions/Helicopter/` & `Functions/Drone/`)
+* [`Functions/Helicopter/fn_initSupport.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_initSupport.sqf) : Initialisation du menu de Soutien natif (`CfgCommunicationMenu`, Touche 0-8).
+* [`Functions/Helicopter/fn_heliDispatch.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_heliDispatch.sqf) : Dispatcher de priorités des missions hélicoptère (Ravitaillement, Véhicule, Extraction, CAS).
+* [`Functions/Helicopter/fn_heliManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_heliManager.sqf) : Gestionnaire du cycle de vie de l'UH-60 RACS (spawn lointain hors de vue en élingue, dépose physique, CAS, extraction et RTB).
+* [`Functions/Helicopter/fn_addResupplyAction.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Helicopter/fn_addResupplyAction.sqf) : Action addAction (`#FFFF00`) animant l'interaction de rechargement réaliste des IA à la caisse de munitions.
+* [`Functions/Drone/fn_droneManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Drone/fn_droneManager.sqf) : Gestionnaire du drone de reconnaissance MQ-9.
+* [`Functions/Drone/fn_droneDispatch.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Drone/fn_droneDispatch.sqf) : Contrôleur des missions de survol et de transmission vidéo/radio du drone.
+
+### 🔹 Environnement, Immersion & Acoustique (`Functions/Environment/`)
+* [`Functions/Environment/fn_randomWeather.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_randomWeather.sqf) : Initialisation et transition météo dynamique.
+* [`Functions/Environment/fn_initSkills.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_initSkills.sqf) : Compétences dynamiques d'escouade et comportements d'attaque IA.
+* [`Functions/Environment/fn_doorSecurity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_doorSecurity.sqf) : Ouverture automatique des portes à 4m pour l'IA, gestion d'hystérésis (4s), élimination du clipping à travers les portes.
+* [`Functions/Environment/fn_playEzan.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Environment/fn_playEzan.sqf) : Diffusion de l'Ezan en audio Mono spatialisé 3D, clustering anti-cacophonie (< 350m) et écho de vallée (2.2s - 3.4s).
+
+### 🔹 Santé & Soins (`Functions/Medical/` & `Functions/Player/`)
+* [`Functions/Medical/fn_aiHealSelf.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Medical/fn_aiHealSelf.sqf) : Auto-soin autonome des unités IA blessées.
+* [`Functions/Player/fn_addHealAction.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_addHealAction.sqf) : Action interactive de soin médical sur le terrain.
+
+### 🔹 Journal & Briefing (`Functions/Briefing/`)
+* [`Functions/Briefing/fn_initBriefing.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Briefing/fn_initBriefing.sqf) : Génération des entrées de journal de bord (`createDiaryRecord`).
+* [`Functions/Briefing/fn_initContext.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Briefing/fn_initContext.sqf) : Initialisation du contexte opérationnel.
+
+### 🔹 Générateur de Tâches & Scénarios (`Functions/Task/`)
+* **Cinématiques & Arsenal :**
+  * [`Functions/Task/fn_intro_01.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_intro_01.sqf) : Cinématique d'insertion UH-60 RACS.
+  * [`Functions/Task/fn_intro_02.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_intro_02.sqf) : Cinématique d'insertion C-130J HALO.
+  * [`Functions/Task/fn_spawnStartArsenal.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_spawnStartArsenal.sqf) : Arsenal de départ avec verrouillage d'uniforme Légion.
+  * [`Functions/Task/fn_initVehicleLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_initVehicleLoadout.sqf) : Transfert du loadout d'arsenal vers le véhicule d'équipe.
+* **Tâches Systématiques (A, B, C) :**
+  * [`Functions/Task/fn_taskA.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskA.sqf) : Tâche A - Se rendre sur la zone d'opération (550m).
+  * [`Functions/Task/fn_taskB.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskB.sqf) : Tâche B - Protection des civils.
+  * [`Functions/Task/fn_taskC.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskC.sqf) : Tâche C - Protection et extraction de l'escouade.
+  * [`Functions/Task/fn_taskManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskManager.sqf) & `fn_task_generator.sqf` : Orchestrateur et générateur dynamique de missions.
+  * [`Functions/Task/fn_taskCleanup.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskCleanup.sqf) : Nettoyage et fuite/suppression des PNJ en fin de tâche.
+* **Tâches Optionnelles (D) :**
+  * [`fn_taskD_captive.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_captive.sqf), [`fn_taskD_hvt.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_hvt.sqf), [`fn_taskD_defuse.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_defuse.sqf), [`fn_taskD_transmission.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_transmission.sqf), [`fn_taskD_chemical.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_chemical.sqf), [`fn_taskD_extract_hvt.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_extract_hvt.sqf), [`fn_taskD_documents.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_documents.sqf), [`fn_taskD_tigris.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_tigris.sqf), [`fn_taskD_militia.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Task/fn_taskD_militia.sqf).
+
+### 🔹 Interface & Audio TTS (`Functions/UI/` & `TTS/`)
+* [`Functions/UI/fn_radioMessage.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/UI/fn_radioMessage.sqf) : Affichage sous-titré et restitution audio des communications radio du QG et du soutien.
+* [`TTS/generate_radio.py`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/TTS/generate_radio.py) : Script Python de génération automatique des fichiers voix TTS avec filtres Lo-Fi radio.
 
 ---
 
-## 5. Système Acoustique de l'Appel à la Prière (`fn_playEzan.sqf`)
+## 3. Directives Anti-Glitch & Règles de Pathfinding (`INFO_TASKS.md`)
 
-Géré côté serveur au démarrage (`init.sqf`), le système diffuse l'Ezan (`Music\ezan.ogg`, 142 secondes) de façon atmosphérique, réaliste et sans aucune cacophonie à travers le relief du Takistan.
-
-### Optimisations Acoustiques & Anti-Cacophonie :
-* **Conversion Audio Mono pour Véritable Spatialisation 3D :**
-  * Le fichier `ezan.ogg` a été converti en **MONO (1 canal)** (sauvegarde de l'original stéréo conservée). Dans le moteur d'Arma 3, un son stéréo joué en 3D ne peut pas être spatialisé correctement et blast dans les deux oreilles en 2D. En mono, le moteur calcule avec précision l'orientation panoramique, la réverbération et l'atténuation physique en fonction de la position exacte du haut-parleur.
-* **Regroupement Géographique en Clusters (< 350 m) :**
-  * Si plusieurs haut-parleurs sont placés à proximité (ex: `ezan_00` et `ezan_01` sur le même rocher ou le même minaret), ils sont automatiquement fusionnés dans un même cluster.
-  * **Un seul haut-parleur représentant diffuse le son par site.** Cela élimine à 100 % l'effet de filtrage en peigne (comb filtering), les voix métalliques et la cacophonie de deux pistes superposées à quelques mètres d'intervalle.
-* **Écho Naturel de Vallée entre Villages Distants :**
-  * Pour un joueur donné, le haut-parleur le plus proche démarre immédiatement (T = 0s) à pleine puissance avec une portée de 2000 m.
-  * Si un second village distant (> 700 m du premier) se trouve dans la portée d'écoute (< 2000 m du joueur), il s'enclenche avec un **décalage réaliste de 2.2 à 3.4 secondes**, créant un écho lointain magnifique et immersif à travers les montagnes, sans jamais surcharger l'environnement sonore.
-* **Verrouillage Mutex Anti-Chevauchement :**
-  * Tant qu'un Ezan est en cours de diffusion (145 s), aucun autre Ezan ne peut être démarré.
-* **Périodicité Réaliste :**
-  * Premier appel entre 5 et 10 minutes après le début de mission, puis répétition périodique toutes les 20 à 30 minutes.
-
----
-
-## 6. Reste du Projet (À modifier et adapter)
-
-Tous les autres dossiers et fichiers présents dans `Functions/` :
-- `Functions/Briefing/` (En attente de mise à jour des textes selon `INTEGR_BRIEFING.md`)
-- `Functions/Civilian/`
-- `Functions/Drone/`
-- `Functions/Environment/` (à l'exception de `fn_randomWeather.sqf`, `fn_initSkills.sqf`, `fn_doorSecurity.sqf` et `fn_playEzan.sqf` qui sont actifs)
-- `Functions/Player/` (à l'exception de `fn_initIdentity.sqf` et `fn_initLoadout.sqf`)
-- `Functions/Task/` (à l'exception de `fn_intro_01.sqf`, `fn_intro_02.sqf`, `fn_spawnStartArsenal.sqf`, `fn_initVehicleLoadout.sqf`)
-
-**Sont en attente d'implémentation.**  
-Ne pas présumer de leur fonctionnement. Tout développement ultérieur doit se baser exclusivement sur les spécifications de l'éditeur (`INFO_EDITOR.md`, `INFO_TASKS.md`, `INFO_MENU.md`).
+1. **Hauteur de Spawn :** `Z + 0.2` obligatoire pour toutes les unités/GameLogics afin d'éviter les collisions physiques avec le sol ou l'apparition sur les toits.
+2. **Placement :** Utiliser systématiquement `"CAN_COLLIDE"` dans `createUnit`.
+3. **Protection Initialisation :** `allowDamage false` pendant 3 secondes après le spawn.
+4. **Groupes Ambiants Distincts :** Chaque civil ambiant est créé dans son propre groupe pour interdire la formation d'escouade à travers les murs.
+5. **Pathfinding Découplé Intérieur / Extérieur :**
+   * **Unités d'intérieur (`INDOOR`) :** Les ordres `doMove` sont restreints aux `buildingPos` du **MÊME** bâtiment.
+   * **Unités d'extérieur (`LOCAL` / `TRAVELER`) :** Les destinations sont restreintes aux **GameLogics (`Logic`, `Land_HelipadEmpty_F`)**, aux routes ou aux zones ouvertes.
+   * **Dispersion :** Application d'un décalage aléatoire (`_pos getPos [1 + random 3, random 360]`) sur chaque cible pour empêcher l'empilement des unités.

@@ -30,11 +30,17 @@ tasks/
 
 ## 2. Règles de spawn des PNJ
 
-### Anti-Glitch (Murs et Planchers) : Z + 0.2, CAN_COLLIDE et Groupes Séparés
-Pour éviter que les IA n'apparaissent dans les murs ou s'enfoncent dans le sol (particulièrement dans les bâtiments) :
-1. **Élévation :** Tout PNJ ou objet spawné dans ou près d'un bâtiment doit être positionné à Z + 0.2 pour éviter les collisions avec le plancher.
-2. **CAN_COLLIDE :** Toujours utiliser `"CAN_COLLIDE"` dans `createUnit` pour forcer le placement.
-3. **Groupes Individuels (Ambiance) :** Les PNJ ambiants doivent impérativement être dans leur propre groupe. Si plusieurs PNJ ambiants sont dans le même groupe, ils essaieront de former une escouade et traverseront les murs pour rejoindre leur chef.
+### Anti-Glitch (Spawn, Murs & Pathfinding) : Z + 0.2, CAN_COLLIDE, Groupes Séparés & Pathfinding Découplé
+
+Pour garantir que les IA ne traversent pas les murs, ne s'enfoncent pas dans le sol et ne se rentrent pas les unes dans les autres :
+
+1. **Élévation au spawn (Z + 0.2) :** Tout PNJ ambiant ou de tâche spawné dans ou près d'un bâtiment doit être positionné à `Z + 0.2` (ex: `_pos set [2, (_pos select 2) + 0.2]`). Ne pas modifier cette hauteur au-delà de +0.2 pour éviter que les unités ne réapparaissent sur les toits.
+2. **Placement CAN_COLLIDE :** Toujours utiliser `"CAN_COLLIDE"` dans `createUnit` pour imposer le placement initial.
+3. **Groupes Individuels (Ambiance) :** Chaque PNJ ambiant doit être créé dans son propre groupe (`createGroup [civilian, true]`). Si plusieurs PNJ ambiants partagent le même groupe, la logique d'escouade les forcera à rejoindre le leader en ligne droite à travers les murs.
+4. **Pathfinding & Déplacement Intérieur / Extérieur (Découplé) :**
+   - **Civils d'intérieur (`INDOOR`) :** Une IA apparue à l'intérieur d'un bâtiment ne doit **JAMAIS** recevoir un ordre `doMove` direct vers une position d'un autre bâtiment distant. Ses déplacements se font exclusivement entre les `buildingPos` du **MÊME** bâtiment pour respecter le pathfinding interne.
+   - **Civils d'extérieur (`LOCAL` / `TRAVELER`) :** Les cibles de déplacement des unités qui marchent dehors doivent être des **GameLogics (`Logic`, `Land_HelipadEmpty_F`)**, des routes ou des coordonnées de terrain dégagé situées à l'extérieur.
+   - **Anti-Empilement des IA :** Appliquer une dispersion aléatoire sur chaque position de destination (`_pos getPos [1 + random 3, random 360]`) afin que plusieurs unités ne ciblent pas la même coordonnée et ne traversent pas leurs corps respectifs.
 
 ```sqf
 private _pos = getPosATL _logique;

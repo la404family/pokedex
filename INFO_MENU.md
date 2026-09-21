@@ -1,93 +1,82 @@
 # INFO_MENU.md — Spécification du Menu Tactique de Lancement Initial
 
-Ce document spécifie le fonctionnement, les objectifs, la configuration Éditeur Eden et la logique de nettoyage post-lancement du **Panneau de Commandement Initial** pour la mission Takistan Restored.
+Ce document spécifie le fonctionnement, l'architecture GUI, la configuration Éditeur Eden, les identifiants de contrôle (IDCs) et la logique de nettoyage post-lancement du **Panneau de Commandement Initial** (`Refour_Main_Menu_Dialog`, IDD 7000) pour la mission *Takistan Restored*.
 
 ---
 
 ## 1. Objectifs et Fonctionnalités du Menu Initial
 
-Le menu initial (`Refour_Main_Menu_Dialog`) est l'interface centrale de préparation avant l'insertion tactique du joueur sur le théâtre d'opérations de Takistan.
+Le menu initial (`Refour_Main_Menu_Dialog`) est l'interface centrale 3 panneaux de préparation avant l'insertion tactique du joueur sur le théâtre d'opérations de Takistan.
 
-* **Ouverture Automatique :** Dès le démarrage de la mission (`init.sqf` / `initPlayerLocal.sqf`), le jeu masque l'écran (`titleCut`) et ouvre immédiatement le panneau de commande plein écran.
-* **Sélection de Mission :** Choix parmi les missions d'opération (Reconnaissance, Destruction de dépôt, Infiltration HVT) avec mise à jour dynamique du titre et du briefing.
-* **Panneau Environnement & Météo :**
-  * **Heure de la journée :** Réglage en direct de l'horaire.
-  * **Couverture nuageuse :** Ajustement de l'ennuagement.
-  * **Densité du brouillard :** Brouillard scalaire adapté au relief montagneux de Takistan (visible 1 seconde après le choix du joueur).
-* **Choix du Véhicule & Aperçu 3D PiP :**
-  * Sélection dynamique parmi les véhicules légers/voitures disponibles dans les addons du joueur (véhicule par défaut : *Land Rover 110 Transport* `CUP_I_LR_Transport_RACS`).
-  * Flux vidéo caméra en temps réel (`rendertarget8`) affichant le véhicule sous les projecteurs de la zone de présentation (`vehicles_spawner`).
-* **Déploiement Tactique & Carte :**
-  * **Secteur de Déploiement :** Sélection du secteur d'opération avec affichage des coordonnées de grille militaires (`Grille 097-043`).
-  * **Vecteur d'Insertion :** Dépose par Hélicoptère (`HELI`) ou Parachutage haute altitude (`TAP`).
-  * **Aperçu Carte Tactique :** Animation et centrage automatique de la carte sur le secteur sélectionné.
+* **Ouverture Automatique :** Dès le démarrage (`init.sqf`), le script [`fn_spawn_main_menu.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Spawn/fn_spawn_main_menu.sqf) est exécuté avec l'argument `"OPEN"`.
+* **Disposition 3 Panneaux :**
+  1. **Panneau Gauche :** Sélection des Tâches Obligatoires (cochées/bloquées) et Optionnelles (cochables).
+  2. **Panneau Central :** Réglages environnementaux (Heure, Nuages, Brouillard) et Aperçu Véhicule en temps réel PiP 3D (`rendertarget8`).
+  3. **Panneau Droit :** Choix du secteur d'opération (Grille militaire), vecteur d'insertion (Hélicoptère / HALO C-130) et carte tactique interactive.
 
 ---
 
-## 2. Déroulement du Lancement et Nettoyage Post-Opération
+## 2. Structure GUI et Contrôles IDCs (`Dialogs/main_menu.hpp`)
 
-Lors du clic sur **"LANCER L'OPÉRATION"**, le script (`LL_fnc_spawn_main_menu`) exécute les séquences suivantes :
+**Dialog IDD :** `7000` (`Refour_Main_Menu_Dialog`)
 
-### A. Suppression des Éléments de Prévisualisation (Nettoyage de Scène)
-Tous les éléments temporaires de présentation situés sur le terrain sont définitivement supprimés afin de libérer de la mémoire et d'assainir la carte :
-* **`post_camera` :** La caméra de prévisualisation et sa logique support.
-* **`vehicles_spawner` :** La logique de spawner et la zone d'exposition du véhicule.
-* **`post_lamp_0`, `post_lamp_1`, `post_lamp_2` :** Les projecteurs d'éclairage nocturne de la zone d'exposition.
-* **`MISSION_var_preview_veh` & Caméra PiP :** Destruction du véhicule 3D d'aperçu et fermeture du canal vidéo `rendertarget8`.
+### 🔹 Panneau Gauche : Sélection des Objectifs de Mission
+| IDC | Type | Description / Rôle |
+| :--- | :--- | :--- |
+| **`7100`** | `RscCheckBox` | **Tâche Obligatoire 1 (TaskA)** : Se rendre sur zone (Cochée & verrouillée). |
+| **`7101`** | `RscCheckBox` | **Tâche Obligatoire 2 (TaskB)** : Protection population (Cochée & verrouillée). |
+| **`7102`** | `RscCheckBox` | **Tâche Obligatoire 3 (TaskC)** : Protection escouade & Extraction (Cochée & verrouillée). |
+| **`7110`** | `RscCheckBox` | **Optionnelle 1 :** Captif (`TASK_CAPTIVE`) |
+| **`7111`** | `RscCheckBox` | **Optionnelle 2 :** Cible HVT (`TASK_HVT`) |
+| **`7112`** | `RscCheckBox` | **Optionnelle 3 :** Déminage (`TASK_DEFUSE`) |
+| **`7113`** | `RscCheckBox` | **Optionnelle 4 :** Émetteur Radio (`TASK_TRANSMISSION`) |
+| **`7114`** | `RscCheckBox` | **Optionnelle 5 :** Dépôt Chimique (`TASK_CHEMICAL`) |
+| **`7115`** | `RscCheckBox` | **Optionnelle 6 :** Extraction HVT (`TASK_EXTRACT_HVT`) |
+| **`7116`** | `RscCheckBox` | **Optionnelle 7 :** Documents Secrets (`TASK_DOCUMENTS`) |
+| **`7117`** | `RscCheckBox` | **Optionnelle 8 :** Épave Tigris (`TASK_TIGRIS`) |
+| **`7118`** | `RscCheckBox` | **Optionnelle 9 :** Milice Insurgée (`TASK_MILITIA`) |
 
-### B. Isolation Visuelle du Secteur sur la Carte
-* Tous les marqueurs de secteurs non sélectionnés (`marker_0`, `marker_1`, etc.) passent en **transparence totale (`setMarkerAlpha 0`)**.
-* **Seul le marqueur du secteur choisi pour la mission reste visible sur la carte (`setMarkerAlpha 1`)**.
+### 🔹 Panneau Central : Environnement & Studio Véhicule 3D (PiP)
+| IDC | Type | Description / Rôle |
+| :--- | :--- | :--- |
+| **`7200`** | `RscCombo` | **Heure de la journée :** Liste déroulante de 00:00 à 23:00. |
+| **`7201`** | `RscCombo` | **Couverture nuageuse :** Pourcentage d'ennuagement (0% à 100%). |
+| **`7202`** | `RscCombo` | **Densité du brouillard :** Intensité du brouillard (0% à 100%). |
+| **`7204`** | `RscCombo` | **Sélection du Véhicule :** Liste auto-remplie des véhicules légers issus de `CfgVehicles` (par défaut `CUP_I_LR_Transport_RACS`). |
+| **`7203`** | `RscPicture` | **Écran Caméra PiP :** Rendu 3D temps réel du véhicule d'exposition (`#(argb,512,512,1)r2t(rendertarget8,1.0)`). |
 
-### C. Introductions et Déploiement Aérien
-Le lancement déclenche l'une des deux séquences d'introduction tactique :
-1. **Introduction Hélicoptère (`fn_intro_01.sqf`) :**
-   - Rassemblement des unités jouables `player_0` à `player_5` (faction Indépendante - RACS).
-   - Embarquement des joueurs dans l'hélicoptère de transport allié UH-60L (`CUP_I_UH60L_FFV_RACS`).
-   - Séquence vidéo cinématique, vol d'approche tactique, ouverture des portes latérales, atterrissage et débarquement des joueurs à la LZ.
-2. **Introduction Avion (`fn_intro_02.sqf`) :**
-   - Largage parachutiste (HALO) depuis un C-130J à haute altitude au-dessus du secteur.
-
-### D. Point de Dépose et Ravitaillement du Véhicule
-* **Zone d'Insertion (Minimum 900m) :** Le point d'atterrissage ou de largage est déterminé à un minimum de **900 mètres** du secteur d'objectif afin de garantir une phase d'approche tactique.
-* **Téléportation et Équipement du Véhicule Sélectionné :**
-  - Le véhicule choisi dans le menu est généré à proximité immédiate du lieu de dépose/largage et assigné à la variable `vehicule_team`.
-  - Il est accompagné sur place d'une **caisse de munitions / arsenal (`fn_spawnStartArsenal.sqf`)** et d'un **fumigène vert (`SmokeShellGreen`)** marquant le point de ralliement.
-
----
-
-## 3. Configuration Requise dans l'Éditeur Eden
-
-Pour assurer le bon fonctionnement du menu et de la scène de présentation, les éléments suivants doivent être placés dans l'Éditeur Eden :
-
-1. **Objets de Scène Caméra & Véhicule :**
-   * `post_camera` : Position et orientation de la caméra de prévisualisation du véhicule.
-   * `vehicles_spawner` : Point central où le véhicule est exposé.
-   * `post_lamp_0`, `post_lamp_1`, `post_lamp_2` : Éclairages orientés vers `vehicles_spawner` pour la prévisualisation de nuit.
-2. **Unités Jouables :**
-   * Unités jouables RACS (Indépendant) nommées `player_0` à `player_5`.
-3. **Marqueurs de Secteurs :**
-   * Marqueurs nommés `marker_0`, `marker_1`, `marker_2`, etc., définissant les zones d'opérations sur Takistan.
+### 3️⃣ Panneau Droit : Déploiement Tactique & Carte Interactive
+| IDC | Type | Description / Rôle |
+| :--- | :--- | :--- |
+| **`7300`** | `RscCombo` | **Secteur de Déploiement :** Sélection parmi les marqueurs carte (`marker_*`) avec affichage des coordonnées de grille militaires (`Grille XXX-YYY`). |
+| **`7301`** | `RscCombo` | **Vecteur d'Insertion :** Dépose par Hélicoptère (`HELI` / `fn_intro_01`) ou Parachutage C-130 HALO (`TAP` / `fn_intro_02`). |
+| **`7302`** | `RscMapControl` | **Carte Tactique Interactive :** Zoom et centrage automatique sur le secteur sélectionné. |
 
 ---
 
-## 4. Architecture Fichiers & Système de Traduction
+## 3. Éléments Obligatoires dans l'Éditeur Eden (Studio PiP)
 
-```
-description.ext                 ← Inclusion de Dialogs\main_menu.hpp et CfgFunctions (LL_fnc_intro_01)
-stringtable.xml                 ← Fichier compilé contenant les 15 langues Arma 3
+Pour assurer le fonctionnement du rendu 3D du véhicule dans l'écran PiP du menu :
 
-Dialogs/
-  main_menu.hpp                 ← Interface HPP plein écran (IDD 7000, PiP rendertarget8)
+1. **`vehicles_spawner` (`Game Logic`) :** Marqueur de position de spawn pour le véhicule de prévisualisation du menu.
+2. **`post_camera` (`Game Logic`) :** Position et orientation de la caméra du studio de prévisualisation.
+3. **`post_lamp_0`, `post_lamp_1`, `post_lamp_2` (`Game Logics`) :** Eclairages/projecteurs du studio d'exposition du véhicule.
 
-Functions/Spawn/
-  fn_spawn_main_menu.sqf        ← Traitement SQF (OPEN, SELECT_MISSION, SELECT_VEHICLE, UPDATE_MAP, UPDATE_ENV_PREVIEW, LAUNCH)
-  fn_spawn_main_menu.xml        ← Source XML des textes (15 langues traduites)
+---
 
-Functions/Task/
-  fn_intro_01.sqf               ← Introduction Hélicoptère (UH-60L RACS, embarquement player_0 à player_5)
-  fn_intro_01.xml               ← Source XML des textes de l'intro (15 langues traduites)
-  fn_spawnStartArsenal.sqf      ← Génération de la caisse d'arsenal au point de dépose
-```
+## 4. Logique de Lancement & Nettoyage (`LAUNCH`)
 
-Le projet suit la procédure **`INFO_STRINTABLE.md`** : toute modification de texte s'effectue dans les fichiers `.xml` puis est compilée dans `stringtable.xml` via `python compile_stringtable.py`.
+Lorsque le joueur clique sur le bouton **Lancer l'opération** :
+
+1. **Collecte des Tâches :** Vérification des cases cocher optionnelles. Si aucune tâche optionnelle n'est sélectionnée, une alerte est affichée.
+2. **Clôture du GUI :** Fermeture du dialogue (`closeDialog 0`).
+3. **Nettoyage Automatique du Studio PiP :**
+   * Destruction de l'objet véhicule de prévisualisation (`MISSION_var_preview_veh`).
+   * Suppression de la caméra PiP (`MISSION_var_veh_cam`) et déconnexion de `rendertarget8`.
+   * Suppression des GameLogics `vehicles_spawner`, `post_camera` et des projecteurs `post_lamp_*`.
+4. **Application des Conditions Météo :** Horodatage (`setDate`), ennuagement (`setOvercast`), brouillard (`setFog`) et synchronisation (`simulWeatherSync`).
+5. **Calcul de la Zone d'Atterrissage (LZ) :** Détermination dynamique d'une LZ distante d'au moins **900 m** de l'objectif principal.
+6. **Lancement des Systèmes de Mission :**
+   * Exécution de la cinématique sélectionnée (`fn_intro_01` pour hélicoptère ou `fn_intro_02` pour parachutage HALO).
+   * Lancement de la faune et de la population civile ambiante (`fn_ambientCivilians`).
+   * Lancement du générateur de scénarios (`fn_task_generator`).
