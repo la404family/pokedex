@@ -30,13 +30,19 @@ tasks/
 
 ## 2. Règles de spawn des PNJ
 
-### Z + 0.2 obligatoire
-Tout PNJ ou objet spawné dans ou près d'un bâtiment **doit être positionné à Z + 0.2** pour éviter les collisions avec les géométries intérieures.
+### Anti-Glitch (Murs et Planchers) : Z + 0.2, CAN_COLLIDE et Groupes Séparés
+Pour éviter que les IA n'apparaissent dans les murs ou s'enfoncent dans le sol (particulièrement dans les bâtiments) :
+1. **Élévation :** Tout PNJ ou objet spawné dans ou près d'un bâtiment doit être positionné à Z + 0.2 pour éviter les collisions avec le plancher.
+2. **CAN_COLLIDE :** Toujours utiliser `"CAN_COLLIDE"` dans `createUnit` pour forcer le placement.
+3. **Groupes Individuels (Ambiance) :** Les PNJ ambiants doivent impérativement être dans leur propre groupe. Si plusieurs PNJ ambiants sont dans le même groupe, ils essaieront de former une escouade et traverseront les murs pour rejoindre leur chef.
 
 ```sqf
-private _pos = getPosASL _logique;
+private _pos = getPosATL _logique;
 _pos set [2, (_pos select 2) + 0.2];
-_unit setPosASL _pos;
+
+private _grp = createGroup [civilian, true];
+private _unit = _grp createUnit ["C_man_1", _pos, [], 0, "CAN_COLLIDE"];
+_unit setPosATL _pos;
 ```
 
 ### Protection anti-collision au spawn

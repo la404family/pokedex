@@ -406,15 +406,9 @@ if (_mode == "LAUNCH") exitWith {
         };
     };
 
-    // Récupération globale des GameLogics pour la circulation des civils sur toute la carte
-    private _globalNodes = nearestObjects [_dropPosCenter, ["Logic", "Land_HelipadEmpty_F"], 400] + nearestObjects [_targetPos, ["Logic", "Land_HelipadEmpty_F"], 400];
-    if (count _globalNodes == 0) then {
-        _globalNodes = nearestObjects [_dropPosCenter, ["House", "Building"], 400] + nearestObjects [_targetPos, ["House", "Building"], 400];
-    };
-
-    // Lancement de la vie civile ambiante (Immersive)
-    [_dropPosCenter, 400, 15, _globalNodes] spawn LL_fnc_ambientCivilians; // LZ (Départ)
-    [_targetPos, 400, 30, _globalNodes] spawn LL_fnc_ambientCivilians;     // Objectif (Arrivée)
+    // Lancement de la vie civile ambiante (Immersive) avec gestion des voyageurs inter-zones (80% Locaux / 20% Voyageurs)
+    [_dropPosCenter, 400, 15, _targetPos] spawn LL_fnc_ambientCivilians; // LZ (Départ)
+    [_targetPos, 400, 30, _dropPosCenter] spawn LL_fnc_ambientCivilians; // Objectif (Arrivée)
 
     // Lancement du gestionnaire dynamique des tâches
     [_selectedLocationMarker, _selectedInsertion, _selectedTasks] spawn LL_fnc_task_generator;

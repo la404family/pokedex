@@ -1,52 +1,85 @@
-/*
-    LL_fnc_ambientCivilians
-    Spawne des civils qui se déplacent de GameLogic en GameLogic avec comportement de fuite.
-*/
 if (!isServer) exitWith {};
 
 params [
     ["_centerPos", [0,0,0], [[]]],
     ["_radius", 400, [0]],
     ["_maxCivs", 35, [0]],
-    ["_globalNodes", [], [[]]]
+    ["_otherZonePos", [], [[]]]
 ];
 
 if (_centerPos isEqualTo [0,0,0]) exitWith {};
 
-// Récupérer les GameLogic locaux (pour le spawn initial)
-private _nodes = nearestObjects [_centerPos, ["Logic", "Land_HelipadEmpty_F"], _radius];
-if (count _nodes == 0) then {
-    _nodes = nearestObjects [_centerPos, ["House", "Building"], _radius];
-};
-
+private _nodes = nearestObjects [_centerPos, ["Logic", "Land_HelipadEmpty_F", "House", "Building"], _radius];
 if (count _nodes == 0) exitWith {};
 
-// Si aucun noeud global n'est fourni, on utilise les noeuds locaux
-private _patrolNodes = if (count _globalNodes > 0) then { _globalNodes } else { _nodes };
+private _validTowns = [];
+if (count _otherZonePos > 0) then {
+    private _distToTarget = _centerPos distance2D _otherZonePos;
+    private _towns = nearestLocations [_centerPos, ["NameVillage", "NameCity", "NameCityCapital", "NameLocal"], _distToTarget];
+    
+    {
+        private _pos = locationPosition _x;
+        if ((_pos distance2D _otherZonePos) < _distToTarget && (_pos distance2D _centerPos) > 150) then {
+            _validTowns pushBack _x;
+        };
+    } forEach _towns;
+};
+
+private _sheepGroup = createGroup [sideAmbientLife, true];
+private _safePos = [_centerPos, 25, 200, 5, 0, 0.4, 0] call BIS_fnc_findSafePos;
+for "_s" from 1 to 5 do {
+    private _spawnPos = _safePos getPos [random 10, random 360];
+    private _sheep = _sheepGroup createUnit ["Sheep_random_F", _spawnPos, [], 0, "NONE"];
+    _sheep setVariable ["LL_isAnimal", true];
+};
 
 private _spawnCount = (count _nodes) min _maxCivs;
 private _spawnedCivs = [];
-private _grp = createGroup [civilian, true];
 
 for "_i" from 1 to _spawnCount do {
     private _node = selectRandom _nodes;
     private _pos = getPosATL _node;
+    private _isIndoor = false;
     
-    // Si c'est un bâtiment, on prend une position intérieure aléatoire, sinon la position du Logic
     if (_node isKindOf "House" || _node isKindOf "Building") then {
         private _bPosList = _node buildingPos -1;
-        if (count _bPosList > 0) then { _pos = selectRandom _bPosList; };
+        if (count _bPosList > 0) then { 
+            _pos = selectRandom _bPosList; 
+            _pos set [2, (_pos select 2) + 0.5];
+            _isIndoor = true;
+        };
     };
     
-    // Spawn du civil
-    private _civ = _grp createUnit ["C_man_1", _pos, [], 0, "NONE"];
+    private _grp = createGroup [civilian, true];
+    private _civ = _grp createUnit ["C_man_1", _pos, [], 0, "CAN_COLLIDE"];
     _civ setPosATL _pos;
     
-    // Ratio de femmes
+    if (_isIndoor) then {
+        private _posASL = getPosASL _civ;
+        private _terrainZ = getTerrainHeightASL [_posASL select 0, _posASL select 1];
+        if ((_posASL select 2) < _terrainZ + 0.3) then {
+            private _fallback = [_node, 5, 30, 3, 0, 0.4, 0] call BIS_fnc_findSafePos;
+            _civ setPosATL [_fallback select 0, _fallback select 1, 0];
+        };
+    };
+    
+    _civ disableAI "TARGET";
+    _civ disableAI "AUTOTARGET";
+    _civ disableAI "MINEDETECTION";
+    _civ disableAI "SUPPRESSION";
+    _civ disableAI "COVER";
+    
     private _isFemale = (random 1) < 0.10;
     [_civ, _isFemale, false] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
     
-    // Event Handler pour la peur
+    if ((random 100) <= 20 && {count _otherZonePos > 0}) then {
+        _civ setVariable ["LL_profile", "TRAVELER"];
+        _civ setVariable ["LL_travelNodes", _validTowns];
+        _civ setVariable ["LL_travelIndex", 0];
+    } else {
+        _civ setVariable ["LL_profile", "LOCAL"];
+    };
+    
     _civ addEventHandler ["FiredNear", {
         params ["_unit", "_firer", "_distance", "_weapon", "_muzzle", "_mode", "_ammo", "_gunner"];
         if (_distance < 150) then {
@@ -54,82 +87,106 @@ for "_i" from 1 to _spawnCount do {
         };
     }];
     
-    // Désactiver temporairement les dégâts pour éviter les collisions au spawn
     _civ allowDamage false;
     [_civ] spawn { sleep 3; (_this select 0) allowDamage true; };
     
     _spawnedCivs pushBack _civ;
-    sleep 0.2;
+    sleep 0.1;
 };
 
-// Logique FSM pour chaque civil
+private _allEntities = _spawnedCivs + (units _sheepGroup);
+
 {
-    [_x, _patrolNodes] spawn {
-        params ["_civ", "_patrolNodes"];
+    [_x, _nodes, _otherZonePos] spawn {
+        params ["_unit", "_nodes", "_otherZonePos"];
         
-        while { alive _civ } do {
-            // Nettoyage si le joueur s'éloigne (uniquement après s'être approché une première fois)
-            if (!(_civ getVariable ["LL_hasBeenSeen", false])) then {
-                if (player distance2D _civ < 800) then {
-                    _civ setVariable ["LL_hasBeenSeen", true];
+        while { alive _unit } do {
+            if (!(_unit getVariable ["LL_hasBeenSeen", false])) then {
+                if (player distance2D _unit < 800) then {
+                    _unit setVariable ["LL_hasBeenSeen", true];
                 };
             } else {
-                if (player distance2D _civ > 1000) exitWith {
-                    deleteVehicle _civ;
+                if (player distance2D _unit > 1000) exitWith {
+                    deleteVehicle _unit;
                 };
             };
             
-            // Si le civil a été supprimé par la condition ci-dessus
-            if (!alive _civ) exitWith {};
+            if (!alive _unit) exitWith {};
             
-            private _fleeTime = _civ getVariable ["LL_fleeTime", 0];
-            private _isFleeing = time < _fleeTime;
-            
-            private _targetNode = selectRandom _patrolNodes;
-            private _targetPos = getPosATL _targetNode;
-            if (_targetNode isKindOf "House" || _targetNode isKindOf "Building") then {
-                private _bPosList = _targetNode buildingPos -1;
-                if (count _bPosList > 0) then { _targetPos = selectRandom _bPosList; };
-            };
-            
-            if (_isFleeing) then {
-                // Comportement de FUITE
-                _civ setBehaviour "CARELESS";
-                _civ setSpeedMode "FULL";
-                _civ setUnitPos "UP";
-                _civ doMove _targetPos;
-                
-                // On attend d'arriver ou fin de la fuite
-                waitUntil {
-                    sleep 1;
-                    !alive _civ || {(_civ distance2D _targetPos) < 4} || {time > _civ getVariable ["LL_fleeTime", 0]}
-                };
-                
-                if (alive _civ && time < _civ getVariable ["LL_fleeTime", 0]) then {
-                    // Si arrivé et toujours effrayé : on se cache (les logics étant des maisons)
-                    _civ setUnitPos "DOWN";
-                    sleep (5 + random 15);
-                };
+            if (_unit getVariable ["LL_isAnimal", false]) then {
+                sleep 10;
             } else {
-                // Comportement CALME
-                _civ setBehaviour "SAFE";
-                _civ setSpeedMode "LIMITED";
-                _civ setUnitPos "UP";
-                _civ doMove _targetPos;
+                private _fleeTime = _unit getVariable ["LL_fleeTime", 0];
+                private _isFleeing = time < _fleeTime;
                 
-                private _timeout = time + 120; // 2 min max pour atteindre le point
-                waitUntil {
-                    sleep 2;
-                    !alive _civ || {(_civ distance2D _targetPos) < 4} || {time > _timeout} || {time < _civ getVariable ["LL_fleeTime", 0]}
+                private _profile = _unit getVariable ["LL_profile", "LOCAL"];
+                private _targetPos = [];
+                
+                if (_isFleeing) then {
+                    private _node = selectRandom _nodes;
+                    _targetPos = getPosATL _node;
+                    if (_node isKindOf "House" || _node isKindOf "Building") then {
+                        private _bPosList = _node buildingPos -1;
+                        if (count _bPosList > 0) then { _targetPos = selectRandom _bPosList; };
+                    };
+                    
+                    _unit setBehaviour "CARELESS";
+                    _unit setSpeedMode "FULL";
+                    _unit setUnitPos "UP";
+                } else {
+                    _unit setBehaviour "SAFE";
+                    _unit setSpeedMode "LIMITED";
+                    _unit setUnitPos "UP";
+                    
+                    if (_profile == "LOCAL") then {
+                        private _node = selectRandom _nodes;
+                        _targetPos = getPosATL _node;
+                        if (_node isKindOf "House" || _node isKindOf "Building") then {
+                            private _bPosList = _node buildingPos -1;
+                            if (count _bPosList > 0) then { _targetPos = selectRandom _bPosList; };
+                        };
+                    } else {
+                        private _towns = _unit getVariable ["LL_travelNodes", []];
+                        private _idx = _unit getVariable ["LL_travelIndex", 0];
+                        
+                        if (_idx < count _towns) then {
+                            _targetPos = locationPosition (_towns select _idx);
+                        } else {
+                            _targetPos = _otherZonePos;
+                        };
+                    };
                 };
                 
-                if (alive _civ && time >= _civ getVariable ["LL_fleeTime", 0]) then {
-                    // Pause ambiante
-                    sleep (10 + random 40);
+                if (count _targetPos > 0) then {
+                    _unit doMove _targetPos;
+                    
+                    private _timeout = time + 180;
+                    waitUntil {
+                        sleep 2;
+                        !alive _unit || {(_unit distance2D _targetPos) < 15} || {time > _timeout} || {time < _unit getVariable ["LL_fleeTime", 0] && !_isFleeing}
+                    };
+                    
+                    if (alive _unit) then {
+                        if (time < _unit getVariable ["LL_fleeTime", 0]) then {
+                            _unit setUnitPos "DOWN";
+                            sleep (5 + random 15);
+                        } else {
+                            if (_profile == "TRAVELER") then {
+                                private _idx = _unit getVariable ["LL_travelIndex", 0];
+                                _unit setVariable ["LL_travelIndex", _idx + 1];
+                                
+                                sleep (5 + random 10);
+                                
+                                if (_unit distance2D _otherZonePos < 150) then {
+                                    _unit setVariable ["LL_profile", "LOCAL"];
+                                };
+                            } else {
+                                sleep (10 + random 40);
+                            };
+                        };
+                    };
                 };
             };
-            
-            sleep 1;
         };
     };
-} forEach _spawnedCivs;
+} forEach _allEntities;
