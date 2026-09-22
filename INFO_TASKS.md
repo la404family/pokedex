@@ -117,25 +117,33 @@ _target removeAction _id;
 
 ### Création de tâche (Comportement Vanilla Arma 3)
 Nous utilisons le système de tâches **Vanilla** (`BIS_fnc_taskCreate`). 
-Pour avoir de "vraies" tâches avec le comportement natif du jeu (affichage sur la carte, et affichage en 3D à l'écran **uniquement si le joueur a assigné la tâche**), il faut laisser le 9ème paramètre (`visibleIn3D`) sur `false` ou l'omettre.
+
+**Bonnes pratiques d'immersion (À implémenter pour chaque nouvelle tâche) :**
+1. **Affichage 3D (HUD) :** Le 9ème paramètre (`visibleIn3D`) contrôle si l'icône flotte en permanence dans le monde 3D. Par défaut sur `false` (s'affiche uniquement si la tâche est assignée activement par le joueur). À activer sur `true` si la navigation requiert un indicateur visuel constant.
+2. **Icônes Spécifiques :** Ne pas se contenter des icônes génériques (`"move"`, `"defend"`). Utiliser la bibliothèque d'icônes précises d'Arma 3 : `"kill"` (Cible HVT), `"interact"` / `"heal"` (Otages/Civils), `"takeoff"` (Extraction), `"destroy"`, `"search"`, `"documents"`.
+3. **Hiérarchie (Parent/Enfant) :** Pour éviter d'encombrer l'écran, groupez les tâches. Au lieu d'un simple ID `"task_name"`, utilisez un tableau `["task_enfant", "task_parent"]` pour créer des sous-objectifs clairs.
 
 ```sqf
 [
     player, // Uniquement assigné au joueur local
-    ["task_XX_nom"],
+    ["task_XX_nom"], // Ou ["task_enfant", "task_parent"]
     [
         localize "STR_LL_Task_XX_Desc",
         localize "STR_LL_Task_XX_Title",
         localize "STR_LL_Task_XX_Marker"
     ],
     _positionObjectif,
-    "AUTOASSIGNED", // Assigne la tâche automatiquement au joueur, ce qui fera apparaître son marqueur 3D Vanilla
+    "AUTOASSIGNED", // Assigne la tâche automatiquement
     5,
-    true,    // Notification activée ("Nouvelle Tâche")
-    "recon", // Icône de tâche (Vanilla)
-    false    // visibleIn3D = false -> Le marqueur 3D s'affiche UNIQUEMENT si la tâche est assignée.
+    true,        // Notification activée ("Nouvelle Tâche")
+    "interact",  // Icône de tâche SPÉCIFIQUE (kill, interact, takeoff, destroy...)
+    false        // visibleIn3D = false -> Le marqueur 3D s'affiche UNIQUEMENT si assigné.
 ] call BIS_fnc_taskCreate;
 ```
+
+### Amélioration de l'Intel et du Briefing
+- **Liens de Marqueurs :** Dans les textes XML, utiliser `<marker name='nom_du_marker'>Texte cliquable</marker>`. Dans le briefing en jeu, cliquer sur ce texte en orange centrera automatiquement la carte sur l'objectif.
+- **Intel Physique :** Placer des objets physiques (documents, laptops) avec un `addAction` pour révéler de nouvelles pages secrètes dans le briefing via `createDiaryRecord`.
 
 ### Suivi en temps réel sur la carte
 Puisque la mission est Solo, vous pouvez **sans aucun problème** utiliser les commandes globales de marqueurs (`createMarker`, `setMarkerPos`) dans une boucle pour mettre à jour la position d'une cible en mouvement. La notion de surcharge réseau n'existe pas ici.
@@ -222,11 +230,26 @@ deleteVehicle _dummy;
 ## 11. Migration des Tâches Optionnelles (D)
 
 > **INFORMATION IMPORTANTE POUR LE DÉVELOPPEMENT FUTUR**
-> Toutes les tâches optionnelles sont **déjà codées et fonctionnelles**. Leur logique, leurs scénarios et leurs triggers existent actuellement dans le dossier `Functions\Task` sous les anciens noms de fichiers (`fn_task00.sqf`, `fn_task01.sqf`, `fn_task02.sqf`, ..., `fn_task08.sqf`).
+> Toutes les tâches optionnelles sont **déjà codées et fonctionnelles**. Leur logique, leurs scénarios et leurs triggers existent actuellement dans le dossier `Functions\Task` sous les anciens noms de fichiers (`fn_task00.sqf` à `fn_task08.sqf`).
 > 
 > **Le travail restant sur ces tâches consiste uniquement à :**
 > 1. **Optimiser** et nettoyer le code existant de ces fichiers `fn_taskXX.sqf`.
-> 2. **Migrer** cette logique dans les nouveaux fichiers de structure prévus à cet effet (`fn_taskD_captive.sqf`, `fn_taskD_hvt.sqf`, `fn_taskD_defuse.sqf`, etc.).
+> 2. **Migrer** cette logique dans les nouveaux fichiers de structure prévus à cet effet (`fn_taskD_*.sqf`).
 > 3. Supprimer l'utilisation des fichiers séparés `_addAction.sqf` et centraliser la logique dans le fichier principal de la tâche.
-> 
-> Le code de mission et les objets nécessaires sont déjà là, l'objectif est d'adapter et d'intégrer ces missions dans le nouveau gestionnaire dynamique.
+> 4. **Ne JAMAIS utiliser `createMarker` avec `mil_objective` ou de gros marqueurs manuels** pour indiquer les cibles (cela surcharge la carte). Utilisez exclusivement les destinations natives de `BIS_fnc_taskCreate` ou `BIS_fnc_taskSetDestination` pour que l'icône de la tâche s'affiche proprement.
+
+### État de la migration (To-Do List)
+
+**Tâches Terminées (Faites) :**
+- [x] **TASK_HVT** (`fn_taskD_hvt.sqf`) - Éliminer le Commandant HVT.
+- [x] **TASK_DOCUMENTS** (`fn_taskD_documents.sqf`) - Migrer depuis `fn_task01.sqf` (Fouiller l'officier pour les registres).
+
+**Tâches Restantes (À faire) :**
+- [ ] **TASK_TRANSMISSION** (`fn_taskD_transmission.sqf`) - Migrer depuis `fn_task03.sqf` (Détruire les stations radio).
+- [ ] **TASK_CAPTIVE** (`fn_taskD_captive.sqf`) - Migrer depuis `fn_task00.sqf` (Libérer l'agent captif).
+- [ ] **TASK_DEFUSE** (`fn_taskD_defuse.sqf`) - Migrer depuis `fn_task02.sqf` (Désamorcer les charges explosives).
+- [ ] **TASK_MILITIA** (`fn_taskD_militia.sqf`) - Migrer depuis `fn_task05.sqf` (Éliminer les chefs de milices).
+- [ ] **TASK_EXTRACT_HVT** (`fn_taskD_extract_hvt.sqf`) - Migrer depuis `fn_task06.sqf` (Capturer vivant l'HVT).
+- [ ] **TASK_CHEMICAL** (`fn_taskD_chemical.sqf`) - Migrer depuis `fn_task04.sqf` (Élinguer la citerne chimique sans la détruire).
+- [ ] **TASK_TIGRIS** (`fn_taskD_tigris.sqf`) - Migrer depuis `fn_task08.sqf` (Détruire le brouilleur et la DCA Tigris).
+*(Note : l'ancienne `task07` sur le char Angara semble avoir été remplacée/abandonnée au profit de TASK_HVT dans le gestionnaire).*

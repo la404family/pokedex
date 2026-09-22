@@ -7,13 +7,16 @@ params [
 if (_locMarker == "") then { _locMarker = "marker_0"; };
 
 private _centerPos = getMarkerPos _locMarker;
-private _nearLogics = nearestObjects [_centerPos, ["Logic", "Land_HelipadEmpty_F"], 500];
+private _nearHelipads = nearestObjects [_centerPos, ["Land_HelipadEmpty_F"], 500];
+private _allLogics = allMissionObjects "Logic";
+private _nearLogics = _allLogics select { _x distance2D _centerPos <= 500 };
+private _validSpawnPoints = _nearLogics + _nearHelipads;
 
 private _hvtPos = _centerPos;
 private _otherLogics = [];
 
-if (count _nearLogics > 0) then {
-    private _shuffled = _nearLogics call BIS_fnc_arrayShuffle;
+if (count _validSpawnPoints > 0) then {
+    private _shuffled = _validSpawnPoints call BIS_fnc_arrayShuffle;
     _hvtPos = getPosATL (_shuffled select 0);
     _otherLogics = _shuffled select [1, (count _shuffled - 1)];
 } else {
@@ -46,7 +49,10 @@ private _sentinelLogics = _otherLogics select [0, 4];
     _allGuards pushBack _sentinel;
 } forEach _sentinelLogics;
 
-private _patrolLogics = if (count _otherLogics > 0) then { _otherLogics } else { [_nearLogics] select { count _nearLogics > 0 } };
+private _patrolLogics = _otherLogics - _sentinelLogics;
+if (count _patrolLogics == 0) then {
+    _patrolLogics = if (count _otherLogics > 0) then { _otherLogics } else { _validSpawnPoints };
+};
 
 for "_p" from 1 to 2 do {
     private _pGrp = createGroup [east, true];
@@ -159,13 +165,6 @@ private _fn_triggerAlert = {
     };
 } forEach (_allGuards + [_hvt]);
 
-private _mkrName = "mkr_taskD_hvt";
-deleteMarker _mkrName;
-createMarker [_mkrName, _hvtPos];
-_mkrName setMarkerType "mil_objective";
-_mkrName setMarkerColor "ColorOrange";
-_mkrName setMarkerText (localize "STR_LL_Task_D_HVT_Marker");
-
 [
     player,
     ["task_d_hvt"],
@@ -174,21 +173,13 @@ _mkrName setMarkerText (localize "STR_LL_Task_D_HVT_Marker");
         localize "STR_LL_Task_D_HVT_Title",
         localize "STR_LL_Task_D_HVT_Marker"
     ],
-    _hvtPos,
+    [_hvt, true],
     "AUTOASSIGNED",
     5,
     true,
     "kill",
     false
 ] call BIS_fnc_taskCreate;
-
-[_hvt, _mkrName] spawn {
-    params ["_unit", "_mkr"];
-    while { !isNull _unit && { alive _unit } } do {
-        _mkr setMarkerPos (getPosATL _unit);
-        sleep 5;
-    };
-};
 
 waitUntil {
     sleep 2;
@@ -197,8 +188,6 @@ waitUntil {
 
 ["task_d_hvt", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 missionNamespace setVariable ["LL_g_taskInProgress", false, true];
-
-deleteMarker _mkrName;
 
 private _remainingGuards = _allGuards select { !isNull _x && { alive _x } };
 if (count _remainingGuards > 0) then {

@@ -85,7 +85,7 @@ private _squad = [
     _unit setName [(_nameData select 0), (_nameData select 1), (_nameData select 2)];
     
     // Configuration dynamique des voix avec le mod UVO (Anglais pour RACS)
-    if (!isNil "LL_fnc_setupUVO") then { [_unit] call LL_fnc_setupUVO; };
+
     
 } forEach _squad;
 

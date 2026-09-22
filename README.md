@@ -50,7 +50,7 @@ Toutes les fonctions ci-dessous sont déclarées dans `CfgFunctions` sous le tag
 ### 🔹 Escouade, Identité & Comportement (`Functions/Team/` & `Functions/Player/`)
 * [`Functions/Player/fn_initIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initIdentity.sqf) : Générateur d'identité aléatoire (visages, voix, noms) pour l'escouade.
 * [`Functions/Player/fn_initLoadout.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_initLoadout.sqf) : Personnalisation esthétique tout en conservant le kit d'armes d'origine.
-* [`Functions/Player/fn_setupUVO.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Player/fn_setupUVO.sqf) : Intégration du mod Unit Voice-Overs (Anglais pour RACS, Persan pour ennemis/civils).
+
 * [`Functions/Team/fn_applyIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_applyIdentity.sqf) : Application des visages et voix.
 * [`Functions/Team/fn_badgeManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_badgeManager.sqf) : Application forcée de l'insigne officiel RACS (`Images/racs_badge_ca.paa`).
 * [`Functions/Team/fn_identityManager.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_identityManager.sqf) : Gestionnaire des profils d'unités de l'escouade.

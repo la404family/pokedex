@@ -15,6 +15,8 @@ private _livingUnits = [];
 if (count _livingUnits > 0) then {
     private _targetAI = selectRandom _livingUnits;
     
+    _targetAI addScore (score _deadUnit);
+    
     selectPlayer _targetAI;
     private _group = group _targetAI;
     _group selectLeader _targetAI;

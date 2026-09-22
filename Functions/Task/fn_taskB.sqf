@@ -19,7 +19,7 @@ private _targetPos = getMarkerPos _locMarker;
     "CREATED",
     5,
     true,
-    "defend",
+    "interact",
     false
 ] call BIS_fnc_taskCreate;
 

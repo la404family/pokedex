@@ -12,7 +12,7 @@ if (!isServer) exitWith {};
     "CREATED",
     5,
     true,
-    "heli",
+    "takeoff",
     false
 ] call BIS_fnc_taskCreate;
 
