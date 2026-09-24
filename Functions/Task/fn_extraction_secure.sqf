@@ -20,6 +20,15 @@ if (count _allSquadUnits == 0) then {
     _allSquadUnits = (allPlayers + playableUnits) select { !isNull _x };
 };
 
+// Ajouter les autres membres ralliés au groupe du joueur (ex: captifs, HVT)
+if (!isNull player) then {
+    {
+        if (!(_x in _allSquadUnits) && {alive _x}) then {
+            _allSquadUnits pushBack _x;
+        };
+    } forEach (units group player);
+};
+
 // Récupérer le groupe d'origine et son camp
 private _squadGroup = grpNull;
 private _squadSide = independent;

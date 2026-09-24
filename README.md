@@ -63,7 +63,7 @@ Toutes les fonctions ci-dessous sont déclarées dans `CfgFunctions` sous le tag
 * [`Functions/Team/fn_switchToAI.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Team/fn_switchToAI.sqf) : Gestion de la mort en Solo (transfert instantané de la caméra et du commandement vers une IA survivante).
 
 ### 🔹 Vie Ambiante & Population Civile (`Functions/Civilian/`)
-* [`Functions/Civilian/fn_ambientCivilians.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_ambientCivilians.sqf) : Système de civils ambiants. Gère la séparation des déplacements intérieurs/extérieurs, le pathfinding anti-wall-clipping, le comportement sous les tirs et la boucle de suppression synchronisée (déclenchement à 800m de l'objectif, nettoyage des civils à 1500m+ toutes les 2 min).
+* [`Functions/Civilian/fn_ambientCivilians.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_ambientCivilians.sqf) : Système de civils ambiants immersif à 6 profils de déplacement (`INDOOR`, `LOCAL`, `ROAD_WALKER`, `TRAVELER`, `MARKET`, `SITTER`) et 4 stratégies de fuite (`FLEE_ROAD`, `FLEE_DIRECT`, `FLEE_HIDE`, `FLEE_SCATTER`). Pathfinding via `nearRoads`/`roadsConnectedTo` pour les marcheurs de route et voyageurs. Propagation de peur entre civils proches (50m, délai 1-5s). Comportement `AWARE`+`FULL` pour le sprint de fuite, `CARELESS`+`LIMITED` pour la marche normale. Attentes interruptibles par `FiredNear`. Boucle de suppression synchronisée (800m/1500m, 120s).
 * [`Functions/Civilian/fn_ambientSheep.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_ambientSheep.sqf) : Système de faune ambiante (10 moutons par zone de spawn). Placement terrain sécurisé hors `Logic` et `Land_HelipadEmpty_F`, patrouille pacifique autonome et boucle de despawn synchronisée (à 800m de l'objectif, suppression à 1500m+ toutes les 2 min).
 * [`Functions/Civilian/fn_spawnPresence.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_spawnPresence.sqf) : Instanciation de la population civile locale selon la densité des villages.
 * [`Functions/Civilian/fn_applyTakistaniIdentity.sqf`](file:///c:/Users/kevin/Documents/Arma%203/missions/takistanRestored.takistan/Functions/Civilian/fn_applyTakistaniIdentity.sqf) : Attribution des visages, barbes, turbans, pakols et tenues civiles orientales.
@@ -126,8 +126,19 @@ Toutes les fonctions ci-dessous sont déclarées dans `CfgFunctions` sous le tag
    * **Aucun despawn précoce :** Aucun civil ni mouton ambiant ne disparaît tant que le joueur n'a pas atteint le rayon des **800m** de la zone d'objectif sélectionnée.
    * **Nettoyage périodique (800m / 1500m) :** Dès le rayon des 800m franchi par le joueur, une boucle automatique s'exécute toutes les 2 minutes (120s) et supprime via `deleteVehicle` toutes les entités ambiantes situées à **1500m ou plus** du joueur.
 6. **Placement Sécurisé de la Faune :** Les moutons ambiants sont placés dans des espaces extérieurs dégagés à l'écart de tout objet `"Logic"` (GameLogic) et `"Land_HelipadEmpty_F"`.
-7. **Pathfinding Découplé Intérieur / Extérieur :**
-   * **Unités d'intérieur (`INDOOR`) :** Les ordres `doMove` sont restreints aux `buildingPos` du **MÊME** bâtiment.
-   * **Unités d'extérieur (`LOCAL` / `TRAVELER`) :** Les destinations sont restreintes aux **GameLogics (`Logic`, `Land_HelipadEmpty_F`)**, aux routes ou aux zones ouvertes.
+7. **Pathfinding Découplé par Profil (6 Profils) :**
+   * **`INDOOR` (~30% indoor) :** Les ordres `doMove` sont restreints aux `buildingPos` du **MÊME** bâtiment. Longues pauses (15-60s).
+   * **`LOCAL` (~25% outdoor) :** Destinations restreintes aux **GameLogics (`Logic`, `Land_HelipadEmpty_F`)**. Pauses moyennes (10-30s).
+   * **`ROAD_WALKER` (~20% outdoor) :** Suit les routes via `nearRoads`/`roadsConnectedTo`. Anti-retour via `LL_lastRoadPos`. Pauses courtes (3-8s).
+   * **`TRAVELER` (~15% outdoor) :** Se déplace entre zones via routes et villes intermédiaires (`nearestLocations`). Devient `LOCAL` à 150m de la destination.
+   * **`MARKET` (~5% outdoor) :** Stationne devant les bâtiments avec changements de direction aléatoires. Longues pauses (30-90s).
+   * **`SITTER` (~5% outdoor) :** Se pose (`setUnitPos "DOWN"`) près des bâtiments. Très longues pauses (60-180s).
    * **Dispersion :** Application d'un décalage aléatoire (`_pos getPos [1 + random 3, random 360]`) sur chaque cible pour empêcher l'empilement des unités.
-8. **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de tâches optionnelles, l'algorithme doit lire la taille exacte du marqueur de zone `(markerSize _locMarker) select 0` pour délimiter la recherche de GameLogics. Il doit exclure tout point situé à moins de 15m d'une position déjà enregistrée dans `LL_g_usedTaskPos`.
+8. **Fuite Diversifiée (4 Stratégies) :**
+   * **`FLEE_ROAD` (~30%) :** Fuit vers l'autre zone en suivant les segments de route (`roadsConnectedTo`).
+   * **`FLEE_DIRECT` (~25%) :** Court en ligne directe vers l'autre zone (urgence maximale, offset 200m).
+   * **`FLEE_HIDE` (~25%) :** Court vers le bâtiment le plus proche et se cache (`setUnitPos "DOWN"` pendant 5-15s). Les civils déjà indoor restent dans leur bâtiment.
+   * **`FLEE_SCATTER` (~20%) :** Fuit dans une direction opposée au tireur avec dispersion ±90°.
+   * **Propagation de peur :** Chaque civil paniqué propage la peur aux civils civils dans un rayon de 50m avec un délai aléatoire de 1-5s.
+   * **Comportement de fuite :** `setBehaviour "AWARE"` + `setSpeedMode "FULL"` (sprint réel). 30% de chance de posture accroupie (`MIDDLE`) entre les mouvements. Toutes les attentes sont interruptibles par un nouvel événement `FiredNear`.
+9. **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de tâches optionnelles, l'algorithme doit lire la taille exacte du marqueur de zone `(markerSize _locMarker) select 0` pour délimiter la recherche de GameLogics. Il doit exclure tout point situé à moins de 15m d'une position déjà enregistrée dans `LL_g_usedTaskPos`.

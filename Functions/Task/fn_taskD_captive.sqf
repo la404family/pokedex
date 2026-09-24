@@ -64,10 +64,13 @@ for "_i" from 0 to (_numGroups - 1) do {
 sleep 1.5;
 
 private _grpCiv = createGroup [civilian, true];
-private _hostage = _grpCiv createUnit ["C_man_polo_1_F", _spawnPos, [], 0, "CAN_COLLIDE"];
+private _hostage = _grpCiv createUnit ["C_man_1", _spawnPos, [], 0, "CAN_COLLIDE"];
 _hostage setPosATL _spawnPos;
 _hostage allowDamage false;
 [_hostage] spawn { sleep 3; (_this select 0) allowDamage true; };
+
+// Appliquer l'identité takistanaise masculine
+[_hostage, false, false] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
 
 _hostage setCaptive true;
 removeAllWeapons _hostage;
