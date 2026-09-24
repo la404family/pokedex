@@ -12,7 +12,7 @@ if (!isServer) exitWith {};
 private _targetPos = getMarkerPos _locMarker;
 
 [
-    player,
+    group player,
     ["task_mandatory_move"],
     [
         localize "STR_LL_Task_Man1_Desc",

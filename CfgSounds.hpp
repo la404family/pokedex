@@ -2,6 +2,13 @@ class CfgSounds
 {
     sounds[] = {};
 
+    class ezan
+    {
+        name = "ezan";
+        sound[] = {"Music\ezan.ogg", db+5, 1.0};
+        titles[] = {0, ""};
+    };
+
     class STR_Drone_AlreadyActive
     {
         name = "STR_Drone_AlreadyActive";

@@ -10,7 +10,16 @@ private _centerPos = getMarkerPos _locMarker;
 private _nearHelipads = nearestObjects [_centerPos, ["Land_HelipadEmpty_F"], 500];
 private _allLogics = allMissionObjects "Logic";
 private _nearLogics = _allLogics select { _x distance2D _centerPos <= 500 };
-private _validSpawnPoints = _nearLogics + _nearHelipads;
+
+private _usedPositions = missionNamespace getVariable ["LL_g_usedTaskPos", []];
+private _validSpawnPoints = (_nearLogics + _nearHelipads) select {
+    private _candidate = _x;
+    (_usedPositions findIf { _x distance2D _candidate < 150 }) == -1
+};
+
+if (count _validSpawnPoints == 0) then {
+    _validSpawnPoints = _nearLogics + _nearHelipads;
+};
 
 private _hvtPos = _centerPos;
 private _otherLogics = [];
@@ -22,6 +31,9 @@ if (count _validSpawnPoints > 0) then {
 } else {
     _hvtPos = _centerPos getPos [random 50, random 360];
 };
+
+_usedPositions pushBack _hvtPos;
+missionNamespace setVariable ["LL_g_usedTaskPos", _usedPositions];
 
 _hvtPos set [2, (_hvtPos select 2) + 0.2];
 
@@ -166,7 +178,7 @@ private _fn_triggerAlert = {
 } forEach (_allGuards + [_hvt]);
 
 [
-    player,
+    group player,
     ["task_d_hvt"],
     [
         localize "STR_LL_Task_D_HVT_Desc",

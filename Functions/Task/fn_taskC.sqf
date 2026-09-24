@@ -1,7 +1,7 @@
 if (!isServer) exitWith {};
 
 [
-    player,
+    group player,
     ["task_mandatory_ext"],
     [
         localize "STR_LL_Task_Man3_Desc",

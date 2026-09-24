@@ -13,8 +13,18 @@ if (_locMarker == "") then { _locMarker = "marker_0"; };
 
 private _centerPos = getMarkerPos _locMarker;
 private _nearHelipads = nearestObjects [_centerPos, ["Land_HelipadEmpty_F"], 800];
-private _nearLogics = (allMissionObjects "Logic") select { _x distance2D _centerPos <= 800 };
-private _validSpawnPoints = _nearLogics + _nearHelipads;
+private _allLogics = allMissionObjects "Logic";
+private _nearLogics = _allLogics select { _x distance2D _centerPos <= 800 };
+
+private _usedPositions = missionNamespace getVariable ["LL_g_usedTaskPos", []];
+private _validSpawnPoints = (_nearLogics + _nearHelipads) select {
+    private _candidate = _x;
+    (_usedPositions findIf { _x distance2D _candidate < 150 }) == -1
+};
+
+if (count _validSpawnPoints == 0) then {
+    _validSpawnPoints = _nearLogics + _nearHelipads;
+};
 
 if (count _validSpawnPoints < 2) then {
     while { count _validSpawnPoints < 2 } do {
@@ -37,6 +47,10 @@ for "_i" from 0 to (_numSpawns - 1) do {
     private _logic = _selectedLogics select _i;
     private _spawnPos = getPosATL _logic;
     if (_spawnPos isEqualTo [0,0,0]) then { _spawnPos = getPos _logic; };
+    
+    _usedPositions pushBack _spawnPos;
+    missionNamespace setVariable ["LL_g_usedTaskPos", _usedPositions];
+    
     _spawnPos set [2, (_spawnPos select 2) + 0.2];
 
     private _zoneGuards = [];
@@ -163,7 +177,7 @@ for "_i" from 0 to (_numSpawns - 1) do {
 };
 
 [
-    player,
+    group player,
     ["task_d_documents"],
     [
         localize "STR_LL_Task_01_Desc",
@@ -178,4 +192,4 @@ for "_i" from 0 to (_numSpawns - 1) do {
     false
 ] call BIS_fnc_taskCreate;
 
-player createDiaryRecord ["diary", [localize "STR_LL_Diary_Task01_Title", localize "STR_LL_Diary_Task01_Text"]];
+{ _x createDiaryRecord ["diary", [localize "STR_LL_Diary_Task01_Title", localize "STR_LL_Diary_Task01_Text"]]; } forEach (units group player);

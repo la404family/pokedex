@@ -125,7 +125,7 @@ Nous utilisons le système de tâches **Vanilla** (`BIS_fnc_taskCreate`).
 
 ```sqf
 [
-    player, // Uniquement assigné au joueur local
+    true, // TOUJOURS 'true' (tous les joueurs jouables) pour garder les tâches actives en cas de mort (fn_switchToAI)
     ["task_XX_nom"], // Ou ["task_enfant", "task_parent"]
     [
         localize "STR_LL_Task_XX_Desc",
@@ -165,6 +165,7 @@ Les tâches de base ne sont **jamais** écrites en dur dans le fichier de menu o
 
 - **Priorité aux Game Logics :** Toujours rechercher les Game Logics placées dans l'éditeur.
 - **Filtres de distance :** Minimum 400 mètres du joueur. S'élargit par paliers progressifs (+50m) si aucun lieu n'est disponible.
+- **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de plusieurs tâches optionnelles par `fn_taskB.sqf`, les emplacements sélectionnés (`Logic` ou `Helipad`) doivent être enregistrés dans le tableau global `LL_g_usedTaskPos`. Chaque tâche doit filtrer sa liste d'apparition pour exclure tout point situé à moins de 150m d'un point déjà utilisé, évitant ainsi le chevauchement d'objectifs.
 - **Espacement :** 250 mètres minimum entre chaque sous-objectif.
 
 ---
@@ -173,6 +174,12 @@ Les tâches de base ne sont **jamais** écrites en dur dans le fichier de menu o
 
 Chaque nouvelle tâche doit ajouter au moins une entrée dans le journal du joueur (`createDiaryRecord`) avec un **titre** et un **texte**.
 **Rappel :** Arma 3 affiche les `createDiaryRecord` en ordre chronologique inverse. Créer d'abord les sections secondaires, puis l'OPORD principal en dernier.
+
+**Important (Compatibilité Transfert d'IA) :**
+Pour que les journaux soient conservés si le joueur meurt et prend le contrôle d'une IA de l'escouade (`fn_switchToAI.sqf`), n'utilisez pas `player createDiaryRecord`. Assignez-le à tout le groupe via une boucle locale :
+```sqf
+{ _x createDiaryRecord ["diary", ["Titre", "Texte"]]; } forEach (units group player);
+```
 
 ---
 
@@ -245,8 +252,8 @@ deleteVehicle _dummy;
 - [x] **TASK_DOCUMENTS** (`fn_taskD_documents.sqf`) - Migrer depuis `fn_task01.sqf` (Fouiller l'officier pour les registres).
 
 **Tâches Restantes (À faire) :**
-- [ ] **TASK_TRANSMISSION** (`fn_taskD_transmission.sqf`) - Migrer depuis `fn_task03.sqf` (Détruire les stations radio).
-- [ ] **TASK_CAPTIVE** (`fn_taskD_captive.sqf`) - Migrer depuis `fn_task00.sqf` (Libérer l'agent captif).
+- [x] **TASK_TRANSMISSION** (`fn_taskD_transmission.sqf`) - Migrer depuis `fn_task03.sqf` (Détruire les stations radio).
+- [x] **TASK_CAPTIVE** (`fn_taskD_captive.sqf`) - Migrer depuis `fn_task00.sqf` (Libérer l'agent captif).
 - [ ] **TASK_DEFUSE** (`fn_taskD_defuse.sqf`) - Migrer depuis `fn_task02.sqf` (Désamorcer les charges explosives).
 - [ ] **TASK_MILITIA** (`fn_taskD_militia.sqf`) - Migrer depuis `fn_task05.sqf` (Éliminer les chefs de milices).
 - [ ] **TASK_EXTRACT_HVT** (`fn_taskD_extract_hvt.sqf`) - Migrer depuis `fn_task06.sqf` (Capturer vivant l'HVT).

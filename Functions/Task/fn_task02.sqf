@@ -165,7 +165,7 @@ if (_mode == "init") exitWith {
         false
     ] call BIS_fnc_taskCreate;
 
-    [[], { player createDiaryRecord ["diary", [localize "STR_LL_Diary_Task02_Title", localize "STR_LL_Diary_Task02_Text"]]; }] remoteExec ["spawn", 0, true];
+    [[], { { _x createDiaryRecord ["diary", [localize "STR_LL_Diary_Task02_Title", localize "STR_LL_Diary_Task02_Text"]]; } forEach (units group player); }] remoteExec ["spawn", 0, true];
 
     private _timerMinutes = 25 + floor(random 21); 
     [_timerMinutes, _bombs, _numZones] spawn {

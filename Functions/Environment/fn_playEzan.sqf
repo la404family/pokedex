@@ -72,9 +72,9 @@ private _clusters = []; // Format: [_centerPos, _representativeSpeaker, [_allSpe
 diag_log format ["[LL_fnc_playEzan] %1 clusters de diffusion formés (anti-cacophonie actif).", count _clusters];
 
 // =========================================================================
-// 4. Premier délai atmosphérique (entre 5 et 10 minutes après le lancement)
+// 4. Premier délai atmosphérique (entre 1 et 2 minutes après le lancement)
 // =========================================================================
-sleep (300 + random 300);
+sleep (60 + random 60);
 
 // =========================================================================
 // 5. Boucle principale de diffusion de l'Ezan
@@ -148,6 +148,6 @@ while {true} do {
         };
     };
 
-    // Intervalle entre les prières : 20 à 30 minutes
-    sleep (1200 + random 600);
+    // Intervalle entre les prières : 10 à 15 minutes
+    sleep (600 + random 300);
 };

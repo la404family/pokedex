@@ -8,7 +8,7 @@ params [
 private _targetPos = getMarkerPos _locMarker;
 
 [
-    player,
+    group player,
     ["task_mandatory_civ"],
     [
         localize "STR_LL_Task_Man2_Desc",
@@ -53,6 +53,8 @@ for "_i" from 1 to 3 do {
     sleep 3;
     { if (!isNull _x) then { _x allowDamage true; }; } forEach (_this select 0);
 };
+
+missionNamespace setVariable ["LL_g_usedTaskPos", []];
 
 {
     private _taskId = _x;

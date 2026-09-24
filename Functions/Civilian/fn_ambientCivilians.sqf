@@ -115,12 +115,16 @@ missionNamespace setVariable ["MISSION_var_ambientCivs", _globalCivs];
             private _targetPos = [];
             
             if (_isFleeing) then {
-                if (_isIndoor && !isNull _homeBuilding) then {
-                    private _bPosList = _homeBuilding buildingPos -1;
-                    if (count _bPosList > 0) then { _targetPos = selectRandom _bPosList; };
+                if (count _otherZonePos > 0) then {
+                    _targetPos = _otherZonePos getPos [random 150, random 360];
                 } else {
-                    private _node = selectRandom _outdoorNodes;
-                    _targetPos = (getPosATL _node) getPos [random 3, random 360];
+                    if (_isIndoor && !isNull _homeBuilding) then {
+                        private _bPosList = _homeBuilding buildingPos -1;
+                        if (count _bPosList > 0) then { _targetPos = selectRandom _bPosList; };
+                    } else {
+                        private _node = selectRandom _outdoorNodes;
+                        _targetPos = (getPosATL _node) getPos [random 3, random 360];
+                    };
                 };
                 
                 _unit setBehaviour "SAFE";
