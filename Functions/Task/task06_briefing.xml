@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Diary_Task06_Title">
-        <Original>OPORD : Opération Live Asset (Capture d'HVT &amp; Reddition)</Original>
-        <French>OPORD : Opération Live Asset (Capture d'HVT &amp; Reddition)</French>
+        <Original>Embarquer l'HVT à bord de l'hélico</Original>
+        <French>Embarquer l'HVT à bord de l'hélico</French>
         <English>OPORD: Operation Live Asset (HVT Capture &amp; Surrender)</English>
         <Turkish>OPORD: Live Asset Harekâtı (HVT Yakalama &amp; Teslim Alma)</Turkish>
         <Korean>작전 명령: 라이브 에셋 작전 (HVT 생포 및 항복 유도)</Korean>

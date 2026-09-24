@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Diary_Task02_Title">
-        <Original>OPORD : Opération Defused Shadow (Neutralisation d'Explosifs)</Original>
-        <French>OPORD : Opération Defused Shadow (Neutralisation d'Explosifs)</French>
+        <Original>Désamorcer une charge explosive</Original>
+        <French>Désamorcer une charge explosive</French>
         <English>OPORD: Operation Defused Shadow (Explosives Neutralization)</English>
         <Turkish>OPORD: Defused Shadow Harekâtı (Patlayıcı İmhası)</Turkish>
         <Korean>작전 명령: 디퓨즈드 섀도 작전 (폭발물 무력화)</Korean>

@@ -57,9 +57,9 @@
         <Polish>Zwolnij HVT</Polish>
     </Key>
     <Key ID="STR_LL_Task_06_Title">
-        <Original>Opération Live Asset</Original>
-        <French>Opération Live Asset</French>
-        <English>Operation Live Asset</English>
+        <Original>Embarquer l'HVT à bord de l'hélico</Original>
+        <French>Embarquer l'HVT à bord de l'hélico</French>
+        <English>Extract HVT via helicopter</English>
         <Turkish>Live Asset Harekâtı</Turkish>
         <Korean>라이브 에셋 작전</Korean>
         <Spanish>Operación Live Asset</Spanish>

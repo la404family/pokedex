@@ -2726,8 +2726,8 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Turkish>Karargah, sektördeki dağınık terminallerden gelen şifreli düşman yayınlarını ele geçirdi. Bu istasyonlar koordinasyonları için kritik öneme sahip. Tanımlanan tüm terminalleri tamamen yok ederek iletişim ağlarını devre dışı bırakmalıyız.</Turkish>
         </Key>
         <Key ID="STR_LL_Diary_Task00_Title">
-            <Original>OPORD : Opération Broken Cage (Sauvetage de Captif)</Original>
-            <French>OPORD : Opération Broken Cage (Sauvetage de Captif)</French>
+            <Original>Libérer un captif</Original>
+            <French>Libérer un captif</French>
             <English>OPORD: Operation Broken Cage (Hostage Rescue)</English>
             <Turkish>OPORD: Broken Cage Harekâtı (Tutsak Kurtarma)</Turkish>
             <Korean>작전 명령: 브로큰 케이지 작전 (포로 구출)</Korean>
@@ -2782,9 +2782,9 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Zabierz agenta na pokład</Polish>
         </Key>
         <Key ID="STR_LL_Task_00_Title">
-            <Original>Opération Broken Cage</Original>
-            <French>Opération Broken Cage</French>
-            <English>Operation Broken Cage</English>
+            <Original>Libérer un captif</Original>
+            <French>Libérer un captif</French>
+            <English>Free a captive</English>
             <Turkish>Broken Cage Harekâtı</Turkish>
             <Korean>브로큰 케이지 작전</Korean>
             <Spanish>Operación Broken Cage</Spanish>
@@ -2838,8 +2838,8 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Obszar operacji</Polish>
         </Key>
         <Key ID="STR_LL_Diary_Task01_Title">
-            <Original>OPORD : Opération Black Ledger (Traque &amp; Vol de Données)</Original>
-            <French>OPORD : Opération Black Ledger (Traque &amp; Vol de Données)</French>
+            <Original>Récupérer des documents</Original>
+            <French>Récupérer des documents</French>
             <English>OPORD: Operation Black Ledger (HVT Hunt &amp; Intel Theft)</English>
             <Turkish>OPORD: Black Ledger Harekâtı (HVT Avı &amp; İstihbarat Ele Geçirme)</Turkish>
             <Korean>작전 명령: 블랙 레저 작전 (HVT 추적 및 기밀 탈취)</Korean>
@@ -2866,9 +2866,9 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Wywiad zlokalizował wrogiego dowódcę wysokiego szczebla, nadzorującego finansowanie i logistykę regionalnych bojówek. Oficer posiada zaszyfrowane rejestry składów broni i tajnych sieci. Zlikwiduj cel z dużej odległości, zabezpiecz pozycję i przeszukaj ciało, aby odzyskać dane strategiczne.</Polish>
         </Key>
         <Key ID="STR_LL_Task_01_Title">
-            <Original>Opération Black Ledger</Original>
-            <French>Opération Black Ledger</French>
-            <English>Operation Black Ledger</English>
+            <Original>Récupérer des documents</Original>
+            <French>Récupérer des documents</French>
+            <English>Recover documents</English>
             <Turkish>Black Ledger Harekâtı</Turkish>
             <Korean>블랙 레저 작전</Korean>
             <Spanish>Operación Black Ledger</Spanish>
@@ -2936,8 +2936,8 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Przeszukaj oficera</Polish>
         </Key>
         <Key ID="STR_LL_Diary_Task02_Title">
-            <Original>OPORD : Opération Defused Shadow (Neutralisation d'Explosifs)</Original>
-            <French>OPORD : Opération Defused Shadow (Neutralisation d'Explosifs)</French>
+            <Original>Désamorcer une charge explosive</Original>
+            <French>Désamorcer une charge explosive</French>
             <English>OPORD: Operation Defused Shadow (Explosives Neutralization)</English>
             <Turkish>OPORD: Defused Shadow Harekâtı (Patlayıcı İmhası)</Turkish>
             <Korean>작전 명령: 디퓨즈드 섀도 작전 (폭발물 무력화)</Korean>
@@ -2964,9 +2964,9 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>W ramach przygotowań do ofensywy rebelianci zaminowali kluczowe budynki i infrastrukturę przemysłowymi ładunkami czasowymi. Wasz oddział musi przeniknąć w rejon wysokiego zagrożenia, zlokalizować wszystkie pułapki i rozbroić je przed detonacją (szacowany czas 25–45 minut). Walczcie ostrożnie, aby nie doprowadzić do przedwczesnego wybuchu.</Polish>
         </Key>
         <Key ID="STR_LL_Task_02_Title">
-            <Original>Opération Defused Shadow</Original>
-            <French>Opération Defused Shadow</French>
-            <English>Operation Defused Shadow</English>
+            <Original>Désamorcer une charge explosive</Original>
+            <French>Désamorcer une charge explosive</French>
+            <English>Defuse explosive charge</English>
             <Turkish>Defused Shadow Harekâtı</Turkish>
             <Korean>디퓨즈드 섀도 작전</Korean>
             <Spanish>Operación Defused Shadow</Spanish>
@@ -3076,9 +3076,9 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Wróg rozmieścił stacje nadawcze wysokiej częstotliwości i przekaźniki łączności, aby koordynować uderzenia i zagłuszać sygnały w regionie. Waszym celem jest sabotaż tych obiektów strategicznych. Przeniknijcie na pozycje wroga, podłóżcie ładunek C4 pod każdy terminal (zapalnik 40 sekund) i oddalcie się przed wybuchem.</Polish>
         </Key>
         <Key ID="STR_LL_Task_03_Title">
-            <Original>Opération Blind Signal</Original>
-            <French>Opération Blind Signal</French>
-            <English>Operation Blind Signal</English>
+            <Original>Détruire des stations de transmission</Original>
+            <French>Détruire des stations de transmission</French>
+            <English>Destroy transmission stations</English>
             <Turkish>Blind Signal Harekâtı</Turkish>
             <Korean>블라인드 시그널 작전</Korean>
             <Spanish>Operación Blind Signal</Spanish>
@@ -3174,8 +3174,8 @@ Ağ doluysa istekleriniz reddedilebilir veya kesintiye uğrayabilir.&lt;br/&gt;&
             <Polish>Ładunek uzbrojony! Opuścić strefę!</Polish>
         </Key>
         <Key ID="STR_LL_Diary_Task04_Title">
-            <Original>OPORD : Opération Crimson Hazard (Interception Chimique)</Original>
-            <French>OPORD : Opération Crimson Hazard (Interception Chimique)</French>
+            <Original>Sécuriser une citerne chimique</Original>
+            <French>Sécuriser une citerne chimique</French>
             <English>OPORD: Operation Crimson Hazard (Chemical Interception)</English>
             <Spanish>OPORD: Operación Crimson Hazard (Intercepción Química)</Spanish>
             <Italian>OPORD: Operazione Crimson Hazard (Intercettazione Chimica)</Italian>
@@ -3304,9 +3304,9 @@ Sadece hassas atış. Hedef araç yakınında patlayıcı yasaktır.</Turkish>
 仅限精准射击。目标车辆周围严禁使用爆炸物。</Chinese>
         </Key>
         <Key ID="STR_LL_Task_04_Title">
-            <Original>Opération Crimson Hazard</Original>
-            <French>Opération Crimson Hazard</French>
-            <English>Operation Crimson Hazard</English>
+            <Original>Sécuriser une citerne chimique</Original>
+            <French>Sécuriser une citerne chimique</French>
+            <English>Secure chemical tank</English>
             <Spanish>Operación Crimson Hazard</Spanish>
             <Italian>Operazione Crimson Hazard</Italian>
             <German>Operation Crimson Hazard</German>
@@ -3368,8 +3368,8 @@ Sadece hassas atış. Hedef araç yakınında patlayıcı yasaktır.</Turkish>
             <Chinese>请求油罐车吊运撤离（Slingload）</Chinese>
         </Key>
         <Key ID="STR_LL_Diary_Task05_Title">
-            <Original>OPORD : Opération Decapitation (Élimination d'État-Major)</Original>
-            <French>OPORD : Opération Decapitation (Élimination d'État-Major)</French>
+            <Original>Arrêter un chef de milice ennemi</Original>
+            <French>Arrêter un chef de milice ennemi</French>
             <English>OPORD: Operation Decapitation (High Command Elimination)</English>
             <Turkish>OPORD: Decapitation Harekâtı (Komuta Kademesi İmhası)</Turkish>
             <Korean>작전 명령: 디캐피테이션 작전 (지휘부 참수)</Korean>
@@ -3444,9 +3444,9 @@ Waszym zadaniem jest wytropienie i zlikwidowanie wszystkich wrogich dowódców.
 OSTRZEŻENIE: Gdy tylko jeden oficer zostanie zabity, pozostali natychmiast skoordynują zmasowany kontratak. Przygotujcie stanowiska ogniowe.</Polish>
         </Key>
         <Key ID="STR_LL_Task_05_Title">
-            <Original>Opération Decapitation</Original>
-            <French>Opération Decapitation</French>
-            <English>Operation Decapitation</English>
+            <Original>Arrêter un chef de milice ennemi</Original>
+            <French>Arrêter un chef de milice ennemi</French>
+            <English>Arrest militia leader</English>
             <Turkish>Decapitation Harekâtı</Turkish>
             <Korean>디캐피테이션 작전</Korean>
             <Spanish>Operación Decapitation</Spanish>
@@ -3514,8 +3514,8 @@ OSTRZEŻENIE: Gdy tylko jeden oficer zostanie zabity, pozostali natychmiast skoo
             <Polish>Dowódca Wyeliminowany</Polish>
         </Key>
         <Key ID="STR_LL_Diary_Task06_Title">
-            <Original>OPORD : Opération Live Asset (Capture d'HVT &amp; Reddition)</Original>
-            <French>OPORD : Opération Live Asset (Capture d'HVT &amp; Reddition)</French>
+            <Original>Embarquer l'HVT à bord de l'hélico</Original>
+            <French>Embarquer l'HVT à bord de l'hélico</French>
             <English>OPORD: Operation Live Asset (HVT Capture &amp; Surrender)</English>
             <Turkish>OPORD: Live Asset Harekâtı (HVT Yakalama &amp; Teslim Alma)</Turkish>
             <Korean>작전 명령: 라이브 에셋 작전 (HVT 생포 및 항복 유도)</Korean>
@@ -3598,9 +3598,9 @@ OSTRZEŻENIE: Gdy tylko jeden oficer zostanie zabity, pozostali natychmiast skoo
             <Polish>Zwolnij HVT</Polish>
         </Key>
         <Key ID="STR_LL_Task_06_Title">
-            <Original>Opération Live Asset</Original>
-            <French>Opération Live Asset</French>
-            <English>Operation Live Asset</English>
+            <Original>Embarquer l'HVT à bord de l'hélico</Original>
+            <French>Embarquer l'HVT à bord de l'hélico</French>
+            <English>Extract HVT via helicopter</English>
             <Turkish>Live Asset Harekâtı</Turkish>
             <Korean>라이브 에셋 작전</Korean>
             <Spanish>Operación Live Asset</Spanish>
@@ -3750,8 +3750,8 @@ OSTRZEŻENIE: Gdy tylko jeden oficer zostanie zabity, pozostali natychmiast skoo
             <Chinese>军官</Chinese>
         </Key>
         <Key ID="STR_LL_Diary_Task08_Title">
-            <Original>OPORD : Neutralisation de réseau antiaérien et de brouillage</Original>
-            <French>OPORD : Neutralisation de réseau antiaérien et de brouillage</French>
+            <Original>Détruire un DCA Tigris</Original>
+            <French>Détruire un DCA Tigris</French>
             <English>OPORD: Neutralize Anti-Aircraft &amp; Jamming Network</English>
             <Turkish>OPORD: Uçaksavar ve Karıştırma Ağını Etkisiz Hale Getir</Turkish>
             <Korean>OPORD: 대공 및 교란 네트워크 무력화</Korean>
@@ -3778,8 +3778,8 @@ OSTRZEŻENIE: Gdy tylko jeden oficer zostanie zabity, pozostali natychmiast skoo
             <Polish>&lt;font color='#FF4444'&gt;MISJA WYSOKIEGO RYZYKA&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;Wróg rozmieścił silnie chronioną sieć zakłócania i obrony przeciwlotniczej. Wsparcie lotnicze jest niedostępne na początku operacji.&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFFF00'&gt;SOJUSZNICZY LOT LOGISTYCZNY :&lt;/font&gt;&lt;br/&gt;- Samolot transportowy RACS C-130J (ViV) przeleci nad obszarem działań &lt;b&gt;między 45. a 55. minutą&lt;/b&gt; operacji.&lt;br/&gt;- Jeśli zagłuszacz Tempest nadrzędny nie zostanie zniszczony przed jego przybyciem, wroga obrona przeciwlotnicza zestrzeli samolot transportowy, powodując niepowodzenie misji.&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFFF00'&gt;INFO TAKTYCZNE:&lt;/font&gt;&lt;br/&gt;- &lt;font color='#FF8800'&gt;Zagłuszacz Drona (Pozycja A):&lt;/font&gt; Ciężarówka Tempest (Urządzenie) blokuje drona.&lt;br/&gt;- &lt;font color='#FF8800'&gt;DCA i Artyleria (Pozycja B, &gt;600m):&lt;/font&gt; Pojazd ZSU-39 Tigris DCA i wyrzutnia BM-21 Grad blokują helikoptery.&lt;br/&gt;&lt;br/&gt;&lt;font color='#FFFF00'&gt;ROZWIĄZANIE:&lt;/font&gt;&lt;br/&gt;- Zniszczenie pojazdu Tempest (Urządzenie) zalicza zadanie główne, odblokowuje drona i oślepia obronę przeciwlotniczą.&lt;br/&gt;- Zniszczenie pojazdu Tigris DCA odblokowuje wsparcie helikoptera.&lt;br/&gt;&lt;br/&gt;Użycie drona i helikoptera jest kluczowe. Możesz zniszczyć obronę przeciwlotniczą i artylerię przed zagłuszaczem, aby uzyskać wsparcie lotnicze. Po zniszczeniu zagłuszacza Tempest całe pozostałe wsparcie będzie dostępne.</Polish>
         </Key>
         <Key ID="STR_LL_Task_08_Title">
-            <Original>Neutraliser le réseau de brouillage</Original>
-            <French>Neutraliser le réseau de brouillage</French>
+            <Original>Détruire un DCA Tigris</Original>
+            <French>Détruire un DCA Tigris</French>
             <English>Neutralize Jamming Network</English>
             <Spanish>Neutralizar la red de interferencias</Spanish>
             <Italian>Neutralizzare la rete di disturbo</Italian>

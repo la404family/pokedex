@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Diary_Task00_Title">
-        <Original>OPORD : Opération Broken Cage (Sauvetage de Captif)</Original>
-        <French>OPORD : Opération Broken Cage (Sauvetage de Captif)</French>
+        <Original>Libérer un captif</Original>
+        <French>Libérer un captif</French>
         <English>OPORD: Operation Broken Cage (Hostage Rescue)</English>
         <Turkish>OPORD: Broken Cage Harekâtı (Tutsak Kurtarma)</Turkish>
         <Korean>작전 명령: 브로큰 케이지 작전 (포로 구출)</Korean>

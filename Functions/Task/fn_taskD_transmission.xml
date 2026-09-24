@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Task_D_Transmission_Title">
-        <Original>Destroy Radio Stations</Original>
-        <English>Destroy Radio Stations</English>
-        <French>Détruire les stations radio</French>
+        <Original>Destroy transmission stations</Original>
+        <English>Destroy transmission stations</English>
+        <French>Détruire des stations de transmission</French>
         <Spanish>Destruir las estaciones de radio</Spanish>
         <German>Radiostationen zerstören</German>
         <Italian>Distruggi le stazioni radio</Italian>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Diary_Task05_Title">
-        <Original>OPORD : Opération Decapitation (Élimination d'État-Major)</Original>
-        <French>OPORD : Opération Decapitation (Élimination d'État-Major)</French>
+        <Original>Arrêter un chef de milice ennemi</Original>
+        <French>Arrêter un chef de milice ennemi</French>
         <English>OPORD: Operation Decapitation (High Command Elimination)</English>
         <Turkish>OPORD: Decapitation Harekâtı (Komuta Kademesi İmhası)</Turkish>
         <Korean>작전 명령: 디캐피테이션 작전 (지휘부 참수)</Korean>

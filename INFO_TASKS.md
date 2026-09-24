@@ -165,7 +165,7 @@ Les tâches de base ne sont **jamais** écrites en dur dans le fichier de menu o
 
 - **Priorité aux Game Logics :** Toujours rechercher les Game Logics placées dans l'éditeur.
 - **Filtres de distance :** Minimum 400 mètres du joueur. S'élargit par paliers progressifs (+50m) si aucun lieu n'est disponible.
-- **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de plusieurs tâches optionnelles par `fn_taskB.sqf`, les emplacements sélectionnés (`Logic` ou `Helipad`) doivent être enregistrés dans le tableau global `LL_g_usedTaskPos`. Chaque tâche doit filtrer sa liste d'apparition pour exclure tout point situé à moins de 150m d'un point déjà utilisé, évitant ainsi le chevauchement d'objectifs.
+- **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de plusieurs tâches optionnelles par `fn_taskB.sqf`, les emplacements sélectionnés (`Logic` ou `Helipad`) doivent être enregistrés dans le tableau global `LL_g_usedTaskPos`. Chaque tâche doit filtrer sa liste d'apparition pour exclure tout point situé à moins de 15m d'un point déjà utilisé, évitant ainsi le chevauchement d'objectifs.
 - **Espacement :** 250 mètres minimum entre chaque sous-objectif.
 
 ---

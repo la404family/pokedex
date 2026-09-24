@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Task_D_HVT_Title">
-        <Original>Eliminate HVT Commander</Original>
-        <English>Eliminate HVT Commander</English>
+        <Original>Eliminate enemy commander</Original>
+        <English>Eliminate enemy commander</English>
         <French>Éliminer le commandant HVT</French>
         <Spanish>Eliminar al comandante HVT</Spanish>
         <German>HVT-Kommandanten eliminieren</German>

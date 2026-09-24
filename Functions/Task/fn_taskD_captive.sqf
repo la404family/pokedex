@@ -5,14 +5,16 @@ params [
 if (_locMarker == "") then { _locMarker = "marker_0"; };
 
 private _centerPos = getMarkerPos _locMarker;
-private _nearHelipads = nearestObjects [_centerPos, ["Land_HelipadEmpty_F"], 500];
+private _radius = (markerSize _locMarker) select 0;
+if (_radius == 0) then { _radius = 250; };
+private _nearHelipads = nearestObjects [_centerPos, ["Land_HelipadEmpty_F"], _radius];
 private _allLogics = allMissionObjects "Logic";
-private _nearLogics = _allLogics select { _x distance2D _centerPos <= 500 };
+private _nearLogics = _allLogics select { _x distance2D _centerPos <= _radius };
 
 private _usedPositions = missionNamespace getVariable ["LL_g_usedTaskPos", []];
 private _validSpawnPoints = (_nearLogics + _nearHelipads) select {
     private _candidate = _x;
-    (_usedPositions findIf { _x distance2D _candidate < 150 }) == -1
+    (_usedPositions findIf { _x distance2D _candidate < 15 }) == -1
 };
 
 if (count _validSpawnPoints == 0) then {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keys>
     <Key ID="STR_LL_Diary_Task08_Title">
-        <Original>OPORD : Neutralisation de réseau antiaérien et de brouillage</Original>
-        <French>OPORD : Neutralisation de réseau antiaérien et de brouillage</French>
+        <Original>Détruire un DCA Tigris</Original>
+        <French>Détruire un DCA Tigris</French>
         <English>OPORD: Neutralize Anti-Aircraft &amp; Jamming Network</English>
         <Turkish>OPORD: Uçaksavar ve Karıştırma Ağını Etkisiz Hale Getir</Turkish>
         <Korean>OPORD: 대공 및 교란 네트워크 무력화</Korean>
