@@ -166,6 +166,7 @@ Les tâches de base ne sont **jamais** écrites en dur dans le fichier de menu o
 - **Priorité aux Game Logics :** Toujours rechercher les Game Logics placées dans l'éditeur.
 - **Filtres de distance :** Minimum 400 mètres du joueur. S'élargit par paliers progressifs (+50m) si aucun lieu n'est disponible.
 - **Anti-Superposition (Tâches Multiples) :** Lors du chargement simultané de plusieurs tâches optionnelles par `fn_taskB.sqf`, les emplacements sélectionnés (`Logic` ou `Helipad`) doivent être enregistrés dans le tableau global `LL_g_usedTaskPos`. Chaque tâche doit filtrer sa liste d'apparition pour exclure tout point situé à moins de 15m d'un point déjà utilisé, évitant ainsi le chevauchement d'objectifs.
+- **Conflit Héliport/Véhicule :** Si la tâche nécessite de faire apparaitre un **véhicule** (ex: Camion citerne, Tigris, blindé) sur une position d'apparition qui se trouve être un `Land_HelipadEmpty_F`, il faut **absolument supprimer (deleteVehicle) cet héliport invisible** lors du spawn. Sinon, les hélicoptères d'extraction/support du jeu risquent de s'y poser en plein sur le véhicule, causant une explosion.
 - **Espacement :** 250 mètres minimum entre chaque sous-objectif.
 
 ---
@@ -254,9 +255,6 @@ deleteVehicle _dummy;
 **Tâches Restantes (À faire) :**
 - [x] **TASK_TRANSMISSION** (`fn_taskD_transmission.sqf`) - Migrer depuis `fn_task03.sqf` (Détruire les stations radio).
 - [x] **TASK_CAPTIVE** (`fn_taskD_captive.sqf`) - Migrer depuis `fn_task00.sqf` (Libérer l'agent captif).
-- [ ] **TASK_DEFUSE** (`fn_taskD_defuse.sqf`) - Migrer depuis `fn_task02.sqf` (Désamorcer les charges explosives).
-- [ ] **TASK_MILITIA** (`fn_taskD_militia.sqf`) - Migrer depuis `fn_task05.sqf` (Éliminer les chefs de milices).
-- [ ] **TASK_EXTRACT_HVT** (`fn_taskD_extract_hvt.sqf`) - Migrer depuis `fn_task06.sqf` (Capturer vivant l'HVT).
-- [ ] **TASK_CHEMICAL** (`fn_taskD_chemical.sqf`) - Migrer depuis `fn_task04.sqf` (Élinguer la citerne chimique sans la détruire).
-- [ ] **TASK_TIGRIS** (`fn_taskD_tigris.sqf`) - Migrer depuis `fn_task08.sqf` (Détruire le brouilleur et la DCA Tigris).
+- [x] **TASK_CHEMICAL** (`fn_taskD_chemical.sqf`) - Migrer depuis `fn_task04.sqf` (Élinguer la citerne chimique sans la détruire).
+- [x] **TASK_TIGRIS** (`fn_taskD_tigris.sqf`) - Migrer depuis `fn_task08.sqf` (Détruire le brouilleur et la DCA Tigris).
 *(Note : l'ancienne `task07` sur le char Angara semble avoir été remplacée/abandonnée au profit de TASK_HVT dans le gestionnaire).*

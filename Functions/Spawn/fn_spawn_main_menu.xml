@@ -427,4 +427,19 @@
         <English>YOU MUST SELECT AT LEAST ONE OPTIONAL OBJECTIVE!</English>
         <French>VOUS DEVEZ SÉLECTIONNER AU MOINS UN OBJECTIF OPTIONNEL !</French>
     </Key>
+    <Key ID="STR_MAIN_MENU_RULES">
+        <Original>&lt;t color='#FFFF00' size='0.85'&gt;TACTICAL DIRECTIVES:&lt;br/&gt;- Choose 1 to 3 missions maximum.&lt;br/&gt;- You must call for extraction manually via Support (0-8-3).&lt;br/&gt;- Manage your squad's Rules of Engagement via the action menu (scroll wheel).&lt;/t&gt;</Original>
+        <English>&lt;t color='#FFFF00' size='0.85'&gt;TACTICAL DIRECTIVES:&lt;br/&gt;- Choose 1 to 3 missions maximum.&lt;br/&gt;- You must call for extraction manually via Support (0-8-3).&lt;br/&gt;- Manage your squad's Rules of Engagement via the action menu (scroll wheel).&lt;/t&gt;</English>
+        <French>&lt;t color='#FFFF00' size='0.85'&gt;DIRECTIVES TACTIQUES :&lt;br/&gt;- Choisissez 1 à 3 missions maximum.&lt;br/&gt;- L'extraction est manuelle : appelez le support (0-8-3).&lt;br/&gt;- Gérez l'engagement de votre escouade via le menu molette.&lt;/t&gt;</French>
+        <Spanish>&lt;t color='#FFFF00' size='0.85'&gt;DIRECTIVAS TÁCTICAS:&lt;br/&gt;- Elige de 1 a 3 misiones máximo.&lt;br/&gt;- Debes solicitar la extracción manualmente (0-8-3).&lt;br/&gt;- Gestiona las reglas de combate de tu escuadrón a través del menú de acción.&lt;/t&gt;</Spanish>
+        <Italian>&lt;t color='#FFFF00' size='0.85'&gt;DIRETTIVE TATTICHE:&lt;br/&gt;- Scegli da 1 a 3 missioni al massimo.&lt;br/&gt;- L'estrazione va richiesta manualmente tramite Supporto (0-8-3).&lt;br/&gt;- Gestisci le regole di ingaggio della squadra dal menu azioni.&lt;/t&gt;</Italian>
+        <German>&lt;t color='#FFFF00' size='0.85'&gt;TAKTISCHE DIREKTIVEN:&lt;br/&gt;- Wähle maximal 1 bis 3 Missionen.&lt;br/&gt;- Evakuierung muss manuell angefordert werden (0-8-3).&lt;br/&gt;- Verwalte die Einsatzregeln deines Trupps über das Aktionsmenü.&lt;/t&gt;</German>
+        <Polish>&lt;t color='#FFFF00' size='0.85'&gt;WYTYCZNE TAKTYCZNE:&lt;br/&gt;- Wybierz od 1 do 3 misji maksymalnie.&lt;br/&gt;- Ewakuację należy wezwać ręcznie przez menu wsparcia (0-8-3).&lt;br/&gt;- Zarządzaj zasadami zaangażowania drużyny przez menu akcji.&lt;/t&gt;</Polish>
+        <Russian>&lt;t color='#FFFF00' size='0.85'&gt;ТАКТИЧЕСКИЕ ДИРЕКТИВЫ:&lt;br/&gt;- Выберите от 1 до 3 миссий.&lt;br/&gt;- Эвакуация вызывается вручную через меню поддержки (0-8-3).&lt;br/&gt;- Управляйте правилами ведения боя отряда через меню действий.&lt;/t&gt;</Russian>
+        <Turkish>&lt;t color='#FFFF00' size='0.85'&gt;TAKTİK DİREKTİFLER:&lt;br/&gt;- En fazla 1 ila 3 görev seçin.&lt;br/&gt;- Tahliyeyi Destek menüsünden (0-8-3) manuel çağırmalısınız.&lt;br/&gt;- Manga angajman kurallarını aksiyon menüsünden yönetin.&lt;/t&gt;</Turkish>
+        <Japanese>&lt;t color='#FFFF00' size='0.85'&gt;戦術指示:&lt;br/&gt;- 最大1〜3つのミッションを選択。&lt;br/&gt;- 脱出はサポート(0-8-3)から手動で要請する必要があります。&lt;br/&gt;- アクションメニューから分隊の交戦規定を管理してください。&lt;/t&gt;</Japanese>
+        <Korean>&lt;t color='#FFFF00' size='0.85'&gt;전술 지침:&lt;br/&gt;- 최대 1~3개의 임무를 선택하세요.&lt;br/&gt;- 탈출은 지원 메뉴(0-8-3)를 통해 수동으로 요청해야 합니다.&lt;br/&gt;- 액션 메뉴를 통해 분대의 교전 수칙을 관리하세요.&lt;/t&gt;</Korean>
+        <Chinese>&lt;t color='#FFFF00' size='0.85'&gt;战术指令：&lt;br/&gt;- 最多选择1至3个任务。&lt;br/&gt;- 必须通过支援菜单（0-8-3）手动呼叫撤离。&lt;br/&gt;- 通过操作菜单管理小队的交战规则。&lt;/t&gt;</Chinese>
+        <Chinesesimp>&lt;t color='#FFFF00' size='0.85'&gt;战术指令：&lt;br/&gt;- 最多选择1至3个任务。&lt;br/&gt;- 必须通过支援菜单（0-8-3）手动呼叫撤离。&lt;br/&gt;- 通过操作菜单管理小队的交战规则。&lt;/t&gt;</Chinesesimp>
+    </Key>
 </Keys>

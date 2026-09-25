@@ -24,6 +24,31 @@ class RscText
     tooltipColorColor[] = {0, 0, 0, 1};
 };
 
+class RscStructuredText
+{
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 13;
+    idc = -1;
+    style = 0;
+    colorText[] = {1,1,1,1};
+    class Attributes
+    {
+        font = "RobotoCondensed";
+        color = "#ffffff";
+        align = "left";
+        shadow = 1;
+    };
+    x = 0;
+    y = 0;
+    h = 0.035;
+    w = 0.1;
+    text = "";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    shadow = 1;
+};
+
 class RscCheckBox
 {
     idc = -1;
@@ -817,26 +842,12 @@ class Refour_Main_Menu_Dialog
             h = 0.025 * safezoneH;
         };
 
-        class CB_Opt3: RscCheckBox {
-            idc = 7112;
-            x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.31 * safezoneH);
-            w = 0.015 * safezoneW;
-            h = 0.025 * safezoneH;
-        };
-        class Txt_Opt3: RscText {
-            idc = -1;
-            text = "$STR_TASK_OPT3";
-            x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.31 * safezoneH);
-            w = 0.26 * safezoneW;
-            h = 0.025 * safezoneH;
-        };
+
 
         class CB_Opt4: RscCheckBox {
             idc = 7113;
             x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.34 * safezoneH);
+            y = safezoneY + (0.31 * safezoneH);
             w = 0.015 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -844,7 +855,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_TASK_OPT4";
             x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.34 * safezoneH);
+            y = safezoneY + (0.31 * safezoneH);
             w = 0.26 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -852,7 +863,7 @@ class Refour_Main_Menu_Dialog
         class CB_Opt5: RscCheckBox {
             idc = 7114;
             x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.37 * safezoneH);
+            y = safezoneY + (0.34 * safezoneH);
             w = 0.015 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -860,31 +871,17 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_TASK_OPT5";
             x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.37 * safezoneH);
+            y = safezoneY + (0.34 * safezoneH);
             w = 0.26 * safezoneW;
             h = 0.025 * safezoneH;
         };
 
-        class CB_Opt6: RscCheckBox {
-            idc = 7115;
-            x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.40 * safezoneH);
-            w = 0.015 * safezoneW;
-            h = 0.025 * safezoneH;
-        };
-        class Txt_Opt6: RscText {
-            idc = -1;
-            text = "$STR_TASK_OPT6";
-            x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.40 * safezoneH);
-            w = 0.26 * safezoneW;
-            h = 0.025 * safezoneH;
-        };
+
 
         class CB_Opt7: RscCheckBox {
             idc = 7116;
             x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.43 * safezoneH);
+            y = safezoneY + (0.37 * safezoneH);
             w = 0.015 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -892,7 +889,7 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_TASK_OPT7";
             x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.43 * safezoneH);
+            y = safezoneY + (0.37 * safezoneH);
             w = 0.26 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -900,7 +897,7 @@ class Refour_Main_Menu_Dialog
         class CB_Opt8: RscCheckBox {
             idc = 7117;
             x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.46 * safezoneH);
+            y = safezoneY + (0.40 * safezoneH);
             w = 0.015 * safezoneW;
             h = 0.025 * safezoneH;
         };
@@ -908,25 +905,21 @@ class Refour_Main_Menu_Dialog
             idc = -1;
             text = "$STR_TASK_OPT8";
             x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.46 * safezoneH);
+            y = safezoneY + (0.40 * safezoneH);
             w = 0.26 * safezoneW;
             h = 0.025 * safezoneH;
         };
 
-        class CB_Opt9: RscCheckBox {
-            idc = 7118;
-            x = safezoneX + (0.03 * safezoneW);
-            y = safezoneY + (0.49 * safezoneH);
-            w = 0.015 * safezoneW;
-            h = 0.025 * safezoneH;
-        };
-        class Txt_Opt9: RscText {
+
+
+        class Txt_Rules: RscStructuredText {
             idc = -1;
-            text = "$STR_TASK_OPT9";
-            x = safezoneX + (0.05 * safezoneW);
-            y = safezoneY + (0.49 * safezoneH);
-            w = 0.26 * safezoneW;
-            h = 0.025 * safezoneH;
+            text = "$STR_MAIN_MENU_RULES";
+            x = safezoneX + (0.025 * safezoneW);
+            y = safezoneY + (0.50 * safezoneH);
+            w = 0.29 * safezoneW;
+            h = 0.25 * safezoneH;
+            colorBackground[] = {0,0,0,0};
         };
 
         class EnvHeader: RscText

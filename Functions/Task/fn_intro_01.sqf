@@ -279,7 +279,7 @@ waitUntil { camCommitted _cam };
 _heli animateDoor ["doorLB", 1];
 _heli animateDoor ["doorRB", 1];
 _heli doMove _destPos;
-_heli flyInHeight 15;
+_heli land "GET OUT";
 
 cutText ["", "BLACK IN", 0.8];
 
@@ -307,42 +307,34 @@ private _ehApproach = addMissionEventHandler ["EachFrame", {
     _cam camCommit 0;
 }];
 
-// Attente de l'approche basse de l'hélicoptère (altitude < 5m ou max 12s)
-private _maxWaitLanding = time + 12;
+// Attente de l'atterrissage complet de l'hélicoptère
+private _maxWaitLanding = time + 40;
 waitUntil {
-    sleep 0.1;
-    isTouchingGround _heli || { (getPosATL _heli select 2) < 5.0 } || { time > _maxWaitLanding }
+    sleep 0.5;
+    isTouchingGround _heli || { (getPosATL _heli select 2) < 1.0 } || { time > _maxWaitLanding }
 };
 
+// =========================================================================
+// 10. FIN DU PLAN : ÉCRAN NOIR, ÉJECTION ET REDÉCOLLAGE
+// =========================================================================
 removeMissionEventHandler ["EachFrame", _ehApproach];
 
-// =========================================================================
-// 10. FIN DU PLAN : ÉCRAN NOIR, NETTOYAGE ET REGROUPEMENT ABSOLU DES 6 PLAYERS
-// =========================================================================
-cutText ["", "BLACK OUT", 0.6];
-sleep 0.6;
+cutText ["", "BLACK OUT", 1.0];
+sleep 1.0;
 
 // 1. D'ABORD forcer la sortie de tout le monde
-for "_i" from 0 to 5 do {
-    private _u = missionNamespace getVariable [format ["player_%1", _i], objNull];
-    if (isNull _u) then { _u = missionNamespace getVariable [format ["player_0%1", _i], objNull]; };
-    if (!isNull _u) then {
-        unassignVehicle _u;
-        moveOut _u;
-    };
-};
+{
+    unassignVehicle _x;
+    moveOut _x;
+} forEach _allUnits;
 
-// Pause indispensable pendant le noir : laisser le moteur Arma 3 libérer les sièges passagers
+// Pause indispensable pendant le noir
 sleep 0.3;
 
-// 2. Suppression de l'hélicoptère et de son équipage (maintenant 100% vide)
-{ deleteVehicle _x; } forEach _crew;
-deleteVehicle _heli;
-
-// 3. Référence au sol : à côté du Land Rover
+// 2. Référence au sol : à côté du Land Rover
 private _teamRef = if (!isNil "vehicule_team" && {!isNull vehicule_team}) then { getPosATL vehicule_team } else { _destPos };
 
-// 4. Téléportation propre au sol de toute l'escouade
+// 3. Téléportation propre au sol de toute l'escouade
 private _allSquad = [];
 for "_i" from 0 to 5 do {
     private _u = missionNamespace getVariable [format ["player_%1", _i], objNull];
@@ -356,6 +348,21 @@ for "_i" from 0 to 5 do {
         _u switchMove "";
         _u setDir (_pos getDir _teamRef);
     };
+};
+
+// 4. L'hélicoptère redécolle au lieu d'être supprimé
+_heli engineOn true;
+private _exitPos = _destPos getPos [5000, (_destPos getDir _startPos)];
+_exitPos set [2, 100];
+_heli doMove _exitPos;
+_heli flyInHeight 100;
+
+// Nettoyage de l'hélicoptère une fois loin (en background)
+[_heli, _destPos] spawn {
+    params ["_h", "_dp"];
+    waitUntil { sleep 2; (_h distance2D _dp) > 3000 || !alive _h };
+    { deleteVehicle _x; } forEach (crew _h);
+    deleteVehicle _h;
 };
 
 // Pause pour confirmer le statut à pied de toutes les unités

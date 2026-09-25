@@ -61,7 +61,7 @@ for "_i" from 0 to (_numSpawns - 1) do {
     for "_p" from 1 to _numPatrols do {
         private _grp = createGroup [east, true];
         _grp setBehaviour "SAFE";
-        _grp setCombatMode "RED";
+        _grp setCombatMode "YELLOW";
 
         private _numGuards = 2 + floor (random 2);
         for "_g" from 1 to _numGuards do {
@@ -69,22 +69,26 @@ for "_i" from 0 to (_numSpawns - 1) do {
             _guard setPosATL _spawnPos;
             _guard allowDamage false;
             [_guard] spawn { sleep 3; (_this select 0) allowDamage true; };
-            [_guard, false, true] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
+            [_guard, false, true] call LL_fnc_applyTakistaniIdentity;
             _zoneGuards pushBack _guard;
         };
-        [_grp, _spawnPos, 150] call BIS_fnc_taskPatrol;
+        private _wp = _grp addWaypoint [_spawnPos, 150];
+        _wp setWaypointType "SAD";
+        _wp setWaypointBehaviour "SAFE";
     };
 
     private _grpOfficer = createGroup [east, true];
     _grpOfficer setBehaviour "SAFE";
-    _grpOfficer setCombatMode "RED";
+    _grpOfficer setCombatMode "YELLOW";
     private _officer = _grpOfficer createUnit ["O_Officer_F", _spawnPos, [], 0, "CAN_COLLIDE"];
     _officer setPosATL _spawnPos;
     _officer allowDamage false;
     [_officer] spawn { sleep 3; (_this select 0) allowDamage true; };
-    [_officer, false, true] execVM "Functions\Civilian\fn_applyTakistaniIdentity.sqf";
+    [_officer, false, true] call LL_fnc_applyTakistaniIdentity;
     _officer setRank "COLONEL";
-    [_grpOfficer, _spawnPos, 50] call BIS_fnc_taskPatrol;
+    private _wpO = _grpOfficer addWaypoint [_spawnPos, 50];
+    _wpO setWaypointType "MOVE";
+    _wpO setWaypointBehaviour "SAFE";
 
     private _allUnits = missionNamespace getVariable ["LL_TaskD_Doc_AllUnits", []];
     _allUnits append _zoneGuards;
@@ -102,55 +106,51 @@ for "_i" from 0 to (_numSpawns - 1) do {
         params ["_unit"];
         
         if (_unit getVariable ["LL_hasDocuments", false]) then {
-            private _pos = getPosATL _unit; 
-            private _docPos = _unit getPos [0.65, (getDir _unit) + 90];
-            _docPos set [2, (_pos select 2) + 0.05];
-            private _doc = createVehicle ["Land_Document_01_F", _docPos, [], 0, "CAN_COLLIDE"];
-            _doc setPosATL _docPos;
-            _doc setDir (random 360);
-            _doc setVectorUp (surfaceNormal _docPos);
-
-            ["task_d_documents", [_doc, true]] call BIS_fnc_taskSetDestination;
-            ["task_d_documents", "ASSIGNED"] call BIS_fnc_taskSetState;
-
-            private _actionCode = {
-                params ["_target", "_caller", "_actionId", "_arguments"];
-                _arguments params ["_unit", "_doc"];
-                
-                if (missionNamespace getVariable ["LL_TaskD_Doc_Triggered", false]) exitWith {};
-                missionNamespace setVariable ["LL_TaskD_Doc_Triggered", true];
-                
-                if (!isNull _unit) then { removeAllActions _unit; };
-                if (!isNull _doc) then { removeAllActions _doc; };
-                
-                _caller playActionNow "PutDown";
-                if (_caller canAdd "Item_Document_01_F") then { _caller addItem "Item_Document_01_F"; };
-                
-                if (!isNull _doc) then { deleteVehicle _doc; };
-                
-                ["task_d_documents", "SUCCEEDED", true] call BIS_fnc_taskSetState;
-                missionNamespace setVariable ["LL_g_taskInProgress", false, true];
-                
-                private _allU = missionNamespace getVariable ["LL_TaskD_Doc_AllUnits", []];
-                private _alive = _allU select { alive _x };
-                if (count _alive > 0) then {
-                    [_alive] spawn LL_fnc_taskCleanup;
-                };
+            
+            if (isNil "LL_fnc_taskD_docComplete") then {
+                missionNamespace setVariable ["LL_fnc_taskD_docComplete", {
+                    params ["_unit"];
+                    ["task_d_documents", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+                    missionNamespace setVariable ["LL_g_taskInProgress", false, true];
+                    
+                    private _allU = missionNamespace getVariable ["LL_TaskD_Doc_AllUnits", []];
+                    private _alive = _allU select { alive _x };
+                    if (count _alive > 0) then {
+                        [_alive] spawn LL_fnc_taskCleanup;
+                    };
+                }];
             };
 
-            _unit addAction [
-                format ["<t color='#FFFF00'>%1</t>", localize "STR_LL_Task_01_Action"],
-                _actionCode,
-                [_unit, _doc],
-                10, true, true, "", "_this distance _target < 4", 4
-            ];
-
-            _doc addAction [
-                format ["<t color='#FFFF00'>%1</t>", localize "STR_LL_Task_01_Action"],
-                _actionCode,
-                [_unit, _doc],
-                10, true, true, "", "_this distance _target < 4", 4
-            ];
+            private _actionTitle = format ["<t color='#FFFF00'>%1</t>", "Fouiller le corps (Documents)"];
+            
+            [
+                _unit, 
+                _actionTitle, 
+                "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa", 
+                "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa", 
+                "_this distance _target < 3", 
+                "true", 
+                { (_this select 1) playActionNow "PutDown"; }, 
+                {}, 
+                {
+                    params ["_target", "_caller", "_actionId", "_arguments"];
+                    _arguments params ["_unit"];
+                    
+                    if (missionNamespace getVariable ["LL_TaskD_Doc_Triggered", false]) exitWith {};
+                    missionNamespace setVariable ["LL_TaskD_Doc_Triggered", true];
+                    
+                    if (_caller canAdd "Item_Document_01_F") then { _caller addItem "Item_Document_01_F"; };
+                    
+                    [_target, _actionId] call BIS_fnc_holdActionRemove;
+                    [_unit] call (missionNamespace getVariable "LL_fnc_taskD_docComplete");
+                }, 
+                {}, 
+                [_unit], 
+                1.5, 
+                10, 
+                true, 
+                false
+            ] call BIS_fnc_holdActionAdd;
             
             private _alivePlayers = allPlayers select { alive _x };
             private _allTaskUnits = missionNamespace getVariable ["LL_TaskD_Doc_AllUnits", []];

@@ -445,3 +445,52 @@ cutText ["", "BLACK IN", 2.5];
 ] spawn BIS_fnc_dynamicText;
 
 missionNamespace setVariable ["MISSION_intro_finished", true, true];
+
+// =========================================================================
+// 11. PASSAGE EN BASSE ALTITUDE (Ambiance post-intro)
+// =========================================================================
+[_destPos] spawn {
+    params ["_destPos"];
+    sleep 3; // Laisse le temps au joueur de s'orienter
+
+    // Fait apparaître un C-130 à 3 km, se dirigeant droit sur les joueurs
+    private _spawnDist = 3000;
+    private _dirToPlayer = random 360; 
+    private _spawnPos = _destPos getPos [_spawnDist, _dirToPlayer];
+    _spawnPos set [2, 100]; 
+
+    private _flybyPlane = createVehicle ["CUP_I_C130J_RACS", _spawnPos, [], 0, "FLY"];
+    _flybyPlane setPosATL _spawnPos;
+    _flybyPlane setDir (_spawnPos getDir _destPos);
+    _flybyPlane setVelocityModelSpace [0, 130, 0];
+    
+    // Altitude très basse pour un passage impressionnant
+    _flybyPlane flyInHeight 60; 
+    _flybyPlane allowDamage false;
+    
+    createVehicleCrew _flybyPlane;
+    private _flybyCrew = crew _flybyPlane;
+    { _x allowDamage false; } forEach _flybyCrew;
+
+    private _grp = group driver _flybyPlane;
+    _grp setBehaviour "CARELESS";
+    _grp setCombatMode "BLUE";
+    _grp setSpeedMode "FULL";
+
+    _flybyPlane doMove _destPos;
+
+    // Attend que l'avion survole la zone
+    waitUntil { sleep 0.5; (_flybyPlane distance2D _destPos) < 400 || !alive _flybyPlane };
+    
+    // Le fait remonter et partir au loin
+    private _exitPos = _destPos getPos [8000, _spawnPos getDir _destPos];
+    _exitPos set [2, 350];
+    _flybyPlane doMove _exitPos;
+    _flybyPlane flyInHeight 350;
+
+    // Nettoyage une fois l'avion hors de vue (4 km)
+    waitUntil { sleep 2; (_flybyPlane distance2D _destPos) > 4000 || !alive _flybyPlane };
+    
+    { deleteVehicle _x; } forEach _flybyCrew;
+    deleteVehicle _flybyPlane;
+};

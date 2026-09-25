@@ -41,6 +41,9 @@ if (_mode == "OPEN") exitWith {
         private _cbOpt = _display displayCtrl _i;
         if (!isNull _cbOpt) then {
             _cbOpt cbSetChecked false;
+            _cbOpt ctrlAddEventHandler ["CheckedChanged", {
+                ["CHECK_LIMIT"] call LL_fnc_spawn_main_menu;
+            }];
         };
     };
 
@@ -271,6 +274,35 @@ if (_mode == "UPDATE_ENV_PREVIEW") exitWith {
     simulWeatherSync;
 };
 
+if (_mode == "CHECK_LIMIT") exitWith {
+    private _display = findDisplay 7000;
+    if (isNull _display) exitWith {};
+
+    private _selectedCount = 0;
+    private _taskIDCs = [7110, 7111, 7113, 7114, 7116, 7117];
+
+    {
+        private _cb = _display displayCtrl _x;
+        if (cbChecked _cb) then {
+            _selectedCount = _selectedCount + 1;
+        };
+    } forEach _taskIDCs;
+
+    if (_selectedCount >= 3) then {
+        {
+            private _cb = _display displayCtrl _x;
+            if (!cbChecked _cb) then {
+                _cb ctrlEnable false;
+            };
+        } forEach _taskIDCs;
+    } else {
+        {
+            private _cb = _display displayCtrl _x;
+            _cb ctrlEnable true;
+        } forEach _taskIDCs;
+    };
+};
+
 if (_mode == "LAUNCH") exitWith {
     private _display = findDisplay 7000;
     
@@ -278,13 +310,10 @@ if (_mode == "LAUNCH") exitWith {
     private _taskMap = [
         [7110, "TASK_CAPTIVE"],
         [7111, "TASK_HVT"],
-        [7112, "TASK_DEFUSE"],
         [7113, "TASK_TRANSMISSION"],
         [7114, "TASK_CHEMICAL"],
-        [7115, "TASK_EXTRACT_HVT"],
         [7116, "TASK_DOCUMENTS"],
-        [7117, "TASK_TIGRIS"],
-        [7118, "TASK_MILITIA"]
+        [7117, "TASK_TIGRIS"]
     ];
     
     {

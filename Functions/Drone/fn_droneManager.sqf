@@ -67,7 +67,7 @@ while { true } do {
         _markerDrone setMarkerColor "ColorCIV";
         _markerDrone setMarkerSize [0.9, 0.9];
 
-        ["STR_Drone_Approach"] call LL_fnc_radioMessage;
+        private _msgSent = false;
 
         private _wp = _grp addWaypoint [_targetPos, 0];
         _wp setWaypointType "LOITER";
@@ -82,9 +82,16 @@ while { true } do {
             _markerDrone setMarkerPos (getPosATL _drone);
 
             private _enemies = [];
-            if ((_drone distance2D _targetPos) <= (_orbitRadius + 200)) then {
-                _enemies = _targetPos nearEntities [["Car", "Tank", "Helicopter", "Plane", "Ship", "Man"], _scanRadius];
-                _enemies = _enemies select { alive _x && (side _x == east || _x in (missionNamespace getVariable ["LL_Task08_Targets", []])) };
+            if ((_drone distance2D _targetPos) <= (_orbitRadius + 500)) then {
+                if (!_msgSent) then {
+                    ["STR_Drone_Approach"] call LL_fnc_radioMessage;
+                    _msgSent = true;
+                };
+                
+                if ((_drone distance2D _targetPos) <= (_orbitRadius + 200)) then {
+                    _enemies = _targetPos nearEntities [["Car", "Tank", "Helicopter", "Plane", "Ship", "Man"], _scanRadius];
+                    _enemies = _enemies select { alive _x && (side _x == east || _x in (missionNamespace getVariable ["LL_Task08_Targets", []])) };
+                };
             };
 
             private _currentEnemyIds = [];

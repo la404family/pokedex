@@ -72,9 +72,9 @@ private _clusters = []; // Format: [_centerPos, _representativeSpeaker, [_allSpe
 diag_log format ["[LL_fnc_playEzan] %1 clusters de diffusion formés (anti-cacophonie actif).", count _clusters];
 
 // =========================================================================
-// 4. Premier délai atmosphérique (entre 1 et 2 minutes après le lancement)
+// 4. Premier délai atmosphérique (entre 5 et 7 minutes après le lancement)
 // =========================================================================
-sleep (60 + random 60);
+sleep (300 + random 120);
 
 // =========================================================================
 // 5. Boucle principale de diffusion de l'Ezan

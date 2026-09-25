@@ -61,13 +61,10 @@ missionNamespace setVariable ["LL_g_usedTaskPos", []];
     switch (_taskId) do {
         case "TASK_CAPTIVE": { [_locMarker] spawn LL_fnc_taskD_captive; };
         case "TASK_HVT": { [_locMarker] spawn LL_fnc_taskD_hvt; };
-        case "TASK_DEFUSE": { [_locMarker] spawn LL_fnc_taskD_defuse; };
         case "TASK_TRANSMISSION": { [_locMarker] spawn LL_fnc_taskD_transmission; };
         case "TASK_CHEMICAL": { [_locMarker] spawn LL_fnc_taskD_chemical; };
-        case "TASK_EXTRACT_HVT": { [_locMarker] spawn LL_fnc_taskD_extract_hvt; };
         case "TASK_DOCUMENTS": { [_locMarker] spawn LL_fnc_taskD_documents; };
         case "TASK_TIGRIS": { [_locMarker] spawn LL_fnc_taskD_tigris; };
-        case "TASK_MILITIA": { [_locMarker] spawn LL_fnc_taskD_militia; };
     };
 } forEach _optionalTasks;
 
